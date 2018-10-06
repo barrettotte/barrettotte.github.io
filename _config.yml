@@ -1,18 +1,8 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+
 
 # Theme Settings
-#
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
-
-# theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -21,11 +11,11 @@ title_separator          : "-"
 name                     : "Barrett Otte"
 description              : "Portfolio and simple blog."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : 
 repository               : "barrettotte/barrettotte.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+teaser                   : "/assets/images/placeholder.jpg"
+# breadcrumbs            : false
+words_per_minute         : 150
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
@@ -35,7 +25,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
+    num_posts            : 5
     colorscheme          : "dark" # "light" (default), "dark"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
@@ -83,7 +73,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/images/placeholder.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -102,7 +92,7 @@ analytics:
 # Site Author
 author:
   name             : "Barrett Otte"
-  avatar           : "/images/placeholder.jpg"
+  avatar           : "/assets/images/avatar.jpg"
   bio              : "Software Developer and Hobbyist Game Developer"
   location         : "Maryland"
   email            : "barrettottegmail.com"
@@ -110,9 +100,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/barrettotte"
-    - label: "Barrettotte.com"
-      icon: "fas fa-fw fa-link"
-      url: "https://barrettotte.com"
 
 # Site Footer
 footer:
@@ -123,9 +110,6 @@ footer:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       url: "https://gitlab.com/barrettotte"
-    - label: "Barrettotte.com"
-      icon: "fas fa-fw fa-link"
-      url: "https://barrettotte.com"
 
 
 # Reading Files
@@ -254,6 +238,9 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -275,3 +262,20 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      

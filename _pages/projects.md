@@ -1,11 +1,13 @@
 ---
 layout: archive
+title: "All Projects"
 permalink: /projects/
-title: "Projects"
-author_profile: true
-header:
-    image: "/images/placeholder.jpg"
 ---
 
+Projects
 
-This is a page with all projects on it
+<div class="grid__wrapper">
+  {% for post in site.projects %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
