@@ -1,4 +1,4 @@
 # Ignore all .js files
-vendor/jquery/*.js linguist-vendored
-lunr/*.js linguist-vendored
-plugins/*.js
+assets/js/vendor/jquery/* linguist-vendored
+assets/js/lunr/* linguist-vendored
+assets/js/plugins/*
