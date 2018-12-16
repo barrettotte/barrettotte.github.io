@@ -7,10 +7,10 @@ Simple portfolio and occasional blog page using the [Minimal Mistakes](https://g
 * [Minimal Mistakes Quick Start Guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 * Dev dependencies 
  * Ubuntu
-  * Ruby ```apt-get -y install ruby-full```
-  * Sanity Check ```apt-get -y install ruby-dev zlib1g-dev``` (nokogiri sometimes fails without this)
+   * Ruby ```apt-get -y install ruby-full```
+   * Sanity Check ```apt-get -y install ruby-dev zlib1g-dev``` (nokogiri sometimes fails without this)
  * Arch
-  * Ruby ```pacman -S --noconfirm ruby``` and add to PATH
+   * Ruby ```pacman -S --noconfirm ruby``` and add to PATH
  * Bundler Gem ```gem install bundler```
  * Jekyll Gem ```gem install jekyll```
  * Rake Gem ```gem install rake```
