@@ -1,16 +1,19 @@
 ---
 layout: home
 author_profile: true
+title: Portfolio
 ---
 
+<!--Temp-->
+  <br><br>
+  [Put something here] 
+  <br><br>
+<!---->
 
-
-<h3>Showcase:</h3>
-<hr><br />
+<div class="archive__subtitle">Showcase:</div>
 
 <div class="grid__wrapper">
   {% for post in site.portfolio limit:8%}
     {% include archive-single.html type="grid" %}
   {% endfor %}
 </div>
-

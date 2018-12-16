@@ -1,8 +1,12 @@
 ---
-title: "Portfolio Item 1"
-excerpt: "Testing"
+title: "Proc. Jam 2018"
+excerpt: "Simulate basic population genetics on creatures' DNA."
 header:
-    teaser: /assets/images/projects/project1.jpg
+    teaser: /assets/images/projects/project_ProcJam-2018.PNG
 ---
 
-Portfolio Item 1 Page
+Procedural Generation Jam 2018
+
+[GitHub Link](https://github.com/barrettotte/ProcJam-2018)
+
+< Description Here >

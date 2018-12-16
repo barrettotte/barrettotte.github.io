@@ -1,8 +1,12 @@
 ---
-title: "Portfolio Item 2"
-excerpt: "Testing"
+title: "Project Ranger"
+excerpt: "Ongoing hobby game development project."
 header:
-    teaser: /assets/images/projects/project2.jpg
+    teaser: /assets/images/projects/project_Project_Ranger.PNG
 ---
 
-Portfolio Item 2 Page
+Project Ranger
+
+[GitHub Link](https://github.com/barrettotte/Project_Ranger)
+
+< Description Here >

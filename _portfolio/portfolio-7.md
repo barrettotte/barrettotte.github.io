@@ -1,8 +1,12 @@
 ---
-title: "Portfolio Item 7"
-excerpt: "Testing"
+title: "Manga Downloader"
+excerpt: "Scrape web pages for manga and assemble to CBZ File"
 header:
-    teaser: /assets/images/projects/project1.jpg
+    teaser: /assets/images/projects/project_Manga-Downloader.PNG
 ---
 
-Portfolio Item 7 Page
+Manga Downloader
+
+[GitHub Link](https://github.com/barrettotte/Manga-Downloader)
+
+< Description Here >

@@ -1,7 +1,10 @@
 # main links
 main:
+  - title: "Home"
+    url: /
   - title: "Projects"
-    url: /projects/
+    url: /projects/index.html
+  - title: "Resume"
+    url: /resume/
   - title: "About"
     url: /about/
-  

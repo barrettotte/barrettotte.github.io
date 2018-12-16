@@ -1,8 +1,12 @@
 ---
-title: "Portfolio Item 8"
-excerpt: "Testing"
+title: "Terrain Generation Study"
+excerpt: "Use Perlin noise to generate LOD enabled terrain"
 header:
-    teaser: /assets/images/projects/project2.jpg
+    teaser: /assets/images/projects/project_Terrain-Generation-Study.PNG
 ---
 
-Portfolio Item 8 Page
+Terrain Generation Study
+
+[GitHub Link](https://github.com/barrettotte/Terrain-Generation-Study)
+
+< Description Here >

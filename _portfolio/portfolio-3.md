@@ -1,8 +1,12 @@
 ---
-title: "Portfolio Item 3"
-excerpt: "Testing"
+title: "ASM HTTP Server"
+excerpt: "Basic HTTP server written with 64-bit assembly and NASM"
 header:
-    teaser: /assets/images/projects/project3.jpg
+    teaser: /assets/images/projects/project_HTTP-ASM64.PNG
 ---
 
-Portfolio Item 3 Page
+64-bit Assembly HTTP Server
+
+[GitHub Link](https://github.com/barrettotte/ProcJam-2018)
+
+< Description Here >
