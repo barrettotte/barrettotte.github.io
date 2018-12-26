@@ -199,21 +199,40 @@ whitelist:
 pagination:
   enabled: true
   debug: false
-  collection: 'projects'
-  per_page: 12
+  collection: 'posts'
+  per_page: 10
   permalink: '/page:num/'
   title: ':title - page :num'
   limit: 0
   sort_field: 'date'
-  sort_reverse: false
-  category: 'projects'
+  sort_reverse: true
+  category: 'posts'
   tag: ''
   locale: ''
   trail:
     before: 2
     after: 2
   extension: html
-  indexpage: 'index'
+indexpage: 'index'
+
+pagination:
+  enabled: true
+  debug: false
+  collection: 'projects'
+  per_page: 10
+  permalink: '/page:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
+  extension: html
+indexpage: 'index'
 
 
 # Archives
@@ -263,17 +282,6 @@ collections:
 
 # Defaults
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: false
-      related: true
   # _pages
   - scope:
       path: ""
@@ -291,7 +299,7 @@ defaults:
       share: false
   # _projects
   - scope:
-      path: "/projects/index.html"
+      path: ""
       type: projects
     values:
       layout: single
