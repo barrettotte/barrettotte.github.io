@@ -290,7 +290,7 @@ defaults:
       share: false
   # _projects
   - scope:
-      path: "/projects/"
+      path: ""
       type: projects
     values:
       layout: single
