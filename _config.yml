@@ -195,24 +195,6 @@ whitelist:
   - jekyll-include-cache
 
 # https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
-pagination:
-  enabled: true
-  debug: false
-  collection: 'posts'
-  per_page: 10
-  permalink: '/page:num/'
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  category: 'posts'
-  tag: ''
-  locale: ''
-  trail:
-    before: 2
-    after: 2
-  extension: html
-  indexpage: 'index'
 
 pagination:
   enabled: true
@@ -309,7 +291,7 @@ defaults:
       share: false
   # _projects
   - scope:
-      path: ""
+      path: "/projects/index.html"
       type: projects
     values:
       layout: single
