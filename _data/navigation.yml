@@ -3,7 +3,7 @@ main:
   - title: "Home"
     url: /
   - title: "Projects"
-    url: /projects/index.html
+    url: /projects/
   - title: "Resume"
     url: /resume/
   - title: "About"
