@@ -4,15 +4,6 @@ title: Projects
 
 pagination:
     enabled: true
-    collection: 'projects'
-    category: 'posts'
-    sort_reverse: false
-    per_page: 12
-    
-    title: ':title - Page :num'
-    trail:
-        before: 2
-        after: 3
 ---
 
 <!--   To Do: Add content to project pages and add tags to projects with ability to sort.   -->
@@ -25,7 +16,7 @@ pagination:
 </div>
 
 <nav class="pagination">
-    {% if paginator.total_pages > 1 %}
+    {% if paginator.total_pages >= 0 %}
         <ul>
             {% if paginator.previous_page %}
                 <li>
