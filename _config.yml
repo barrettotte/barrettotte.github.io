@@ -214,6 +214,25 @@ pagination:
   extension: html
   indexpage: 'index'
 
+pagination:
+  enabled: true
+  debug: false
+  collection: 'projects'
+  per_page: 12
+  permalink: '/page:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: false
+  category: 'projects'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
+  extension: html
+  indexpage: 'index'
+
 
 # Archives
 #  Type
