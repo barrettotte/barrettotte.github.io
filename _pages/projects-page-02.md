@@ -1,13 +1,31 @@
 ---
 layout: archive
-title: Projects - Page 02
+title: All Projects - Page 02
 permalink: /projects/page-02
 ---
 
-<br><br>
+<div class="grid__wrapper">
+  <br>
+  <table>
+    <tbody>
+      <tr style="text-align: center">
+        <td style="padding-bottom: 50px;">
+          <button onClick="window.location.href='#'" id="test" class="btn btn--primary btn--x-large">Programming</button>
+        </td>
+        <td style="padding-bottom: 50px;">
+          <button onClick="window.location.href='#'" id="test" class="btn btn--primary btn--x-large">Electronics</button>
+        </td>
+        <td style="padding-bottom: 50px;">
+          <button onClick="window.location.href='#'" id="test" class="btn btn--primary btn--x-large">Everything Else</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+</div>
 
 <div class="grid__wrapper">
-    {% for post in site.projects offset:12 limit:12 %}
+    {% for post in site.projects offset:16 limit:16 %}
       {% include archive-single.html type="grid" %}
     {% endfor %}
 </div>

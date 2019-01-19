@@ -1,24 +1,43 @@
 ---
 layout: archive
-title: Projects
+title: All Projects
 permalink: /projects/
 ---
 
-<br><br>
-
 <div class="grid__wrapper">
-    {% for post in site.projects limit:12 %}
-      {% include archive-single.html type="grid" %}
-    {% endfor %}
+  <br>
+  <table>
+    <tbody>
+      <tr style="text-align: center">
+        <td style="padding-bottom: 50px;">
+          <button onClick="window.location.href='#'" id="test" class="btn btn--primary btn--x-large">Programming</button>
+        </td>
+        <td style="padding-bottom: 50px;">
+          <button onClick="window.location.href='#'" id="test" class="btn btn--primary btn--x-large">Electronics</button>
+        </td>
+        <td style="padding-bottom: 50px;">
+          <button onClick="window.location.href='#'" id="test" class="btn btn--primary btn--x-large">Everything Else</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
 </div>
 
-<div class="archive__pagination">
-  <a href="/projects/">&laquo;</a>
-  <a class="active" href="/projects/">1</a>
-  <a href="/projects/page-02">2</a>
-  <a href="/projects/page-03">3</a>
-  <!--<a href="/projects/page-04">4</a>
-  <a href="/projects/page-05">5</a>
-  <a href="/projects/page-06">6</a>-->
-  <a href="/projects/page-02">&raquo;</a>
-</div> 
+<div class="grid__wrapper">
+    {% for post in site.projects limit:16 %}
+      {% include archive-single.html type="grid" %}
+    {% endfor %}
+
+  <div class="archive__pagination">
+    <a href="/projects/">&laquo;</a>
+    <a class="active" href="/projects/">1</a>
+    <a href="/projects/page-02">2</a>
+    <a href="/projects/page-03">3</a>
+    <!--<a href="/projects/page-04">4</a>
+    <a href="/projects/page-05">5</a>
+    <a href="/projects/page-06">6</a>-->
+    <a href="/projects/page-02">&raquo;</a>
+  </div> 
+</div>
+
