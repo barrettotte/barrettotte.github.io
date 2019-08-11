@@ -1,6 +1,0 @@
-# Ignore all .js files
-assets/js/vendor/jquery/* linguist-vendored
-assets/js/lunr/* linguist-vendored
-assets/js/plugins/* linguist-vendored
-ProcJam-2018/WebGL/* linguist-vendored
-_includes/

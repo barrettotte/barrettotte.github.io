@@ -1,0 +1,58 @@
+mdb-card-body {
+    background: #424242;
+}
+
+h4, a, .card-title {
+    color: white;
+    filter:brightness(150%);
+    text-align: center;
+}
+
+a:hover {
+    color: #5ED467;
+}
+
+.project-card-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 450px 450px;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+}
+
+.project-card-container:hover{
+    //transform: scale(1.05);
+    background-size: 750px 750px;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+}
+
+.project-card:hover{
+    .hover-overlay {
+        width:100%;
+        height:100%;
+        position:absolute;
+        background-color:rgba(0, 0, 0, 0.452);
+        opacity:0.5;
+    }
+    border-bottom: #5ED467 5px solid;
+}
+
+.project-card {
+    margin-top: 0;
+    border-bottom: #2e2e2e 5px solid;
+}
+
+.view-btn {
+    background-color: #1b612c;
+}
+
+.view-btn:hover {
+    background-color: lighten(#1b612c,15%);
+}
+
+mdb-card {
+    height: 350px;
+}
