@@ -19,14 +19,12 @@ import { ProjectsComponent } from './projects/projects.component';
 import { PostsComponent } from './posts/posts.component';
 import { AboutComponent } from './about/about.component';
 import { OtherComponent } from './other/other.component';
-import { ResumeComponent } from './resume/resume.component';
 import { FooterComponent } from './footer/footer.component';
 import { MaintenanceComponent } from './maintenance/maintenance.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { PostCardComponent } from './post-card/post-card.component';
 
 import { DataService } from './services/data.service';
-import { FileService } from './services/file.service';
 import { AboutPanelComponent } from './about-panel/about-panel.component';
 import { PaginationService } from './services/pagination.service';
 import { HomeCarouselComponent } from './home-carousel/home-carousel.component';
@@ -41,12 +39,10 @@ import { HomeCarouselComponent } from './home-carousel/home-carousel.component';
       PostsComponent,
       AboutComponent,
       OtherComponent,
-      ResumeComponent,
       FooterComponent,
       MaintenanceComponent,
       ProjectCardComponent,
       PostCardComponent,
-      ResumeComponent,
       AboutPanelComponent,
       HomeCarouselComponent
    ],
@@ -66,7 +62,6 @@ import { HomeCarouselComponent } from './home-carousel/home-carousel.component';
    ],
    providers: [
       DataService,
-      FileService,
       PaginationService
    ],
    bootstrap: [
