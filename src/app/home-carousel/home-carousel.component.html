@@ -1,0 +1,16 @@
+<mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+  <mdb-carousel-item *ngFor="let i of carouselItems">
+    <div class="view w-100">
+      <img class="d-block w-100 carousel-img" src="{{i.image}}" alt="{{i.title}}">
+      <div class="mask rgba-black-slight waves-light"></div>
+    </div>
+    <div class="carousel-caption">
+      <h3 class="h3-responsive">
+        <a [routerLink]="[i.url]">
+          {{i.title}}
+        </a>
+      </h3>
+      <p>{{i.description}}</p>
+    </div>
+  </mdb-carousel-item>
+</mdb-carousel>

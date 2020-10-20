@@ -1,0 +1,27 @@
+
+h4, h5{
+    color: white;
+    font-weight: 400;
+}
+
+a{
+    color: #5ED467;
+}
+
+a:hover{
+    color: #26883e;
+}
+
+hr{
+    border-bottom: 1px solid white;
+}
+
+.goals-list{
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+}
+
+table, th, td{
+    border: 1px solid white;
+}

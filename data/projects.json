@@ -1,0 +1,666 @@
+[
+  {
+    "id": 2,
+    "title": "GUI Parser",
+    "description": "Recursive Descent GUI Parser",
+    "url": "https://github.com/barrettotte/Recursive-Descent-GUI-Parser",
+    "tags": [
+      "Java",
+      "Parsing"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "ZX Dungeon",
+    "description": "ZX Spectrum Game Jam Entry",
+    "url": "https://github.com/barrettotte/ZX-Dungeon",
+    "tags": [
+      "BASIC",
+      "Game Jam",
+      "Event",
+      "Game",
+      "Vintage Computing"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "ASM Snake",
+    "description": "Basic snake game",
+    "url": "https://github.com/barrettotte/AssemblySnake",
+    "tags": [
+      "Assembly",
+      "Game"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "ASM XOR Encryption",
+    "description": "XOR file encryption",
+    "url": "https://github.com/barrettotte/Assembly_XOR_Encrypt",
+    "tags": [
+      "Assembly"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Seaport Project",
+    "description": "Concurrent programming project",
+    "url": "https://github.com/barrettotte/Seaport-Project",
+    "tags": [
+      "Java"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Master Telegrapher",
+    "description": "One Button Game Jam Entry",
+    "url": "https://github.com/barrettotte/Master-Telegrapher-Demo",
+    "tags": [
+      "C#",
+      "Game",
+      "Game Jam",
+      "Event",
+      "Unity"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Terrain Generation",
+    "description": "LOD mesh using 2D map and perlin noise",
+    "url": "https://github.com/barrettotte/Terrain-Generation-Study",
+    "tags": [
+      "C#",
+      "Game",
+      "Unity"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Manga Downloader",
+    "description": "Scrape mangareader.net build CBZ",
+    "url": "https://github.com/barrettotte/Manga-Downloader",
+    "tags": [
+      "Python"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "NodeJS CRUD App",
+    "description": "My first CRUD app",
+    "url": "https://github.com/barrettotte/NodeJS_CRUD_App",
+    "tags": [
+      "Node",
+      "API",
+      "Web"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "MEAN To Do List",
+    "description": "To Do List app using MEAN stack",
+    "url": "https://github.com/barrettotte/MEAN-ToDoList",
+    "tags": [
+      "Node",
+      "Angular",
+      "Mongo",
+      "Web",
+      "API"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "CF Codebase Scanner",
+    "description": "Scan CF and JS files for functions",
+    "url": "https://github.com/barrettotte/Codebase-Scanner",
+    "tags": [
+      "ColdFusion"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "HTML to JSON Parser",
+    "description": "Parse HTML to JSON with custom lexer and parser",
+    "url": "https://github.com/barrettotte/HTML-JSON-Parser",
+    "tags": [
+      "C#",
+      "Parsing"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Fortran77 Enigma Machine",
+    "description": "Enigma machine simulator",
+    "url": "https://github.com/barrettotte/Fortran77-Enigma",
+    "tags": [
+      "Fortran",
+      "Vintage Computing",
+      "Abomination"
+    ],
+    "featured": 6
+  },
+  {
+    "id": 15,
+    "title": "ASM HTTP Server",
+    "description": "Barebones HTTP server in 64-bit assembly",
+    "url": "https://github.com/barrettotte/HTTP-ASM64",
+    "tags": [
+      "Assembly",
+      "Abomination"
+    ],
+    "featured": 5
+  },
+  {
+    "id": 16,
+    "title": "Project Ranger",
+    "description": "My main game development project",
+    "url": "https://github.com/barrettotte/Project_Ranger",
+    "tags": [
+      "C#",
+      "Game"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "SQL GoL",
+    "description": "Game of Life in TSQL",
+    "url": "https://github.com/barrettotte/SQL-Game-of-Life",
+    "tags": [
+      "SQL",
+      "Abomination",
+      "TSQL",
+      "Python"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "TempleOS and Holy C",
+    "description": "A brief adventure in TempleOS and Holy C",
+    "url": "https://github.com/barrettotte/TempleOS-and-HolyC",
+    "tags": [
+      "HolyC",
+      "TempleOS"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Proc Jam 2018",
+    "description": "Proc Jam 2018 entry on population genetics",
+    "url": "https://github.com/barrettotte/ProcJam-2018",
+    "tags": [
+      "C#",
+      "Unity",
+      "Game Jam",
+      "Event"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Population Genetics Simulator",
+    "description": "Simulate a population of fake organisms' DNA",
+    "url": "https://github.com/barrettotte/Population-Genetics-Sim",
+    "tags": [
+      "Python"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "TRS-80",
+    "description": "Learning LEVEL-II BASIC and Z80 Assembly",
+    "url": "https://github.com/barrettotte/TRS-80",
+    "tags": [
+      "BASIC",
+      "Assembly",
+      "Vintage Computing"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Groovy BF",
+    "description": "Brainfuck interpreter in Groovy",
+    "url": "https://github.com/barrettotte/Groovy-BF",
+    "tags": [
+      "Groovy",
+      "Brainfuck",
+      "Interpreter"
+    ]
+  },
+  {
+    "id": 25,
+    "title": "SQL Unit",
+    "description": "POC MSSQL Unit Testing Framework",
+    "url": "https://github.com/barrettotte/SQL-UNIT-POC",
+    "tags": [
+      "Python",
+      "SQL"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Anilist Gem",
+    "description": "API wrapper for Anilist's GraphQL API",
+    "url": "https://github.com/barrettotte/Anilist-Ruby",
+    "tags": [
+      "Ruby",
+      "GraphQL",
+      "Web",
+      "Weeb",
+      "Anilist"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "LoL Data Visualization",
+    "description": "Visualize user's stats in League of Legends",
+    "url": "https://github.com/barrettotte/LoL-R-Data-Visual",
+    "tags": [
+      "R",
+      "Data Science"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "PowerShell CRUD",
+    "description": "A CRUD API written in PowerShell",
+    "url": "https://github.com/barrettotte/PowerShell-CRUD",
+    "tags": [
+      "PowerShell",
+      "Abomination",
+      "API",
+      "Web"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Genshi BASIC Interpreter",
+    "description": "An interpreter for my custom BASIC dialect",
+    "url": "https://github.com/barrettotte/GenshiBASIC-Interpreter",
+    "tags": [
+      "Python",
+      "BASIC",
+      "Parsing",
+      "Abomination"
+    ]
+  },
+  {
+    "id": 32,
+    "title": "IBMi Spring Boot API",
+    "description": "API to return libraries, files, and source members",
+    "url": "https://github.com/barrettotte/IBMi-SpringBoot-API",
+    "tags": [
+      "Java",
+      "IBMi",
+      "Spring Boot",
+      "API",
+      "Web"
+    ]
+  },
+  {
+    "id": 33,
+    "title": "PICO-8 Fishing",
+    "description": "A basic fishing game",
+    "url": "https://github.com/barrettotte/Pico8-Fishing",
+    "tags": [
+      "Lua",
+      "PICO-8",
+      "Game"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "VS Code Cryptosb",
+    "description": "Extension to display cryptocurrency prices in status bar",
+    "url": "https://github.com/barrettotte/vscode-cryptosb",
+    "tags": [
+      "TypeScript",
+      "VS Code",
+      "Extension"
+    ]
+  },
+  {
+    "id": 35,
+    "title": "C Linear Algebra",
+    "description": "A linear algebra library for matrix operations",
+    "url": "https://github.com/barrettotte/Linear-Algebra-C",
+    "tags": [
+      "C",
+      "Mathematics"
+    ]
+  },
+  {
+    "id": 38,
+    "title": "IBMi Library Repo",
+    "description": "Export all members via FTP to a git repository",
+    "url": "https://github.com/barrettotte/IBMi-Lib-Repo",
+    "tags": [
+      "Python",
+      "IBMi"
+    ]
+  },
+  {
+    "id": 39,
+    "title": "XSLT Perlin2D",
+    "description": "Generate 2D Perlin noise using only XSLT",
+    "url": "https://github.com/barrettotte/XSLT-Perlin2D",
+    "tags": [
+      "XSLT",
+      "Abomination"
+    ]
+  },
+  {
+    "id": 40,
+    "title": "IBMi Book",
+    "description": "My WIP eBook on learning the fundamentals of IBMi",
+    "url": "https://github.com/barrettotte/IBMi-Book",
+    "tags": [
+      "IBMi",
+      "RPGLE",
+      "Book"
+    ],
+    "featured": 2
+  },
+  {
+    "id": 41,
+    "title": "Portfolio",
+    "description": "The site you are currently viewing",
+    "url": "https://github.com/barrettotte/Portfolio",
+    "tags": [
+      "Angular",
+      "TypeScript",
+      "Web"
+    ]
+  },
+  {
+    "id": 42,
+    "title": "RPGLE BTC Hash",
+    "description": "SHA-256 and BTC algorithms in RPGLE",
+    "url": "https://github.com/barrettotte/RPGLE-BTC-Hash",
+    "tags": [
+      "RPGLE",
+      "IBMi",
+      "C",
+      "Abomination"
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Anilist RandExt",
+    "description": "Chrome extension for random anime item",
+    "url": "https://github.com/barrettotte/Anilist-RandExt",
+    "tags": [
+      "JavaScript",
+      "Extension",
+      "Web",
+      "Weeb",
+      "Anilist"
+    ]
+  },
+  {
+    "id": 44,
+    "title": "Scuffed 6502Kt",
+    "description": "A scuffed 6502 emulator in Kotlin",
+    "url": "https://github.com/barrettotte/Scuffed-6502Kt",
+    "tags": [
+      "Kotlin",
+      "Emulator",
+      "6502",
+      "Vintage Computing"
+    ],
+    "featured": 3
+  },
+  {
+    "id": 45,
+    "title": "Model Generator",
+    "description": "Generate models for multiple languages with JSON Schema",
+    "url": "https://github.com/barrettotte/Model-Generator",
+    "tags": [
+      "Python",
+      "Code Generation"
+    ]
+  },
+  {
+    "id": 46,
+    "title": "CF SQL Client",
+    "description": "A toy browser SQL client for DB2 and MSSQL",
+    "url": "https://github.com/barrettotte/CF-SQL-Client",
+    "tags": [
+      "ColdFusion",
+      "SQL"
+    ]
+  },
+  {
+    "id": 47,
+    "title": "C Socket Server",
+    "description": "A multithreaded C socket server.",
+    "url": "https://github.com/barrettotte/Sock-server",
+    "tags": [
+      "C",
+      "Socket"
+    ]
+  },
+  {
+    "id": 48,
+    "title": "MTM 2019",
+    "description": "Master the Mainframe 2019",
+    "url": "https://github.com/barrettotte/MTM-2019",
+    "tags": [
+      "Rexx",
+      "Mainframe",
+      "IBM Z",
+      "Event"
+    ]
+  },
+  {
+    "id": 49,
+    "title": "Issue Utils",
+    "description": "Various utilities for issue tracking for Trello, GitLab, and Glo",
+    "url": "https://github.com/barrettotte/Issue-Utils",
+    "tags": [
+      "Python",
+      "Trello"
+    ]
+  },
+  {
+    "id": 50,
+    "title": "Atari 2600 Game",
+    "description": "A small adventure in 6502 assembly for Ataria 2600 (VCS)",
+    "url": "https://github.com/barrettotte/Game-2600",
+    "tags": [
+      "Assembly",
+      "Vintage Computing",
+      "6502",
+      "Game"
+    ]
+  },
+  {
+    "id": 51,
+    "title": "Slideshow Builder",
+    "description": "A simple opinionated markdown slideshow builder",
+    "url": "https://github.com/barrettotte/Slideshow-Builder",
+    "tags": [
+      "PowerShell",
+      "Markdown"
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Anilist IBMi",
+    "description": "Querying Anilist GraphQL API from IBMi",
+    "url": "https://gitub.com/barrettotte/Anilist-IBMi",
+    "tags": [
+      "IBMi",
+      "RPGLE",
+      "Abomination",
+      "GraphQL",
+      "Weeb",
+      "Anilist"
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Simple Lang",
+    "description": "A stupid language made using Yacc and Lex",
+    "url": "https://github.com/barrettotte/Simple-Lang",
+    "tags": [
+      "C"
+    ]
+  },
+  {
+    "id": 54,
+    "title": "RangerLang",
+    "description": "My first compiler for a basic programming language",
+    "url": "https://github.com/barrettotte/Ranger-Lang",
+    "featured": 1,
+    "tags": [
+      "C",
+      "Compiler",
+      "VM",
+      "Assembly"
+    ]
+  },
+  {
+    "id": 55,
+    "title": "VS Code IBMi Languages",
+    "description": "VS Code extension for IBMi Languages such as RPG, CL, DDS, RPGLE, and MI",
+    "url": "https://github.com/barrettotte/vscode-ibmi-languages",
+    "tags": [
+      "IBMi",
+      "VS Code",
+      "Extension",
+      "RPGLE"
+    ],
+    "featured": 4
+  },
+  {
+    "id": 56,
+    "title": "Drools SpringBoot",
+    "description": "An example Spring Boot API to mess around with Drools",
+    "url": "https://github.com/barrettotte/Drools-SpringBoot",
+    "tags": [
+      "Java",
+      "Spring Boot",
+      "Drools"
+    ]
+  },
+  {
+    "id": 57,
+    "title": "CPP Lisp Interpreter",
+    "description": "A small lisp interpreter to refresh on C++",
+    "url": "https://github.com/barrettotte/CPP-Lisp" ,
+    "tags": [
+      "C++",
+      "Interpreter",
+      "Lisp"
+    ]
+  },
+  {
+    "id": 58,
+    "title": "TRS-80 Twilio",
+    "description": "Sending a text from a TRS-80 model 100 using Twilio SMS API",
+    "url": "https://github.com/barrettotte/TRS80-Twilio",
+    "tags": [
+      "C++",
+      "ESP8266",
+      "BASIC",
+      "Event",
+      "Twilio"
+    ]
+  },
+  {
+    "id": 59,
+    "title": "IBMi Jupyter",
+    "description": "Utility notebook for using Jupyter Notebooks with IBMi",
+    "url": "https://github.com/barrettotte/IBMi-Jupyter",
+    "tags": [
+      "Jupyter",
+      "IBMi",
+      "Python",
+      "DB2",
+      "SQL"
+    ]
+  },
+  {
+    "id": 60,
+    "title": "RPGLE Twilio",
+    "description": "RPGLE service program for sending text messages with Twilio SMS API",
+    "url": "https://github.com/barrettotte/RPGLE-Twilio",
+    "tags": [
+      "RPGLE",
+      "IBMi",
+      "Twilio"
+    ]
+  },
+  {
+    "id": 61,
+    "title": "DSL 5250",
+    "description": "A dummy's approach to making a simple DSL for 5250 emulator automation",
+    "url": "https://github.com/barrettotte/DSL-5250",
+    "tags": [
+      "Groovy",
+      "IBMi",
+      "DSL",
+      "5250"
+    ]
+  },
+  {
+    "id": 62,
+    "title": "Anilist ESP8266",
+    "description": "Using an ESP8266 to display Anilist GraphQL API results on a mini OLED",
+    "url": "https://github.com/barrettotte/Anilist-ESP8266",
+    "tags": [
+      "C++",
+      "ESP8266",
+      "Anilist",
+      "Weeb"
+    ]
+  },
+  {
+    "id": 63,
+    "title": "Plex Discord RPC",
+    "description": "Use Discord RPC to display local Plex session data",
+    "url": "https://github.com/barrettotte/Plex-Discord-RPC",
+    "tags": [
+      "JavaScript",
+      "Discord",
+      "Plex"
+    ]
+  },
+  {
+    "id": 64,
+    "title": "Qsharp",
+    "description": "Fundamentals of Quantum Computing",
+    "url": "https://github.com/barrettotte/Qsharp",
+    "tags": [
+      "Q#",
+      "Quantum"
+    ]
+  },
+  {
+    "id": 65,
+    "title": "Subarashii CPU",
+    "description": "16-bit RISC CPU inspired by MIPS",
+    "url": "https://github.com/barrettotte/Subarashii-CPU",
+    "tags": [
+      "Verilog",
+      "CPU"
+    ]
+  },
+  {
+    "id": 66,
+    "title": "Pokemon Teams",
+    "description": "Record Pokemon teams across playthroughs",
+    "url": "https://github.com/barrettotte/Pokemon-Teams",
+    "tags": [
+      "Vue",
+      "Web"
+    ]
+  },
+  {
+    "id": 67,
+    "title": "DinoRunner-AS",
+    "description": "A tiny endless runner in ActionScript",
+    "url": "https://github.com/barrettotte/DinoRunner-AS",
+    "tags": [
+      "ActionScript"
+    ]
+  }
+]

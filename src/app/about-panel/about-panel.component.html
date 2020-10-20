@@ -1,0 +1,76 @@
+<div class="container right-panel">
+  <div class="row mt-4 mb-2 text-center">
+    <div class="col-12">
+      <img src="{{person?.avatarUrl}}" width="200" height="200">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <hr>
+    </div>
+  </div>
+  <div class="row mx-2 mt-1">
+    <div class="col-2">
+      <mdb-icon fas icon="user-astronaut"></mdb-icon>
+    </div>
+    <div class="col-10">{{person?.firstName}} {{person?.lastName}}</div>
+  </div>
+  <div class="row mx-2 mt-1">
+    <div class="col-2">
+      <mdb-icon fas icon="envelope"></mdb-icon>
+    </div>
+    <div class="col-10">
+      <a href="mailto:{{person?.email}}" class="email">{{person?.email}}</a>
+    </div>
+  </div>
+  <div class="row mx-2 mt-1">
+    <div class="col-2">
+      <mdb-icon fas icon="globe"></mdb-icon>
+    </div>
+    <div class="col-10">{{person?.location}}</div>
+  </div>
+  <div class="row mx-2 mt-1">
+    <div class="col-2">
+      <mdb-icon fas icon="university"></mdb-icon>
+    </div>
+    <div class="col-10">{{person?.degree}}</div>
+  </div>
+  <!-- <div class="row" align="center">
+    <div class="col-12">
+      <hr>
+    </div>
+  </div> -->
+  <div class="row">
+    <div class="col-12">
+      <hr>
+      <h5 class="text-center h5-responsive">Occupation</h5>
+      <div class="text-center my-3">
+        &nbsp; {{occupation?.title}}
+      </div>
+      <div class="text-center my-2">
+        <div *ngFor="let row of occLanguages">
+          {{row}}
+        </div>
+      </div>
+      <div class="text-center mb-3">
+        <div *ngFor="let row of occKeywords">
+          {{row}}
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <!-- TODO: links should handle dynamic content better ? -->
+  <div class="row text-center">
+    <div *ngFor="let link of links" class="col-3 my-2">
+      <a class="li-ic" href="{{link.href}}">
+        <mdb-icon fab icon="{{link.fabIcon}}" size="2x"></mdb-icon>
+      </a>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col-12">
+      <hr>
+    </div>
+  </div>
+</div>

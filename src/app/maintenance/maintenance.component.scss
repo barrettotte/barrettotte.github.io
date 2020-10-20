@@ -1,0 +1,50 @@
+h1,h2{
+    color: #ffffff;
+}
+
+h3, mdb-icon{
+    color: #5ED467;
+}
+
+.container {
+    border: 1px solid #a8a8a8;
+}
+
+
+// Stolen from https://css-tricks.com/books/volume-i/animate-text-like-typewriter/
+
+.typewriter {
+    font-family: Courier, monospace;
+	display: inline-block;
+}
+
+.typewriter-text {
+    display: inline-block;
+    overflow: hidden;  
+  	letter-spacing: 2px;
+ 	animation: typing 1.5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    color: #5ED467;
+    font-size: 20px;
+    font-weight: 700;
+    border-right: 4px solid #5ED467;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: #5ED467; 
+    }
+}

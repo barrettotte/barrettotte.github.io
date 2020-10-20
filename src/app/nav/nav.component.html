@@ -1,0 +1,30 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark elegant-color-dark">
+  <mdb-navbar-brand>
+    <a class="navbar-brand font-weight-bold" [routerLink]="['/home']">
+      Barrett Otte
+    </a>
+  </mdb-navbar-brand>
+  <links>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" [routerLinkActive]="['nav-active']" 
+        [routerLinkActiveOptions]="{exact:true}">
+        <a class="navbar-brand font-weight-bold" [routerLink]="['/home']">Home</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['nav-active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="navbar-brand font-weight-bold" [routerLink]="['/projects']">Projects</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['nav-active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="navbar-brand font-weight-bold" [routerLink]="['/posts']">Posts</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['nav-active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="navbar-brand font-weight-bold" [routerLink]="['/about']">About</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="navbar-brand font-weight-bold" [routerLink]="['/other']">Other</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['nav-active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="navbar-brand font-weight-bold" [routerLink]="['/resume']">Resume</a>
+      </li>
+    </ul>
+  </links>
+</mdb-navbar>

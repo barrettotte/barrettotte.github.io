@@ -1,0 +1,31 @@
+
+hr{
+    border-bottom: 1px solid white;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.right-panel{
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+h5{
+    font-weight: 400;
+}
+
+h3, h4, h5, ul, .email{
+    color: white;
+}
+
+a, mdb-icon{
+    color: #5ED467;
+}
+
+a:hover, a mdb-icon:hover, .email:hover{
+    color: #26883e;
+    transform: rotate(6deg);
+}
