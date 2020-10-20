@@ -14,9 +14,9 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.get('/data/index.json',    (req, res) => res.sendFile(path.resolve(__dirname, '../data/index.json')));
-app.get('/data/about.json',    (req, res) => res.sendFile(path.resolve(__dirname, '../data/about.json')));
-app.get('/data/posts.json',    (req, res) => res.sendFile(path.resolve(__dirname, '../data/posts.json')));
-app.get('/data/projects.json', (req, res) => res.sendFile(path.resolve(__dirname, '../data/projects.json')));
+app.get('/data/index.json',    (req, res) => res.sendFile(path.resolve(__dirname, 'data/index.json')));
+app.get('/data/about.json',    (req, res) => res.sendFile(path.resolve(__dirname, 'data/about.json')));
+app.get('/data/posts.json',    (req, res) => res.sendFile(path.resolve(__dirname, 'data/posts.json')));
+app.get('/data/projects.json', (req, res) => res.sendFile(path.resolve(__dirname, 'data/projects.json')));
 
 app.listen(port, () => console.log(`Server running at ${host}:${port}/`));

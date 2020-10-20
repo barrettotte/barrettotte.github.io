@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve --watch",
     "build": "ng build",
+    "ghpages": "ng build --prod --outputPath dist/ --base-href \"https://barrettotte.github.io/\"",
+    "devserver": "node dev/server.js",
     "test": "ng test",
     "lint": "ng lint"
   },
