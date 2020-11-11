@@ -1,55 +1,9 @@
-<div class="card-body text-center card-container ribbon-wrapper"> 
-  <div class="container-fluid p-0 card-inner">
-    <div class="card-title">
-      <h4 class="mt-3 text-center">
-        <a href="{{project.url}}">{{project.title}}</a>
-      </h4>
-    </div>
-    <div class="card-content">
-      {{project.description}}
-    </div>
-    <div class="container mb-2">
-      <div class="row">
-        <div class="col tag-text text-left">
-          <a href="/projects?tag={{primaryTag}}">
-            <mdb-badge pill="true">
-              <div class="badge-text">
-                {{project.tags[0]}}
-              </div>
-            </mdb-badge>
-          </a>
-        </div>
-        <div class="col text-right">
-          <a class="category-btn" href="{{project.url}}">
-            <mdb-icon fab icon="github fa-lg"></mdb-icon>
-          </a>
-        </div>
-      </div>
-    </div>
+<div class="project-container">
+  <div class="project-title">
+    <a href="{{project.url}}">{{project.title}}</a>
   </div>
+  <div class="project-desc">
+    {{project.description}}
+  </div>
+  <div class="project-tags" [innerHTML]="tagList"></div>
 </div>
-
-<!-- <div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close pull-right" (click)="basicModal.hide()">
-          <span>×</span>
-        </button>
-        <h4 class="modal-title w-100 text-center">
-          {{project.title}}
-        </h4>
-      </div>
-      <div class="modal-body">
-        <strong>THIS MODAL IS A PLACEHOLDER</strong>
-        <br><br>
-        {{project.description}}
-      </div>
-      <div class="modal-footer flex-center">
-        <a href="{{project.url}}">
-          <mdb-icon fab icon="github fa-3x" class="pr-1"></mdb-icon>
-        </a>
-      </div>
-    </div>
-  </div>
-</div> -->

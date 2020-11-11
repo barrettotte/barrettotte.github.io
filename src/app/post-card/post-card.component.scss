@@ -6,41 +6,11 @@
     color: #5ED467;
 }
 
-.post-separator {
-    border-bottom: 1px solid #a8a8a8;
-}
-
 .post-share {
     text-align: right;
-}
-
-.card-container {
-    border-top: #3d3d3d 5px solid;
-    border-bottom: #3d3d3d 5px solid;
-    overflow: hidden;
-}
-
-.card-container:hover {
-    border-bottom: #5ED467 5px solid;
-}
-
-.card-img {
-    height: 250px;
-    min-height: 250px;
-}
-
-.post-card {
-    background: #3d3d3d;
 }
 
 .post-date {
     min-height: 6px;
     font-size: 12px;
-}
-
-.post-desc{
-    color: #a8a8a8;
-    height: 75px;
-    max-height: 75px;
-    min-height: 30px;
 }

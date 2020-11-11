@@ -1,25 +1,26 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 import { Project } from '../models/project';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-project-card',
   templateUrl: './project-card.component.html',
   styleUrls: ['./project-card.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ProjectCardComponent implements OnInit {
 
   @Input() project: Project;
-  primaryTag: string;
+  tagList: SafeHtml;
 
-  constructor() { }
+  constructor(private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-    this.primaryTag = encodeURIComponent(this.project.tags[0].toUpperCase());
-  }
-
-  getBadgeColor(tag: string, normal = true) {
-    // TODO: make service or something for color
-    return (normal) ? '#26883e' : '#5ED467';
+    this.tagList = this.sanitizer.bypassSecurityTrustHtml(
+      this.project.tags.map(t => {
+        return `<a href="/projects?tag=${encodeURIComponent(t.toUpperCase())}">${t}</a>`
+      }).join(", ")
+    );
   }
 
 }

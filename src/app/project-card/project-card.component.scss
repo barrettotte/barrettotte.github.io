@@ -1,51 +1,36 @@
-.card-container{
-    background-color: #3d3d3d;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    color: white;
-    width: 100%;
-    height: 280px;
-    perspective: 1000px;
-}
+.project-container{
+    padding: 15px;
+    // border: 1px solid #a8a8a8;
 
-.card-inner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
+    a{
+        color: white;
+    }
+    a:hover{
+        color: #5ED467;
+    }
 
-.card-date{
-    height: 15px;
-    font-size: 12px;
-    color: #a8a8a8;
-}
+    .project-title{
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-size: x-large;
+        color: white;
+    }
 
-.card-content{
-    height: 120px;
-    font-weight: 500;
-    color: #a8a8a8;
-}
-
-h4{
-    height: 70px;
-    font-weight: 600;
-    color: white;
-}
-
-.card-title a{
-    color: white;
-}
-
-.card-title a:hover{
-    color: #5ED467;
-    cursor: pointer;
-}
-
-p{
-    font-weight: 500;
+    .project-desc{
+        color: #a8a8a8;
+    }
+    .project-tags{
+        padding-top: 15px;
+        a{
+            color: #a8a8a8;
+            font-weight: 800;
+            font-size: small;
+            padding-left: 5px;
+        }
+        a:hover{
+            color: #5ED467;
+        }
+    }
 }
 
 .category-btn{
@@ -58,15 +43,6 @@ p{
 
 mdb-icon:hover{
     transform: rotate(12deg);
-}
-
-.card-container:hover{
-    border-bottom: 5px solid #5ED467;
-    background-color: #353535;
-}
-
-.tag-text{
-    font-size: 14px;
 }
 
 mdb-badge{
@@ -82,25 +58,4 @@ mdb-badge{
 
 mdb-badge:hover{
     background-color: #5ED467;
-}
-
-.modal{
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.modal-content{
-    background-color: #3d3d3d;
-    color: white;
-    .modal-header button{
-        color: white;
-    }
-    .modal-footer{
-        mdb-icon{
-            color: #26883e;
-        }
-        mdb-icon:hover{
-            color: #5ED467;
-        }
-    }
 }

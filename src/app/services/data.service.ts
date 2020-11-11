@@ -6,6 +6,7 @@ import { Person } from '../models/person';
 import { map } from 'rxjs/operators';
 import { Project } from '../models/project';
 import { Post } from '../models/post';
+import { VintageItem } from '../models/vintageItem';
 
 @Injectable({
   providedIn: 'root'
@@ -46,6 +47,10 @@ export class DataService {
 
   getPerson(): Observable<Person> {
     return this.getAbout().pipe(map(r => r.person));
+  }
+
+  getVintageItems(): Observable<Array<VintageItem>> {
+    return this.http.get<any>(`${this.dataUrl}/vintage.json`).pipe(map(i => i))
   }
 
 }

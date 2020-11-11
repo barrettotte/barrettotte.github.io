@@ -14,13 +14,11 @@ export class ProjectsComponent implements OnInit {
   private projects: Project[];
 
   // Pagination
-  pageSize = 9;
+  pageSize = 16;
   pages: number[];
   currentPage: number;
   totalPages: number;
   pagedItems: Project[];
-
-
 
 
   constructor(

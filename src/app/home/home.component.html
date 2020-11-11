@@ -28,38 +28,8 @@
     </div>
   </div>
   <div class="row mx-0 mb-3 row-eq-height">
-    <div class="col-md-4 my-3" *ngFor="let fp of featuredProjects">
+    <div class="col-md-6 my-3" *ngFor="let fp of featuredProjects">
       <app-project-card [project]="fp"></app-project-card>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <a [routerLink]="['/projects']">
-        <div mdbBtn class="white-text link-btn">
-          <mdb-icon far icon="clone" class="left"></mdb-icon>
-          View All
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="row mb-1 row-header">
-    <div class="col-md-12 pt-4">
-      <h3 class="h3-responsive">Featured Posts</h3>
-    </div>
-  </div>
-  <div class="row mb-3 row-eq-height">
-    <div class="col-md-6 pt-4" *ngFor="let fp of featuredPosts">
-      <app-post-card [post]="fp"></app-post-card>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <a [routerLink]="['/posts']">
-        <div mdbBtn class="white-text link-btn">
-          <mdb-icon far icon="clone" class="left"></mdb-icon>
-          View All
-        </div>
-      </a>
     </div>
   </div>
 </div>

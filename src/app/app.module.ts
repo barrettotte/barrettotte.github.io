@@ -28,6 +28,8 @@ import { DataService } from './services/data.service';
 import { AboutPanelComponent } from './about-panel/about-panel.component';
 import { PaginationService } from './services/pagination.service';
 import { HomeCarouselComponent } from './home-carousel/home-carousel.component';
+import { VintageComponent } from './vintage/vintage.component';
+import { VintageCardComponent } from './vintage-card/vintage-card.component';
 
 
 @NgModule({
@@ -44,7 +46,9 @@ import { HomeCarouselComponent } from './home-carousel/home-carousel.component';
       ProjectCardComponent,
       PostCardComponent,
       AboutPanelComponent,
-      HomeCarouselComponent
+      HomeCarouselComponent,
+      VintageComponent,
+      VintageCardComponent
    ],
    imports: [
       BrowserModule,

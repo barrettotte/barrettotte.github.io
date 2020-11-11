@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "TRS-80 Model IV",
+    "description": "No floppy drives",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "title": "TRS-80 Model I",
+    "description": "",
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "TRS-80 Model 4P",
+    "description": "",
+    "image": ""
+  },
+  {
+    "id": 4,
+    "title": "Tandy Color Computer 3",
+    "description": "",
+    "image": ""
+  },
+  {
+    "id": 5,
+    "title": "Commodore 64",
+    "description": "",
+    "image": ""
+  },
+  {
+    "id": 6,
+    "title": "TRS-80 Model 100",
+    "description": "My favorite vintage computer to mess around with",
+    "image": ""
+  },
+  {
+    "id": 7,
+    "title": "Leading Edge ???",
+    "description": "",
+    "image": ""
+  },
+  {
+    "id": 8,
+    "title": "Comtrade ???",
+    "description": "",
+    "image": ""
+  },
+  {
+    "id": 9,
+    "title": "Mac ???",
+    "description": "",
+    "image": ""
+  },
+  {
+    "id": 10,
+    "title": "Altair 8800 Replica",
+    "description": "",
+    "image": ""
+  },
+  {
+    "id": 11,
+    "title": "AS/400 Model 9406",
+    "description": "Originally purchased to learn RPG in my free time. However, the OS license is way too expensive. I believe I'm just missing hard drives.",
+    "image": ""
+  },
+  {
+    "id": 12,
+    "title": "Remex RRS1150BC1 Tape Reader",
+    "description": "Paper tape reader purchased for future fun projects.",
+    "image": ""
+  },
+  {
+    "id": 13,
+    "title": "Tandy PC-6",
+    "description": "Pocket scientific computer",
+    "image": ""
+  },
+  {
+    "id": 14,
+    "title": "Electromechanical Calculator ???",
+    "description": "",
+    "image": ""
+  },
+  {
+    "id": 15,
+    "title": "Felix Arithmometer",
+    "description": "Soviet Union era mechanical calculator",
+    "image": ""
+  }
+]

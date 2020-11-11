@@ -1,3 +1,5 @@
+<app-maintenance></app-maintenance>
+
 <div class="container mt-2 mb-5">
   <div class="row py-2 row-header">
     <div class="col-md-12 pt-4">
@@ -7,17 +9,17 @@
 
   <div *ngIf="projects?.length === 0; else projects">
     <p>No result(s) found</p>
-    <!-- TODO: Not working ... -->
   </div>
 
   <ng-template #projects>
     <div class="row">
-      <div class="col-md-4 my-3" *ngFor="let p of pagedItems">
+      <div class="col-md-6 my-3" *ngFor="let p of pagedItems">
         <app-project-card [project]="p"></app-project-card>
       </div>
     </div>
-    <div class="row mt-3 mb-2">
-      <div class="col">
+    <br>
+    <div class="row mt-4 mb-2">
+      <div class="col-md-12">
         <nav aria-label="Projects pagination">
           <ul *ngIf="pages && pages.length" class="pagination justify-content-center">
             <li class="page-item" [ngClass]="{disabled: currentPage === 1}">
