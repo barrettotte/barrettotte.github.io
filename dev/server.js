@@ -14,10 +14,10 @@ app.use(function(_, res, next) {
   next();
 });
 
-app.get('/data/index.json',    (_, res) => res.sendFile(path.resolve(__dirname, '../data/index.json')));
-app.get('/data/about.json',    (_, res) => res.sendFile(path.resolve(__dirname, '../data/about.json')));
-app.get('/data/posts.json',    (_, res) => res.sendFile(path.resolve(__dirname, '../data/posts.json')));
-app.get('/data/projects.json', (_, res) => res.sendFile(path.resolve(__dirname, '../data/projects.json')));
-app.get('/data/vintage.json',  (_, res) => res.sendFile(path.resolve(__dirname, '../data/vintage.json')));
+app.get('/data/index.json',    (_, res) => res.sendFile(path.resolve(__dirname, 'data/index.json')));
+app.get('/data/about.json',    (_, res) => res.sendFile(path.resolve(__dirname, 'data/about.json')));
+app.get('/data/posts.json',    (_, res) => res.sendFile(path.resolve(__dirname, 'data/posts.json')));
+app.get('/data/projects.json', (_, res) => res.sendFile(path.resolve(__dirname, 'data/projects.json')));
+app.get('/data/vintage.json',  (_, res) => res.sendFile(path.resolve(__dirname, 'data/vintage.json')));
 
 app.listen(port, () => console.log(`Server running at ${host}:${port}/`));
