@@ -31,6 +31,9 @@
             color: #5ED467;
         }
     }
+    .github-icon{
+        padding-left: 3px;
+    }
 }
 
 .category-btn{
@@ -39,23 +42,4 @@
 
 .category-btn:hover{
     color: #26883e;
-}
-
-mdb-icon:hover{
-    transform: rotate(12deg);
-}
-
-mdb-badge{
-    font-size: smaller;
-    background-color: #26883e;
-    a{
-        color: white;
-    }
-    .badge-text{
-        padding: 3px;
-    }
-}
-
-mdb-badge:hover{
-    background-color: #5ED467;
 }
