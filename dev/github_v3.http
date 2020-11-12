@@ -1,0 +1,19 @@
+# Test fetching a user's public repos
+
+@base=https://api.github.com
+@username=barrettotte
+
+
+### Get user
+GET {{base}}/users/{{username}} HTTP/1.1
+Accept: application/vnd.github.v3+json
+
+
+### Get user's repos
+GET {{base}}/users/{{username}}/repos HTTP/1.1
+Accept: application/vnd.github.v3+json
+
+
+### Get user's repos
+GET {{base}}/users/{{username}}/repos/Anilist-ESP8266/languages HTTP/1.1
+Accept: application/vnd.github.v3+json
