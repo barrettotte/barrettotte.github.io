@@ -26,7 +26,7 @@ async function main(){
 
     if(projects.length > 0){
       await updateProjectsGist(projects);
-      console.log('Successfully updated gist!');
+      console.log(`Successfully updated ${projects.length} project(s) in gist!`);
     } else{
       throw new Error("Projects list is empty!");
     }
@@ -45,7 +45,7 @@ function buildProjects(repos, overrides){
     if(ov === undefined){
       return;
     }
-    projects.push({
+    var proj = {
       'id': repo.name,
       'name': repo.name,
       'description': repo.description,
@@ -59,7 +59,11 @@ function buildProjects(repos, overrides){
           .flat()
       )),
       'updated': repo.updatedAt.slice(0,10) // YYYY-MM-DD
-    });
+    };
+    if(ov.featured !== undefined){
+      proj['featured'] = ov.featured;
+    }
+    projects.push(proj);
   });
   return projects;
 }
@@ -88,7 +92,7 @@ async function updateProjectsGist(projects){
     files: {
       [filename]: {
         filename: filename,
-        content: JSON.stringify({projects: projects}, null, 2)
+        content: JSON.stringify(projects, null, 2)
       }
     }
   })

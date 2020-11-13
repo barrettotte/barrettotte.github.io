@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
+import { GistDataService } from '../services/gistData.service';
 
 @Component({
   selector: 'app-about',
@@ -11,7 +11,7 @@ export class AboutComponent implements OnInit {
   aboutMe: Array<string>;
   goals: Array<string>;
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: GistDataService) {
     this.dataService.getAbout().subscribe(
       resp => {
         this.aboutMe = resp.summary;

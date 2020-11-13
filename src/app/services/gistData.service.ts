@@ -11,7 +11,7 @@ import { VintageItem } from '../models/vintageItem';
 @Injectable({
   providedIn: 'root'
 })
-export class DataService {
+export class GistDataService {
 
   dataUrl = environment.dataUrl;
 
@@ -30,7 +30,7 @@ export class DataService {
   }
 
   getFeaturedProjects(): Observable<Array<Project>> {
-    return this.getProjects().pipe(map(r => r.filter(p => p.featured)));
+    return this.getProjects().pipe(map(r => r.filter(p => p.featured > 0)));
   }
 
   getPosts(): Observable<Array<Post>> {

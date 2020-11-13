@@ -4,6 +4,7 @@
 
 username=barrettotte
 gist_id=ee6348040d495ad2ab19bc40fbcff6be
+
 base_url=https://gist.githubusercontent.com/$username/$gist_id/raw
 
 declare -A file_list
@@ -19,7 +20,7 @@ echo "downloading portfolio data..."
 for i in "${file_list[@]}"
 do
   echo "   $i"
-  curl $base_url/$i -O -s
+  curl $base_url/$i -O -s $(dirname "$0")
 done
 
 echo "done."

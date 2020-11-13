@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { DataService } from '../services/data.service';
+import { GistDataService } from '../services/gistData.service';
 import { Project } from '../models/project';
 import { PaginationService } from '../services/pagination.service';
 
@@ -22,7 +22,7 @@ export class ProjectsComponent implements OnInit {
 
 
   constructor(
-    private dataService: DataService, 
+    private dataService: GistDataService, 
     private pagerService: PaginationService,
     private activeRoute: ActivatedRoute
   ) {}
@@ -34,8 +34,6 @@ export class ProjectsComponent implements OnInit {
           this.projects = resp.filter(p => {
             return !('tag' in qp) ||
               p.tags.map(t => t.toUpperCase()).includes(qp['tag']);
-          }).sort((a, b) => {
-            return a.id - b.id;
           }).reverse();
           
           this.setPage(1);

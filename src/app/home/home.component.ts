@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../models/project';
-import { DataService } from '../services/data.service';
-import { Post } from '../models/post';
+import { GistDataService } from '../services/gistData.service';
 import { CarouselItem } from '../models/carouselItem';
 
 @Component({
@@ -12,15 +11,14 @@ import { CarouselItem } from '../models/carouselItem';
 export class HomeComponent implements OnInit {
 
   featuredProjects: Project[] = [];
-  featuredPosts: Post[] = [];
   carouselItems: CarouselItem[];
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: GistDataService) {
     this.dataService.getIndex().subscribe(
       data => {
         this.carouselItems = data.carousel;
         this.dataService.getFeaturedProjects().subscribe(fp => this.featuredProjects = fp.sort(this.sortByFeatured));
-        this.dataService.getFeaturedPosts().subscribe(fp => this.featuredPosts = fp.sort(this.sortByFeatured));
+        console.log(this.featuredProjects);
       },
       error => {
         console.error(error);

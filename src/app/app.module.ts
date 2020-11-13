@@ -24,7 +24,7 @@ import { MaintenanceComponent } from './maintenance/maintenance.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { PostCardComponent } from './post-card/post-card.component';
 
-import { DataService } from './services/data.service';
+import { GistDataService } from './services/gistData.service';
 import { AboutPanelComponent } from './about-panel/about-panel.component';
 import { PaginationService } from './services/pagination.service';
 import { HomeCarouselComponent } from './home-carousel/home-carousel.component';
@@ -65,7 +65,7 @@ import { VintageCardComponent } from './vintage-card/vintage-card.component';
       NgbPaginationModule,
    ],
    providers: [
-      DataService,
+      GistDataService,
       PaginationService
    ],
    bootstrap: [

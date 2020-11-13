@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { VintageItem } from '../models/vintageItem';
-import { DataService } from '../services/data.service';
+import { GistDataService } from '../services/gistData.service';
 
 @Component({
   selector: 'app-vintage',
@@ -11,7 +11,7 @@ export class VintageComponent implements OnInit {
 
   vintageItems: VintageItem[];
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: GistDataService) {}
 
   ngOnInit(): void {
     this.dataService.getVintageItems().subscribe(

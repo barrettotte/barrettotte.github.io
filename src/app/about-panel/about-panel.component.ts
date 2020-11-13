@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Person } from '../models/person';
-import { DataService } from '../services/data.service';
+import { GistDataService } from '../services/gistData.service';
 import { Occupation } from '../models/occupation';
 
 @Component({
@@ -18,7 +18,7 @@ export class AboutPanelComponent implements OnInit {
   occKeywords: Array<String>;
   
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: GistDataService) {
     this.dataService.getAbout().subscribe(
       resp => {
         this.person = resp.person;

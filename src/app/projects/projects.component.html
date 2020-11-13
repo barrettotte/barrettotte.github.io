@@ -21,7 +21,7 @@
     <div class="row mt-4 mb-2">
       <div class="col-md-12">
         <nav aria-label="Projects pagination">
-          <ul *ngIf="pages && pages.length" class="pagination justify-content-center">
+          <ul *ngIf="pages && pages.length > 1" class="pagination justify-content-center">
             <li class="page-item" [ngClass]="{disabled: currentPage === 1}">
               <a (click)="setPage(1)" class="page-link">&laquo;</a>
             </li>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
+import { GistDataService } from '../services/gistData.service';
 import { Post } from '../models/post';
 import { PaginationService } from '../services/pagination.service';
 
@@ -20,7 +20,7 @@ export class PostsComponent implements OnInit {
   pagedItems: Post[];
 
 
-  constructor(private dataService: DataService, private pagerService: PaginationService) {}
+  constructor(private dataService: GistDataService, private pagerService: PaginationService) {}
 
   ngOnInit() {
     this.dataService.getPosts().subscribe(
