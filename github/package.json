@@ -1,0 +1,16 @@
+{
+  "name": "barrettotte.github.io.github",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Barrett Otte",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^18.0.9",
+    "dotenv": "^8.2.0"
+  }
+}

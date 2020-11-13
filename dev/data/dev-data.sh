@@ -12,7 +12,7 @@ file_list[1]='index.json'
 file_list[2]='posts.json'
 file_list[3]='projects.json'
 file_list[4]='vintage.json'
-file_list[5]='repos.json'
+file_list[5]='overrides.json'
 
 echo "downloading portfolio data..."
 
