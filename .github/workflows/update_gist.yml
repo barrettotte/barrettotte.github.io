@@ -11,6 +11,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./github
     steps:
       - uses: actions/checkout@v2
 
@@ -21,8 +23,10 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        working-directory: ${{ env.working-directory }}
 
       - name: Run script
         run: npm run start
+        working-directory: ${{ env.working-directory }}
         env:
           GITHUB_TOKEN :  ${{ secrets.GITHUB_TOKEN }}
