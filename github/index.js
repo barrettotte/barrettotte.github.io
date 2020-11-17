@@ -5,10 +5,9 @@ require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
 const {Octokit} = require('./node_modules/@octokit/rest');
-const octokit = new Octokit({auth: `token ${process.env.GITHUB_TOKEN}`});
 
-// https://gist.github.com/barrettotte/ee6348040d495ad2ab19bc40fbcff6be
-const gist_id = 'ee6348040d495ad2ab19bc40fbcff6be';
+const octokit = new Octokit({auth: `token ${process.env.GIST_TOKEN}`});
+const gist_id = process.env.GIST_ID;
 
 // Languages to ignore. Can be changed via override tags
 const lang_ignore = [
@@ -100,10 +99,10 @@ async function updateProjectsGist(projects){
 
 // Adjust some language tags
 function adjustLang(l){
-  switch(l){
-    case "Jupyter Notebook": return "Jupyter";
+  switch(l.toUpperCase()){
+    case "JUPYTER NOTEBOOK": return "Jupyter";
     case 'SQLPL':            return 'SQL';
-    case 'PlPgSQL':          return 'SQL';
+    case 'PLPGSQL':          return 'SQL';
     case 'PLSQL':            return 'SQL';
     case 'TSQL':             return 'SQL';
   }

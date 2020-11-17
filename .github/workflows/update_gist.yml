@@ -29,4 +29,5 @@ jobs:
         run: npm run start
         working-directory: ${{ env.working-directory }}
         env:
-          GITHUB_TOKEN :  ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIST_TOKEN }}
+          GIST_TOKEN: ${{ secrets.GIST_ID }} 
