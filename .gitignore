@@ -44,3 +44,7 @@ Thumbs.db
 dev/config.json
 dev/data/*.json
 github_v4.http
+
+# github action
+github/.env
+github/node_modules/
