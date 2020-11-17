@@ -1,4 +1,3 @@
-# 
 query{
   user(login: "barrettotte"){
     repositories(first: 100, isFork: false){
