@@ -3,8 +3,8 @@
 name: Update projects.json in gist
 
 on:
-  push:
-    branches: [ master ]
+  # push:
+  #   branches: [ master ]
   schedule:
     - cron: '0 0 * * *'  # every day at midnight
 
