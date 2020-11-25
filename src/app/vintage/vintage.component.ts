@@ -17,7 +17,7 @@ export class VintageComponent implements OnInit {
     this.dataService.getVintageItems().subscribe(
       resp => {
         this.vintageItems = resp.sort((a, b) => {
-          return a.id - b.id
+          return (a.title.toUpperCase() > b.title.toUpperCase()) ? -1 : 1
         }).reverse();
       },
       error => console.error(error)

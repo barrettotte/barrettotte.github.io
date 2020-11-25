@@ -1,20 +1,28 @@
 <app-maintenance></app-maintenance>
 
 <div class="container mt-2 mb-5">
-  <div class="row py-2 row-header">
+  <div class="row pt-2 row-header">
     <div class="col-md-12 pt-4">
       <h3 class="h3-responsive">Other</h3>
     </div>
   </div>
   <div class="row">
     <div class="col-md-12" style="color:white">
-      <p>Any other topics that I'm interested in that I think would be cool to share.</p>
-      <div class="page-list">
-        <p><a [routerLink]="['/other/vintage']">Vintage Computer Collection</a></p>
-        <p><strong>TODO:</strong> Browser Games</p>
-        <p><strong>TODO:</strong> Electronics Projects</p>
-        <p><strong>TODO:</strong> 3D Models and embedded viewer</p>
-      </div>
+      <ul class="page-list">
+        <li class="pl-3"><a [routerLink]="['/other/vintage']">Vintage Computer Collection</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row pt-4 row-header">
+    <div class="col-md-12 pt-4">
+      <h3 class="h3-responsive">Unimplemented</h3>
+    </div>
+    <div class="col-md-12">
+      <ul>
+        <li class="pl-3">Browser Games</li>
+        <li class="pl-3">Electronics Projects</li>
+        <li class="pl-3">3D Models and embedded viewer</li>
+      </ul>
     </div>
   </div>
 </div>
