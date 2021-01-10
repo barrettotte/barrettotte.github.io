@@ -21,7 +21,7 @@ async function main(){
   try{
     const repos = await getRepos();
     const overrides = await getProjectOverrides();
-    const projects = buildProjects(repos, overrides);
+    const projects = getProjects(repos, overrides);
 
     if(projects.length > 0){
       await updateProjectsGist(projects);
@@ -35,15 +35,12 @@ async function main(){
 }
 
 // build merged list of repos and overrides
-function buildProjects(repos, overrides){
+function getProjects(repos, overrides){
   const projects = [];
 
   repos.forEach(repo => {
     const ov = overrides.find(x => x.id.toUpperCase() === repo.name.toUpperCase());
 
-    if(ov === undefined){
-      return;
-    }
     var proj = {
       'id': repo.name,
       'name': repo.name,
@@ -53,18 +50,33 @@ function buildProjects(repos, overrides){
         repo.languages.nodes
           .filter(l => lang_ignore.indexOf(l.name) < 0)
           .map(l => adjustLang(l.name))
-          .concat(ov.languages === undefined ? [] : ov.languages)
-          .concat(ov.tags === undefined ? [] : ov.tags)
-          .flat()
+          .concat(...getTags(ov))
       )),
       'updated': repo.updatedAt.slice(0,10) // YYYY-MM-DD
     };
-    if(ov.featured !== undefined){
+
+    if(ov !== undefined && ov.featured !== undefined){
       proj['featured'] = ov.featured;
     }
     projects.push(proj);
   });
+
   return projects;
+}
+
+// get tags from project override, if exists
+function getTags(ov){
+  const tags = [];
+
+  if(ov !== undefined){
+    if(ov.languages !== undefined){
+      tags.push(ov.languages)
+    }
+    if(ov.tags !== undefined){
+      tags.push(ov.tags);
+    }
+  }
+  return tags;
 }
 
 // query GitHub v4 API for all public repos
