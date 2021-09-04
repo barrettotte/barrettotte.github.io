@@ -1,28 +1,10 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { PostsComponent } from './posts/posts.component';
-import { AboutComponent } from './about/about.component';
-import { OtherComponent } from './other/other.component';
-import { VintageComponent } from './vintage/vintage.component';
+import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'posts', component: PostsComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'other', component: OtherComponent },
-  { path: 'other/vintage', component: VintageComponent },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
-];
+const routes: Routes = [];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    initialNavigation: 'enabled',
-    scrollPositionRestoration: 'top'
-  })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

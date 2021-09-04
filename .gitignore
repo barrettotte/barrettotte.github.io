@@ -41,6 +41,7 @@ testem.log
 .DS_Store
 Thumbs.db
 
+back/
 dev/config.json
 dev/data/*.json
 github_v4.http
