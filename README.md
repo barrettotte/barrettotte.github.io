@@ -1,18 +1,23 @@
-# Portfolio
+# barrettotte.github.io
 
 Hosted at https://barrettotte.github.io
 
+A very simple personal site using [Hugo](https://gohugo.io/).
 
-A very simple portfolio site using Angular and Material Design Bootstrap.
+## Development
 
-Using Angular for a static site is pretty overkill, but it was more fun to mess around this way.
+- Dependencies 
+  - [Hugo v0.98](https://github.com/gohugoio/hugo/releases/tag/v0.98.0)
+- Start dev server - `hugo server`
+- Build site - `hugo`
 
-## Directories
-- [dev/](dev/) - random things for development use only
-- [docs/](docs/) - deployment of github.io page
-- [github/](github/) - script to update projects.json gist dynamically from github repos
-- [src/](src/) - angular source
+## TODO Items
 
-## References
-- MD Bootstrap https://mdbootstrap.com/docs/angular/
-- GitHub GraphQL API https://developer.github.com/v4/object/repository/
+- custom theme?
+- general site rewrite
+  - home
+  - about
+  - projects
+  - misc
+- publish with netlify
+- transfer barrettotte.com domain to point to netlify
