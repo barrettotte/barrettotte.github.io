@@ -1,0 +1,25 @@
+{
+  "name": "barrettotte.github.io",
+  "version": "1.0.0",
+  "description": "Barrett Otte personal site",
+  "scripts": {
+    "dev": "hugo server --gc --disableFastRender",
+    "build": "hugo --gc --cleanDestinationDir --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barrettotte/barrettotte.github.io.git"
+  },
+  "author": "Barrett Otte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barrettotte/barrettotte.github.io/issues"
+  },
+  "homepage": "https://barrettotte.github.io",
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "bootstrap": "^5.1.3",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0"
+  }
+}

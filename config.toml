@@ -1,4 +1,53 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'barrettotte'
+baseURL = "http://example.com/" # TODO:
+languageCode = "en-us"
+title = "Barrett Otte"
+
+[params]
+  author = "Barrett Otte"
+  description = "Software Engineer"
+  github = "barrettotte"
+  gitlab = "barrettotte"
+  favicon = "/img/favicon.ico"
+  #profilePic = "/img/github-profile.jpeg"
+
+# navbar settings
+
+[[menu.main]]
+  url = "/"
+  name = "Home"
+  weight = 1
+
+[[menu.main]]
+  url = "/about/"
+  name = "About"
+  weight = 2
+
+[[menu.main]]
+  url = "/post/"
+  name = "Posts"
+  weight = 3
+
+[[menu.main]]
+  url = "/project/"
+  name = "Projects"
+  weight = 4
+
+[[menu.main]]
+  url = "https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf"
+  name = "Resume"
+  weight = 5
+
+[[menu.icon]]
+  url = "mailto:barrettotte@gmail.com"
+  name = "fas fa-envelope"
+  weight = 1
+
+[[menu.icon]]
+  url = "https://github.com/barrettotte/"
+  name = "fab fa-github"
+  weight = 2
+
+[[menu.icon]]
+  url = "https://www.linkedin.com/in/barrettotte/"
+  name = "fab fa-linkedin"
+  weight = 3
