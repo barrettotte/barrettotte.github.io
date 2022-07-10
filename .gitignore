@@ -1,6 +1,7 @@
 .hugo_build.lock
-
+resources/*
 public
+
 node_modules
 
 themes/skeleton
