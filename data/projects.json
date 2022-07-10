@@ -1,0 +1,33 @@
+{
+  "list": [
+    {
+      "name": "qr-asm",
+      "url": "https://github.com/barrettotte/qr-asm",
+      "desc": "Generate a QR code from scratch with only ARM assembly",
+      "featured": true
+    },
+    {
+      "name": "bootjack",
+      "url": "https://github.com/barrettotte/bootjack",
+      "desc": "A bootable Blackjack written in 508 bytes",
+      "featured": true
+    },
+    {
+      "name": "angstrom-cpu",
+      "url": "https://github.com/barrettotte/angstrom-cpu",
+      "desc": "A 4-bit accumulator-based CPU designed to do the bare minimum and nothing more",
+      "featured": true
+    },
+    {
+      "name": "thule-json",
+      "url": "https://github.com/barrettotte/thule-json",
+      "desc": "Another minimal and unsafe json parser",
+      "hidden": true
+    },
+    {
+      "name": "test",
+      "url": "/projects/test",
+      "desc": "testing project markdown"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{{ define "main"}}
+  <div id="archive">
+    <ul class="post-list">
+      {{ range .Site.Data.projects.list }}
+        {{ if not .hidden }}
+          <li class="project-item">
+            <a href="{{ .url }}">{{ .name }}</a>: {{ .desc | markdownify }}
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

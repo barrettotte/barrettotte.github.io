@@ -1,7 +1,8 @@
 ---
-title: "About"
-description: TODO
-draft: false
+title: About me
+date: 2022-07-09T20:28:15-04:00
 ---
 
-About TODO:
+Github: [barrettotte](https://github.com/barrettotte)
+
+TODO:

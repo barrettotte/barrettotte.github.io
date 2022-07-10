@@ -2,26 +2,19 @@
 
 Hosted at https://barrettotte.github.io
 
-A very simple personal site using [Hugo](https://gohugo.io/) and a minimal custom theme.
+A simple personal site using [Hugo](https://gohugo.io/).
 
 ## Development
 
 - Dependencies 
   - [Hugo Extended v0.99.1](https://github.com/gohugoio/hugo/releases/tag/v0.99.1)
-  - `npm i`
-- Start [dev server](http://localhost:1313/) - `npm run dev`
-- Build site - `npm run build`
+- Start [dev server](http://localhost:1313/) - `hugo server --disableFastRender`
+- Build - `hugo -D`
 
-## TODO Items
+TODO:
+- jetbrains mono font looks pretty awesome
 
-- custom theme
-  - SASS
-  - Bootstrap
-- general site rewrite
-  - home
-  - about
-  - projects
-  - misc
-- publish with netlify
-- transfer barrettotte.com domain to point to netlify?
-- switch cdn js/css to static bundle???
+## References
+
+- Based on [Cactus Theme](https://themes.gohugo.io/themes/hugo-theme-cactus/)
+- https://cloudcannon.com/blog/the-ultimate-guide-to-hugo-sections/

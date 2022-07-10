@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{- .Site.LanguageCode -}}">
-
+<html lang="{{ .Site.LanguageCode }}">
   {{- partial "head" . -}}
-  
-  <body>
-    {{- partial "navbar" . -}}
-    {{- block "main" . }} {{- end }}
-    {{- partial "footer" . -}}
-    {{- partial "script-footer" . -}}
-  </body>
 
+  <body class="max-width mx-auto px3 ltr">
+    <div class="content index py4">
+      {{- partial "header" . -}}
+      {{- block "main" . }}{{- end }}
+      {{- partial "footer" . -}}
+    </div>
+  </body>
+  <link rel="stylesheet" href={{ "/lib/font-awesome/css/all.min.css" | relURL }}>
 </html>
