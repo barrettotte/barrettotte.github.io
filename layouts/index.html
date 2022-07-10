@@ -1,22 +1,18 @@
 {{ define "main" }}
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div>
-          <!-- <img class="profile" src="{{ .Site.Params.profilePic }}"> -->
-          <h1>{{ .Site.Title }}</h1>
+    <div class="d-flex align-items-center justify-content-center" style="">
+      <div>
+        <!-- <img class="profile" src="{{ .Site.Params.profilePic }}"> -->
+        <h1>{{ .Site.Title }}</h1>
 
-          {{ with .Site.Params.Description }}
-            <h2 class="text-secondary">{{ markdownify . }}</h2>
-          {{ end }}
+        {{ with .Site.Params.Description }}
+          <h2 class="text-secondary">{{ markdownify . }}</h2>
+        {{ end }}
 
-          {{ with .Content }}
-            <div>{{ . }}</div>
-          {{ end }}
-        </div>
+        {{ with .Content }}
+          <div>{{ . }}</div>
+        {{ end }}
       </div>
     </div>
-  </div>
 
 {{ end }}
