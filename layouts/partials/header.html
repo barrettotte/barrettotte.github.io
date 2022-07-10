@@ -1,22 +1,21 @@
 <header id="header">
-  <a href="{{ .Site.BaseURL }}">
-    {{ if (isset .Site.Params "gravatar") }}
-      <div id="logo" style="background-image: url(https://www.gravatar.com/avatar/{{ md5 .Site.Params.gravatar }}?s=100&d=identicon)"></div>
-    {{ else if (isset .Site.Params "logo") }}
-      <div id="logo" style="background-image: url({{ .Site.Params.logo | absURL }})"></div>
-    {{ end}}
-    <div id="title">
-      <h1>{{ .Site.Title }}</h1>
-    </div>
-  </a>
+  
+  <div id="title">
+    <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+    <ul id="subtitle">
+      <li><a href="{{ .Site.Params.links.github }}">Software Engineer</a></li>
+      <li>• Tinkerer</li>
+      <li>• <a href="#">Loser</a></li>
+      <li style="color:red; padding-left: 15px;">[{{ .Title }}]</li>
+    </ul>
+  </div>
 
   <div id="nav">
     <ul>
-      <!-- <li class="icon">
-        <a href="#" aria-label="Menu"><i class="fas fa-bars fa-2x" aria-hidden="true"></i></a>
-      </li> -->
       {{ range .Site.Menus.main }}
-        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        <li>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
       {{ end }}
     </ul>
   </div>

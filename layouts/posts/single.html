@@ -13,17 +13,9 @@
           </h1>
           
           <div class="meta">
-            {{ if (or (isset .Site "author") (isset .Site "title"))}}
-              <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <span itemprop="name">
-                  {{ if isset .Site "author" }}
-                    {{ .Site.Author }}
-                  {{ else if isset .Site "title" }}
-                    {{ .Site.Title }}
-                  {{ end }}
-                </span>
-              </span>
-            {{ end }}
+            <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name">{{ .Site.Params.Author }}</span>
+            </span>
 
             <div class="postdate">
               {{ $dataFormat := .Site.Params.dateFormat | default "2006-01-02" }}
@@ -90,21 +82,11 @@
   </body>
 
   <link rel="stylesheet" href={{ "/lib/font-awesome/css/all.min.css" | relURL }}>
+
   <script src={{ "/lib/jquery/jquery.min.js" | relURL }}></script>
+  <script src={{ "js/code-copy.js"  | relURL }}></script>
 
-  {{ if not (isset site.Params "disablecopy") }}
-    <script src={{ "js/code-copy.js"  | relURL }}></script>
-  {{ end }}
-
-  <!-- MathJax -->
-
-  {{ $mathjax := false }}
-  {{ if isset .Params "mathjax" }}
-    {{ $mathjax = .Params.mathjax }}
-  {{ else if isset .Site.Params "mathjax" }}
-    {{ $mathjax = .Site.Params.mathjax }}
-  {{ end }}
-  {{ if $mathjax }}
+  {{ with .Params.mathjax }}
     <script>
       MathJax = {
         tex: {

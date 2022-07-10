@@ -15,7 +15,7 @@
     {
       "name": "angstrom-cpu",
       "url": "https://github.com/barrettotte/angstrom-cpu",
-      "desc": "A 4-bit accumulator-based CPU designed to do the bare minimum and nothing more",
+      "desc": "A 4-bit accumulator-based CPU",
       "featured": true
     },
     {

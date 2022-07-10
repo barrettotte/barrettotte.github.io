@@ -1,40 +1,46 @@
-baseURL = 'https://barrettotte.github.com'
-languageCode = 'en-us'
-title = 'Barrett Otte'
-theme = 'cactus'
+baseURL = "https://barrettotte.github.com"
+languageCode = "en-us"
+title = "Barrett Otte"
+theme = "cactus"
 
 [[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
+  name = "Home"
+  url = "/"
+  weight = 1
 
 [[menu.main]]
-name = "Projects"
-url = "/projects"
-weight = 2
+  name = "Projects"
+  url = "/projects"
+  weight = 2
 
 [[menu.main]]
-name = "Posts"
-url = "/posts"
-weight = 3
+  name = "Posts"
+  url = "/posts"
+  weight = 3
 
 [[menu.main]]
-name = "Tags"
-url = "/tags"
-weight = 4
+  name = "Tags"
+  url = "/tags"
+  weight = 4
 
 [[menu.main]]
-name = "About"
-url = "/about"
-weight = 5
+  name = "About"
+  url = "/about"
+  weight = 5
 
 [[menu.main]]
-name = "Misc"
-url = "/misc"
-weight = 6
+  name = "Misc"
+  url = "/misc"
+  weight = 6
+
+[[menu.main]]
+  name = "Resume"
+  url = "https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf"
+  weight = 7
 
 # https://gohugo.io/getting-started/configuration-markup
 [markup]
+
   [markup.tableOfContents]
     endLevel = 4
     ordered = false
@@ -50,36 +56,29 @@ weight = 6
     noClasses = true
     style = "monokai"
     tabWidth = 4
-    lineAnchors = ''
+    lineAnchors = ""
     anchorLineNos = false
 
 [params]
+  author = "Barrett Otte"
   colortheme = "dark"
+
   rss = true
   dateFormat = "2006-01-02"
   showAllPostsArchive = true
   showReadTime = true
   tocInline = false
   # logo = 
-  # gravatar =
 
   # Home page settings
-  description = "TODO: description"
-  mainSection = "posts"
-  mainSectionTitle = "Posts"
-  showAllPostsOnHomePage = false
   postsOnHomePage = 5
   tagsOverview = false
   showProjectsList = true
-  projectsUrl = "/projects/"
 
-  # Socials
-  [[params.social]]
-    name = "github"
-    link = "https://github.com/barrettotte"
-  [[params.social]]
-    name = "linkedin"
-    link = "https://www.linkedin.com/in/barrettotte/"
-  [[params.social]]
-    name = "email"
-    link = "barrettotte@gmail.com"
+  [params.links]
+    anilist = "https://anilist.co/user/barrettotte/"
+    hackernews = "https://news.ycombinator.com/user?id=barrettotte"
+    email = "barrettotte@gmail.com"
+    github = "https://github.com/barrettotte"
+    linkedin = "https://www.linkedin.com/in/barrettotte/"
+    resume = "https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf"

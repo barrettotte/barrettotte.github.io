@@ -8,11 +8,8 @@ A simple personal site using [Hugo](https://gohugo.io/).
 
 - Dependencies 
   - [Hugo Extended v0.99.1](https://github.com/gohugoio/hugo/releases/tag/v0.99.1)
-- Start [dev server](http://localhost:1313/) - `hugo server --disableFastRender`
+- Start [dev server](http://localhost:1313/) - `hugo server --disableFastRender --noHTTPCache`
 - Build - `hugo -D`
-
-TODO:
-- jetbrains mono font looks pretty awesome
 
 ## References
 
