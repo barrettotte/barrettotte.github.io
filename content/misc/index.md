@@ -4,4 +4,4 @@ title: Misc
 
 # Misc
 
-TODO:
+- [Old Computer Collection](/misc/old-computer-collection)

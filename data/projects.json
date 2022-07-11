@@ -1,33 +1,576 @@
 {
   "list": [
     {
+      "name": "Master-Telegrapher-Demo",
+      "url": "https://github.com/barrettotte/Master-Telegrapher-Demo",
+      "desc": "One Button Game Jam Entry Summer 2016",
+      "date": "2016-08",
+      "tags": ["c#", "unity", "gamedev", "event"]
+    },
+    {
+      "name": "Terrain-Generation-Study",
+      "url": "https://github.com/barrettotte/Terrain-Generation-Study",
+      "desc": "Terrain generation using perlin noise",
+      "date": "2016-12",
+      "tags": ["c#", "unity", "gamedev", "algorithms"]
+    },
+    {
+      "name": "AssemblySnake",
+      "url": "https://github.com/barrettotte/AssemblySnake",
+      "desc": "Very basic snake game in x86 assembly",
+      "date": "2017-05",
+      "tags": ["x86", "assembly", "gamedev"]
+    },
+    {
+      "name": "Recursive-Descent-GUI-Parser",
+      "url": "https://github.com/barrettotte/Recursive-Descent-GUI-Parser",
+      "desc": "GUI generator for college course",
+      "date": "2017-06",
+      "tags": ["java", "parsing"]
+    },
+    {
+      "name": "ZX-Dungeon",
+      "url": "https://github.com/barrettotte/ZX-Dungeon",
+      "desc": "ZX Spectrum Game Jam entry",
+      "date": "2017-06",
+      "tags": ["basic", "event", "vintage", "gamedev"]
+    },
+    {
+      "name": "Assembly_XOR_Encrypt",
+      "url": "https://github.com/barrettotte/Assembly_XOR_Encrypt",
+      "desc": "Text file XOR encrypt/decrypt in x86",
+      "date": "2017-10",
+      "tags": ["x86", "assembly"]
+    },
+    {
+      "name": "Seaport-Project",
+      "url": "https://github.com/barrettotte/Seaport-Project",
+      "desc": "Concurrent programming project for college course",
+      "date": "2017-10",
+      "tags": ["java"]
+    },
+    {
+      "name": "NodeJS_CRUD_App",
+      "url": "https://github.com/barrettotte/NodeJS_CRUD_App",
+      "desc": "Fullstack movie watch list app for college course",
+      "date": "2018-03",
+      "tags": ["javascript", "webdev", "node-js"]
+    },
+    {
+      "name": "Manga-Downloader",
+      "url": "https://github.com/barrettotte/Manga-Downloader",
+      "desc": "Manga downloader using web scraping",
+      "date": "2018-03",
+      "tags": ["python"]
+    },
+    {
+      "name": "MEAN-ToDoList",
+      "url": "https://github.com/barrettotte/MEAN-ToDoList",
+      "desc": "Fullstack to do list app",
+      "date": "2018-05",
+      "tags": ["javascript", "typescript", "nosql", "webdev", "node-js"]
+    },
+    {
+      "name": "Codebase-Scanner",
+      "url": "https://github.com/barrettotte/Codebase-Scanner",
+      "desc": "A dumb ColdFusion code scanner",
+      "date": "2018-07",
+      "tags": ["coldfusion"]
+    },
+    {
+      "name": "HTML-JSON-Parser",
+      "url": "https://github.com/barrettotte/HTML-JSON-Parser",
+      "desc": "Parse HTML to JSON AST",
+      "date": "2018-07",
+      "tags": ["c#", "parsing"]
+    },
+    {
+      "name": "Fortran77-Enigma",
+      "url": "https://github.com/barrettotte/Fortran77-Enigma",
+      "desc": "Enigma machine emulator in Fortran77 fixed format",
+      "date": "2018-08",
+      "tags": ["fortran", "vintage", "emulator"]
+    },
+    {
+      "name": "HTTP-ASM64",
+      "url": "https://github.com/barrettotte/HTTP-ASM64",
+      "desc": "The most basic HTTP server written in x86 assembly",
+      "date": "2018-09",
+      "tags": ["x86", "assembly"]
+    },
+    {
+      "name": "ProcJam-2018",
+      "url": "https://github.com/barrettotte/ProcJam-2018",
+      "desc": "Procedural Generation Jam 2018 entry",
+      "date": "2018-10",
+      "tags": ["c#", "unity", "event", "gamedev"]
+    },
+    {
+      "name": "Population-Genetics-Sim",
+      "url": "https://github.com/barrettotte/Population-Genetics-Sim",
+      "desc": "Simulate basic population genetics",
+      "date": "2018-10",
+      "tags": ["python" , "algorithms"]
+    },
+    {
+      "name": "TempleOS-and-HolyC",
+      "url": "https://github.com/barrettotte/TempleOS-and-HolyC",
+      "desc": "An adventure in TempleOS and HolyC",
+      "date": "2018-10"
+    },
+    {
+      "name": "Resume",
+      "url": "https://github.com/barrettotte/Resume",
+      "desc": "Resume generated in LaTeX",
+      "date": "2018-12",
+      "tags": ["tex"]
+    },
+    {
+      "name": "TRS-80",
+      "url": "https://github.com/barrettotte/TRS-80",
+      "desc": "Exploration of TRS-80 with BASIC and Z80 assembly",
+      "date": "2019-01",
+      "tags": ["basic", "z80", "assembly", "basic", "vintage"]
+    },
+    {
+      "name": "SQL-UNIT-POC",
+      "url": "https://github.com/barrettotte/SQL-UNIT-POC",
+      "desc": "POC MSSQL unit testing framework",
+      "date": "2019-02",
+      "tags": ["python", "mssql", "sql"]
+    },
+    {
+      "name": "Anilist-Ruby",
+      "url": "https://github.com/barrettotte/Anilist-Ruby",
+      "desc": "API wrapper gem for Anilist's GraphQL API",
+      "date": "2019-03",
+      "tags": ["ruby", "anilist", "package"]
+    },
+    {
+      "name": "LoL-R-Data-Visual",
+      "url": "https://github.com/barrettotte/LoL-R-Data-Visual",
+      "desc": "Two basic League of Legends data visualizations",
+      "date": "2019-04",
+      "tags": ["r", "sql"]
+    },
+    {
+      "name": "PowerShell-CRUD",
+      "url": "https://github.com/barrettotte/PowerShell-CRUD",
+      "desc": "CRUD API written in only PowerShell",
+      "date": "2019-04",
+      "tags": ["powershell"]
+    },
+    {
+      "name": "IBMi-SpringBoot-API",
+      "url": "https://github.com/barrettotte/IBMi-SpringBoot-API",
+      "desc": "API for exposing IBM i information",
+      "date": "2019-05",
+      "tags": ["java", "ibmi", "db2sql", "sql", "springboot"]
+    },
+    {
+      "name": "vscode-cryptosb",
+      "url": "https://github.com/barrettotte/vscode-cryptosb",
+      "desc": "VS Code extension for showing cryptocurrency prices",
+      "date": "2019-05",
+      "tags": ["typescript", "extension"]
+    },
+    {
+      "name": "IBMi-Lib-Repo",
+      "url": "https://github.com/barrettotte/IBMi-Lib-Repo",
+      "desc": "IBM i source export tool",
+      "date": "2019-06",
+      "tags": ["python", "ibmi"]
+    },
+    {
+      "name": "Linear-Algebra-C",
+      "url": "https://github.com/barrettotte/Linear-Algebra-C",
+      "desc": "Linear algebra library for matrix operations",
+      "date": "2019-06",
+      "tags": ["c", "math", "algorithms"]
+    },
+    {
+      "name": "XSLT-Perlin2D",
+      "url": "https://github.com/barrettotte/XSLT-Perlin2D",
+      "desc": "2D perlin noise SVG generator with XSLT 2.0",
+      "date": "2019-07",
+      "tags": ["xslt", "algorithms"]
+    },
+    {
+      "name": "BTC-Hash",
+      "url": "https://github.com/barrettotte/BTC-Hash",
+      "desc": "Learning about bitcoin hashing and SHA-256 algorithms",
+      "date": "2019-08",
+      "tags": ["c", "algorithms"]
+    },
+    {
+      "name": "Model-Generator",
+      "url": "https://github.com/barrettotte/Model-Generator",
+      "desc": "Generate Java and TypeScript models from JSON schema",
+      "date": "2019-09",
+      "tags": ["python", "parsing"]
+    },
+    {
+      "name": "SQL-Game-of-Life",
+      "url": "https://github.com/barrettotte/SQL-Game-of-Life",
+      "desc": "Conway's Game of Life in TSQL and animated in Python",
+      "date": "2019-09",
+      "tags": ["mssql", "sql", "python", "algorithms"]
+    },
+    {
+      "name": "Anilist-RandExt",
+      "url": "https://github.com/barrettotte/Anilist-RandExt",
+      "desc": "A chrome extension for selecting random Anilist entries",
+      "date": "2019-10",
+      "tags": ["extension", "anilist", "javascript"]
+    },
+    {
+      "name": "Groovy-BF",
+      "url": "https://github.com/barrettotte/Groovy-BF",
+      "desc": "Yet another BF interpreter in Groovy",
+      "date": "2019-10",
+      "tags": ["groovy", "brainfuck"]
+    },
+    {
+      "name": "CF-SQL-Client",
+      "url": "https://github.com/barrettotte/CF-SQL-Client",
+      "desc": "An unfinished SQL client written in ColdFusion",
+      "date": "2019-11",
+      "tags": ["coldfusion", "sql", "webdev"]
+    },
+    {
+      "name": "Anilist-IBMi",
+      "url": "https://github.com/barrettotte/Anilist-IBMi",
+      "desc": "IBM i program to display Anilist user stats",
+      "date": "2019-12",
+      "tags": ["ibmi", "anilist", "rpgle"]
+    },
+    {
+      "name": "Sock-server",
+      "url": "https://github.com/barrettotte/Sock-server",
+      "desc": "A multithreaded server in C",
+      "date": "2019-12",
+      "tags": ["c"]
+    },
+    {
+      "name": "MTM-2019",
+      "url": "https://github.com/barrettotte/MTM-2019",
+      "desc": "IBM Master the Mainframe 2019 entry",
+      "date": "2019-12",
+      "tags": ["rexx", "ibmz", "event"]
+    },
+    {
+      "name": "Game-2600",
+      "url": "https://github.com/barrettotte/Game-2600",
+      "desc": "Small project in 6502 assembly for Atari 2600",
+      "date": "2020-01",
+      "tags": ["6502", "assembly", "vintage", "gamedev"]
+    },
+    {
+      "name": "Issue-Utils",
+      "url": "https://github.com/barrettotte/Issue-Utils",
+      "desc": "Utilities for moving from GitLab to Trello",
+      "date": "2020-01",
+      "tags": ["python"]
+    },
+    {
+      "name": "Scuffed-6502kt",
+      "url": "https://github.com/barrettotte/Scuffed-6502Kt",
+      "desc": "6502 CPU emulator to learn Kotlin",
+      "date": "2020-01",
+      "tags": ["6502", "emulator"]
+    },
+    {
+      "name": "Simple-Lang",
+      "url": "https://github.com/barrettotte/Simple-Lang",
+      "desc": "A basic programming language to learn about Yacc and Lex",
+      "date": "2020-02",
+      "tags": ["programming-language"]
+    },
+    {
+      "name": "Ranger-Lang",
+      "url": "https://github.com/barrettotte/Ranger-Lang",
+      "desc": "Compiled programming language to learn compiler design",
+      "date": "2020-03",
+      "tags": ["c", "programming-language", "parsing", "compiler"]
+    },
+    {
+      "name": "Drools-SpringBoot",
+      "url": "https://github.com/barrettotte/Drools-SpringBoot",
+      "desc": "Simple vehicle premium API to experiment with Drools",
+      "date": "2020-04",
+      "tags": ["java", "springboot"]
+    },
+    {
+      "name": "CPP-Lisp",
+      "url": "https://github.com/barrettotte/CPP-Lisp",
+      "desc": "Lisp interpeter in C++",
+      "date": "2020-04",
+      "tags": ["c++", "programming-language", "parsing"]
+    },
+    {
+      "name": "vscode-ibmi-languages",
+      "url": "https://github.com/barrettotte/vscode-ibmi-languages",
+      "desc": "Syntax highlighting for IBM i languages",
+      "date": "2020-04",
+      "tags": ["extension", "ibmi", "rpgle", "parsing"]
+    },
+    {
+      "name": "RPGLE-Twilio",
+      "url": "https://github.com/barrettotte/RPGLE-Twilio",
+      "desc": "RPGLE service program for sending text messages with Twilio SMS API",
+      "date": "2020-04",
+      "tags": ["rpgle", "sql", "db2sql", "ibmi", "twilio"]
+    },
+    {
+      "name": "Anilist-ESP8266",
+      "url": "https://github.com/barrettotte/Anilist-ESP8266",
+      "desc": "Display Anilist user data on an OLED with ESP8266",
+      "date": "2020-04",
+      "tags": ["arduino", "hardware", "anilist", "c++"]
+    },
+    {
+      "name": "TRS80-Twilio",
+      "url": "https://github.com/barrettotte/TRS80-Twilio",
+      "desc": "Twilio Hackathon 2020 entry",
+      "date": "2020-04",
+      "tags": ["arduino", "hardware", "twilio", "vintage", "basic", "c++"],
+      "featured": true
+    },
+    {
+      "name": "IBMi-Jupyter",
+      "url": "https://github.com/barrettotte/IBMi-Jupyter",
+      "desc": "Jupyter notebook for IBM i",
+      "date": "2020-05",
+      "tags": ["ibmi", "python", "jupyter", "db2sql", "sql"]
+    },
+    {
+      "name": "Plex-Discord-RPC",
+      "url": "https://github.com/barrettotte/Plex-Discord-RPC",
+      "desc": "Use Discord RPC to display local Plex session data",
+      "date": "2020-05",
+      "tags": ["javascript", "discord", "node-js"]
+    },
+    {
+      "name": "DSL-5250",
+      "url": "https://github.com/barrettotte/DSL-5250",
+      "desc": "DSL for headless interaction with a 5250 emulator",
+      "date": "2020-05",
+      "tags": ["ibmi", "groovy", "parsing", "programming-language"]
+    },
+    {
+      "name": "Qsharp-2020",
+      "url": "https://github.com/barrettotte/Qsharp-2020",
+      "desc": "Microsoft Q# Summer 2020 Coding Contest to learn quantum computing",
+      "date": "2020-06",
+      "tags": ["math", "q#", "quantum-computing", "event"]
+    },
+    {
+      "name": "IBMi-Book",
+      "url": "https://github.com/barrettotte/IBMi-Book",
+      "desc": "My eBook for learning IBM i, RPGLE, and more",
+      "date": "2020-07",
+      "tags": ["ibmi", "rpgle", "db2sql", "book"]
+    },
+    {
+      "name": "Subarashii-CPU",
+      "url": "https://github.com/barrettotte/Subarashii-CPU",
+      "desc": "16-bit RISC CPU to learn about computer architecture",
+      "date": "2020-07",
+      "tags": ["verilog", "cpu-design", "hardware"]
+    },
+    {
+      "name": "RPGLE-BF",
+      "url": "https://github.com/barrettotte/RPGLE-BF",
+      "desc": "A BF interpreter in RPGLE",
+      "date": "2020-08",
+      "tags": ["ibmi", "rpgle", "parsing", "programming-language", "brainfuck"]
+    },
+    {
+      "name": "Pokemon-Teams",
+      "url": "https://github.com/barrettotte/Pokemon-Teams",
+      "desc": "Vue app to track my Pokemon teams",
+      "date": "2020-08",
+      "tags": ["vue-js", "javascript", "python", "postgres", "sql", "webdev"]
+    },
+    {
+      "name": "DinoRunner-AS",
+      "url": "https://github.com/barrettotte/DinoRunner-AS",
+      "desc": "Small endless runner in ActionScript",
+      "date": "2020-08",
+      "tags": ["actionscript", "gamedev"]
+    },
+    {
+      "name": "Pogo2Ts",
+      "url": "https://github.com/barrettotte/Pogo2Ts",
+      "desc": "Generate TypeScript models from Groovy objects using Antlr",
+      "date": "2020-09",
+      "tags": ["parsing", "antlr", "groovy", "typescript"]
+    },
+    {
+      "name": "PRDCSTND",
+      "url": "https://github.com/barrettotte/PRDCSTND",
+      "desc": "A small COBOL program with basic data reports",
+      "date": "2020-09",
+      "tags": ["ibmz", "cobol", "jcl"]
+    },
+    {
+      "name": "Kanpachi",
+      "url": "https://github.com/barrettotte/Kanpachi",
+      "desc": "A small CLI for interacting with IBM i",
+      "date": "2020-10",
+      "tags": ["c#", "ibmi"]
+    },
+    {
+      "name": "punchit",
+      "url": "https://github.com/barrettotte/punchit",
+      "desc": "IBM 5081 punch card generator",
+      "date": "2020-11",
+      "tags": ["go", "vintage", "parsing"]
+    },
+    {
+      "name": "md-graph",
+      "url": "https://github.com/barrettotte/md-graph",
+      "desc": "Generate network graphs from markdown links",
+      "date": "2021-01",
+      "tags": ["python", "parsing"]
+    },
+    {
+      "name": "Genshi-BASIC",
+      "url": "https://github.com/barrettotte/Genshi-BASIC",
+      "desc": "BASIC interpreter",
+      "date": "2021-02",
+      "tags": ["python", "basic", "parsing", "programming-language"]
+    },
+    {
+      "name": "goto-bed",
+      "url": "https://github.com/barrettotte/goto-bed",
+      "desc": "Vibrate a melatonin bottle so I go to bed",
+      "date": "2021-02",
+      "tags": ["arduino", "hardware", "c++", "cad"]
+    },
+    {
+      "name": "going-forth",
+      "url": "https://github.com/barrettotte/going-forth",
+      "desc": "A toy Forth interpreter",
+      "date": "2021-02",
+      "tags": ["go", "parsing", "programming-language", "forth"]
+    },
+    {
+      "name": "forth-http",
+      "url": "https://github.com/barrettotte/forth-http",
+      "desc": "A small web server in Forth",
+      "date": "2021-03",
+      "tags": ["forth"]
+    },
+    {
+      "name": "cat-doorbell",
+      "url": "https://github.com/barrettotte/cat-doorbell",
+      "desc": "Sensor to detect my cat outside my door",
+      "date": "2021-06",
+      "tags": ["arduino", "hardware", "c++", "cad"]
+    },
+    {
+      "name": "github-fop-sb",
+      "url": "https://github.com/barrettotte/github-fop-sb",
+      "desc": "Generate PDF of GitHub user's repos",
+      "date": "2021-06",
+      "tags": ["java", "xslt", "github"]
+    },
+    {
+      "name": "wc-resistor-calc",
+      "url": "https://github.com/barrettotte/wc-resistor-calc",
+      "desc": "Resistor calculator web component",
+      "date": "2021-08",
+      "tags": ["javascript", "webdev"]
+    },
+    {
       "name": "qr-asm",
       "url": "https://github.com/barrettotte/qr-asm",
-      "desc": "Generate a QR code from scratch with only ARM assembly",
+      "desc": "QR code generated with ARM assembly",
+      "date": "2021-09",
+      "tags": ["arm", "assembly", "algorithms"],
+      "featured": true
+    },
+    {
+      "name": "stencil-anlist",
+      "url": "https://github.com/barrettotte/stencil-anilist",
+      "desc": "Web component to display Anilist user",
+      "date": "2021-10",
+      "tags": ["anilist", "javascript", "webdev"]
+    },
+    {
+      "name": "eridu",
+      "url": "https://github.com/barrettotte/eridu",
+      "desc": "CHIP-8 emulator",
+      "date": "2021-11",
+      "tags": ["emulator", "c++", "sdl"]
+    },
+    {
+      "name": "angstrom-cpu",
+      "url": "https://github.com/barrettotte/angstrom-cpu",
+      "desc": "4-bit accumulator-based CPU",
+      "date": "2021-12",
+      "tags": ["verilog", "cpu-design", "hardware"],
       "featured": true
     },
     {
       "name": "bootjack",
       "url": "https://github.com/barrettotte/bootjack",
-      "desc": "A bootable Blackjack written in 508 bytes",
+      "desc": "Bootable Blackjack in 508 bytes",
+      "date": "2021-12",
+      "tags": ["x86", "assembly"],
       "featured": true
     },
     {
-      "name": "angstrom-cpu",
-      "url": "https://github.com/barrettotte/angstrom-cpu",
-      "desc": "A 4-bit accumulator-based CPU",
-      "featured": true
+      "name": "candlestick-mic",
+      "url": "https://github.com/barrettotte/candlestick-mic",
+      "desc": "Old candlestick phone as a headset",
+      "date": "2022-01",
+      "tags": ["hardware", "vintage", "cad"]
+    },
+    {
+      "name": "rusty-lc3-vm",
+      "url": "https://github.com/barrettotte/rusty-lc3-vm",
+      "desc": "LC3 VM",
+      "date": "2022-01",
+      "tags": ["rust", "emulator"]
     },
     {
       "name": "thule-json",
       "url": "https://github.com/barrettotte/thule-json",
-      "desc": "Another minimal and unsafe json parser",
-      "hidden": true
+      "desc": "Minimal and unsafe json parser",
+      "date": "2022-03",
+      "tags": ["c", "parsing"],
+      "featured": true
     },
     {
-      "name": "test",
-      "url": "/projects/test",
-      "desc": "testing project markdown"
+      "name": "spotify-code-3d",
+      "url": "https://github.com/barrettotte/spotify-code-3d",
+      "desc": "3D-printed keychain for Spotify codes",
+      "date": "2022-03",
+      "tags": ["python", "openscad", "cad"]
+    },
+    {
+      "name": "enki-os",
+      "url": "https://github.com/barrettotte/enki-os",
+      "desc": "Basic x86 kernel",
+      "date": "2022-04",
+      "tags": ["x86", "assembly", "c", "operating-system"],
+      "featured": true
+    },
+    {
+      "name": "mech-mouse-jiggler",
+      "url": "https://github.com/barrettotte/mech-mouse-jiggler",
+      "desc": "Mechanical mouse jiggler",
+      "date": "2022-06",
+      "tags": ["hardware", "eda", "cad"]
+    },
+    {
+      "name": "dumb-gcoder",
+      "url": "https://github.com/barrettotte/dumb-gcoder",
+      "desc": "Dumb GCODE generator",
+      "date": "2022-06",
+      "tags": ["python", "cad", "gcode"]
     }
   ]
 }

@@ -6,18 +6,28 @@
     <nav>
       <ul>
         <li>
-          <a class="icon" target="_blank" rel="noopener" href="#">
+          <a class="icon" target="_blank" rel="noopener" href="mailto:{{ .Site.Params.links.email }}">
             <i class="fas fa-lg fa-envelope"></i>
           </a>
         </li>
         <li>
-          <a class="icon" target="_blank" rel="noopener" href="#">
-            <i class="fas fa-lg fa-rss"></i>
+          <a class="icon" target="_blank" rel="noopener" href="{{ .Site.Params.links.github }}">
+            <i class="fab fa-lg fa-github"></i>
           </a>
         </li>
         <li>
-          <a class="icon" target="_blank" rel="noopener" href="#">
-            <i class="fab fa-lg fa-github"></i>
+          <a class="icon" target="_blank" rel="noopener" href="{{ .Site.Params.links.linkedin }}">
+            <i class="fab fa-lg fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" target="_blank" rel="noopener" href="{{ .Site.Params.links.hackernews }}">
+            <i class="fab fa-lg fa-hacker-news-square"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" target="_blank" rel="noopener" href="/index.xml">
+            <i class="fas fa-lg fa-rss"></i>
           </a>
         </li>
       </ul>

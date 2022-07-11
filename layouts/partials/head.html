@@ -23,10 +23,8 @@
 
   <link rel="icon" href={{ "images/favicon.svg" | absURL }} />
 
-  {{ if .Site.Params.rss }}
-    {{ with .OutputFormats.Get "RSS" }}
-      {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
-    {{ end }}
+  {{ with .OutputFormats.Get "RSS" }}
+    {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
   {{ end }}
 
 </head>

@@ -6,7 +6,7 @@
 }
 
 h1, .h1 {
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
 }
 
 h2, .h2 {
@@ -25,13 +25,19 @@ h2, .h2 {
     background-image: none;
 }
 
-.project-list {
+#projects {
+    margin-top: 1.25rem;
+}
+
+.post-list > .post-item {
+    display: list-item;
+    margin-left: 1rem;
     list-style: square;
 }
 
-.project-list .project-item {
-    display: flex;
-    margin-bottom: 5px;
+.post-item > time {
+    color: var(--color-border);
+    margin-right: 15px;
 }
 
 .icon:hover {
@@ -60,7 +66,7 @@ h2, .h2 {
     padding-left: 25px;
     /* margin-bottom: 5px; */
     font-size: 0.75em;
-    list-style-type: none;
+    list-style: none;
 }
 
 #subtitle > li {
