@@ -18,6 +18,11 @@ article .content h2::before {
     content: "";
 }
 
+article .content h3, .h3 {
+    color: var(--color-accent-1);
+    text-decoration: none;
+}
+
 li {
     display: list-item;
     list-style: square;
