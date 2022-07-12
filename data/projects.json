@@ -121,7 +121,7 @@
     {
       "name": "Resume",
       "url": "https://github.com/barrettotte/Resume",
-      "desc": "Resume generated in LaTeX",
+      "desc": "My resume generated in LaTeX",
       "date": "2018-12",
       "tags": ["tex"]
     },
@@ -219,7 +219,7 @@
     {
       "name": "Anilist-RandExt",
       "url": "https://github.com/barrettotte/Anilist-RandExt",
-      "desc": "A chrome extension for selecting random Anilist entries",
+      "desc": "A Chrome extension for selecting random Anilist entries",
       "date": "2019-10",
       "tags": ["extension", "anilist", "javascript"]
     },
@@ -317,7 +317,7 @@
     {
       "name": "RPGLE-Twilio",
       "url": "https://github.com/barrettotte/RPGLE-Twilio",
-      "desc": "RPGLE service program for sending text messages with Twilio SMS API",
+      "desc": "RPGLE service program for sending text messages with Twilio",
       "date": "2020-04",
       "tags": ["rpgle", "sql", "db2sql", "ibmi", "twilio"]
     },
@@ -360,7 +360,7 @@
     {
       "name": "Qsharp-2020",
       "url": "https://github.com/barrettotte/Qsharp-2020",
-      "desc": "Microsoft Q# Summer 2020 Coding Contest to learn quantum computing",
+      "desc": "Microsoft Q# Summer 2020 Coding Contest",
       "date": "2020-06",
       "tags": ["math", "q#", "quantum-computing", "event"]
     },
@@ -374,7 +374,7 @@
     {
       "name": "Subarashii-CPU",
       "url": "https://github.com/barrettotte/Subarashii-CPU",
-      "desc": "16-bit RISC CPU to learn about computer architecture",
+      "desc": "A simple 16-bit RISC CPU",
       "date": "2020-07",
       "tags": ["verilog", "cpu-design", "hardware"]
     },

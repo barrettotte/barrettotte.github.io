@@ -7,8 +7,6 @@ category: coding
 mathjax: true
 ---
 
-# Test
-
 Hello world
 
 ```c

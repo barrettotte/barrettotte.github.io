@@ -29,13 +29,13 @@ theme = "cactus"
   weight = 5
 
 [[menu.main]]
-  name = "Misc"
-  url = "/misc"
+  name = "Resume"
+  url = "https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf"
   weight = 6
 
 [[menu.main]]
-  name = "Resume"
-  url = "https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf"
+  name = "Misc"
+  url = "/misc"
   weight = 7
 
 # https://gohugo.io/getting-started/configuration-markup

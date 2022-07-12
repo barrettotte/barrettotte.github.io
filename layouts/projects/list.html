@@ -2,7 +2,7 @@
   <div id="archive">
     <h1>Projects</h1>
     <ul class="post-list">
-      {{ range .Site.Data.projects.list }}
+      {{ range sort (.Site.Data.projects.list) "date" "desc" }}
         {{ if not .hidden }}
           <li class="post-item">
             <a href="{{ .url }}">{{ .name }}</a>: {{ .desc | markdownify }}

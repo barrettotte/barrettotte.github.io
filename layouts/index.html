@@ -1,10 +1,12 @@
 {{ define "main" }}
+  <p>I’m a lifelong student aspiring to be mediocre at everything. <a href="/about">Read more</a></p>
+
   <section id="posts">
     <span class="h1">
       <a href="/projects">Featured Projects</a>
     </span>
     <ul class="post-list">
-      {{ range .Site.Data.projects.list }}
+      {{ range sort (.Site.Data.projects.list) "date" "desc" }}
         {{ if and .featured (not .hidden) }}
           <li class="post-item">
             <a href="{{ .url }}">{{ .name }}</a>: {{ .desc | markdownify }}
