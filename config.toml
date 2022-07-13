@@ -58,6 +58,9 @@ theme = "cactus"
     tabWidth = 4
     lineAnchors = ""
     anchorLineNos = false
+  
+  [markup.goldmark.renderer]
+    unsafe= true  # allow md+html mix
 
 [params]
   author = "Barrett Otte"

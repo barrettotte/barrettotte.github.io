@@ -28,6 +28,15 @@ li {
     list-style: square;
 }
 
+table {
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+td {
+    vertical-align: top;
+}
+
 .content a {
     text-decoration: underline;
     text-underline-offset: 0.2rem;
