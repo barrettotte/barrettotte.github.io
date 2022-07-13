@@ -1,140 +1,117 @@
 ---
-title: Writing a Book with Docsify
-date: 2019-09-16
+title: ColdFusion Service Pinger
+date: 2018-12-01
 tags:
-    - markdown
-category: coding
+    - coldfusion
 ---
 
-*Migrated post from [DEV.to](https://dev.to/barrettotte/write-a-book-with-docsify-3c0o)*
+At my job sometimes a few of the legacy services' health in the qa/dev environment decays and there are no robust health checks in place.
+So, one morning I coded up a quick and dirty page that product owners could hit to get a sanity check when they were checking features.
 
-![header.PNG](header.PNG)
+In summary, this ColdFusion page hits each listed service in the JSON and uses multithreading.
+This was the first time I ever messed around with multithreading in ColdFusion; It was easier than I thought.
 
-If you ever thought about writing a small book in the comfort of markdown/html then I would suggest using Docsify; https://github.com/docsifyjs/docsify
-
-Docsify is pretty intuitive and has sufficient documentation to get you through the basics of putting together a book. Each directory is a section
-and each markdown file is a page in the book. It also has other features such as navigation, cover pages, and sidebars that I haven't dove too deep into.
-
-Since it uses markdown, you can also use standard HTML and CSS to style everything. I've had mixed results, but it seems like you can also use basic JavaScript as well. The only catch I've found so far is that you cannot use any asynchronous content. For example, I was unable to use embedded code snippets from https://www.cacher.io/ since it is an asynchronous request to cacher to get the content.
-
-## Commands
-
-* Install docsify cli through npm - `npm i -g docsify-cli`
-* Start a new project - `docsify init mybook`
-* Serve book locally on http://localhost:3000 - `docsify serve mybook`
-
-## Sample Page
-
-As expected, you can mix and match markdown and HTML depending on what you need to do. For all of my cases, this was perfect.
-
-```markdown
-<!-- Sample page from my book -->
-
-## Introduction to the 5250 Emulator
-
-This is an emulator of the IBM 5250 terminal originally used to interact with the IBMi and its ancestors. A bit more information on it here https://en.wikipedia.org/wiki/IBM_5250
-
-There's a lot of features in this emulator that I haven't messed around with.
-
-One important thing I learned is using the **popup keypad** located in **Actions** > **Popup Keypad...**
-Sometimes when things go wrong, you have to use **SysReq** to bail yourself out (more on this later).
-
-<figure align="center">
-	<img src="./core/ibmi/_assets/5250-01.PNG" alt="Popup Keypad" />
-</figure>
+`index.cfm`
 
 ```
-
-## Code Blocks
-
-One feature I wanted in my book was basic code blocks with a dark theme. Docsify uses a syntax highlighting package called [Prism JS](https://github.com/PrismJS/prism). For the most part, Prism JS works pretty well out of the box. To include syntax highlighting for PHP you would throw this into your **index.html**
-
-```html
-<!-- index.html -->
-<script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
+<cfscript>
+    serviceTester = new serviceTester();
+    writeOutput('
+        <h1>Web Service Tester</h1>
+        <hr/>
+        <p>Very basic method to check web services. <b>Multiple runs are suggested</b></p>
+        <form>
+            #serviceTester.process()#
+            <br>
+            <input type="submit" value="Retry">
+        </form>
+        <br>
+        <p>If all services are OK and dev still is not working, 
+            <b>then dev most likely needs to be restarted.</b>
+        </p>
+    ');
+</cfscript>
 ```
 
-Unfortunately, I wasn't smart enough to figure out how to use the Prism plugin with Docsify (if you even can). I also tried to get line numbers working through a couple different CSS snippets, but I think my frontend abilities are severely lacking.
+<br>
 
-## Code Blocks with Monokai Theme
+`serviceTester.cfc`
 
-Additionally, I wanted to implement a dark theme like Monokai in VS Code.
-I found a theme called **Xonokai** that was close enough to what I wanted
-https://github.com/PrismJS/prism-themes . I also created a basic **styles.css** to do some additional tweaking on the Xonokai theme.
+```txt
+component{
 
-```css
-/*styles.css*/
-
-/* Hide php tag in code block */
-#main > pre::after {
-  display: none;
-} 
-#main > pre, #main > pre > code {
-  background-color: #2e2e2e; 
-}
-#main > pre > code {
-  color: white;
-}
-.sidebar, .sidebar-toggle {
-  background-color: rgb(228, 228, 228);
-}
-```
-
-As expected, you can link stylesheets in your **index.html**. I put all of my css in a root directory **_assets/css**.
-
-```html
-<!-- index.html -->
-<link rel="stylesheet" href="./_assets/css/prism-xonokai.css">
-<link rel="stylesheet" href="./_assets/css/styles.css">
-```
-
-Currently, this is what it looks like when its all said and done
-
-![example.PNG](example.PNG)
-
-## Additional Setup
-
-I haven't gone super deep into docsify, but I've found a few cool things.
-There's a pretty sweet plugin for pagination within chapters that can be added using
-
-```html
-<!-- index.html -->
-<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js">
-```
-
-A lot of customizing can be done within the **window.$docsify** element, here is my configuration that includes a homepage, repo link, and sidebar.
-
-```html
-<!-- index.html -->
-<script>
-    window.$docsify = {
-      name: '',
-      repo: 'https://github.com/barrettotte/IBMi-Book',
-      loadSidebar: true,
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
-      },
-      homepage: 'README.md',
-      search: 'auto',
-      auto2top: true
+    public serviceTester function init(){
+        local.url = cgi.SERVER_NAME & replace(cgi.SCRIPT_NAME, "index.cfm", "") & "serviceTester.json";
+        variables.config = deserializeJSON(httpGet(local.url).send().getPrefix().FileContent);
+        return this;
     }
-  </script>
+
+    public string function process(){
+        var outHTML = "";
+        var size = arrayLen(variables.config.targets);
+        var threadList = "";
+        this.threadOutput = arrayNew(1); //variables scope makes this work
+
+        for(var i = 1; i <= size;  i++){
+            thread action="run" name="thread#i#" index=i payload=variables.config.targets[i] {
+                this.threadOutput[index] = makeRow(payload);
+            }
+            listAppend(threadList, "thread#i#");
+        }
+        threadJoin(threadList, 15000);
+
+        savecontent variable='outHTML'{
+            writeOutput("<table style='border-collapse:separate; border-spacing:25px 0;'>");
+            for(var i = 1; i <= size; i++){
+                writeOutput(this.threadOutput[i]);
+            }
+            writeOutput("</table>");
+        }
+        return outHTML;
+    }
+
+    private string function makeCell(required any content, numeric padding=10, string color="black"){
+        return "<td style='padding: #arguments.padding#px 0; color:#arguments.color#'>" & arguments.content & "</td>";
+    }
+
+    private string function makeRow(required struct payload){
+        var response = httpGet(payload.url).send().getPrefix()["Statuscode"];
+        var status = response == "200" ? {"text":"OK","color":"green"}:{"text":"DOWN","color":"red"};
+        var outHTML = "<tr>"
+            & makeCell(content: '<a href="' & payload.url & '">' & payload.name & '</a>')
+            & makeCell(content:". . . . . . . .", padding:2)
+            & makeCell(content:status.text, color:status.color) & "</tr>";                    
+        return outHTML;
+    }
+
+    private http function httpGet(required string reqUrl){
+        var httpService = new http();
+        var timeout = isDefined("variables.config.timeout") ? variables.config.timeout : 200;
+        httpService.setTimeOut(timeout);
+        httpService.setCharset('utf-8');
+        httpService.setMethod("GET");
+        httpService.setUrl(arguments.reqUrl);
+        return httpService;
+    }
+}
 ```
 
-This is really just scratching the surface, but you can find much more at https://docsify.js.org/#/?id=docsify
+<br>
 
-## Deploying to GitHub Pages
+`serviceTester.json`
 
-If you put all of your book content within a **docs** directory of your repository, you can use your repository as a GitHub.io page with ease. To make sure that your repository isn't mistaken for a Jekyll site, create an empty file named **.nojekyll**.
-
-To enable the GitHub.io page go to your GitHub repository and select **master branch /docs folder** in **Settings** > **GitHub Pages** > **Source**
-
-![deploy.PNG](deploy.PNG)
-
-## My "Book"
-
-I hesitate to call what I'm making a book, but you can find my project **Learning the IBMi as a Lowly Web Developer** at https://barrettotte.github.io/IBMi-Book/#/
-
-It will be a beginner's guide to programming on the IBMi with RPGLE, CL, and more. I hope to stay motivated/focused and keep chipping away at it.
-
-Thanks for reading this post.
+```json
+{
+  "timeout": 5,
+  "targets": [
+    {
+      "name": "Some Service",
+      "url": "http://somewhere:123"
+    },
+    {
+      "name": "Some other Service",
+      "url": "http://somewhere/else:456"
+    }
+  ]
+}
+```

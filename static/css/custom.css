@@ -23,6 +23,22 @@ article .content h3, .h3 {
     text-decoration: none;
 }
 
+article.post header div.meta {
+    margin-top: 1.0rem;
+}
+
+.article-tag {
+    margin-left: 0.50rem;
+}
+
+.article-tag::before {
+    content: none;
+}
+
+.author > span {
+    text-transform: none;
+}
+
 li {
     display: list-item;
     list-style: square;

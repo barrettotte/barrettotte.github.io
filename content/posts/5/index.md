@@ -1,49 +1,210 @@
 ---
-title: IBM i Book Chapters 1 and 2
-date: 2019-10-10
+title: Utility to Pull Code from IBM i
+date: 2019-08-19
 tags:
     - ibmi
     - rpgle
-category: coding
+    - python
 ---
 
-*Migrated post from [DEV.to](https://dev.to/barrettotte/ibmi-book-chapters-1-and-2-40ij)*
+*Migrated post from [DEV.to](https://dev.to/barrettotte/simple-util-to-pull-code-from-the-ibmi-5hfp)*
 
-![header.png](header.png)
+![header.PNG](header.PNG)
 
-This is a post to say that I have "completed" the first two chapters of my small "book" **Learning IBM i as a Lowly Web Developer**. (Most of the core content is in an acceptable state, but may still be tweaked when I read it over for the millionth time).
+In one of my really dumb side projects I'm making, I have some IBM i code that I'd like to keep in my git repository with some other stuff. I could use the Integrated File System (IFS), but truthfully I don't know enough about IBM i yet to use it correctly.
 
-The work in progress can be found at https://barrettotte.github.io/IBMi-Book/#/
+So, in the meantime I have a quick and dirty python script that lets me pull multiple source members based on a config file, repo.json. This isn't the cleanest, but it works pretty well.
 
-## Preface
+My repo.json is very basic, but lays out a basic IBM i file structure to loop over below with FTP
+```json
+{
+  "library": "BOLIB",
+  "spfs": [
+    {
+      "name": "QRPGLESRC",
+      "extension": "RPGLE",
+      "members": [
+        {
+          "name": "FIZZBUZZ"
+        }
+      ]
+    }
+  ],
+  "output": "./"
+}
+```
 
-It should be obvious, but I'm not a writer and barely a programmer sometimes.
-This book is lazy and heavily relies on "learning by example". Therefore, it might be tough for some people to follow. But, I do try to briefly explain and walkthrough writing each program.
+## Basic Idea
 
-I also decided to use SEU throughout this book just to get the full "green screen" experience. If you can code in SEU, you can code in something better be default.
+If you connect to IBM i over SSH you can navigate and find your source members. For example, I'm going to drill down into my QRPGLESRC file within my BOLIB library.
 
-I do mention [ILEditor](https://github.com/worksofbarry/ILEditor) and plan to include a brief overview of this awesome IDE so that people have the option to use it instead of ancient SEU.
+![terminal.PNG](terminal.PNG)
 
-## Chapter 1
+As you can see, there are my QRPGLESRC members hanging out. All my script does is automate grabbing the source members.
 
-https://barrettotte.github.io/IBMi-Book/#/core/ibmi/index
+## The Code
 
-In chapter 1, I mainly go over operating system concepts and Access Client Solutions (ACS). This includes some Source Entry Utility (SEU) and Program Development Manager (PDM).
+To start, I use a few basic modules found in the python standard library.
+```python
+import ftplib  # easily setup FTP connection
+import json    # read in repo.json config file
+import getpass # used to discretely get password
+import os      # used to safely make directories for output
+```
 
-For practice, I walkthrough creating a library, source physical file, and a CL source member. Additionally, I step through compiling and running a three line CL program.
+I load my config file, instantiate my FTP client, and get the hostname, username, and password from the console
+```python
+config = {}
+with open("./repo.json", 'r') as f: 
+  config = json.load(f)
 
-## Chapter 2
+ftp_client = ftplib.FTP()
+host = input("Enter Host: ")
+user   = input("Enter User: ")
+password = getpass.getpass("Enter Password: ")
+# FTP logic below...
+```
 
-https://barrettotte.github.io/IBMi-Book/#/core/cl/index
+Next, I setup my FTP connection shell with very basic error handling
+```python
+try:
+  ftp_client.connect(host, timeout=10000)
+  ftp_client.login(user, password)
+  # The meat of the code here ...
+except ftplib.all_errors as e:
+  print("Error occurred with FTP.\n" + str(e))
+  exit(1)
+except Exception as e:
+  print("Some other error occurred\n" + str(e))
+  exit(1)
+finally:
+  ftp_client.quit()
+```
 
-In chapter 2, I give an overview of the syntax/structure of CL and start writing some basic CL. The example CL program I provided accepts user input via inquiry and echos it back to the user as a message.
+Now the fun stuff, sending FTP RETR command to get data from IBM i
+```python
+lib = config['library'] # my example only has one library, so no looping
 
-For a more beefy example, I included a subpar implementation of fizzbuzz in CL to go over subroutines, conditionals, and loops. It could definitely be a better implementation, but I think it serves its purpose just fine.
+for spf in config['spfs']:
+  print("Fetching member(s) from {}/{}".format(lib, spf['name']))
 
-## Conclusion
+  if not os.path.exists('./'+spf['name']): 
+    os.makedirs(spf['name']) # make a directory based on source physical file name
 
-I hope to keep making progress on this book as I feel inspired. The next chapter is going to be on the basics of some old RPG and newer RPGLE. Additionally, I hope to add more content to the CL chapter on the differences between newer CLLE vs CL.
+    for mbr in spf['members']:
+      resp = []
 
-If you happen to read the book and have a suggestion on an improvement, please open an issue in my repository here https://barrettotte.github.io/IBMi-Book/#/ and I'll definitely consider it. After all, I'm still a complete noob to the IBMi and could use all the help I can get.
+      # The magic command to get data  ex: BOLIB/QRPGLESRC/FIZZBUZZ.mbr
+      cmd = "RETR {}".format("/QSYS.lib/{}.lib/{}.file/{}.mbr").format(
+        lib, spf['name'], mbr['name'])
 
-On a related note, my company allowed me to attend [RPG & DB2 Summit](https://www.systemideveloper.com/summit/conferences.html) in Minneapolis. I'm 23 so I'll be sticking out like a sore thumb around all the seasoned IBM i developers. I hope to learn a bunch of cool content to include/mention in this book.
+      ftp_client.retrlines(cmd, resp.append) # run the command
+
+      # Create file based on specified extension ex: RPGLE
+      filepath = spf['name'] + '/' + mbr['name'] + '.' + spf['extension']
+
+      # Finally, write data to file
+      with open(filepath, 'w+') as f:
+        for line in resp: f.write(str(line) + '\n')
+
+      print("  Saved " + filepath)
+```
+
+## Final Script
+
+```python
+import ftplib  # easily setup FTP connection
+import json    # read in repo.json config file
+import getpass # used to discretely get password
+import os      # used to safely make directories for output
+
+config = {}
+with open("./repo.json", 'r') as f: 
+  config = json.load(f)
+
+ftp_client = ftplib.FTP()
+host = input("Enter Host: ")
+user   = input("Enter User: ")
+password = getpass.getpass("Enter Password: ")
+
+try:
+  ftp_client.connect(host, timeout=10000)
+  ftp_client.login(user, password)
+  
+  lib = config['library'] # my example only has one library, so no looping
+
+  for spf in config['spfs']:
+    print("Fetching member(s) from {}/{}".format(lib, spf['name']))
+
+    if not os.path.exists('./'+spf['name']): 
+      os.makedirs(spf['name']) # make a directory based on source physical file name
+
+    for mbr in spf['members']:
+      resp = []
+
+      # The magic command to get data  ex: BOLIB/QRPGLESRC/FIZZBUZZ.mbr
+      cmd = "RETR {}".format("/QSYS.lib/{}.lib/{}.file/{}.mbr").format(
+        lib, spf['name'], mbr['name'])
+
+      ftp_client.retrlines(cmd, resp.append) # run the command
+
+      # Create file based on specified extension ex: RPGLE
+      filepath = spf['name'] + '/' + mbr['name'] + '.' + spf['extension']
+
+      # Finally, write data to file
+      with open(filepath, 'w+') as f:
+        for line in resp: f.write(str(line) + '\n')
+
+      print("  Saved " + filepath)
+
+except ftplib.all_errors as e:
+  print("Error occurred with FTP.\n" + str(e))
+  exit(1)
+except Exception as e:
+  print("Some other error occurred\n" + str(e))
+  exit(1)
+finally:
+  ftp_client.quit()
+```
+
+## The File was Fetched!
+
+This is stored in ./QRPGLESRC/FIZZBUZZ.RPGLE
+```
+       /free
+       // The classic fizzbuzz program in RPGLE Free
+       dcl-s num int(10);
+
+       for num = 1 to 100;
+           if %REM(num:3) = 0 and %REM(num:5) = 0;
+               dsply ('num - ' + %char(num) + ' FIZZBUZZ');
+           elseif %rem(num:3) = 0;
+               dsply ('num - ' + %char(num) + ' FIZZ');
+           elseif %rem(num:5) = 0;
+               dsply ('num - ' + %char(num) + ' BUZZ');
+           else;
+               dsply ('num - ' + %char(num));
+           endif;
+       endfor;
+       *INLR = *ON;
+```
+
+## Simple Batch script
+
+In my repository, I made a little batch script so I could pull IBM i code and commit it with the rest of my repository in one call.
+
+```shell
+@ECHO OFF
+IF [%1] == [] GOTO NOMSG
+python ibmi-pull.py && git add . && git commit -m "%~1" && git push origin master
+GOTO END
+:NOMSG
+  ECHO "Enter the commit message!"
+:END
+PAUSE
+```
+
+Again, there's probably some better "tools" you could make involving the IFS, but I'm just not there yet knowledge-wise.
+
+As an experiment, I expanded upon this simple script to grab an entire library and generate a basic git repository : 
+https://github.com/barrettotte/IBMi-Lib-Repo

@@ -1,124 +1,139 @@
 ---
-title: Writing an IBM i Syntax Highlighter for VS Code
-date: 2020-03-30
+title: Writing a Book with Docsify
+date: 2019-09-16
 tags:
-    - ibmi
-    - rpgle
-    - extension
-category: coding
+    - markdown
 ---
 
-*Migrated post from [DEV.to](https://dev.to/barrettotte/writing-an-ibmi-syntax-highlighter-for-vs-code-4h0j)*
+*Migrated post from [DEV.to](https://dev.to/barrettotte/write-a-book-with-docsify-3c0o)*
 
 ![header.PNG](header.PNG)
 
-## Introduction
+If you ever thought about writing a small book in the comfort of markdown/html then I would suggest using Docsify; https://github.com/docsifyjs/docsify
 
-I love VS Code and really want it to be the "all in one" editor.
-Unfortunately, there are still plenty of fringe cases that just don't work yet.
+Docsify is pretty intuitive and has sufficient documentation to get you through the basics of putting together a book. Each directory is a section
+and each markdown file is a page in the book. It also has other features such as navigation, cover pages, and sidebars that I haven't dove too deep into.
 
-To make a long stort short, I recently started working as an IBMi developer. Its a **midrange system** (the middle ground between standard server and mainframe) that uses an old programming language called **RPG** (https://en.wikipedia.org/wiki/IBM_RPG, the same era as COBOL and FORTRAN).
-So, I decided I wanted to be able to use VS Code to read IBMi code.
+Since it uses markdown, you can also use standard HTML and CSS to style everything. I've had mixed results, but it seems like you can also use basic JavaScript as well. The only catch I've found so far is that you cannot use any asynchronous content. For example, I was unable to use embedded code snippets from https://www.cacher.io/ since it is an asynchronous request to cacher to get the content.
 
-## Time to Learn Regular Expressions
+## Commands
 
-A couple months ago I didn't know the black magic behind regular expressions.
-In a prior side project (https://github.com/barrettotte/Ranger-Lang) I learned about compiler theory and finite automata. 
-Which cleared the fog on the reasons why regular expressions exist and a bit of the syntax. I highly suggest taking a bit of time to read through some basic examples of finite automata to get a sense of what I'm talking about.
+* Install docsify cli through npm - `npm i -g docsify-cli`
+* Start a new project - `docsify init mybook`
+* Serve book locally on http://localhost:3000 - `docsify serve mybook`
 
-The rest of my learning was messing around for literal hours using https://regexr.com/ . This tool saved my life, it made things so easy to test.
+## Sample Page
 
-Yes, it took me that long to get the hang of things; you have to be willing to put in the time when you're as dumb as me.
+As expected, you can mix and match markdown and HTML depending on what you need to do. For all of my cases, this was perfect.
 
-## Regular Expression Lookaround
+```markdown
+<!-- Sample page from my book -->
 
-One of the most valuable things to know how to do in regular expressions is lookaround.
-A key concept to understand in regular expressions is that once a pattern is matched, the characters matched are "eaten" by the regex engine (they cannot be reused).
-A lookaround allows you to match a pattern ahead or behind and does not consume the characters matched.
+## Introduction to the 5250 Emulator
 
-## Regular Expression Example
+This is an emulator of the IBM 5250 terminal originally used to interact with the IBMi and its ancestors. A bit more information on it here https://en.wikipedia.org/wiki/IBM_5250
 
-For example,
-I had to make sure there was an 'F' in column 6, an 'F' or 'E' in column 14, and a certain set of words in column 41.
+There's a lot of features in this emulator that I haven't messed around with.
 
-`     FPRINTER O   F     132     OF     PRINTER`
+One important thing I learned is using the **popup keypad** located in **Actions** > **Popup Keypad...**
+Sometimes when things go wrong, you have to use **SysReq** to bail yourself out (more on this later).
 
-Using positive lookbehind, I can check the 'F', the 'F' or 'E', and 'PRINTER' while ensuring that all conditions are matched.
+<figure align="center">
+	<img src="./core/ibmi/_assets/5250-01.PNG" alt="Popup Keypad" />
+</figure>
 
-REGEX: `(?i)(?<=(?<=(?<=^[\s]{5}F).{8}).{4}(F|E).{20})(WORKSTN|DISK|PRINTER|SPECIAL|SEQ)`
-
-This regex will lookbehind for two conditions and match a word (WORKSTN...SEQ) if the prior conditions are matched.
-
-Broken down this is:
-
-```text
-(?i)               // case insensitive switch
-(?<=               // start outer positive lookbehind
-  (?<=             // start middle positive lookbehind 
-    (?<=           // start inner positive lookbehind
-      ^            // beginning of string
-      [\s]{5}      // any non-whitespace character 5 times
-      F            // 'F'
-    )              // end inner positive lookbehind
-    .{8}           // any character 8 times
-  )                // end middle positive lookbehind
-.{4}               // any character 4 times
-(F|E)              // match either 'F' or 'E'
-.{20}              // any character 20 times
-)                  // end outer positive lookbehind
-(WORKSTN|...|SEQ)  // match any word in list
 ```
 
-At least for me, this didn't make much sense until I got my hands dirty.
+## Code Blocks
 
-## Introduction to TextMate
+One feature I wanted in my book was basic code blocks with a dark theme. Docsify uses a syntax highlighting package called [Prism JS](https://github.com/PrismJS/prism). For the most part, Prism JS works pretty well out of the box. To include syntax highlighting for PHP you would throw this into your **index.html**
 
-Atom and VS Code both use a thing called **TextMate** to handle all syntax highlighting. It provides a convenient way to list out sets of regular expressions that correspond to parts of a language such as constants, functions, keywords, operators, etc.
+```html
+<!-- index.html -->
+<script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
+```
 
-Googling around it seems that the TextMate grammars can be written in XML, JSON, and YML. I decided on JSON after screwing around with the YML version and not getting it working correctly (I think).
+Unfortunately, I wasn't smart enough to figure out how to use the Prism plugin with Docsify (if you even can). I also tried to get line numbers working through a couple different CSS snippets, but I think my frontend abilities are severely lacking.
 
-The previous regular expression example as a TextMate Grammar; I make (WORKSTN|...|SEQ) highlight as
-a constant.
+## Code Blocks with Monokai Theme
 
-```json
-{
-  // ...
-  "constants": {
-    "patterns": [
-      {
-        "name": "constant.language.rpg.f.device",
-        "match": "(?i)(?<=(?<=(?<=^[\\s]{5}F).{8}).{4}(F|E).{20})(WORKSTN|DISK|PRINTER|SPECIAL|SEQ)"
-      }
-    ]
-  }
-  // ...
+Additionally, I wanted to implement a dark theme like Monokai in VS Code.
+I found a theme called **Xonokai** that was close enough to what I wanted
+https://github.com/PrismJS/prism-themes . I also created a basic **styles.css** to do some additional tweaking on the Xonokai theme.
+
+```css
+/*styles.css*/
+
+/* Hide php tag in code block */
+#main > pre::after {
+  display: none;
+} 
+#main > pre, #main > pre > code {
+  background-color: #2e2e2e; 
+}
+#main > pre > code {
+  color: white;
+}
+.sidebar, .sidebar-toggle {
+  background-color: rgb(228, 228, 228);
 }
 ```
 
-There's also a lot more fancy things you can do with nested patterns, but I won't get into it here. If you're curious read more at https://www.apeth.com/nonblog/stories/textmatebundle.html
+As expected, you can link stylesheets in your **index.html**. I put all of my css in a root directory **_assets/css**.
 
-For fun, here's a link to Dart's syntax highlighter in TextMate https://github.com/Dart-Code/Dart-Code/blob/master/syntaxes/dart.json
+```html
+<!-- index.html -->
+<link rel="stylesheet" href="./_assets/css/prism-xonokai.css">
+<link rel="stylesheet" href="./_assets/css/styles.css">
+```
 
-## VS Code Language Extension
-
-Another reason why I love VS Code is that they provide just enough documentation to get you started and let you go off on your own.
-
-Language extensions are no exception, I just used this documentation page to get started https://code.visualstudio.com/api/language-extensions/overview
-
-Everything else was achieved by looking around at existing extensions and screwing around with it.
-
-## Putting It All Together
-
-Using the basic knowledge I wrote above, I sat down one week and just kept hacking away.
-
-For my particular extension, I sat down reading IBM's language documentation and making regex one piece at a time.
-By the end of it I made my language extension support DDS, RPG, RPGLE (fixed and free formats), Control Language (CL), and Machine Interface (MI).
-You can check out my extension at https://github.com/barrettotte/vscode-ibmi-languages
-
-## Summary
-
-Honestly, its not that hard of work its just insanely tedious and time consuming. But if you don't know how regular expressions really work, here is the perfect excuse to learn.
-
-This is also the perfect weekend project to put on some music, drink some beer, and be a tiny bit productive while not working too hard.
+Currently, this is what it looks like when its all said and done
 
 ![example.PNG](example.PNG)
+
+## Additional Setup
+
+I haven't gone super deep into docsify, but I've found a few cool things.
+There's a pretty sweet plugin for pagination within chapters that can be added using
+
+```html
+<!-- index.html -->
+<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js">
+```
+
+A lot of customizing can be done within the **window.$docsify** element, here is my configuration that includes a homepage, repo link, and sidebar.
+
+```html
+<!-- index.html -->
+<script>
+    window.$docsify = {
+      name: '',
+      repo: 'https://github.com/barrettotte/IBMi-Book',
+      loadSidebar: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      homepage: 'README.md',
+      search: 'auto',
+      auto2top: true
+    }
+  </script>
+```
+
+This is really just scratching the surface, but you can find much more at https://docsify.js.org/#/?id=docsify
+
+## Deploying to GitHub Pages
+
+If you put all of your book content within a **docs** directory of your repository, you can use your repository as a GitHub.io page with ease. To make sure that your repository isn't mistaken for a Jekyll site, create an empty file named **.nojekyll**.
+
+To enable the GitHub.io page go to your GitHub repository and select **master branch /docs folder** in **Settings** > **GitHub Pages** > **Source**
+
+![deploy.PNG](deploy.PNG)
+
+## My "Book"
+
+I hesitate to call what I'm making a book, but you can find my project **Learning the IBMi as a Lowly Web Developer** at https://barrettotte.github.io/IBMi-Book/#/
+
+It will be a beginner's guide to programming on the IBMi with RPGLE, CL, and more. I hope to stay motivated/focused and keep chipping away at it.
+
+Thanks for reading this post.
