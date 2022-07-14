@@ -18,10 +18,10 @@ theme = "cactus"
   url = "/posts"
   weight = 3
 
-[[menu.main]]
-  name = "Tags"
-  url = "/tags"
-  weight = 4
+# [[menu.main]]
+#   name = "Tags"
+#   url = "/tags"
+#   weight = 4
 
 [[menu.main]]
   name = "About"
@@ -67,7 +67,6 @@ theme = "cactus"
   colortheme = "dark"
 
   dateFormat = "2006-01-02"
-  showAllPostsArchive = true
   showReadTime = true
   tocInline = false
   # logo = 

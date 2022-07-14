@@ -1,8 +1,7 @@
 ---
 title: About
+type: about
 ---
-
-# About
 
 **tldr;** I'm a lifelong student aspiring to be mediocre at everything.
 

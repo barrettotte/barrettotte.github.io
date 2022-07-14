@@ -1,11 +1,12 @@
 {{ define "main"}}
   <div id="archive">
     <h1>Posts</h1>
+    <p>
+      Generally, whatever I make gets turned into a standalone project. 
+      But, sometimes there are small things that aren't quite a full project that I'd like to share.
+    </p>
     <ul class="post-list">
-      {{ $pages := .Paginator.Pages }}
-      {{ if .Site.Params.showAllPostsArchive }}
-        {{ $pages = .Pages }}
-      {{ end }}
+      {{ $pages := .Pages }}
 
       {{ range (sort $pages "Date" "desc") }}
         {{ $pageYear := (.Date.Format "2006") }}
@@ -15,13 +16,10 @@
         {{ end }}
 
         <li class="post-item">
-          <time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</time>
+          <time datetime="{{ time .Date }}">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</time>
           <span><a class="" href="{{ .Permalink }}">{{ if .Title }} {{ .Title }} {{ else }} Untitled {{ end }}</a></span>
         </li>
       {{ end }}
     </ul>
-    {{ if eq .Site.Params.showAllPostsArchive false }}
-      {{ partial "pagination" . }}
-    {{ end }}
   </div>
 {{ end }}

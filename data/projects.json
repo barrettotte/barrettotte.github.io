@@ -68,7 +68,7 @@
       "url": "https://github.com/barrettotte/MEAN-ToDoList",
       "desc": "Fullstack to do list app",
       "date": "2018-05",
-      "tags": ["javascript", "typescript", "nosql", "webdev", "node-js"]
+      "tags": ["javascript", "typescript", "angular", "nosql", "webdev", "node-js"]
     },
     {
       "name": "Codebase-Scanner",
@@ -116,7 +116,8 @@
       "name": "TempleOS-and-HolyC",
       "url": "https://github.com/barrettotte/TempleOS-and-HolyC",
       "desc": "An adventure in TempleOS and HolyC",
-      "date": "2018-10"
+      "date": "2018-10",
+      "tags": ["templeos"]
     },
     {
       "name": "Resume",
@@ -144,7 +145,7 @@
       "url": "https://github.com/barrettotte/Anilist-Ruby",
       "desc": "API wrapper gem for Anilist's GraphQL API",
       "date": "2019-03",
-      "tags": ["ruby", "anilist", "package"]
+      "tags": ["ruby", "anilist", "package", "graphql"]
     },
     {
       "name": "LoL-R-Data-Visual",
@@ -186,7 +187,7 @@
       "url": "https://github.com/barrettotte/Linear-Algebra-C",
       "desc": "Linear algebra library for matrix operations",
       "date": "2019-06",
-      "tags": ["c", "math", "algorithms"]
+      "tags": ["c", "mathematics", "algorithms"]
     },
     {
       "name": "XSLT-Perlin2D",
@@ -221,7 +222,7 @@
       "url": "https://github.com/barrettotte/Anilist-RandExt",
       "desc": "A Chrome extension for selecting random Anilist entries",
       "date": "2019-10",
-      "tags": ["extension", "anilist", "javascript"]
+      "tags": ["extension", "anilist", "javascript", "graphql"]
     },
     {
       "name": "Groovy-BF",
@@ -242,7 +243,7 @@
       "url": "https://github.com/barrettotte/Anilist-IBMi",
       "desc": "IBM i program to display Anilist user stats",
       "date": "2019-12",
-      "tags": ["ibmi", "anilist", "rpgle"]
+      "tags": ["ibmi", "anilist", "graphql", "rpgle"]
     },
     {
       "name": "Sock-server",
@@ -305,7 +306,7 @@
       "url": "https://github.com/barrettotte/CPP-Lisp",
       "desc": "Lisp interpeter in C++",
       "date": "2020-04",
-      "tags": ["c++", "programming-language", "parsing"]
+      "tags": ["c++", "lisp", "programming-language", "parsing"]
     },
     {
       "name": "vscode-ibmi-languages",
@@ -326,7 +327,7 @@
       "url": "https://github.com/barrettotte/Anilist-ESP8266",
       "desc": "Display Anilist user data on an OLED with ESP8266",
       "date": "2020-04",
-      "tags": ["arduino", "hardware", "anilist", "c++"]
+      "tags": ["arduino", "hardware", "anilist", "graphql", "c++"]
     },
     {
       "name": "TRS80-Twilio",
@@ -425,7 +426,7 @@
       "url": "https://github.com/barrettotte/punchit",
       "desc": "IBM 5081 punch card generator",
       "date": "2020-11",
-      "tags": ["go", "vintage", "parsing"]
+      "tags": ["go", "vintage", "parsing", "package"]
     },
     {
       "name": "md-graph",
@@ -496,7 +497,7 @@
       "url": "https://github.com/barrettotte/stencil-anilist",
       "desc": "Web component to display Anilist user",
       "date": "2021-10",
-      "tags": ["anilist", "javascript", "webdev"]
+      "tags": ["anilist", "graphql", "react", "javascript", "webdev"]
     },
     {
       "name": "eridu",

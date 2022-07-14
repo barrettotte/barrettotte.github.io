@@ -8,9 +8,11 @@
     <ul class="post-list">
       {{ range sort (.Site.Data.projects.list) "date" "desc" }}
         {{ if and .featured (not .hidden) }}
-          <li class="post-item">
-            <a href="{{ .url }}">{{ .name }}</a>: {{ .desc | markdownify }}
-          </li>
+        <li class="post-item">
+          {{ $projectDate := printf "%s%s" .date "-01" }}
+          <time datetime="{{ time $projectDate }}" itemprop="datePublished">{{ .date }}</time>
+          <span><a href="{{ .url }}">{{ .name }}</a>: {{ .desc | markdownify }}</span>
+        </li>
         {{ end }}
       {{ end }}
     </ul>
@@ -29,7 +31,9 @@
 
       {{ range (first (.Scratch.Get "count") $mainPosts) }}
         <li class="post-item">
-          <time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format $dataFormat }}</time>
+          <time datetime="{{ time .Date }}">
+            {{ .Date.Format $dataFormat }}
+          </time>
           <span><a href="{{ .Permalink }}">{{ if .Title }} {{- .Title -}} {{ else }} {{- print "Untitled" -}}{{ end }}</a></span>
         </li>
       {{ end }}

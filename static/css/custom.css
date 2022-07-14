@@ -76,6 +76,10 @@ td {
     margin-left: 2rem;
 }
 
+.icon:hover, .post-list > h2 {
+    color: var(--color-accent-1);
+}
+
 #archive .post-list .post-item, #archive .project-list .project-item {
     display: list-item;
     list-style: square;
@@ -87,8 +91,14 @@ td {
     margin-right: 15px;
 }
 
-.icon:hover {
-    color: var(--color-accent-1);
+#nav {
+    border-top: 1px solid var(--color-border);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#header #nav ul {
+    margin-top: 10px;
 }
 
 #header {
@@ -118,16 +128,6 @@ td {
 
 #subtitle > li {
     display: inline;
-}
-
-#nav {
-    border-top: 1px solid var(--color-border);
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-#header #nav ul {
-    margin-top: 10px;
 }
 
 #footer {

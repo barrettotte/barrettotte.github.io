@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <article class="post">
+    <div class="content">
+      <h1>{{- .Title -}}</h1>
+      {{- .Content -}}
+
+      <h2>Computers</h2>
+      {{ range (sort .Site.Data.hoc.computers "name") }}
+        <figure>
+          <img src="{{- .img -}}" alt="{{- .name -}}"/>
+          <figcaption>{{- .name -}}</figcaption>
+        </figure>
+      {{ end }}
+
+      <h2>Misc</h2>
+      {{ range (sort .Site.Data.hoc.misc "name") }}
+        <figure>
+          <img src="{{- .img -}}" alt="{{- .name -}}"/>
+          <figcaption>{{- .name -}}</figcaption>
+        </figure>
+      {{ end }}
+    </div>
+  </article>
+{{ end }}
