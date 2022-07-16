@@ -3,20 +3,23 @@
   <div id="title">
     <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
     <ul id="subtitle">
-      <li><a href="{{ .Site.Params.links.github }}">Software Engineer</a></li>
-      <li>• Tinkerer</li>
-      <li>• <a href="{{ .Site.Params.links.anilist }}">Loser</a></li>
+      <li><a href="{{ .Site.Params.links.github }}">Software Engineer</a> •</li>
+      <li>Tinkerer •</li>
+      <li><a href="{{ .Site.Params.links.anilist }}">Loser</a></li>
       <!-- <li style="color:red; padding-left: 15px;">[{{ .Title }}]</li> -->
     </ul>
   </div>
 
   <div id="nav">
-    <ul>
+    <!-- <ul> -->
       {{ range .Site.Menus.main }}
-        <li>
+        <!-- <li>
           <a href="{{ .URL }}">{{ .Name }}</a>
-        </li>
+        </li> -->
+        <div class="nav-item">
+          <a href="{{- .URL -}}">{{- .Name -}}</a>
+        </div>
       {{ end }}
-    </ul>
+    <!-- </ul> -->
   </div>
 </header>

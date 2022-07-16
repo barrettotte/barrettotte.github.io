@@ -5,8 +5,27 @@
     --color-text: #c9cacc;
 }
 
+html, body {
+    font-size: 0.9rem;
+}
+
 h1, .h1 {
     margin-top: 0.25rem;
+}
+
+li {
+    display: list-item;
+    list-style: square;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px 20px;
+}
+
+td {
+    vertical-align: top;
 }
 
 article .content h2, .h2 {
@@ -39,20 +58,6 @@ article.post header div.meta {
     text-transform: none;
 }
 
-li {
-    display: list-item;
-    list-style: square;
-}
-
-table {
-    border-collapse: separate;
-    border-spacing: 15px;
-}
-
-td {
-    vertical-align: top;
-}
-
 .content a {
     text-decoration: underline;
     text-underline-offset: 0.2rem;
@@ -69,11 +74,13 @@ td {
     margin-top: 1.25rem;
 }
 
-
 .post-list > .post-item {
     display: list-item;
     list-style: square;
     margin-left: 2rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .icon:hover, .post-list > h2 {
@@ -92,14 +99,21 @@ td {
 }
 
 #nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     border-top: 1px solid var(--color-border);
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px 0px 0px;
 }
 
-#header #nav ul {
-    margin-top: 10px;
+#nav a {
+    padding-right: 20px;
 }
+
+/* #header #nav ul {
+    margin-top: 10px;
+} */
 
 #header {
     border-bottom: 1px solid var(--color-border);
@@ -110,7 +124,7 @@ td {
     padding-bottom: 5px;
 }
 
-#header h1 a:hover, #subtitle li a:hover {
+#nav a:hover, #header h1:hover, #subtitle li a:hover {
     color: var(--color-accent-1);
     text-decoration: underline;
     text-underline-offset: 0.2em;
@@ -128,6 +142,28 @@ td {
 
 #subtitle > li {
     display: inline;
+}
+
+.about-top-row {
+    display: flex;
+    padding-left: 1.50rem;
+}
+
+.about-top-row:last-of-type {
+    margin-bottom: 1.0rem;
+}
+
+.about-top-col {
+    flex: 50%;
+}
+
+.about-top-col h3 {
+    margin: 1.0rem 0 0.25rem 0;
+}
+
+.about-top-col ul {
+    margin: 0;
+    padding: 0 0 0 1.0rem;
 }
 
 #footer {
@@ -149,7 +185,60 @@ td {
 }
 
 
-/* 404 page */
+
+/******************* hoc ********************/
+#hoc .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding-left: 0;
+}
+
+#hoc .gallery > li {
+    list-style: none;
+    height: 300px;
+    cursor: pointer;
+    position: relative;
+}
+
+#hoc .gallery li a img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+}
+
+.gallery li .overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.85);
+    color: var(--color-accent-1);
+    border-radius: 5px;
+    transform: scale(0);
+    transition: all 0.075s 0.1s linear;
+    text-align: center;
+}
+
+.gallery li:hover {
+    border-radius: 5px;
+    border: 1px solid var(--color-accent-1);
+}
+
+.gallery li:hover .overlay {
+    transform: scale(1);
+    border-bottom: 1px solid var(--color-accent-1);
+}
+
+/******************* 404 page ********************/
 
 #not-found {
     text-align: center;
@@ -161,8 +250,6 @@ td {
     padding-bottom: 0.25rem;
     color: rgb(164, 0, 0);
 }
-
-/* Stolen from https://css-tricks.com/books/volume-i/animate-text-like-typewriter/ */
 
 .typewriter {
 	display: inline-block;
@@ -196,5 +283,103 @@ td {
     }
     50% { 
         border-color: var(--color-accent-1); 
+    }
+}
+
+/******************* Mobile ********************/
+@media screen and (max-width: 480px) {
+    html, body {
+        font-size: 0.85rem;
+        overflow-x: hidden;
+    }
+
+    #posts > ul > li, #projects > ul > li, #archive > ul > li {
+        /* font-size: 0.65rem; */
+        margin-left: 0;
+    }
+
+    #posts > ul > li > time, #projects > ul > li > time, #archive > ul > li time {
+        font-size: 0.75rem;
+        margin-right: 5px;
+    }
+
+    #archive .post-list .post-item, #archive .project-list .project-item {
+        margin-left: 0;
+    }
+
+    .post > .content > ul {
+        padding-left: 0.75rem;
+    }
+
+    .post-list > h2 {
+        padding-bottom: 10px;
+    }
+
+    .content {
+        margin-right: 0.50rem;
+        width: 100%;
+    }
+
+    li {
+        padding-bottom: 0.50rem;
+        word-wrap: break-word;
+    }
+
+    #title > h1 > a {
+        display: inline-block;
+        width: 100%;
+    }
+
+    #header #title {
+        display: block;
+        margin-right: 0;
+    }
+
+    #header #title h1 {
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+
+    #subtitle {
+        width: 100%;
+        margin: 0;
+        padding: 0px 0px 10px 0px;
+        text-align: center;
+    }
+
+    #subtitle > li {
+        display: inline;
+    }
+
+    #header #nav ul {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    #header #nav ul li, #header #nav li:not(:first-child) {
+        display: inline-block;
+        list-style: none;
+        border-right: none;
+        padding: 25px 0px 10px 0px;
+        font-size: 0.85rem;
+        text-align: center;
+        margin-right: 5px;
+    }
+
+    #footer {
+        height: 25px;
+    }
+
+    .about-top-row {
+        padding-left: 0px;
+    }
+
+    .about-top-col {
+        flex: 100%;
+    }
+
+    .about-top-row {
+        display: inline-block;
     }
 }

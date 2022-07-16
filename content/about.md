@@ -3,32 +3,61 @@ title: About
 type: about
 ---
 
+# About
+
+
+## General
+
 **tldr;** I'm a lifelong student aspiring to be mediocre at everything.
 
-## Interests
+<br>
 
-- History of Computing
-- CPU Design
-- Compilers
-- Analog and Digital Electronics
-- Quantum Computing
+<div class="about-top-row">
+  <div class="about-top-col">
+    <h3>Interests</h3>
+    <ul>
+      <li>History of Computing</li>
+      <li>CPU Architecture and Design</li>
+      <li>Compilers</li>
+      <li>Analog and Digital Electronics</li>
+      <li>Quantum Computing</li>
+    </ul>
+  </div>
+  <div class="about-top-col">
+    <h3>Hobbies</h3>
+    <ul>
+      <li>Tinkering</li>
+      <li>CAD and 3D Printing</li>
+      <li>Amateur Radio</li>
+      <li>Self-Studying</li>
+      <li>Watching Anime</li>
+      <li>Weightlifting</li>
+    </ul>
+  </div>
+</div>
 
-## Hobbies
-
-- Tinkering
-- CAD and 3D Printing
-- Amateur Radio
-- Self-Studying
-- Watching Anime
-- Weightlifting
-
-## Favorite Languages
-
-- C
-- Assembly
-- Python
-- Go
-- TypeScript
+<div class="about-top-row">
+  <div class="about-top-col">
+    <h3>Favorite Languages</h3>
+    <ul>
+      <li>C</li>
+      <li>Assembly</li>
+      <li>Python</li>
+      <li>Go</li>
+      <li>TypeScript</li>
+    </ul>
+  </div>
+  <div class="about-top-col">
+    <h3>Socials</h3>
+    <ul>
+      <li><a href="https://anilist.co/user/barrettotte/">Anilist</a></li>
+      <li><a href="https://news.ycombinator.com/user?id=barrettotte">Hacker News</a></li>
+      <li><a href="barrettotte@gmail.com">Email</a></li>
+      <li><a href="https://github.com/barrettotte">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/barrettotte/">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
 
 ## Long Term Goals
 
@@ -41,7 +70,7 @@ type: about
 - Create and publish a small game to Steam
 - Design and build a homebrew CPU with a basic operating system and more
 - M.S. in Computer Science
-- Complete "Magnum opus" project - *From Stones to Qubits*
+- Complete *From Stones to Qubits*
 
 ## Self-Study
 
@@ -55,16 +84,13 @@ what I've been learning and working on from 2010-present.
 | 2016 | **Computer Science A.S.**                      | Harford Community College (HCC) |
 | 2018 | **Computer Science B.S. Cyber Security minor** | University of Maryland Global Campus (UMGC) |
 
-<br>
-
 ## Career
 
-In summary, I'm a software engineer with the bulk of my official experience in **Java**, **Angular**, and **Postgres**. 
+In summary, I'm a software engineer with the bulk of my official experience in **Java**, **Angular**, and **Postgres**.
+My resume with more detail is available at [/resume]({{< param links.resume >}}).
 
 | Start   | End     | Position                       | Company |
 | ------- | ------- | ------------------------------ | ------- |
 | 06/2018 | 01/2020 | **Software Web Developer**     | Goodville Mutual Casualty Company |
 | 01/2020 | 01/2022 | **Software Developer Analyst** | Goodville Mutual Casualty Company |
 | 01/2022 |         | **Software Engineer**          | Enlighten, a Huntington Ingalls Industries Company |
-
-My resume with more detail is available [here]({{< param links.resume >}}).

@@ -283,7 +283,7 @@
     {
       "name": "Simple-Lang",
       "url": "https://github.com/barrettotte/Simple-Lang",
-      "desc": "A basic programming language to learn about Yacc and Lex",
+      "desc": "Programming language made with Yacc and Lex (unfinished)",
       "date": "2020-02",
       "tags": ["programming-language"]
     },
@@ -297,14 +297,14 @@
     {
       "name": "Drools-SpringBoot",
       "url": "https://github.com/barrettotte/Drools-SpringBoot",
-      "desc": "Simple vehicle premium API to experiment with Drools",
+      "desc": "Simple API to experiment with Drools",
       "date": "2020-04",
       "tags": ["java", "springboot"]
     },
     {
       "name": "CPP-Lisp",
       "url": "https://github.com/barrettotte/CPP-Lisp",
-      "desc": "Lisp interpeter in C++",
+      "desc": "Lisp interpeter in C++ (unfinished)",
       "date": "2020-04",
       "tags": ["c++", "lisp", "programming-language", "parsing"]
     },
@@ -572,6 +572,13 @@
       "desc": "Dumb GCODE generator",
       "date": "2022-06",
       "tags": ["python", "cad", "gcode"]
+    },
+    {
+      "name": "barrettotte.github.io",
+      "url": "https://github.com/barrettotte/barrettotte.github.io",
+      "desc": "Personal site with Hugo",
+      "date": "2022-07",
+      "tags": ["markdown", "html", "hugo"]
     }
   ]
 }

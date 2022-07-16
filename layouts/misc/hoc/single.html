@@ -1,24 +1,32 @@
 {{ define "main" }}
-  <article class="post">
+  <article id="hoc">
     <div class="content">
       <h1>{{- .Title -}}</h1>
       {{- .Content -}}
 
       <h2>Computers</h2>
-      {{ range (sort .Site.Data.hoc.computers "name") }}
-        <figure>
-          <img src="{{- .img -}}" alt="{{- .name -}}"/>
-          <figcaption>{{- .name -}}</figcaption>
-        </figure>
-      {{ end }}
+      <ul class="gallery">
+        {{ range (sort .Site.Data.hoc.computers "name") }}
+          <li>
+            <a href="{{- .img -}}">
+              <img src="{{- .img -}}" alt="{{- .name -}}"/>
+            </a>
+            <div class="overlay"><span>{{- .name -}}</span></div>
+          </li>
+        {{ end }}
+      </ul>
 
       <h2>Misc</h2>
-      {{ range (sort .Site.Data.hoc.misc "name") }}
-        <figure>
-          <img src="{{- .img -}}" alt="{{- .name -}}"/>
-          <figcaption>{{- .name -}}</figcaption>
-        </figure>
-      {{ end }}
+      <ul class="gallery">
+        {{ range (sort .Site.Data.hoc.misc "name") }}
+          <li>
+            <a href="{{- .img -}}">
+              <img src="{{- .img -}}" alt="{{- .name -}}"/>
+            </a>
+            <div class="overlay"><span>{{- .name -}}</span></div>
+          </li>
+        {{ end }}
+      </ul>
     </div>
   </article>
 {{ end }}

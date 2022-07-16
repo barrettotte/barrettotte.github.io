@@ -1,6 +1,4 @@
 {{ define "main" }}
-  <p>I’m a lifelong student aspiring to be mediocre at everything. <a href="/about">Read more</a></p>
-
   <section id="posts">
     <span class="h1">
       <a href="/projects">Featured Projects</a>
@@ -22,10 +20,9 @@
     <span class="h1">
       <a href="/posts">Recent Posts</a>
     </span>
-  
     {{ $dataFormat := .Site.Params.dateFormat | default "2006-01-02" }}
     {{ $mainPosts := (sort ( where site.RegularPages "Type" "in" site.Params.mainSections ) "Date" "desc") }}
-    
+
     <ul class="post-list">
       {{ .Scratch.Set "count" .Site.Params.postsOnHomePage }}
 
