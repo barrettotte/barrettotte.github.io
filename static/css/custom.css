@@ -120,7 +120,12 @@ article.post header div.meta {
 }
 
 #header h1 {
-    display: inline-block;
+    display: inline;
+}
+
+#title {
+    display: block;
+    margin-bottom: 5px;
     padding-bottom: 5px;
 }
 
@@ -131,17 +136,21 @@ article.post header div.meta {
 }
 
 #subtitle {
-    padding-top: 5px;
-    float: right;
+    display: inline;
+    /* float: right; */
     color: var(--color-border);
-    padding-left: 25px;
-    /* margin-bottom: 5px; */
+    padding: 15px 0px 0px 0px;
     font-size: 0.75em;
-    list-style: none;
+    float: right;
 }
 
-#subtitle > li {
+#subtitle > .subtitle-item {
     display: inline;
+}
+
+#subtitle > .subtitle-item:not(:first-child)::before {
+    content: "•";
+    padding-right: 5px;
 }
 
 .about-top-row {
