@@ -3,22 +3,38 @@
   <div id="title">
     <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
     <div id="subtitle">
-      <!-- <li><a href="{{ .Site.Params.links.github }}">Software Engineer</a></li>
-      <li>Tinkerer</li>
-      <li><a href="{{ .Site.Params.links.anilist }}">Loser</a></li> -->
-      <!-- <li style="color:red; padding-left: 15px;">[{{ .Title }}]</li> -->
-
+      <!-- <div class="subtitle-item" style="color:red">[{{ .Title }}]</div> -->
+      <!-- <div class="subtitle-item" style="color:lime">[{{ .Section }}]</div> -->
       <div class="subtitle-item"><a href="{{ .Site.Params.links.github }}">Software Engineer</a></div>
       <div class="subtitle-item">Tinkerer</div>
       <div class="subtitle-item"><a href="{{ .Site.Params.links.anilist }}">Loser</a></div>
-      </div>
+    </div>
   </div>
 
   <div id="nav">
-      {{ range .Site.Menus.main }}
-        <div class="nav-item">
-          <a href="{{- .URL -}}">{{- .Name -}}</a>
-        </div>
+    {{ $section := .Section }}
+
+    {{ if not $section }}
+      {{ if .IsHome }}
+        {{ $section = "" }}
+      {{ else }}
+        {{ $section = .Params.section }}
       {{ end }}
+    {{ end }}
+
+    {{ $section = $section | printf "/%s" }}
+    
+    {{ range .Site.Menus.main }}
+      {{ $isActive := "" }}
+
+      <div class="nav-item">
+        {{ if eq $section .URL }}
+          {{ $isActive = "active" }}
+        {{ else }}
+          {{ $isActive = "" }}
+        {{ end }}
+        <a class="{{$isActive}}" href="{{- .URL -}}">{{- .Name -}}</a>
+      </div>
+    {{ end }}
   </div>
 </header>

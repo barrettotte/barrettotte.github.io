@@ -1,10 +1,9 @@
 ---
 title: About
-type: about
+section: about
 ---
 
 # About
-
 
 ## General
 

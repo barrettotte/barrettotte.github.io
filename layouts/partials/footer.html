@@ -1,6 +1,7 @@
 <footer id="footer">
   <div class="footer-left">
-    &copy; {{ now.Format "2006" }} {{ print .Site.Params.author | markdownify }}
+    &copy; {{ now.Format "2006" }} 
+    <a href="/">{{ print .Site.Params.author | markdownify }}</a>
   </div>
   <div class="footer-right">
     <nav>
@@ -25,11 +26,6 @@
             <i class="fab fa-lg fa-hacker-news-square"></i>
           </a>
         </li>
-        <!-- <li>
-          <a class="icon" target="_blank" rel="noopener" href="/index.xml">
-            <i class="fas fa-lg fa-rss"></i>
-          </a>
-        </li> -->
       </ul>
     </nav>
   </div>
