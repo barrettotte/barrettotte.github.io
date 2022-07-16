@@ -1,0 +1,407 @@
+:root {
+    --color-accent-1: #2bbc8a;
+    --color-background: #1d1f21;
+    --color-border: #666;
+    --color-text: #c9cacc;
+}
+
+html, body {
+    font-size: 0.9rem;
+}
+
+h1, .h1 {
+    margin-top: 0.25rem;
+}
+
+li {
+    display: list-item;
+    list-style: square;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px 20px;
+}
+
+td {
+    vertical-align: top;
+}
+
+article .content h2, .h2 {
+    margin-top: 1.5rem;
+    color: var(--color-accent-1);
+}
+
+article .content h2::before {
+    content: "";
+}
+
+article .content h3, .h3 {
+    color: var(--color-accent-1);
+    text-decoration: none;
+}
+
+article.post header div.meta {
+    margin-top: 1.0rem;
+}
+
+.home-img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2.0rem;
+}
+
+.article-tag {
+    margin-left: 0.50rem;
+}
+
+.article-tag::before {
+    content: none;
+}
+
+.author > span {
+    text-transform: none;
+}
+
+.content a {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    background-image: none;
+}
+
+.content a:hover {
+    color: var(--color-accent-1);
+    text-decoration: underline;
+    background-image: none;
+}
+
+#projects {
+    margin-top: 1.25rem;
+}
+
+.post-list > .post-item {
+    display: list-item;
+    list-style: square;
+    margin-left: 2rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.icon:hover, .post-list > h2 {
+    color: var(--color-accent-1);
+}
+
+#archive .post-list .post-item, #archive .project-list .project-item {
+    display: list-item;
+    list-style: square;
+    margin-left: 2rem;
+}
+
+.post-item > time {
+    color: var(--color-border);
+    margin-right: 15px;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-top: 1px solid var(--color-border);
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px 0px 0px;
+}
+
+#nav > .nav-item .active {
+    text-decoration: underline;
+}
+
+#nav a {
+    padding-right: 20px;
+}
+
+#header {
+    border-bottom: 1px solid var(--color-border);
+}
+
+#header h1 {
+    display: inline;
+}
+
+#title {
+    display: block;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+#nav a:hover, #header h1:hover, #subtitle > .subtitle-item a:hover {
+    color: var(--color-accent-1);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+#nav a:hover {
+    color: var(--color-text);
+}
+
+#subtitle {
+    display: inline;
+    color: var(--color-border);
+    margin: 15px 0px 0px 0px;
+    font-size: 0.75em;
+    float: right;
+}
+
+#subtitle > .subtitle-item {
+    display: inline;
+}
+
+#subtitle > .subtitle-item:not(:first-child)::before {
+    content: "•";
+    padding-right: 5px;
+}
+
+.about-top-row {
+    display: flex;
+    padding-left: 1.50rem;
+}
+
+.about-top-row:last-of-type {
+    margin-bottom: 1.0rem;
+}
+
+.about-top-col {
+    flex: 50%;
+}
+
+.about-top-col h3 {
+    margin: 1.0rem 0 0.25rem 0;
+}
+
+.about-top-col ul {
+    margin: 0;
+    padding: 0 0 0 1.0rem;
+}
+
+#footer {
+    border-top: 1px solid var(--color-border);
+    margin-bottom: 10px;
+}
+
+#footer li {
+    border: none;
+    margin-right: 5px;
+}
+
+#footer a {
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: var(--color-accent-1);
+}
+
+.footer-left, .footer-right {
+    margin-top: 10px;
+}
+
+/******************* hoc ********************/
+#hoc .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding-left: 0;
+}
+
+#hoc .gallery > li {
+    list-style: none;
+    height: 300px;
+    cursor: pointer;
+    position: relative;
+}
+
+#hoc .gallery li a img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+}
+
+.gallery li .overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.85);
+    color: var(--color-accent-1);
+    border-radius: 5px;
+    transform: scale(0);
+    transition: all 0.1s ease-in;
+    text-align: center;
+}
+
+.gallery li:hover {
+    border-radius: 5px;
+    border: 1px solid var(--color-accent-1);
+}
+
+.gallery li:hover .overlay {
+    transform: scale(1);
+    border-bottom: 1px solid var(--color-accent-1);
+}
+
+/******************* 404 page ********************/
+
+#not-found {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+#not-found h1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    color: rgb(164, 0, 0);
+}
+
+.typewriter {
+	display: inline-block;
+    padding-top: 0.25rem;
+}
+
+.typewriter-text {
+    display: inline-block;
+    overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 1.5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    color: var(--color-accent-1);
+    font-size: 20px;
+    border-right: 4px solid var(--color-accent-1);
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: var(--color-accent-1); 
+    }
+}
+
+/******************* Mobile ********************/
+@media screen and (max-width: 480px) {
+    html, body {
+        font-size: 0.85rem;
+        overflow-x: hidden;
+    }
+
+    #posts > ul > li, #projects > ul > li, #archive > ul > li {
+        margin-left: 0;
+    }
+
+    #posts > ul > li > time, #projects > ul > li > time, #archive > ul > li time {
+        font-size: 0.75rem;
+        margin-right: 5px;
+    }
+
+    #archive .post-list .post-item, #archive .project-list .project-item {
+        margin-left: 0;
+    }
+
+    .post > .content > ul {
+        padding-left: 0.75rem;
+    }
+
+    .post-list > h2 {
+        padding-bottom: 10px;
+    }
+
+    .content {
+        margin-right: 0.50rem;
+        width: 100%;
+    }
+
+    li {
+        padding-bottom: 0.50rem;
+        word-wrap: break-word;
+    }
+
+    #title > h1 > a {
+        display: inline-block;
+        width: 100%;
+    }
+
+    #header #title {
+        display: block;
+        margin-right: 0;
+    }
+
+    #header #title h1 {
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+
+    #subtitle {
+        width: 100%;
+        margin: 0;
+        padding: 0px 0px 10px 0px;
+        text-align: center;
+    }
+
+    #subtitle > li {
+        display: inline;
+    }
+
+    #header #nav ul {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    #header #nav ul li, #header #nav li:not(:first-child) {
+        display: inline-block;
+        list-style: none;
+        border-right: none;
+        padding: 25px 0px 10px 0px;
+        font-size: 0.85rem;
+        text-align: center;
+        margin-right: 5px;
+    }
+
+    #footer {
+        height: 25px;
+    }
+
+    .about-top-row {
+        padding-left: 0px;
+    }
+
+    .about-top-col {
+        flex: 100%;
+    }
+
+    .about-top-row {
+        display: inline-block;
+    }
+}

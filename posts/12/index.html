@@ -1,0 +1,195 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title> TRS80-Twilio, Sending Texts Like its 1983! | Barrett Otte</title>
+<link rel=canonical href=https://barrettotte.github.com/posts/12/>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://barrettotte.github.com/css/styles.c05d68261bf086a9d7713c4f8a6215a3601608e267a816a7ee58f139b3d1aae51222aae2081c8e0c6bd35e1334773b7a16283022f31f92afd93bb37e5e822e66.css integrity="sha512-wF1oJhvwhqnXcTxPimIVo2AWCOJnqBan7ljxObPRquUSIqriCByODGvTXhM0dzt6FigwIvMfkq/ZO7N+XoIuZg==">
+<link rel=stylesheet href=/lib/font-awesome/css/all.min.css>
+<link rel=stylesheet href=https://barrettotte.github.com/css/custom.css>
+<link rel=preload href=/lib/font-awesome/webfonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/lib/font-awesome/webfonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/lib/font-awesome/webfonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=icon href=https://barrettotte.github.com/img/favicon.svg>
+</head>
+<body class="max-width mx-auto px3 py5 ltr">
+<div class="content index py4"><header id=header>
+<div id=title>
+<h1><a href=https://barrettotte.github.com>Barrett Otte</a></h1>
+<div id=subtitle>
+<div class=subtitle-item><a href=https://github.com/barrettotte>Software Engineer</a></div>
+<div class=subtitle-item>Tinkerer</div>
+<div class=subtitle-item><a href=https://anilist.co/user/barrettotte/>Loser</a></div>
+</div>
+</div>
+<div id=nav>
+<div class=nav-item>
+<a href=/>Home</a>
+</div>
+<div class=nav-item>
+<a href=/projects>Projects</a>
+</div>
+<div class=nav-item>
+<a class=active href=/posts>Posts</a>
+</div>
+<div class=nav-item>
+<a href=/about>About</a>
+</div>
+<div class=nav-item>
+<a href=https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf>Resume</a>
+</div>
+<div class=nav-item>
+<a href=/misc>Misc</a>
+</div>
+</div>
+</header>
+<article class=post>
+<header>
+<h1 class=posttitle>TRS80-Twilio, Sending Texts Like its 1983!</h1>
+<div class=meta>
+<span class=author>
+<span>Barrett Otte</span>
+</span>
+<div class=postdate>
+<time datetime="2020-04-28 00:00:00 +0000 UTC">2020-04-28</time>
+</div>
+<div class=article-read-time>
+<i class="far fa-clock"></i>
+4 minute read
+</div>
+</div>
+</header>
+<div class=content>
+<p><em>Migrated post from <a href=https://dev.to/barrettotte/trs80-twilio-sending-texts-like-its-1983-submission-450l>DEV.to</a></em></p>
+<p>(This was a submission to a Twilio hackathon)</p>
+<h2 id=what-i-built>What I built</h2>
+<h3 id=category-submission-exciting-x-factors>Category Submission: Exciting X-Factors</h3>
+<p>Send a text message from a TRS-80 Model 100 using the Twilio SMS API and an ESP8266.</p>
+<p><strong>The basic goal was to use a vintage computer as a frontend and an ESP8266 as a backend to send a text message</strong>.</p>
+<p><img src=header.jpg alt=header.jpg></p>
+<p>As I state in my repository, <strong>In no way is this practical or should be recreated. This was solely for fun; don&rsquo;t take this too seriously.</strong></p>
+<p>I wanted to put the &ldquo;HACK&rdquo; in HACKATHON.</p>
+<h2 id=demo-link>Demo Link</h2>
+<p>An awful phone video showing this project in action with test credentials and &ldquo;magic&rdquo; test phone number. I figured it was better than nothing in case you wanted to see it actually running.
+<a href="https://www.youtube.com/watch?v=C2nngeuc3Oc">https://www.youtube.com/watch?v=C2nngeuc3Oc</a></p>
+<h2 id=link-to-code>Link to Code</h2>
+<p>Check out some of the additional documentation I included, as well as some small test programs. <a href=https://github.com/barrettotte/TRS80-Twilio>https://github.com/barrettotte/TRS80-Twilio</a></p>
+<h2 id=how-i-built-it-whats-the-stack-did-i-run-into-issues-or-discover-something-new-along-the-way>How I built it (what&rsquo;s the stack? did I run into issues or discover something new along the way?)</h2>
+<p><img src=trs80.jpg alt=trs80.jpg></p>
+<p><strong>Frontend:</strong> TRS-80 Model 100, BASIC
+<strong>Backend:</strong> ESP8266, Arduino platform, C++</p>
+<p>After I decided I was going to participate in the Twilio hackathon I stumbled across documentation for using an ESP8266 to send an SMS. Naturally, I decided to take it a step further and make a complete coding abomination.
+<strong>The basic goal was to use a vintage computer as a frontend and an ESP8266 as a backend to send a text message</strong>.
+This probably won&rsquo;t get judged (I can&rsquo;t blame them), but this was one of the funnest projects I&rsquo;ve ever done.</p>
+<p>I started out making the &ldquo;frontend&rdquo; on a TRS-80 Model 4P using BASIC and Z80 assembly. In order to write to the Model 4P&rsquo;s serial port, I had to embed Z80 machine language in BASIC. Example of embedding machine language:</p>
+<pre tabindex=0><code>1   REM TEST EMBEDDED MACHINE LANGUAGE PROGRAM IN BASIC
+10  DIM A%(12)
+20  B = VARPTR(A%(0))
+30  FOR I = 0 TO 11
+40  READ C,D
+50  E = D * 256 + C
+60  IF E &gt; 32767 THEN A%(I) = E - 65536 ELSE A%(I) = E
+70  NEXT I
+80  IF B &gt; 32767 THEN DEFUSR0 = B - 65536 ELSE DEFUSR0 = B
+90  X = USR0(0)
+100 GOTO 90
+105 REM ************* MACHINE LANGUAGE PGM *******************
+110 DATA 33,64,60,17,0,60,1,192,3,237,176,33,192,63,62,32,6,64
+120 DATA 119,35,16,252,201,0
+125 REM ******************************************************
+</code></pre><br>
+<p>I woke up one morning and my old computer no longer worked&mldr;Read more in my <a href=https://github.com/barrettotte/TRS80-Twilio/tree/master/test/TRS80-4P>repo</a>.
+I had no time to fix it.</p>
+<p><img src=trs804p.jpg alt=trs804p.jpg></p>
+<p>So, I had to start from scratch 5 days before the due date of this hackathon.
+I recently bought a cheap TRS-80 model 100, so I switched over to learning how it worked.</p>
+<p>To my surprise, it was magnitudes easier to work with than the TRS-80 model 4P.
+With the model 4P, I was forced to embed Z80 machine code into BASIC in order to write to its serial port.
+With the model 100, all I had to do was open the serial port like a file and print to it&mldr;amazing.
+The primary frontend file is <a href=https://github.com/barrettotte/TRS80-Twilio/blob/master/TWILIO.BAS>TWILIO.BAS</a>.
+The frontend&rsquo;s job was to:</p>
+<ul>
+<li>provide a simple interface to input a phone number and message</li>
+<li>build a buffer of 145 bytes from user input</li>
+<li>basic phone number validation</li>
+<li>send buffer to the ESP8266 via RS232 (serial).</li>
+</ul>
+<p>The &ldquo;backend&rdquo; was pretty easy to build. I recently refreshed on Arduino and learned how to use PlatformIO.
+The biggest challenge with the backend was waiting for the incredibly slow serial port send all of the data. There was no good way to figure out when it was done. To solve this challenge, I decided to send a flat 145 bytes from the TRS-80 frontend each time. That way, I always knew that after reading 145 bytes I was done reading from the serial port.</p>
+<p>The primary backend file is <a href=https://github.com/barrettotte/TRS80-Twilio/blob/master/src/main.cpp>src/main.cpp</a>
+The backend&rsquo;s job was to:</p>
+<ul>
+<li>establish connection to WiFi</li>
+<li>output helpful messages to OLED</li>
+<li>read serial input and parse buffer from TRS80</li>
+<li>establish connection to Twilio API</li>
+<li>build and invoke HTTP request to Twilio SMS API</li>
+</ul>
+<p>In summary, this was one of the funnest projects I&rsquo;ve ever worked on.
+Truthfully, I wasn&rsquo;t sure if I was going to be able to pull this project off.
+The reward of hacking away and completing this was huge.</p>
+<p>Not to mention, I got to learn a lot about vintage computing and a bit about embedded development.</p>
+<h2 id=project-layout>Project Layout</h2>
+<p><img src=layout.png alt=layout.png></p>
+<pre tabindex=0><code>### Basic Wiring ###
+
+TRS80 DB25 --&gt; DB25-DB9 Null Modem --&gt; DB9 Male-Male --&gt; TTL-RS232 ...
+
+TTL-RS232   ESP8266      Mini OLED
+              GND &lt;----&gt; GND
+              3V3 &lt;----&gt; VCC
+              D1  &lt;----&gt; SCL
+              D2  &lt;----&gt; SDA
+GND &lt;-------&gt; GND
+VCC &lt;-------&gt; 3V3
+TXD &lt;-------&gt; D6 (RXD)
+RXD &lt;-------&gt; D5 (TXD)
+</code></pre><h2 id=additional-resourcesinfo>Additional Resources/Info</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=0poh_2rBq7E">Introduction to PlatformIO</a></li>
+<li><a href=http://www.classiccmp.org/dunfield/kyocera/index.htm>TRS-80 Model 100 Manuals</a></li>
+<li><a href=http://www.trs-80.com/wordpress/>Ira Goldklang&rsquo;s TRS-80 Revived Site</a></li>
+<li><a href=https://manpages.ubuntu.com/manpages/trusty/man1/minicom.1.html>minicom manpages</a></li>
+</ul>
+</div>
+</article>
+<footer id=footer>
+<div class=footer-left>
+&copy; 2022
+<a href=/>Barrett Otte</a>
+</div>
+<div class=footer-right>
+<nav>
+<ul>
+<li>
+<a class=icon target=_blank rel=noopener href=mailto:barrettotte@gmail.com>
+<i class="fas fa-lg fa-envelope"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href=https://github.com/barrettotte>
+<i class="fab fa-lg fa-github"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href=https://www.linkedin.com/in/barrettotte/>
+<i class="fab fa-lg fa-linkedin"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href="https://news.ycombinator.com/user?id=barrettotte">
+<i class="fab fa-lg fa-hacker-news-square"></i>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</footer>
+</div>
+</body>
+<link rel=stylesheet href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/code-copy.js></script>
+</html>

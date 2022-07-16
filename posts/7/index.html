@@ -1,0 +1,133 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title> Game of Life in TSQL | Barrett Otte</title>
+<link rel=canonical href=https://barrettotte.github.com/posts/7/>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://barrettotte.github.com/css/styles.c05d68261bf086a9d7713c4f8a6215a3601608e267a816a7ee58f139b3d1aae51222aae2081c8e0c6bd35e1334773b7a16283022f31f92afd93bb37e5e822e66.css integrity="sha512-wF1oJhvwhqnXcTxPimIVo2AWCOJnqBan7ljxObPRquUSIqriCByODGvTXhM0dzt6FigwIvMfkq/ZO7N+XoIuZg==">
+<link rel=stylesheet href=/lib/font-awesome/css/all.min.css>
+<link rel=stylesheet href=https://barrettotte.github.com/css/custom.css>
+<link rel=preload href=/lib/font-awesome/webfonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/lib/font-awesome/webfonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/lib/font-awesome/webfonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=icon href=https://barrettotte.github.com/img/favicon.svg>
+</head>
+<body class="max-width mx-auto px3 py5 ltr">
+<div class="content index py4"><header id=header>
+<div id=title>
+<h1><a href=https://barrettotte.github.com>Barrett Otte</a></h1>
+<div id=subtitle>
+<div class=subtitle-item><a href=https://github.com/barrettotte>Software Engineer</a></div>
+<div class=subtitle-item>Tinkerer</div>
+<div class=subtitle-item><a href=https://anilist.co/user/barrettotte/>Loser</a></div>
+</div>
+</div>
+<div id=nav>
+<div class=nav-item>
+<a href=/>Home</a>
+</div>
+<div class=nav-item>
+<a href=/projects>Projects</a>
+</div>
+<div class=nav-item>
+<a class=active href=/posts>Posts</a>
+</div>
+<div class=nav-item>
+<a href=/about>About</a>
+</div>
+<div class=nav-item>
+<a href=https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf>Resume</a>
+</div>
+<div class=nav-item>
+<a href=/misc>Misc</a>
+</div>
+</div>
+</header>
+<article class=post>
+<header>
+<h1 class=posttitle>Game of Life in TSQL</h1>
+<div class=meta>
+<span class=author>
+<span>Barrett Otte</span>
+</span>
+<div class=postdate>
+<time datetime="2019-09-22 00:00:00 +0000 UTC">2019-09-22</time>
+</div>
+<div class=article-read-time>
+<i class="far fa-clock"></i>
+2 minute read
+</div>
+</div>
+</header>
+<div class=content>
+<p><em>Migrated post from <a href=https://dev.to/barrettotte/coding-abomination-conway-s-game-of-life-in-tsql-40fd>DEV.to</a></em></p>
+<p><img src=https://raw.githubusercontent.com/barrettotte/SQL-Game-of-Life/master/demo.gif alt=demo.gif></p>
+<p>GIF can be seen here
+<a href=https://github.com/barrettotte/SQL-Game-of-Life/blob/master/demo.gif>https://github.com/barrettotte/SQL-Game-of-Life/blob/master/demo.gif</a></p>
+<p>One morning during my commute I was zoning out and realized I wanted to make a really dumb side project in SQL. One of my favorite things to do is use a language unconventionally and I thought implementing Game of Life was the perfect little project to do.</p>
+<h2 id=game-of-life>Game of Life</h2>
+<p>If you are unfamiliar with Conway&rsquo;s Game of Life, I encourage to read more about it here <a href=https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life</a></p>
+<p>The &ldquo;algorithm&rdquo; it uses is very simple. For each cell (pixel) in the environment (board), there are 4 rules for determining the next generation.</p>
+<ol>
+<li>Any live cell with fewer than two live neighbours dies, as if by underpopulation.</li>
+<li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+<li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
+<li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+</ol>
+<p>(Taken from the previously linked wiki page)</p>
+<p>Through these simple rules, &ldquo;organisms&rdquo; can appear that exhibit different behavior. In my example, I implement a &ldquo;blinker&rdquo; and a &ldquo;glider&rdquo;. They can also be found on the wiki page I linked.</p>
+<h2 id=implementation>Implementation</h2>
+<p>For this project I could have used TSQL&rsquo;s built in PRINT function, but I wanted actual animation. To do this, I would have to leverage a little bit of Python to display the data that my stored procedure produced using the stdout buffer.</p>
+<p>The stored procedure I made stores the cell data of each generation. If I take the cell data for each generation I can feed it into a drawing function to represent each frame in an animation.</p>
+<p>Now, I will say the stored procedure runs terribly. But, <strong>the goal was to get a basic glider to travel across the screen</strong>. I am 100% sure I could have done some fancy JOINs or something. But, I just ended up using SQL like a general purpose language instead.</p>
+<h2 id=source>Source</h2>
+<p>The project consisted of a single stored procedure and a python display script.
+Everything can be found here <a href=https://github.com/barrettotte/SQL-Game-of-Life>https://github.com/barrettotte/SQL-Game-of-Life</a></p>
+<h2 id=coding-abominations>Coding Abominations</h2>
+<p>Its all well and good to spend your time programming useful things or learning new subjects. But, I think one of the funnest things to do is make really obscure and useless projects.</p>
+<p>You would be surprised on how much you learn when making something super bizarre that has been implemented by only a few people. It forces you to think outside the box and touch parts of a language that you don&rsquo;t normally handle.</p>
+<p><strong>I find that making a coding abomination every once in a while is a good anti-burnout exercise</strong>. After finishing a fun coding abomination, I feel refreshed to tackle another side project. The important thing is to pick something you&rsquo;re relatively interested in, otherwise you&rsquo;re not going to have a good time.</p>
+<p>Another fun abomination I made a few months back was a 2D perlin noise SVG generator using only XSLT <a href=https://github.com/barrettotte/XSLT-Perlin2D>https://github.com/barrettotte/XSLT-Perlin2D</a> .
+I ended up learning a bunch of neat tricks in XSLT that I didn&rsquo;t even know were possible.</p>
+</div>
+</article>
+<footer id=footer>
+<div class=footer-left>
+&copy; 2022
+<a href=/>Barrett Otte</a>
+</div>
+<div class=footer-right>
+<nav>
+<ul>
+<li>
+<a class=icon target=_blank rel=noopener href=mailto:barrettotte@gmail.com>
+<i class="fas fa-lg fa-envelope"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href=https://github.com/barrettotte>
+<i class="fab fa-lg fa-github"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href=https://www.linkedin.com/in/barrettotte/>
+<i class="fab fa-lg fa-linkedin"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href="https://news.ycombinator.com/user?id=barrettotte">
+<i class="fab fa-lg fa-hacker-news-square"></i>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</footer>
+</div>
+</body>
+<link rel=stylesheet href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/code-copy.js></script>
+</html>
