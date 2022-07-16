@@ -34,7 +34,14 @@
           {{ $isActive = "" }}
         {{ end }}
 
-        <a {{ with $isActive }} class="{{$isActive}}" {{ end }} href="{{- .URL -}}">{{- .Name -}}</a>
+        <a href="{{- .URL -}}" 
+          {{ with $isActive }} 
+            class="{{$isActive}}" 
+          {{ end }}
+          {{ if eq .Name "Resume" }} 
+            target="_blank" rel="noopener noreferrer"
+          {{ end }}
+        >{{- .Name -}}</a>
       </div>
     {{ end }}
   </div>

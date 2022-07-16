@@ -86,7 +86,8 @@ what I've been learning and working on from 2010-present.
 ## Career
 
 In summary, I'm a software engineer with the bulk of my official experience in **Java**, **Angular**, and **Postgres**.
-My resume with more detail is available at [/resume]({{< param links.resume >}}).
+My resume with more detail is available at 
+<a href="https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf" target="_blank" rel="noopener noreferrer">/resume</a>.
 
 | Start   | End     | Position                       | Company |
 | ------- | ------- | ------------------------------ | ------- |
