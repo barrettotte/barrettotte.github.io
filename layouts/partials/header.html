@@ -33,7 +33,8 @@
         {{ else }}
           {{ $isActive = "" }}
         {{ end }}
-        <a class="{{$isActive}}" href="{{- .URL -}}">{{- .Name -}}</a>
+
+        <a {{ with $isActive }} class="{{$isActive}}" {{ end }} href="{{- .URL -}}">{{- .Name -}}</a>
       </div>
     {{ end }}
   </div>
