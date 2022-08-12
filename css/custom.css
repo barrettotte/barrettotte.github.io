@@ -16,6 +16,7 @@ h1, .h1 {
 li {
     display: list-item;
     list-style: square;
+    margin-bottom: 5px;
 }
 
 table {
@@ -85,12 +86,20 @@ article.post header div.meta {
 
 .post-list > .post-item {
     display: list-item;
-    list-style: square;
     margin-left: 2rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+/* show text on hover ... idk not a fan of this approach
+
+.post-list > .post-item:hover {
+    overflow: visible;
+    white-space: normal;
+    height: auto;
+}
+*/
 
 .icon:hover, .post-list > h2 {
     color: var(--color-accent-1);
@@ -98,7 +107,6 @@ article.post header div.meta {
 
 #archive .post-list .post-item, #archive .project-list .project-item {
     display: list-item;
-    list-style: square;
     margin-left: 2rem;
 }
 
@@ -403,5 +411,9 @@ article.post header div.meta {
 
     .about-top-row {
         display: inline-block;
+    }
+
+    #hoc .gallery > li {
+        width: 100%;
     }
 }
