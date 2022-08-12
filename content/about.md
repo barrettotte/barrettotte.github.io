@@ -58,6 +58,30 @@ section: about
   </div>
 </div>
 
+## Career
+
+In summary, I'm a software engineer with the bulk of my official experience in **Java**, **Angular**, and **Postgres**.
+My resume with more detail is available at 
+<a href="https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf" target="_blank" rel="noopener noreferrer">/resume</a>.
+
+| Start   | End     | Position                   | Company |
+| ------- | ------- | -------------------------- | ------- |
+| 06/2018 | 01/2020 |Software Web Developer      | Goodville Mutual Casualty Company |
+| 01/2020 | 01/2022 | Software Developer Analyst | Goodville Mutual Casualty Company |
+| 01/2022 |         | Software Engineer          | Enlighten, a Huntington Ingalls Industries Company |
+
+## Education
+
+| Year | Degree                                     | College |
+| ---- | ------------------------------------------ | ------- |
+| 2016 | Computer Science A.S.                      | Harford Community College (HCC) |
+| 2018 | Computer Science B.S. Cyber Security minor | University of Maryland Global Campus (UMGC) |
+
+## Self-Study
+
+I plan to eventually release my yearly lists that detail 
+what I've been learning and working on from 2010-present.
+
 ## Long Term Goals
 
 - Self-study Electrical Engineering, Mechanical Engineering, and Physics
@@ -70,27 +94,3 @@ section: about
 - Design and build a homebrew CPU with a basic operating system and more
 - M.S. in Computer Science
 - Complete *From Stones to Qubits*
-
-## Self-Study
-
-I plan to eventually release my yearly lists that detail 
-what I've been learning and working on from 2010-present.
-
-## Education
-
-| Year | Degree                                         | College |
-| ---- | ---------------------------------------------- | ------- |
-| 2016 | **Computer Science A.S.**                      | Harford Community College (HCC) |
-| 2018 | **Computer Science B.S. Cyber Security minor** | University of Maryland Global Campus (UMGC) |
-
-## Career
-
-In summary, I'm a software engineer with the bulk of my official experience in **Java**, **Angular**, and **Postgres**.
-My resume with more detail is available at 
-<a href="https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf" target="_blank" rel="noopener noreferrer">/resume</a>.
-
-| Start   | End     | Position                       | Company |
-| ------- | ------- | ------------------------------ | ------- |
-| 06/2018 | 01/2020 | **Software Web Developer**     | Goodville Mutual Casualty Company |
-| 01/2020 | 01/2022 | **Software Developer Analyst** | Goodville Mutual Casualty Company |
-| 01/2022 |         | **Software Engineer**          | Enlighten, a Huntington Ingalls Industries Company |

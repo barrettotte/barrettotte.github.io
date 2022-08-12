@@ -1,5 +1,5 @@
 ---
-title: My Library
+title: My Library (coming soon)
 ---
 
 **Coming soon...**

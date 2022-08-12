@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ if .IsPage }} {{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <title>{{ if not .IsHome }} {{ .Title }} | {{ end }} {{ .Site.Title }}</title>
   <link rel = 'canonical' href = '{{ .Permalink }}'>
 
   {{ with .Site.Params.description }}

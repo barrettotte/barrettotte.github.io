@@ -579,6 +579,27 @@
       "desc": "Personal site with Hugo",
       "date": "2022-07",
       "tags": ["markdown", "html", "hugo"]
+    },
+    {
+      "name": "vacuum-tube-toolbox",
+      "url": "https://github.com/barrettotte/vacuum-tube-toolbox",
+      "desc": "Toolbox for tinkering with vacuum tubes",
+      "date": "2022-07",
+      "tags": ["hardware", "openscad", "package", "vintage"]
+    },
+    {
+      "name": "pascal-md5",
+      "url": "https://github.com/barrettotte/pascal-md5",
+      "desc": "MD5 hash function in Pascal for no good reason",
+      "date": "2022-08",
+      "tags": ["pascal", "algorithms"]
+    },
+    {
+      "name": "strong-zero-css",
+      "url": "https://github.com/barrettotte/strong-zero-css",
+      "desc": "A subpar CSS art of a Strong Zero canxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "date": "2022-08",
+      "tags": ["css"]
     }
   ]
 }
