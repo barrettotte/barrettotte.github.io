@@ -1,0 +1,280 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title> Sending a Text Message with Twilio and DB2 SQL | Barrett Otte</title>
+<link rel=canonical href=https://barrettotte.github.io/posts/2020/3/>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://barrettotte.github.io/css/styles.c05d68261bf086a9d7713c4f8a6215a3601608e267a816a7ee58f139b3d1aae51222aae2081c8e0c6bd35e1334773b7a16283022f31f92afd93bb37e5e822e66.css integrity="sha512-wF1oJhvwhqnXcTxPimIVo2AWCOJnqBan7ljxObPRquUSIqriCByODGvTXhM0dzt6FigwIvMfkq/ZO7N+XoIuZg==">
+<link rel=stylesheet href=https://barrettotte.github.io/lib/font-awesome/css/all.min.css>
+<link rel=stylesheet href=https://barrettotte.github.io/css/custom.css>
+<link rel=preload href=https://barrettotte.github.io/lib/font-awesome/webfonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=https://barrettotte.github.io/lib/font-awesome/webfonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=https://barrettotte.github.io/lib/font-awesome/webfonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=https://barrettotte.github.io/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=icon href=https://barrettotte.github.io/img/favicon.svg>
+</head>
+<body class="max-width mx-auto px3 py5 ltr">
+<div class="content index py4"><header id=header>
+<div id=title>
+<h1><a href=https://barrettotte.github.io>Barrett Otte</a></h1>
+<div id=subtitle>
+<div class=subtitle-item><a href=https://github.com/barrettotte>Software Engineer</a></div>
+<div class=subtitle-item>Tinkerer</div>
+<div class=subtitle-item><a href=https://anilist.co/user/barrettotte/>Loser</a></div>
+</div>
+</div>
+<div id=nav>
+<div class=nav-item>
+<a href=/>Home</a>
+</div>
+<div class=nav-item>
+<a href=/projects>Projects</a>
+</div>
+<div class=nav-item>
+<a href=/posts class=active>Posts</a>
+</div>
+<div class=nav-item>
+<a href=/about>About</a>
+</div>
+<div class=nav-item>
+<a href=https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf target=_blank rel="noopener noreferrer">Resume</a>
+</div>
+<div class=nav-item>
+<a href=/misc>Misc</a>
+</div>
+</div>
+</header>
+<article class=post>
+<header>
+<h1 class=posttitle>Sending a Text Message with Twilio and DB2 SQL</h1>
+<div class=meta>
+<span class=author>
+<span>Barrett Otte</span>
+</span>
+<div class=postdate>
+<time datetime="2020-04-23 00:00:00 +0000 UTC">2020-04-23</time>
+</div>
+<div class=article-read-time>
+<i class="far fa-clock"></i>
+4 minute read
+</div>
+</div>
+</header>
+<div class=content>
+<p><em>Migrated post from <a href=https://dev.to/barrettotte/sending-a-text-message-with-sql-ibmi-4jnj>DEV.to</a></em></p>
+<p>This is going to be a pretty short post, but I thought it would be fun to share this in light of the Twilio + DEV hackathon this month. Honestly, I&rsquo;m not sure if either project I planned out will be finished in time. This month went by way too fast, so the outlook is not good.</p>
+<p>Since I&rsquo;m still a pretty new IBMi developer, I found that the best way to learn this new world was to take a fun idea and see if it was possible to do with <a href=https://en.wikipedia.org/wiki/IBM_RPG>RPG</a> and/or <a href=https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_71/db2/rbafzintro.htm>DB2 SQL</a>.
+Now I have a handful of arguably useless code snippets for my day job lol&mldr;</p>
+<h2 id=example-http-request-in-db2-for-i>Example HTTP Request in DB2 for i</h2>
+<p>One of the major things that made me fall in love with IBMi was that DB2 was really versatile. The fact that I could easily send HTTP requests with SQL was mind blowing.</p>
+<p>For a really basic example, I&rsquo;m going to do a basic HTTP GET to the GitHub REST API v3 for my user using only SQL. The equivalent CURL command will be</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span style=color:#75715e>#!/bin/bash
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span style=color:#75715e></span>curl -i https://api.github.com/users/barrettotte
+</code></pre></div><br>
+<p>This HTTP request is super simple because we don&rsquo;t need any HTTP headers.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span style=color:#66d9ef>values</span> SysTools.HttpGetClob(
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span>  <span style=color:#66d9ef>cast</span>(<span style=color:#e6db74>&#39;https://api.github.com/users/barrettotte&#39;</span> <span style=color:#66d9ef>as</span> varchar(<span style=color:#ae81ff>128</span>)), <span style=color:#75715e>-- url
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span style=color:#75715e></span>  <span style=color:#66d9ef>cast</span>(<span style=color:#66d9ef>null</span> <span style=color:#66d9ef>as</span> <span style=color:#66d9ef>clob</span>) <span style=color:#75715e>-- http headers
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span style=color:#75715e></span>);
+</code></pre></div><p>The request returns</p>
+<table>
+<thead>
+<tr>
+<th>00001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lsquo;{&ldquo;login&rdquo;:&ldquo;barrettotte&rdquo;,&ldquo;id&rdquo;:15623775,&ldquo;node_id&rdquo;&mldr;}&rsquo;</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p>Ok. That&rsquo;s cool because we can parse the JSON string in another program or something. But, actually we can do some way cooler stuff. We can return the HTTP response as a result set.</p>
+<p>Here is a really basic example, I mostly just used varchars for simplicity, but any field could be mapped to any appropriate data type.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span style=color:#66d9ef>select</span> <span style=color:#f92672>*</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span><span style=color:#66d9ef>from</span> json_table(
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span>  SysTools.HttpGetClob(
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span>    <span style=color:#66d9ef>cast</span>(<span style=color:#e6db74>&#39;https://api.github.com/users/barrettotte&#39;</span> <span style=color:#66d9ef>as</span> varchar(<span style=color:#ae81ff>128</span>)),
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span>    <span style=color:#66d9ef>cast</span>(<span style=color:#66d9ef>null</span> <span style=color:#66d9ef>as</span> <span style=color:#66d9ef>clob</span>)
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span>  ),
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span>  <span style=color:#e6db74>&#39;$&#39;</span> columns(
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span>    login          varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.login&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span>    id             varchar(<span style=color:#ae81ff>16</span>)   path <span style=color:#e6db74>&#39;lax $.id&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span>    node_id        varchar(<span style=color:#ae81ff>32</span>)   path <span style=color:#e6db74>&#39;lax $.node_id&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11</span>    avatar_url     varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.avatar_url&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12</span>    url            varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.url&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13</span>    html_url       varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.html_url&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14</span>    followers_url  varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.followers_url&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15</span>    following_url  varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.following_url&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16</span>    gists_url      varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.gists_url&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17</span>    starred_url    varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.starred_url&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18</span>    subs_url       varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.subscriptions_url&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19</span>    orgs_url       varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.organizations_url&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20</span>    repos_url      varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.repos_url&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21</span>    events_url     varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.events_url&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22</span>    rcv_events_url varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.received_events_url&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23</span>    <span style=color:#66d9ef>type</span>           varchar(<span style=color:#ae81ff>16</span>)   path <span style=color:#e6db74>&#39;lax $.type&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24</span>    site_admin     varchar(<span style=color:#ae81ff>8</span>)    path <span style=color:#e6db74>&#39;lax $.site_admin&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25</span>    name           varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.name&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26</span>    company        varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.company&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27</span>    blog           varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.blog&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28</span>    <span style=color:#66d9ef>location</span>       varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.location&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29</span>    email          varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.email&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">30</span>    hireable       varchar(<span style=color:#ae81ff>8</span>)    path <span style=color:#e6db74>&#39;lax $.hireable&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">31</span>    bio            varchar(<span style=color:#ae81ff>512</span>)  path <span style=color:#e6db74>&#39;lax $.bio&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">32</span>    public_repos   int           path <span style=color:#e6db74>&#39;lax $.public_repos&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">33</span>    public_gists   int           path <span style=color:#e6db74>&#39;lax $.public_gists&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">34</span>    followers      int           path <span style=color:#e6db74>&#39;lax $.followers&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">35</span>    following      int           path <span style=color:#e6db74>&#39;lax $.following&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">36</span>    created_at     varchar(<span style=color:#ae81ff>32</span>)   path <span style=color:#e6db74>&#39;lax $.created_at&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">37</span>    updated_at     varchar(<span style=color:#ae81ff>32</span>)   path <span style=color:#e6db74>&#39;lax $.updated_at&#39;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">38</span>  )
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">39</span>);
+</code></pre></div><p>The request returns</p>
+<table>
+<thead>
+<tr>
+<th>LOGIN</th>
+<th>ID</th>
+<th>NODE_ID</th>
+<th>&mldr;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>barrettotte</td>
+<td>15623775</td>
+<td>MDQ6VXN&mldr;</td>
+<td>&mldr;</td>
+</tr>
+</tbody>
+</table>
+<p>Personally I think this is really neat.</p>
+<h2 id=calling-twilio-from-db2-sql>Calling Twilio from DB2 SQL</h2>
+<p>I figured I should say I know that this is not an ideal solution for probably a majority of cases. But, this is just a fun thing I&rsquo;m showing.</p>
+<p>The HTTP request I&rsquo;m going to make looks like this</p>
+<pre tabindex=0><code>POST {{base}}/2010-04-01/Accounts/{{account}}/Messages.json HTTP/1.1
+Authorization: Basic {{account}}:{{auth}}
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+
+To={{to}}&amp;From={{from}}&amp;Body=Hello+World
+</code></pre><p>Calling Twilio takes a few more steps than the previous example. In DB2 for i, you have to pass HTTP headers as XML (I assume its a legacy thing and I wish it was JSON, but its still easy to work with).</p>
+<p>The authorization header has to be passed as a Base64 encoded string. There is a scalar function called <strong>Base64Encode</strong> in <strong>SysTools</strong> that seems to work fine.</p>
+<p>Additionally, Twilio wants the request body as a url-encoded string. To my surprise, I learned that <strong>SysTools</strong> also has a scalar function called <strong>UrlEncode</strong>. All of the hard work is done with scalar functions, you just have to piece them together.</p>
+<p>I replaced all <strong>secrets</strong> in this query with &lsquo;variables&rsquo; surrounded by double curly braces.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span style=color:#66d9ef>select</span> <span style=color:#f92672>*</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span><span style=color:#66d9ef>from</span> json_table(
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span>  SysTools.HttpPostClob(
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span>    <span style=color:#e6db74>&#39;https://api.twilio.com/2010-04-01/Accounts/{{account}}/Messages.json&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span>    <span style=color:#66d9ef>cast</span>((
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span>      <span style=color:#e6db74>&#39;&lt;httpHeader&gt;
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span><span style=color:#e6db74>        &lt;header name=&#34;Authorization&#34; value=&#34;Basic &#39;</span> <span style=color:#f92672>||</span> <span style=color:#66d9ef>trim</span>(SysTools.Base64Encode(
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span>          <span style=color:#66d9ef>cast</span>(<span style=color:#e6db74>&#39;{{account}}:{{auth}}&#39;</span> <span style=color:#66d9ef>as</span> varchar(<span style=color:#ae81ff>256</span>) ccsid <span style=color:#ae81ff>1208</span>))) <span style=color:#f92672>||</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span>        <span style=color:#e6db74>&#39;&#34;/&gt;
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span><span style=color:#e6db74>        &lt;header name=&#34;Accept&#34; value=&#34;application/json&#34;/&gt;
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11</span><span style=color:#e6db74>        &lt;header name=&#34;Content-Type&#34; value=&#34;application/x-www-form-urlencoded&#34;/&gt;
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12</span><span style=color:#e6db74>      &lt;/httpHeader&gt;&#39;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13</span>    ) <span style=color:#66d9ef>as</span> <span style=color:#66d9ef>clob</span>),
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14</span>    <span style=color:#66d9ef>cast</span>((
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15</span>      <span style=color:#e6db74>&#39;To=&#39;</span>    <span style=color:#f92672>||</span> SysTools.UrlEncode(<span style=color:#e6db74>&#39;{{to}}&#39;</span>, <span style=color:#e6db74>&#39;UTF-8&#39;</span>) <span style=color:#f92672>||</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16</span>      <span style=color:#e6db74>&#39;&amp;From=&#39;</span> <span style=color:#f92672>||</span> SysTools.UrlEncode(<span style=color:#e6db74>&#39;{{from}}&#39;</span>, <span style=color:#e6db74>&#39;UTF-8&#39;</span>) <span style=color:#f92672>||</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17</span>      <span style=color:#e6db74>&#39;&amp;Body=&#39;</span> <span style=color:#f92672>||</span> SysTools.UrlEncode(<span style=color:#e6db74>&#39;Hello World&#39;</span>, <span style=color:#e6db74>&#39;UTF-8&#39;</span>)
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18</span>    ) <span style=color:#66d9ef>as</span> <span style=color:#66d9ef>clob</span>)
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19</span>  ),
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20</span>  <span style=color:#e6db74>&#39;$&#39;</span> columns(
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21</span>    sid           varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.sid&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22</span>    date_created  varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.date_created&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23</span>    date_updated  varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.date_updated&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24</span>    date_sent     varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.date_sent&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25</span>    account_sid   varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.account_sid&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26</span>    phone_to      varchar(<span style=color:#ae81ff>32</span>)   path <span style=color:#e6db74>&#39;lax $.to&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27</span>    phone_from    varchar(<span style=color:#ae81ff>32</span>)   path <span style=color:#e6db74>&#39;lax $.from&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28</span>    msg_srv_sid   varchar(<span style=color:#ae81ff>64</span>)   path <span style=color:#e6db74>&#39;lax $.messaging_service_sid&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29</span>    body          varchar(<span style=color:#ae81ff>1600</span>) path <span style=color:#e6db74>&#39;lax $.body&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">30</span>    status        varchar(<span style=color:#ae81ff>16</span>)   path <span style=color:#e6db74>&#39;lax $.status&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">31</span>    num_segments  varchar(<span style=color:#ae81ff>8</span>)    path <span style=color:#e6db74>&#39;lax $.num_segments&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">32</span>    num_media     varchar(<span style=color:#ae81ff>8</span>)    path <span style=color:#e6db74>&#39;lax $.num_media&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">33</span>    direction     varchar(<span style=color:#ae81ff>32</span>)   path <span style=color:#e6db74>&#39;lax $.direction&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">34</span>    api_version   varchar(<span style=color:#ae81ff>16</span>)   path <span style=color:#e6db74>&#39;lax $.api_version&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">35</span>    price         varchar(<span style=color:#ae81ff>8</span>)    path <span style=color:#e6db74>&#39;lax $.price&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">36</span>    price_unit    varchar(<span style=color:#ae81ff>4</span>)    path <span style=color:#e6db74>&#39;lax $.price_unit&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">37</span>    error_code    varchar(<span style=color:#ae81ff>8</span>)    path <span style=color:#e6db74>&#39;lax $.error_code&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">38</span>    error_message varchar(<span style=color:#ae81ff>512</span>)  path <span style=color:#e6db74>&#39;lax $.error_message&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">39</span>    uri           varchar(<span style=color:#ae81ff>256</span>)  path <span style=color:#e6db74>&#39;lax $.uri&#39;</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">40</span>    nested <span style=color:#e6db74>&#39;$.subresource_uris[*]&#39;</span> columns(
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">41</span>      media       varchar(<span style=color:#ae81ff>256</span>)  path <span style=color:#e6db74>&#39;lax $.media&#39;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">42</span>    )
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">43</span>  )
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">44</span>);
+</code></pre></div><p>The request returns</p>
+<table>
+<thead>
+<tr>
+<th>SID</th>
+<th>DATE_CREATED</th>
+<th>DATE_UPDATED</th>
+<th>DATE_SENT</th>
+<th>ACCOUNT_SID</th>
+<th>PHONE_TO</th>
+<th>&mldr;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&mldr;</td>
+<td>Wed, 22 Apr 2020 23:35:26 +0000</td>
+<td>&mldr;</td>
+<td>&mldr;</td>
+<td>&mldr;</td>
+<td>&mldr;</td>
+<td>&mldr;</td>
+</tr>
+</tbody>
+</table>
+<h2 id=conclusion>Conclusion</h2>
+<p>That&rsquo;s kind of it, I thought it was pretty cool and figured I&rsquo;d share it for anyone browsing around this morning.
+The gist can be found <a href=https://gist.github.com/barrettotte/8a12130d40882c52a18c14f9a72df12a>here</a></p>
+<p>Realistically, I don&rsquo;t know what you would do with this. But, knowing that it exists &ldquo;might&rdquo; do some good in some situation.</p>
+</div>
+</article>
+<footer id=footer>
+<div class=footer-left>
+&copy; 2022
+<a href=/>Barrett Otte</a>
+</div>
+<div class=footer-right>
+<nav>
+<ul>
+<li>
+<a class=icon target=_blank rel=noopener href=mailto:barrettotte@gmail.com>
+<i class="fas fa-lg fa-envelope"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href=https://github.com/barrettotte>
+<i class="fab fa-lg fa-github"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href=https://www.linkedin.com/in/barrettotte/>
+<i class="fab fa-lg fa-linkedin"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href="https://news.ycombinator.com/user?id=barrettotte">
+<i class="fab fa-lg fa-hacker-news-square"></i>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</footer>
+</div>
+</body>
+<link rel=stylesheet href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/code-copy.js></script>
+</html>
