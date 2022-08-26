@@ -541,8 +541,7 @@
       "url": "https://github.com/barrettotte/thule-json",
       "desc": "Minimal and unsafe json parser",
       "date": "2022-03",
-      "tags": ["c", "parsing"],
-      "featured": true
+      "tags": ["c", "parsing"]
     },
     {
       "name": "spotify-code-3d",
@@ -600,6 +599,14 @@
       "desc": "A subpar CSS art of a Strong Zero can",
       "date": "2022-08",
       "tags": ["css"]
+    },
+    {
+      "name": "perceptron-asm",
+      "url": "https://github.com/barrettotte/perceptron-asm",
+      "desc": "Single-layer perceptron in x86 assembly",
+      "date": "2022-08",
+      "tags": ["assembly", "x86"],
+      "featured": true
     }
   ]
 }
