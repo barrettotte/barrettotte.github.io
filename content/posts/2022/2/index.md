@@ -83,7 +83,7 @@ Align tube with key to figure out pinout.
 
 ### Socket Saver
 
-I created a repo named [vacuum-tube-toolbox]() to make it easier to start
+I created a repo named [vacuum-tube-toolbox](https://github.com/barrettotte/vacuum-tube-toolbox) to make it easier to start
 messing around with vacuum tubes. For this tube, I 3D printed one
 of my socket savers using the following OpenScad code:
 
