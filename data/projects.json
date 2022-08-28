@@ -584,7 +584,7 @@
       "url": "https://github.com/barrettotte/vacuum-tube-toolbox",
       "desc": "Toolbox for tinkering with vacuum tubes",
       "date": "2022-07",
-      "tags": ["hardware", "openscad", "package", "vintage"]
+      "tags": ["hardware", "openscad", "package", "vacuum-tube", "vintage"]
     },
     {
       "name": "pascal-md5",
