@@ -1,0 +1,211 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title> Simple Vacuum Tube Amplifier | Barrett Otte</title>
+<link rel=canonical href=https://barrettotte.github.io/posts/2022/2/>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://barrettotte.github.io/css/styles.c05d68261bf086a9d7713c4f8a6215a3601608e267a816a7ee58f139b3d1aae51222aae2081c8e0c6bd35e1334773b7a16283022f31f92afd93bb37e5e822e66.css integrity="sha512-wF1oJhvwhqnXcTxPimIVo2AWCOJnqBan7ljxObPRquUSIqriCByODGvTXhM0dzt6FigwIvMfkq/ZO7N+XoIuZg==">
+<link rel=stylesheet href=https://barrettotte.github.io/lib/font-awesome/css/all.min.css>
+<link rel=stylesheet href=https://barrettotte.github.io/css/custom.css>
+<link rel=preload href=https://barrettotte.github.io/lib/font-awesome/webfonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=https://barrettotte.github.io/lib/font-awesome/webfonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=https://barrettotte.github.io/lib/font-awesome/webfonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=https://barrettotte.github.io/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=icon href=https://barrettotte.github.io/img/favicon.svg>
+</head>
+<body class="max-width mx-auto px3 py5 ltr">
+<div class="content index py4"><header id=header>
+<div id=title>
+<h1><a href=https://barrettotte.github.io>Barrett Otte</a></h1>
+<div id=subtitle>
+<div class=subtitle-item><a href=https://github.com/barrettotte>Software Engineer</a></div>
+<div class=subtitle-item>Tinkerer</div>
+<div class=subtitle-item><a href=https://anilist.co/user/barrettotte/>Loser</a></div>
+</div>
+</div>
+<div id=nav>
+<div class=nav-item>
+<a href=/>Home</a>
+</div>
+<div class=nav-item>
+<a href=/projects>Projects</a>
+</div>
+<div class=nav-item>
+<a href=/posts class=active>Posts</a>
+</div>
+<div class=nav-item>
+<a href=/about>About</a>
+</div>
+<div class=nav-item>
+<a href=https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf target=_blank rel="noopener noreferrer">Resume</a>
+</div>
+<div class=nav-item>
+<a href=/misc>Misc</a>
+</div>
+</div>
+</header>
+<article class=post>
+<header>
+<h1 class=posttitle>Simple Vacuum Tube Amplifier</h1>
+<div class=meta>
+<span class=author>
+<span>Barrett Otte</span>
+</span>
+<div class=postdate>
+<time datetime="2022-08-27 00:00:00 +0000 UTC">2022-08-27</time>
+</div>
+<div class=article-read-time>
+<i class="far fa-clock"></i>
+3 minute read
+</div>
+</div>
+</header>
+<div class=content>
+<p>For a hobby project I needed to learn the basics of how vacuum tubes work.
+I picked up <a href=https://www.amazon.com/Inside-Vacuum-Tube-John-Rider/dp/1882580427>Inside the Vacuum Tube by John F. Rider</a> which
+gave an awesome overview of the internals of vacuum tubes and a lot of the jargon.</p>
+<p>To get a little more hands-on experience, I decided to build a really simple amplifier using an old
+vacuum tube dated around 1938.</p>
+<h2 id=how-a-triode-generally-works>How a Triode Generally Works</h2>
+<p>The first triode, was the <a href="https://www.historyofinformation.com/detail.php?id=563">Audion</a> invented by Lee de Forest in 1906.
+It was an electronic device designed to detect or amplify a signal.</p>
+<figure style=margin-top:-15px;text-align:center>
+<a href=triode-diagram.png target=_blank rel="noopener noreferrer">
+<img src=triode-diagram.png alt="Triode with filament and cathode labeled" style=width:200px;height:200px>
+</a>
+<figcaption>Triode with filament and cathode labeled. (<i><a href=https://en.wikipedia.org/wiki/Triode>Source</a></i>)</figcaption>
+</figure>
+<p>A triode consists of three electrodes enclosed in an evacuated glass tube: A filament, grid, and plate.</p>
+<p>The plate serves as the anode.</p>
+<p>The filament is either directly or indirectly heated. Older vacuum tubes only have a filament, which will also serve as the cathode.
+But, newer tubes have a distinct cathode separate from the filament.
+Electrons boil off the hot surface of the filament and are attracted to the positive charge of the plate (anode).
+This action is known as <a href=https://en.wikipedia.org/wiki/Thermionic_emission>thermionic emission</a>.
+Thomas Edison actually discovered this phenomenon and thermionic emission was previously known as the <strong>Edison effect</strong>,
+but he did not understand why it happened.</p>
+<p>The grid, or control grid, is an electrode to control electron flow between the cathode and anode.
+<a href="https://www.youtube.com/watch?v=oHjZs0bNwEs&ab_channel=MrCarlson%27sLab">Mr Carlson&rsquo;s Lab</a> provided an easy way to understand how the control grid works.
+Simply imagine the control grid as Venetian blinds.
+When the control grid (Venetian blinds) is positive, the electrons from the filament (sunlight) flow (shine) strongly.
+When the control grid is negative, the electrons are blocked and electrons are unable to flow.</p>
+<h2 id=1h4-g-tube>1H4-G Tube</h2>
+<p>I have a couple pretty old <strong>1H4-G</strong> triodes on hand. This type of tube is considered a &ldquo;detector amplifier triode&rdquo;.
+I found two datasheets for this tube, both dated 1938:</p>
+<ul>
+<li><a href=https://frank.pocnet.net/sheets/127/1/1H4G.pdf>https://frank.pocnet.net/sheets/127/1/1H4G.pdf</a></li>
+<li><a href=http://www.r-type.org/pdfs/1h4g.pdf>http://www.r-type.org/pdfs/1h4g.pdf</a></li>
+</ul>
+<figure style=text-align:center>
+<a href=1h4g.jpg target=_blank rel="noopener noreferrer">
+<img src=1h4g.jpg alt="1H4-G tube" style=width:50%>
+</a>
+<figcaption>1H4-G tube</figcaption>
+</figure>
+<h3 id=1h4-g-pinout>1H4-G Pinout</h3>
+<figure style=text-align:center>
+<a href=1h4g-pinout.png target=_blank rel="noopener noreferrer">
+<img src=1h4g-pinout.png alt="1H4-G pinout" style=width:200px;height:200px>
+</a>
+<figcaption>1H4-G pinout. (<a href=http://www.r-type.org/pdfs/1h4g.pdf>Source</a>)</figcaption>
+</figure>
+<p>Align tube with key to figure out pinout.</p>
+<ol>
+<li style=list-style:decimal>Not connected</li>
+<li style=list-style:decimal>Filament</li>
+<li style=list-style:decimal>Plate</li>
+<li style=list-style:decimal>Not connected</li>
+<li style=list-style:decimal>Grid</li>
+<li style=list-style:decimal>Not connected</li>
+<li style=list-style:decimal>Filament</li>
+<li style=list-style:decimal>Not connected</li>
+</ol>
+<h3 id=socket-saver>Socket Saver</h3>
+<p>I created a repo named <a href>vacuum-tube-toolbox</a> to make it easier to start
+messing around with vacuum tubes. For this tube, I 3D printed one
+of my socket savers using the following OpenScad code:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-openscad data-lang=openscad><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span style=color:#75715e>// 1h4g_socket.scad
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span><span style=color:#75715e>//
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span><span style=color:#75715e>// openscad -o 1h4g_socket.stl 1h4g_socket.scad
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span><span style=color:#75715e></span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span><span style=color:#f92672>include</span> &lt;<span style=color:#75715e>../VacuumTubes/sockets.scad</span>&gt;
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span>$fs <span style=color:#f92672>=</span> <span style=color:#ae81ff>0.1</span>;
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span>$fn <span style=color:#f92672>=</span> <span style=color:#ae81ff>60</span>;
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span>tolerance <span style=color:#f92672>=</span> <span style=color:#ae81ff>0.1</span>;
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11</span>socket_mounted(pins<span style=color:#f92672>=</span><span style=color:#ae81ff>8</span>, pin_diameter<span style=color:#f92672>=</span><span style=color:#ae81ff>3</span> <span style=color:#f92672>+</span> tolerance, pin_offset<span style=color:#f92672>=</span><span style=color:#ae81ff>8.5</span>, socket_diameter<span style=color:#f92672>=</span><span style=color:#ae81ff>27.75</span>, 
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12</span>    socket_height<span style=color:#f92672>=</span><span style=color:#ae81ff>19.75</span>, center_diameter<span style=color:#f92672>=</span><span style=color:#ae81ff>8.65</span> <span style=color:#f92672>+</span> tolerance, notch_length<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span>,
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13</span>    mount_hole_diameter<span style=color:#f92672>=</span><span style=color:#ae81ff>3.1</span> <span style=color:#f92672>+</span> tolerance, mount_width<span style=color:#f92672>=</span><span style=color:#ae81ff>9</span>, mount_height<span style=color:#f92672>=</span><span style=color:#ae81ff>7.5</span>, mount_pin_diameter<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span><span style=color:#f92672>+</span>tolerance);
+</code></pre></div><p>Then, I created pin sockets by soldering copper foil and 1.5mm inner diameter magnet wire.</p>
+<figure style=text-align:center>
+<a href=1h4g-socket-saver.jpg target=_blank rel="noopener noreferrer">
+<img src=1h4g-socket-saver.jpg alt="Socket saver for 1H4-G" style=width:50%>
+</a>
+<figcaption>Socket saver for 1H4-G, labeled with pinout.</figcaption>
+</figure>
+<h2 id=amplifier-circuit>Amplifier Circuit</h2>
+<p>Tube circuits of this era commonly used an &ldquo;A battery&rdquo; and &ldquo;B battery.
+The A battery is used to heat the filament and the B battery is used to charge the plate.
+I used my DC power supply for the A battery, the filament ends up pulling around 0.05A (50mA).
+For the B battery, I wired five 9 volt batteries in series to produce 45V as the datasheet calls for.</p>
+<p>This circuit will take in a 5 volt 10Hz sine wave from my signal generator and amplify it with the 1H4-G tube.
+I confirmed the circuit works with my oscilloscope and printed the results.</p>
+<figure style=text-align:center>
+<a href=amp-schematic.jpg target=_blank rel="noopener noreferrer">
+<img src=amp-schematic.jpg alt="Amplifier schematic" style=width:100%>
+</a>
+<figcaption>Amplifier schematic</figcaption>
+</figure>
+<figure style=text-align:center>
+<a href=amp-breadboard.jpg target=_blank rel="noopener noreferrer">
+<img src=amp-breadboard.jpg alt="Amplifier breaboard" style=width:50%>
+</a>
+<figcaption>Amplifier built on breadboard</figcaption>
+</figure>
+<figure style=text-align:center>
+<a href=oscillo-out.png target=_blank rel="noopener noreferrer">
+<img src=oscillo-out.png alt="Oscilloscope output" style=width:100%>
+</a>
+<figcaption>Oscilloscope output of amplifier</figcaption>
+</figure>
+</div>
+</article>
+<footer id=footer>
+<div class=footer-left>
+&copy; 2022
+<a href=/>Barrett Otte</a>
+</div>
+<div class=footer-right>
+<nav>
+<ul>
+<li>
+<a class=icon target=_blank rel=noopener href=mailto:barrettotte@gmail.com>
+<i class="fas fa-lg fa-envelope"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href=https://github.com/barrettotte>
+<i class="fab fa-lg fa-github"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href=https://www.linkedin.com/in/barrettotte/>
+<i class="fab fa-lg fa-linkedin"></i>
+</a>
+</li>
+<li>
+<a class=icon target=_blank rel=noopener href="https://news.ycombinator.com/user?id=barrettotte">
+<i class="fab fa-lg fa-hacker-news-square"></i>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</footer>
+</div>
+</body>
+<link rel=stylesheet href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/code-copy.js></script>
+</html>
