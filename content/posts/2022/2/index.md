@@ -1,6 +1,6 @@
 ---
 title: Simple Vacuum Tube Amplifier
-date: 2022-08-27
+date: 2022-08-28
 tags:
     - hardware
     - openscad
@@ -116,10 +116,10 @@ Then, I created pin sockets by soldering copper foil and 1.5mm inner diameter ma
 
 Tube circuits of this era commonly used an "A battery" and "B battery.
 The A battery is used to heat the filament and the B battery is used to charge the plate.
-I used my DC power supply for the A battery, the filament ends up pulling around 0.05A (50mA).
-For the B battery, I wired five 9 volt batteries in series to produce 45V as the datasheet calls for.
+I used my DC power supply for the A battery; The filament ends up pulling around 0.05A (50mA) of current.
+For the B battery, I wired five 9V batteries in series to produce 45V as the datasheet calls for.
 
-This circuit will take in a 5 volt 10Hz sine wave from my signal generator and amplify it with the 1H4-G tube. 
+This circuit will take in a 5V 10Hz sine wave from my signal generator and amplify it with the 1H4-G tube. 
 I confirmed the circuit works with my oscilloscope and printed the results.
 
 <figure style="text-align: center">
