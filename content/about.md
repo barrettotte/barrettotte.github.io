@@ -54,6 +54,9 @@ section: about
       <li><a href="barrettotte@gmail.com">Email</a></li>
       <li><a href="https://github.com/barrettotte">GitHub</a></li>
       <li><a href="https://www.linkedin.com/in/barrettotte/">LinkedIn</a></li>
+      <li><a href="https://tryhackme.com/p/barrettotte">TryHackMe</a></li>
+      <li><a href="https://www.kaggle.com/barrettotte">Kaggle</a></li>
+      <li><a href="https://barrettotte.itch.io/">Itch.io</a></li>
     </ul>
   </div>
 </div>

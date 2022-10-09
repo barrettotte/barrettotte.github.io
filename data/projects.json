@@ -607,6 +607,20 @@
       "date": "2022-08",
       "tags": ["assembly", "x86"],
       "featured": true
+    },
+    {
+      "name": "pico-signals",
+      "url": "https://github.com/barrettotte/pico-signals",
+      "desc": "A small signal generator in PICO-8. My entry for the PICO-1K Jam 2022",
+      "date": "2022-09",
+      "tags": ["lua", "gamedev", "event"]
+    },
+    {
+      "name": "anilist-ml",
+      "url": "https://github.com/barrettotte/anilist-ml",
+      "desc": "Training a binary classifier model to predict if I would recommend an anime using my Anilist user data",
+      "date": "2022-10",
+      "tags": ["anilist", "machine-learning", "python", "jupyter"]
     }
   ]
 }
