@@ -532,7 +532,7 @@
     {
       "name": "rusty-lc3-vm",
       "url": "https://github.com/barrettotte/rusty-lc3-vm",
-      "desc": "LC3 VM",
+      "desc": "LC3 VM in rust",
       "date": "2022-01",
       "tags": ["rust", "emulator"]
     },
@@ -621,6 +621,13 @@
       "desc": "Training a binary classifier model to predict if I would recommend an anime using my Anilist user data",
       "date": "2022-10",
       "tags": ["anilist", "machine-learning", "python", "jupyter"]
+    },
+    {
+      "name": "hacktheboo-2022",
+      "url": "https://github.com/barrettotte/ctf/tree/master/hacktheboo-2022",
+      "desc": "HackTheBox Halloween 2022 CTF",
+      "date": "2022-10",
+      "tags": ["event", "ctf"]
     }
   ]
 }

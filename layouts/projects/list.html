@@ -12,7 +12,13 @@
         {{ if not .hidden }}
           <li class="post-item">
             <time datetime="{{ time (printf "%s%s" .date "-01") }}">{{ .date }}</time>
-            <span><a href="{{ .url }}">{{ .name }}</a>: {{ .desc | markdownify }}</span>
+            <span>
+              {{ if .url }}
+                <a href="{{ .url }}">{{ .name }}</a>: {{ .desc | markdownify }}
+              {{ else }}
+                {{ .name }}: {{ .desc | markdownify }}
+              {{ end }}
+            </span>
           </li>
         {{ end }}
       {{ end }}
