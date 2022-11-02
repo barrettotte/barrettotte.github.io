@@ -48,7 +48,7 @@ My resume with more detail is available at
 ## Self-Study
 
 I plan to eventually release my yearly lists that detail what 
-I've been learning and working on from 2010-present, called **yygdrasil**. 
+I've been learning and working on from 2011-present, called **yygdrasil**. 
 It won't be all that useful, but may give some people the idea to start 
 tracking things like this and be self-reflective.
 

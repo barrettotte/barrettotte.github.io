@@ -1,11 +1,102 @@
 {
   "list": [
     {
+      "name": "Hello World",
+      "url": null,
+      "desc": "My first program",
+      "date": "2011-09",
+      "tags": ["c++", "high-school"]
+    },
+    {
+      "name": "Blackjack",
+      "url": null,
+      "desc": "Blackjack in C++ for high school course",
+      "date": "2012-05",
+      "tags": ["c++", "high-school"]
+    },
+    {
+      "name": "SlothGame",
+      "url": null,
+      "desc": "A bad clone of Frogger in Java for high school course",
+      "date": "2012-12",
+      "tags": ["java", "high-school"]
+    },
+    {
+      "name": "Atomic Minecraft Mod",
+      "url": null,
+      "desc": "Build molecules using subatomic particles",
+      "date": "2013-06",
+      "tags": ["java", "gamedev", "mod"]
+    },
+    {
+      "name": "TicTacToe",
+      "url": null,
+      "desc": "TicTacToe in C++ for high school course",
+      "date": "2013-12",
+      "tags": ["c++", "high-school"]
+    },
+    {
+      "name": "One Rep Max Calc",
+      "url": null,
+      "desc": "Java GUI program to calculate one rep max for lifting",
+      "date": "2013-12",
+      "tags": ["java"]
+    },
+    {
+      "name": "Battleship",
+      "url": null,
+      "desc": "Battleship in C++ for high school course",
+      "date": "2014-01",
+      "tags": ["c++", "high-school"]
+    },
+    {
+      "name": "Portfolio v1",
+      "url": null,
+      "desc": "Portfolio site in static HTML and CSS",
+      "date": "2014-01",
+      "tags": ["html", "css", "webdev"]
+    },
+    {
+      "name": "VB Text Editor",
+      "url": null,
+      "desc": "A basic text editor in Visual Basic for college course",
+      "date": "2014-10",
+      "tags": ["vb", "college"]
+    },
+    {
+      "name": "Battleship",
+      "url": null,
+      "desc": "Battleship in C for college course",
+      "date": "2015-04",
+      "tags": ["c", "college"]
+    },
+    {
+      "name": "Portfolio v2",
+      "url": null,
+      "desc": "Portfolio site with PHP and JS this time",
+      "date": "2015-06",
+      "tags": ["html", "css", "webdev", "javascript", "php"]
+    },
+    {
+      "name": "Tetris",
+      "url": null,
+      "desc": "Tetris clone in Unity Engine",
+      "date": "2015-06",
+      "tags": ["c#", "unity", "gamedev"]
+    },
+    {
       "name": "Master-Telegrapher-Demo",
       "url": "https://github.com/barrettotte/Master-Telegrapher-Demo",
       "desc": "One Button Game Jam Entry Summer 2016",
       "date": "2016-08",
       "tags": ["c#", "unity", "gamedev", "event"]
+    },
+    {
+      "name": "Gainz-Goblin",
+      "url": null,
+      "desc": "Discord bot in Node.js to play YouTube audio clips",
+      "date": "2016-11",
+      "tags": ["node-js"]
     },
     {
       "name": "Terrain-Generation-Study",
@@ -26,7 +117,7 @@
       "url": "https://github.com/barrettotte/Recursive-Descent-GUI-Parser",
       "desc": "GUI generator for college course",
       "date": "2017-06",
-      "tags": ["java", "parsing"]
+      "tags": ["java", "parsing", "college"]
     },
     {
       "name": "ZX-Dungeon",
@@ -34,6 +125,13 @@
       "desc": "ZX Spectrum Game Jam entry",
       "date": "2017-06",
       "tags": ["basic", "event", "vintage", "gamedev"]
+    },
+    {
+      "name": "SAP-1-CPU",
+      "url": null,
+      "desc": "SAP-1 breadboard CPU",
+      "date": "2017-08",
+      "tags": ["cpu-design", "hardware"]
     },
     {
       "name": "Assembly_XOR_Encrypt",
@@ -47,14 +145,14 @@
       "url": "https://github.com/barrettotte/Seaport-Project",
       "desc": "Concurrent programming project for college course",
       "date": "2017-10",
-      "tags": ["java"]
+      "tags": ["java", "college"]
     },
     {
       "name": "NodeJS_CRUD_App",
       "url": "https://github.com/barrettotte/NodeJS_CRUD_App",
       "desc": "Fullstack movie watch list app for college course",
       "date": "2018-03",
-      "tags": ["javascript", "webdev", "node-js"]
+      "tags": ["javascript", "webdev", "node-js", "college"]
     },
     {
       "name": "Manga-Downloader",

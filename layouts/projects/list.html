@@ -16,7 +16,7 @@
               {{ if .url }}
                 <a href="{{ .url }}">{{ .name }}</a>: {{ .desc | markdownify }}
               {{ else }}
-                {{ .name }}: {{ .desc | markdownify }}
+                <span style="text-decoration:underline;">{{ .name }}</span>: {{ .desc | markdownify }}
               {{ end }}
             </span>
           </li>
