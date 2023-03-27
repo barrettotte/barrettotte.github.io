@@ -1,6 +1,6 @@
 ---
-title: History of Computing Collection
-type: misc/hoc
+title: Computing Collection
+type: misc/computing
 ---
 
 Over the years I've been collecting various items while I study the history of computing.

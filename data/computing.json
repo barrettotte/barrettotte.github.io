@@ -1,0 +1,86 @@
+{
+  "computers": [
+    {
+      "name": "Altair 8800 Replica",
+      "img": "/img/computing/computers/altair8800-replica.jpg"
+    },
+    {
+      "name": "Commodore 64",
+      "img": "/img/computing/computers/commodore-64x2.jpg"
+    },
+    {
+      "name": "Comtrade Express",
+      "img": "/img/computing/computers/comtrade-express.jpg"
+    },
+    {
+      "name": "IBM 5150XT",
+      "img": "/img/computing/computers/ibm-5150xt.jpg"
+    },
+    {
+      "name": "IBM 5155",
+      "img": "/img/computing/computers/ibm-5155.jpg"
+    },
+    {
+      "name": "IBM AS/400",
+      "img": "/img/computing/computers/ibm-as400.jpg"
+    },
+    {
+      "name": "iMac G3",
+      "img": "/img/computing/computers/imac-g3.jpg"
+    },
+    {
+      "name": "Leading Edge (?)",
+      "img": "/img/computing/computers/leadingedge-x.jpg"
+    },
+    {
+      "name": "Tandy Color Computer 3",
+      "img": "/img/computing/computers/tandy-coco3.jpg"
+    },
+    {
+      "name": "TRS-80 Model I",
+      "img": "/img/computing/computers/trs80-1.jpg"
+    },
+    {
+      "name": "TRS-80 Model III",
+      "img": "/img/computing/computers/trs80-3.jpg"
+    },
+    {
+      "name": "TRS-80 Model 4P",
+      "img": "/img/computing/computers/trs80-4p.jpg"
+    },
+    {
+      "name": "TRS-80 Model 100",
+      "img": "/img/computing/computers/trs80-m100.jpg"
+    }
+  ],
+  "misc": [
+    {
+      "name": "IBM Model 8923 Keyboard",
+      "img": "/img/computing/ibm-kb-8923.jpg"
+    },
+    {
+      "name": "IBM Model M Keyboard",
+      "img": "/img/computing/ibm-kb-m.jpg"
+    },
+    {
+      "name": "Monroe Electromechanical Calculator",
+      "img": "/img/computing/monroe-calc.jpg"
+    },
+    {
+      "name": "Remex RRS1150BC1 Tape Reader",
+      "img": "/img/computing/remex-tape.jpg"
+    },
+    {
+      "name": "Tandy Pocket Scientific Calculator PC-6",
+      "img": "/img/computing/tandy-pc6.jpg"
+    },
+    {
+      "name": "USSR Felix Arithmometer",
+      "img": "/img/computing/ussr-mechcalc.jpg"
+    },
+    {
+      "name": "USSR Core Memory Chip",
+      "img": "/img/computing/ussr-memory-chip.jpg"
+    }
+  ]
+}

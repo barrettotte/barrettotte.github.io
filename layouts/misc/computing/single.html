@@ -1,12 +1,12 @@
 {{ define "main" }}
-  <article id="hoc">
+  <article id="computing">
     <div class="content">
       <h1>{{- .Title -}}</h1>
       {{- .Content -}}
 
       <h2>Computers</h2>
       <ul class="gallery">
-        {{ range (sort .Site.Data.hoc.computers "name") }}
+        {{ range (sort .Site.Data.computing.computers "name") }}
           <li>
             <a href="{{- .img -}}">
               <img src="{{- .img -}}" alt="{{- .name -}}"/>
@@ -18,7 +18,7 @@
 
       <h2>Misc</h2>
       <ul class="gallery">
-        {{ range (sort .Site.Data.hoc.misc "name") }}
+        {{ range (sort .Site.Data.computing.misc "name") }}
           <li>
             <a href="{{- .img -}}">
               <img src="{{- .img -}}" alt="{{- .name -}}"/>
