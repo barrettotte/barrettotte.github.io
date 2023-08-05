@@ -41,7 +41,7 @@ section: about
 
 ## Career
 
-In summary, I'm a software engineer with the bulk of my official experience in **Java**, **Angular**, and **Postgres**.
+In summary, I'm a software engineer with the bulk of my experience in **Java**, **Angular**, and **Postgres**.
 My resume with more detail is available at 
 <a href="https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf" target="_blank" rel="noopener noreferrer">/resume</a>.
 
