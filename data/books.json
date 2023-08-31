@@ -59,7 +59,7 @@
     "isbn13": "9781409200734",
     "year": 2008,
     "author": "Poli, Riccardo; Langdon, William B.; McPhee, Nicholas Freitag",
-    "category": "Computer Science and Software Engineering"
+    "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
     "title": "A First Course in Abstract Algebra",
@@ -289,7 +289,7 @@
     "isbn13": "9780123742605",
     "year": 2011,
     "author": "Pacheco, Peter",
-    "category": "Computer Science and Software Engineering"
+    "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
     "title": "An Introduction to Radio Astronomy",
@@ -343,7 +343,7 @@
     "isbn13": "9781461468486",
     "year": 2013,
     "author": "Kuhn, Max; Johnson, Kjell",
-    "category": "Computer Science and Software Engineering"
+    "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
     "title": "Approaching the Buddhist Path",
@@ -544,7 +544,7 @@
     "isbn13": "9780201719628",
     "year": 2001,
     "author": "Metsker, Steven John Metsker",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "C# 5.0 in a Nutshell",
@@ -639,14 +639,14 @@
     "isbn13": "9780534939724",
     "year": 1997,
     "author": "Louden, Kenneth C.",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Compilers: Principles, Techniques, and Tools",
     "isbn13": "9780201100884",
     "year": 1986,
     "author": "Aho, Alfred V.; Sethi, Ravi; Ullman, Jeffrey D.",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "CompTIA Security+ All-in-One Exam Guide, Fourth Edition (Exam SY0-401)",
@@ -757,7 +757,7 @@
     "isbn13": "9780130307965",
     "year": 2001,
     "author": "Shapiro, Linda G.; Stockman, George C.",
-    "category": "Computer Science and Software Engineering"
+    "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
     "title": "Computer: A History of the Information Machine",
@@ -825,7 +825,7 @@
     "isbn13": "9780134177410",
     "year": 2015,
     "author": "Storti, Duane; Yurtoglu, Mete",
-    "category": "Computer Science and Software Engineering"
+    "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
     "title": "Data File Programming in BASIC",
@@ -838,14 +838,14 @@
     "isbn13": "9781449361327",
     "year": 2013,
     "author": "Provost, Foster; Fawcett, Tom",
-    "category": "Computer Science and Software Engineering"
+    "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
     "title": "Data Science from Scratch: First Principles with Python",
     "isbn13": "9781492041139",
     "year": 2019,
     "author": "Grus, Joel",
-    "category": "Computer Science and Software Engineering"
+    "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
     "title": "Data Structures Using Pascal",
@@ -887,7 +887,7 @@
     "isbn13": "9780262035613",
     "year": 2016,
     "author": "Goodfellow, Ian; Bengio, Yoshua; Courville, Aaron",
-    "category": "Computer Science and Software Engineering"
+    "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
     "title": "Design of Analog CMOS Integrated Circuits",
@@ -1185,7 +1185,7 @@
     "isbn13": "9780120884780",
     "year": 2011,
     "author": "Cooper, Keith; Torczon, Linda",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Engineering Electromagnetics",
@@ -1306,7 +1306,7 @@
     "isbn13": "9780201120035",
     "year": 1987,
     "author": "Michael J Folk",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Fingerprints Of The Gods",
@@ -1604,7 +1604,7 @@
     "isbn13": "9781492032649",
     "year": 2019,
     "author": "Géron, Aurélien",
-    "category": "Computer Science and Software Engineering"
+    "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
     "title": "Heart of the Buddha's Teaching: Transforming Suffering into Peace, Joy, and Liberation",
@@ -1651,7 +1651,7 @@
     "isbn13": "9780810457898",
     "year": 1977,
     "author": "Freeman; Donald E",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "IBM's Early Computers",
@@ -1742,7 +1742,7 @@
     "isbn13": "9780486248646",
     "year": 1985,
     "author": "Jackson Jr., Philip C.",
-    "category": "Computer Science and Software Engineering"
+    "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
     "title": "Introduction to Astrophysics: The Stars",
@@ -2009,7 +2009,7 @@
     "isbn13": "9781934356456",
     "year": 2010,
     "author": "Terence Parr",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Large-Capacity Memory Techniques for Computing Systems",
@@ -2076,14 +2076,14 @@
     "isbn13": "9780596005900",
     "year": 2005,
     "author": "Jonathan Corbet; Alessandro Rubini; Greg Kroah-Hartman",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Linux System Programming: Talking Directly to the Kernel and C Library",
     "isbn13": "9781449339531",
     "year": 2013,
     "author": "Love, Robert",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Lisp (3rd Edition)",
@@ -2294,7 +2294,7 @@
     "isbn13": "9780521607650",
     "year": 2004,
     "author": "Appel, Andrew W.",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Modern Digital and Analog Communication Systems",
@@ -2501,21 +2501,21 @@
     "isbn13": "9780471694663",
     "year": 2004,
     "author": "Silberschatz, Abraham; Galvin, Peter B.; Gagne, Greg",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Operating Systems: Internals and Design Principles (5th Edition)",
     "isbn13": "9780131479548",
     "year": 2004,
     "author": "Stallings, William",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Operating Systems: Three Easy Pieces",
     "isbn13": "9781985086593",
     "year": 2018,
     "author": "Arpaci-Dusseau, Remzi H; Arpaci-Dusseau, Andrea C",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Opticks",
@@ -2577,7 +2577,7 @@
     "isbn13": "9780201577976",
     "year": 1991,
     "author": "Ralf Brown",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Physical Chemistry: A Molecular Approach",
@@ -2712,7 +2712,7 @@
     "isbn13": "9781118739327",
     "year": 2014,
     "author": "Cheng, John; Grossman, Max; McKercher, Ty",
-    "category": "Computer Science and Software Engineering"
+    "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
     "title": "Programming Android",
@@ -2775,7 +2775,7 @@
     "isbn13": "9780130276780",
     "year": 2000,
     "author": "Pratt, Terrence W.; Zelkowitz, Marvin V.",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Programming Languages: History and Fundamentals",
@@ -2789,7 +2789,7 @@
     "isbn13": "9780128119860",
     "year": 2016,
     "author": "Kirk, David B.; Hwu, Wen-mei W.",
-    "category": "Computer Science and Software Engineering"
+    "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
     "title": "Programming Perl",
@@ -2829,7 +2829,7 @@
     "isbn13": "9780201142242",
     "year": 1986,
     "author": "Bratko, Ivan",
-    "category": "Computer Science and Software Engineering"
+    "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
     "title": "Purple Team Field Manual",
@@ -2850,7 +2850,7 @@
     "isbn13": "9781783555130",
     "year": 2015,
     "author": "Raschka, Sebastian",
-    "category": "Computer Science and Software Engineering"
+    "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
     "title": "QED: The Strange Theory of Light and Matter",
@@ -3389,7 +3389,7 @@
     "isbn13": "9780132017992",
     "year": 1986,
     "author": "Bach, Maurice",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "The Development of Modern Chemistry",
@@ -3456,7 +3456,7 @@
     "isbn13": "9781934356999",
     "year": 2013,
     "author": "Parr, Terence",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "The Fabric of Civilization",
@@ -3724,7 +3724,7 @@
     "isbn13": "9780139376818",
     "year": 1983,
     "author": "Brian W. Kernighan; Rob Pike",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "The Way of Kings: Book One of the Stormlight Archive",
@@ -3862,14 +3862,14 @@
     "isbn13": "9780596005658",
     "year": 2005,
     "author": "Bovet, Daniel P.; Cesati, Marco",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Understanding Linux Network Internals: Guided Tour to Networking on Linux",
     "isbn13": "9780596002558",
     "year": 2006,
     "author": "Benvenuti, Christian",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "University Physics with Modern Physics (14th Edition)",
@@ -3883,7 +3883,7 @@
     "isbn13": "9780078815768",
     "year": 1990,
     "author": "Muster, John",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Vacuum-tube and Semiconductor Electronics",
@@ -3916,14 +3916,14 @@
     "isbn13": "9783982016108",
     "year": 2018,
     "author": "Ball, Thorsten",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Writing Compilers and Interpreters",
     "isbn13": "9780471113539",
     "year": 1996,
     "author": "Mak, Ronald",
-    "category": "Computer Science and Software Engineering"
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "XSLT Cookbook",
