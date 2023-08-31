@@ -1,7 +1,6 @@
 baseURL = "https://barrettotte.github.io"
 languageCode = "en-us"
 title = "Barrett Otte"
-# theme = "cactus"
 
 [[menu.main]]
   name = "Home"
@@ -17,11 +16,6 @@ title = "Barrett Otte"
   name = "Posts"
   url = "/posts"
   weight = 3
-
-# [[menu.main]]
-#   name = "Tags"
-#   url = "/tags"
-#   weight = 4
 
 [[menu.main]]
   name = "About"
