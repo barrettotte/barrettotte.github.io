@@ -789,6 +789,28 @@
       "desc": "Making my AC unit a little smarter with MQTT and Home Assistant",
       "date": "2023-06",
       "tags": ["arduino", "hardware", "c++", "esp8266", "cad", "eda", "infrared", "mqtt", "home-assistant", "smart-device"]
+    },
+    {
+      "name": "ctf",
+      "url": "https://github.com/barrettotte/ctf",
+      "desc": "CTFs, cybersecurity courses, and other cyber junk",
+      "date": "2023-06",
+      "tags": [],
+      "hidden": true
+    },
+    {
+      "name": "anki-arrl",
+      "url": "https://github.com/barrettotte/anki-arrl",
+      "desc": "Convert ARRL amateur radio exam question pools to Anki decks",
+      "date": "2023-06",
+      "tags": ["python", "radio"]
+    },
+    {
+      "name": "deep-fryer",
+      "url": "https://github.com/barrettotte/deep-fryer",
+      "desc": "An image \"deep fryer\" to learn a little CUDA and parallel programming ",
+      "date": "2023-07",
+      "tags": ["c", "cuda", "parallel", "graphics"]
     }
   ]
 }
