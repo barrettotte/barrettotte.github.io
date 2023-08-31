@@ -1,0 +1,3963 @@
+[
+  {
+    "title": "1800 Mechanical Movements, Devices and Appliances",
+    "isbn13": "9780486457437",
+    "year": 2007,
+    "author": "Hiscox, Gardner D.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "507 Mechanical Movements",
+    "isbn13": "9781614275183",
+    "year": 2013,
+    "author": "Brown, Henry T.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "57 Practical Programs & Games in BASIC",
+    "isbn13": "9780830699872",
+    "year": 1978,
+    "author": "Tracton, Ken",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "6809 Assembly Language Programming",
+    "year": 1981,
+    "author": "Leventhal",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "A Book of Set Theory",
+    "isbn13": "9780486497082",
+    "year": 2014,
+    "author": "Pinter, Charles C",
+    "category": "Mathematics"
+  },
+  {
+    "title": "A Clash of Kings (A Song of Ice and Fire, Book 2)",
+    "isbn13": "9780553579901",
+    "year": 2000,
+    "author": "Martin, George R. R.",
+    "category": "Fiction"
+  },
+  {
+    "title": "A Dance with Dragons (A Song of Ice and Fire, Book 5)",
+    "isbn13": "9780553582017",
+    "year": 2013,
+    "author": "Martin, George R. R.",
+    "category": "Fiction"
+  },
+  {
+    "title": "A Feast for Crows (A Song of Ice and Fire, Book 4)",
+    "isbn13": "9780553582024",
+    "year": 2006,
+    "author": "Martin, George R. R.",
+    "category": "Fiction"
+  },
+  {
+    "title": "A Field Guide to Genetic Programming",
+    "isbn13": "9781409200734",
+    "year": 2008,
+    "author": "Poli, Riccardo; Langdon, William B.; McPhee, Nicholas Freitag",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "A First Course in Abstract Algebra",
+    "isbn13": "9780201534672",
+    "year": 1994,
+    "author": "Fraleigh, John B.",
+    "category": "Mathematics"
+  },
+  {
+    "title": "A Game of Thrones (A Song of Ice and Fire, Book 1)",
+    "year": 1997,
+    "author": "Martin, George R.R.",
+    "category": "Fiction"
+  },
+  {
+    "title": "A Guide to FORTRAN IV Programming",
+    "year": 1968,
+    "author": "McCracken",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "A Hangman's Diary",
+    "isbn13": "9781629144801",
+    "year": 2015,
+    "author": "Schmidt, Franz",
+    "category": "History"
+  },
+  {
+    "title": "A History of Astronomy",
+    "isbn10": "0486659941",
+    "year": 2011,
+    "author": "Pannekoek, A.",
+    "category": "History of Technology"
+  },
+  {
+    "title": "A History of Electricity and Magnetism",
+    "isbn10": "026213070x",
+    "year": 1971,
+    "author": "Meyer, Herbert W.",
+    "category": "History of Technology"
+  },
+  {
+    "title": "A History of Mechanical Inventions",
+    "isbn10": "048625593x",
+    "year": 2011,
+    "author": "Usher, Abbott Payson",
+    "category": "History of Technology"
+  },
+  {
+    "title": "A History of Mechanics",
+    "isbn10": "0486656322",
+    "year": 2011,
+    "author": "Dugas, René",
+    "category": "History of Technology"
+  },
+  {
+    "title": "A History of Modern Computing",
+    "isbn10": "0262532034",
+    "year": 2003,
+    "author": "Ceruzzi, Paul E.",
+    "category": "History of Computing"
+  },
+  {
+    "title": "A History of the Theories of Aether & Electricity (Two Volumes)",
+    "isbn13": "9780486261263",
+    "year": 1989,
+    "author": "Edmund T. Whittaker",
+    "category": "History of Technology"
+  },
+  {
+    "title": "A Mind at Play: How Claude Shannon Invented the Information Age",
+    "isbn13": "9781476766690",
+    "year": 2018,
+    "author": "Soni, Jimmy; Goodman, Rob",
+    "category": "History of Computing"
+  },
+  {
+    "title": "A Physical Introduction to Fluid Mechanics",
+    "isbn13": "9780471253495",
+    "year": 1999,
+    "author": "Smits, Alexander J.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "A Programmer's Guide To ZPL",
+    "isbn13": "9780262692175",
+    "year": 1999,
+    "author": "Lawrence Snyder",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "A Storm of Swords (A Song of Ice and Fire, Book 3)",
+    "isbn13": "9780553573428",
+    "year": 2003,
+    "author": "Martin, George R. R.",
+    "category": "Fiction"
+  },
+  {
+    "title": "A System of Natural Philosophy",
+    "year": 1853,
+    "author": "Comstock",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "A Textbook on Chemistry",
+    "year": 1853,
+    "author": "Draper",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "A Transition to Advanced Mathematics",
+    "isbn13": "9780534122348",
+    "year": 1989,
+    "author": "Smith, Douglas; Eggen, Maurice; St. Andre, Richard",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Abstracting Away the Machine: The History of the FORTRAN Programming Language",
+    "isbn13": "9781082395949",
+    "year": 2019,
+    "author": "Lorenzo, Mark Jones",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Ada's Algorithm",
+    "isbn13": "9781612194578",
+    "year": 2015,
+    "author": "Essinger, James",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Ada 95 from the Beginning",
+    "isbn13": "9780201403763",
+    "year": 1996,
+    "author": "Skansholm, J.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Advanced Graphics in C: Programming and Techniques",
+    "isbn13": "9780078812576",
+    "year": 1987,
+    "author": "Johnson, Nelson",
+    "category": "Game Development, Graphics, and Audio"
+  },
+  {
+    "title": "Advanced Integrated RPG",
+    "isbn13": "9781583470954",
+    "year": 2010,
+    "author": "Thomas Snyder",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Amateur Telescope Making",
+    "year": 1941,
+    "author": "Ingalls, Albert G.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "An Elementary Treatise on Electric Power and Lighting Volume I",
+    "year": 1897,
+    "author": "ICS",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "An Elementary Treatise on Electric Power and Lighting Volume II",
+    "year": 1897,
+    "author": "ICS",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "An Imaginary Tale: The Story of √-1",
+    "isbn13": "9780691027951",
+    "year": 1998,
+    "author": "Nahin, Paul J.",
+    "category": "History of Mathematics"
+  },
+  {
+    "title": "An Introduction to Bioinformatics Algorithms",
+    "isbn13": "9780262101066",
+    "year": 2004,
+    "author": "Jones, Neil C.; Pevzner, Pavel A.",
+    "category": "Biology"
+  },
+  {
+    "title": "An Introduction to Classical Electrodynamics",
+    "isbn13": "9781949942002",
+    "year": 2019,
+    "author": "Keohane, Jonathan W.; Foy, Joseph P.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "An Introduction to Differential Equations and Their Applications",
+    "isbn13": "9780486445953",
+    "year": 2006,
+    "author": "Stanley J. Farlow",
+    "category": "Mathematics"
+  },
+  {
+    "title": "An Introduction to Functional Programming Through Lambda Calculus",
+    "isbn13": "9780486478838",
+    "year": 2011,
+    "author": "Greg Michaelson",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "An Introduction to Information Theory: Symbols, Signals and Noise",
+    "isbn13": "9780486240619",
+    "year": 1980,
+    "author": "Pierce, John R.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "An Introduction to Mathematical Machine Theory",
+    "year": 1962,
+    "author": "Seymour Ginsburg",
+    "category": "Mathematics"
+  },
+  {
+    "title": "An Introduction to Modern Astrophysics",
+    "isbn13": "9780201547306",
+    "year": 1995,
+    "author": "Carroll, Bradley W.; Ostlie, Dale A.",
+    "category": "Physics"
+  },
+  {
+    "title": "An Introduction to Parallel Programming",
+    "isbn13": "9780123742605",
+    "year": 2011,
+    "author": "Pacheco, Peter",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "An Introduction to Radio Astronomy",
+    "isbn13": "9780521556040",
+    "year": 1996,
+    "author": "Burke, Bernard F.; Graham-Smith, Francis",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "An Introduction to Semiconductor Electronics",
+    "year": 1963,
+    "author": "Nanavati",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "An Introduction to Statistical Thermodynamics",
+    "isbn13": "9780486652429",
+    "year": 1987,
+    "author": "Hill, Terrell L.",
+    "category": "Physics"
+  },
+  {
+    "title": "An Introduction to the Mechanics of Solids: Second Edition",
+    "isbn13": "9780072380415",
+    "year": 1999,
+    "author": "Crandall, Stephen; Lardner, Thomas",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Ant: The Definitive Guide, 2nd Edition",
+    "isbn13": "9780596006099",
+    "year": 2005,
+    "author": "Holzner, Steve",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Applied Cryptography: Protocols, Algorithms, and Source Code in C",
+    "isbn13": "9780471117094",
+    "year": 2007,
+    "author": "Bruce Schneier",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Applied Practical Radio-Television",
+    "year": 1958,
+    "author": "Coyne",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Applied Predictive Modeling",
+    "isbn13": "9781461468486",
+    "year": 2013,
+    "author": "Kuhn, Max; Johnson, Kjell",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Approaching the Buddhist Path",
+    "year": 2017,
+    "author": "Lama, Dalai; Chodron, Thubten",
+    "category": "Religion and Mythology"
+  },
+  {
+    "title": "ARM Assembly Language Programming with Raspberry Pi using GCC",
+    "isbn13": "9781970054002",
+    "year": 2018,
+    "author": "Naimi, Sepehr; Naimi, Sarmad; Yaghini, Azalia; Mazidi, Muhammad Ali",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "ARRL General Class License Manual 10th Edition",
+    "isbn13": "9781625951717",
+    "year": 2023,
+    "author": "ARRL Inc.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "ARRL Ham Radio License Manual 5th Edition",
+    "isbn13": "9781625951557",
+    "year": 2022,
+    "author": "ARRL Inc.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Assembler Language Programming: The IBM System/360 and 370",
+    "isbn13": "9780201073225",
+    "year": 1975,
+    "author": "Struble, George",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Assembler Language Programming for IBM and IBM-Compatible Computers",
+    "isbn13": "9780471886570",
+    "year": 1986,
+    "author": "Stern, Nancy B.",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Assembly Language Step-by-Step: Programming with Linux",
+    "isbn13": "9780470497029",
+    "year": 2009,
+    "author": "Duntemann, Jeff",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Astronomy & Maths in Ancient China: The 'Zhou Bi Suan Jing'",
+    "isbn10": "0521035376",
+    "year": 2008,
+    "author": "Cullen, Christopher",
+    "category": "History of Technology"
+  },
+  {
+    "title": "Atomic Spectra and Atomic Structure",
+    "isbn13": "9780486601151",
+    "year": 2010,
+    "author": "Herzberg, Gerhard",
+    "category": "Chemistry and Materials Science"
+  },
+  {
+    "title": "Auto Mechanics Fundamentals: How and Why of the Design, Construction, and Operation of Automotive Units",
+    "isbn13": "9780870067709",
+    "year": 1990,
+    "author": "Stockel, Martin T.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Automobile Engineering Volume I",
+    "year": 1918,
+    "author": "American Technical Society",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Automobile Engineering Volume II",
+    "year": 1918,
+    "author": "American Technical Society",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Automobile Engineering Volume III",
+    "year": 1918,
+    "author": "American Technical Society",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Automobile Engineering Volume IV",
+    "year": 1918,
+    "author": "American Technical Society",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Automobile Engineering Volume V",
+    "year": 1918,
+    "author": "American Technical Society",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Automobile Power Plants",
+    "year": 1923,
+    "author": "Elliott",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Automotive Electricity",
+    "year": 1925,
+    "author": "Consoliver",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Basic Electricity",
+    "isbn13": "9780486209739",
+    "year": 1970,
+    "author": "Bureau of Naval Personnel",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Basic Electronics",
+    "isbn13": "9780486210766",
+    "year": 1973,
+    "author": "U.S. Bureau of Naval Personnel",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Basic Machines and How They Work",
+    "isbn13": "9780486217093",
+    "year": 1997,
+    "author": "Naval Education And Training Program",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Beginner's BASIC",
+    "isbn13": "9780895120281",
+    "year": 1979,
+    "author": "Inman, Don",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Beginning DB2: From Novice to Professional",
+    "isbn13": "9781590599426",
+    "year": 2008,
+    "author": "Allen, Grant",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Bhagavad Gita",
+    "isbn13": "9789389432701",
+    "year": 2019,
+    "category": "Religion and Mythology"
+  },
+  {
+    "title": "Biological Modeling and Simulation: A Survey of Practical Models, Algorithms, and Numerical Methods",
+    "isbn13": "9780262195843",
+    "year": 2008,
+    "author": "Schwartz, Russell",
+    "category": "Biology"
+  },
+  {
+    "title": "Bit by Bit: An Illustrated History of Computers",
+    "isbn10": "0899193021",
+    "year": 1984,
+    "author": "Augarten, Stan",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Black Hat Go: Go Programming For Hackers and Pentesters",
+    "isbn13": "9781593278656",
+    "year": 2020,
+    "author": "Steele, Tom; Patten, Chris; Kottmann, Dan",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Blue Team Field Manual",
+    "isbn13": "9781541016361",
+    "year": 2017,
+    "author": "White, Alan J; Clark, Ben",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Boolean Algebra and Its Applications",
+    "isbn13": "9780486477671",
+    "year": 2010,
+    "author": "Whitesitt, J. Eldon",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Build Your Own CNC Machine",
+    "isbn13": "9781430224891",
+    "year": 2009,
+    "author": "Floyd Kelly, James; Hood-Daniel, Patrick",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Building Parsers with Java",
+    "isbn13": "9780201719628",
+    "year": 2001,
+    "author": "Metsker, Steven John Metsker",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "C# 5.0 in a Nutshell",
+    "isbn13": "9781449320102",
+    "year": 2012,
+    "author": "Albahari, Joseph; Albahari, Ben",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Calculus, 7th Edition",
+    "isbn13": "9780538497817",
+    "year": 2012,
+    "author": "Stewart, James",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Calculus and Analytic Geometry",
+    "isbn13": "9780871503237",
+    "year": 1983,
+    "author": "Faires, J. Douglas",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Calculus for Scientists and Engineers: Early Transcendentals, Single Variable",
+    "isbn13": "9780321785503",
+    "year": 2012,
+    "author": "Briggs, William; Cochran, Lyle; Gillett, Bernard",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Campbell Biology (10th Edition)",
+    "isbn13": "9780321775658",
+    "year": 2019,
+    "author": "Reece, Jane B.; Urry, Lisa A.; Cain, Michael L.; Wasserman, Steven A.; Minorsky, Peter V.; Jackson, Robert B.",
+    "category": "Biology"
+  },
+  {
+    "title": "Catching the Light: The Entwined History of Light and Mind",
+    "isbn10": "0195095758",
+    "year": 1995,
+    "author": "Zajonc, Arthur",
+    "category": "History of Technology"
+  },
+  {
+    "title": "Chemistry: Principles, Patterns, and Applications",
+    "isbn13": "9780805383171",
+    "year": 2006,
+    "author": "Averill, Bruce A.; Eldredge, Patricia",
+    "category": "Chemistry and Materials Science"
+  },
+  {
+    "title": "Chinese Mathematics in the Thirteenth Century",
+    "isbn10": "0486446190",
+    "year": 2006,
+    "author": "Ulrich Libbrecht",
+    "category": "History of Mathematics"
+  },
+  {
+    "title": "Classical Mechanics: The Theoretical Minimum",
+    "isbn13": "9780141976228",
+    "year": 2014,
+    "author": "SUSSKIND, Leonard & HRABOVSKY, George",
+    "category": "Physics"
+  },
+  {
+    "title": "Clojure for the Brave and True",
+    "isbn13": "9781593275914",
+    "year": 2015,
+    "author": "Higginbotham, Daniel",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "CODE The Hidden Language of Computer Hardware and Software",
+    "isbn13": "9780735611313",
+    "year": 2013,
+    "author": "Steinberg, Prof James",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "College Physics",
+    "year": 1935,
+    "author": "Mendenhall; Eve; Keys",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Color Computer 3 Extended BASIC",
+    "year": 1982,
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Compiler Construction: Principles and Practice",
+    "isbn13": "9780534939724",
+    "year": 1997,
+    "author": "Louden, Kenneth C.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Compilers: Principles, Techniques, and Tools",
+    "isbn13": "9780201100884",
+    "year": 1986,
+    "author": "Aho, Alfred V.; Sethi, Ravi; Ullman, Jeffrey D.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "CompTIA Security+ All-in-One Exam Guide, Fourth Edition (Exam SY0-401)",
+    "isbn13": "9780071841245",
+    "year": 2014,
+    "author": "Conklin, Wm. Arthur; White, Greg; Williams, Dwayne; Cothren, Chuck; Davis, Roger",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Computability, Complexity, and Languages: Fundamentals of Theoretical Computer Science",
+    "isbn13": "9780122063824",
+    "year": 1994,
+    "author": "Davis, Martin; Sigal, Ron; Weyuker, Elaine J.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Computational Electromagnetics for RF and Microwave Engineering",
+    "isbn13": "9780521518918",
+    "year": 2010,
+    "author": "Davidson, David B.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Computational Electromagnetics with Matlab, Fourth Edition",
+    "isbn13": "9781032339030",
+    "year": 2022,
+    "author": "Sadiku",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Computational Geometry in C",
+    "isbn13": "9780521649766",
+    "year": 1998,
+    "author": "O'Rourke, Joseph",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Computational Molecular Biology: An Algorithmic Approach",
+    "isbn13": "9780262161978",
+    "year": 2000,
+    "author": "Pevzner, Pavel A.",
+    "category": "Biology"
+  },
+  {
+    "title": "Computational Physics",
+    "isbn13": "9781480145511",
+    "year": 2012,
+    "author": "Newman, Mark",
+    "category": "Physics"
+  },
+  {
+    "title": "Compute!'s First Book of Commodore 64",
+    "isbn13": "9780942386202",
+    "year": 1983,
+    "author": "Compute, Books",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Computer Architecture: A Quantitative Approach",
+    "isbn13": "9780123838728",
+    "year": 2011,
+    "author": "Hennessy, John L.; Patterson, David A.",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Computer Graphics: Principles and Practice",
+    "isbn13": "9780201848403",
+    "year": 1995,
+    "author": "Van Dam, Andries; Feiner, Steven K.; Hughes, John F.",
+    "category": "Game Development, Graphics, and Audio"
+  },
+  {
+    "title": "Computer Networking: A Top-Down Approach",
+    "isbn13": "9789332585492",
+    "year": 2017,
+    "author": "Ross Keith W. And Kurose James F.",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Computer Organization and Design MIPS Edition: The Hardware/Software Interface",
+    "isbn13": "9780124077263",
+    "year": 2013,
+    "author": "Patterson, David A.; Hennessy, John L.",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Computer Programming Fundamentals: Based on the IBM System/360",
+    "year": 1970,
+    "author": "Leeds; Weinberg",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Computer Structures: Readings and Examples",
+    "isbn13": "9780070043572",
+    "year": 1971,
+    "author": "C. Gordon Bell; Allen Newell",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Computer Systems: A Programmer's Perspective",
+    "isbn13": "9789332573901",
+    "year": 2016,
+    "author": "Randal E. Bryant, David R. O'Hallaron",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Computer Vision",
+    "isbn13": "9780130307965",
+    "year": 2001,
+    "author": "Shapiro, Linda G.; Stockman, George C.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Computer: A History of the Information Machine",
+    "isbn13": "9780813345901",
+    "year": 2013,
+    "author": "Campbell-Kelly, Martin; Aspray, William; Ensmenger, Nathan; Yost, Jeffrey R.",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Computers - From Sand Table to Electronic Brain",
+    "lccn": "70127976",
+    "year": 1970,
+    "author": "Vorwald, Alan",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Control Language Programming for IBM i",
+    "isbn13": "9781583473580",
+    "year": 2011,
+    "author": "Buck, Jim; Meyers, Bryan; Riehl, Dan",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Control Language Programming for the AS/400 (2nd Edition)",
+    "isbn13": "9781882419760",
+    "year": 1997,
+    "author": "Meyers, Bryan; Riehl, Dan",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Control Systems Engineering",
+    "isbn13": "9780471794752",
+    "year": 2007,
+    "author": "Nise, Norman S.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Copper and Its Alloys in Engineering and Technology",
+    "year": 1951,
+    "category": "Chemistry and Materials Science"
+  },
+  {
+    "title": "Cosmos",
+    "isbn13": "9780394502946",
+    "year": 1980,
+    "author": "Sagan, Carl",
+    "category": "Physics"
+  },
+  {
+    "title": "Cryptonomicon",
+    "isbn13": "9780060512804",
+    "year": 2002,
+    "author": "Stephenson, Neal",
+    "category": "Fiction"
+  },
+  {
+    "title": "Crystal Fire: The Birth of the Information Age",
+    "isbn10": "0393041247",
+    "year": 1997,
+    "author": "Riordan, Michael; Hoddeson, Lillian",
+    "category": "History of Computing"
+  },
+  {
+    "title": "CUDA for Engineers: An Introduction to High-Performance Parallel Computing",
+    "isbn13": "9780134177410",
+    "year": 2015,
+    "author": "Storti, Duane; Yurtoglu, Mete",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Data File Programming in BASIC",
+    "isbn13": "9780471083337",
+    "year": 1981,
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Data Science for Business",
+    "isbn13": "9781449361327",
+    "year": 2013,
+    "author": "Provost, Foster; Fawcett, Tom",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Data Science from Scratch: First Principles with Python",
+    "isbn13": "9781492041139",
+    "year": 2019,
+    "author": "Grus, Joel",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Data Structures Using Pascal",
+    "isbn13": "9780131966680",
+    "year": 1997,
+    "author": "Tenenbaum, Aaron M.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Database Design and Implementation",
+    "isbn13": "9780471757160",
+    "year": 2008,
+    "author": "Sciore, Edward",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Database Design for Mere Mortals",
+    "isbn13": "9780321884497",
+    "year": 2013,
+    "author": "Hernandez, Michael",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Database System Implementation",
+    "isbn13": "9780130402646",
+    "year": 1999,
+    "author": "Garcia-Molina, Hector; Ullman, Jeffrey D.; Widom, Jennifer D.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Decoding the Heavens",
+    "isbn13": "9780306817427",
+    "year": 2009,
+    "author": "Marchant, Jo",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Deep Learning",
+    "isbn13": "9780262035613",
+    "year": 2016,
+    "author": "Goodfellow, Ian; Bengio, Yoshua; Courville, Aaron",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Design of Analog CMOS Integrated Circuits",
+    "isbn13": "9780072380323",
+    "year": 2000,
+    "author": "Razavi, Behzad",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Design of Machinery: An Introduction to the Synthesis and Analysis of Mechanisms and Machines",
+    "isbn13": "9780073121581",
+    "year": 2008,
+    "author": "Norton, Robert L.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Designing Great Beers: The Ultimate Guide to Brewing Classic Beer Styles",
+    "isbn13": "9780937381502",
+    "year": 1998,
+    "author": "Daniels, Ray"
+  },
+  {
+    "title": "Die Rechenmaschinen von Konrad Zuse",
+    "isbn13": "9783642719455",
+    "year": 2011,
+    "author": "Raúl Rojas",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Differential Equations with Boundary-Value Problems",
+    "isbn13": "9780495108368",
+    "year": 2008,
+    "author": "Zill, Dennis G.; Cullen, Michael R.",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Digital Computer Electronics",
+    "isbn13": "9780074622353",
+    "year": 2001,
+    "author": "Malvino; Brown",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Digital Design and Computer Architecture: ARM Edition",
+    "isbn13": "9780128000564",
+    "year": 2015,
+    "author": "Harris, Sarah; Harris, David",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Digital Design: Principles and Practices",
+    "isbn13": "9780131863897",
+    "year": 2005,
+    "author": "Wakerly, John F.",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Digital Media Primer (2nd Edition)",
+    "isbn13": "9780132893503",
+    "year": 2012,
+    "author": "Shandar Junaid; Wong, Yue-Ling",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Direct-Current Machinery",
+    "year": 1952,
+    "author": "Siskind",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Discrete and Combinatorial Mathematics: An Applied Introduction (4th Edition)",
+    "isbn13": "9780201199123",
+    "year": 1998,
+    "author": "Grimaldi, Ralph",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability (3rd Edition)",
+    "isbn13": "9780321965516",
+    "year": 2013,
+    "author": "Krug, Steve",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Dynamo Electric Machinery Part One",
+    "year": 1902,
+    "author": "Thompson",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Dynamo Electric Machinery Part Two",
+    "year": 1902,
+    "author": "Thompson",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Dynamo Tending for Engineers",
+    "year": 1904,
+    "author": "Horstmann; Tousley",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Early Greek Science: Thales to Aristotle",
+    "isbn10": "0393005836",
+    "year": 1974,
+    "author": "Lloyd, G. E. R.",
+    "category": "History of Technology"
+  },
+  {
+    "title": "Einstein's Greatest Mistake: Abandonment Of The Aether",
+    "isbn13": "9780595374816",
+    "year": 2006,
+    "author": "Sid Deutsch",
+    "category": "Physics"
+  },
+  {
+    "title": "Electrical Engineering Experiments",
+    "year": 1939,
+    "author": "Reed; Corcoran",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Electrical Engineering Principles And Application",
+    "isbn13": "9789332563308",
+    "year": 2021,
+    "author": "Hambley, Allan R.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electromechanical Motion Devices",
+    "isbn13": "9780070354944",
+    "year": 1989,
+    "author": "Krause, Paul C.; Wasynczuk, Oleg",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electron-Tube Circuits",
+    "year": 1950,
+    "author": "Seely",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electron-Tube Circuits (2nd Edition)",
+    "year": 1958,
+    "author": "Seely",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electron and Nuclear Physics",
+    "year": 1952,
+    "author": "J. Barton Hoag",
+    "category": "Physics"
+  },
+  {
+    "title": "Electronic and Radio Engineering, 4th Edition",
+    "isbn13": "9780070635098",
+    "year": 1955,
+    "author": "Terman, Frederick Emmons",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electronic Circuits: Physical Principles, Analysis, And Design",
+    "isbn13": "9780070107977",
+    "year": 1971,
+    "author": "Chirlian, P. M.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electronic Devices and Their Application",
+    "year": 1938,
+    "author": "E.P. Anderson",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Electronic Switching, Timing, and Pulsing Circuits",
+    "year": 1959,
+    "author": "Pettit",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electronics",
+    "year": 1951,
+    "author": "Seely",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electronics and Nuclear Physics",
+    "isbn13": "9780719520037",
+    "year": 1966,
+    "author": "Duncan, T.",
+    "category": "Physics"
+  },
+  {
+    "title": "Electronics and Nucleonics Dictionary 3rd Edition",
+    "year": 1960,
+    "author": "Markus",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Elementary Linear Algebra",
+    "isbn13": "9780470458211",
+    "year": 2010,
+    "author": "Anton, Howard",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Elementary Number Theory and Its Applications",
+    "isbn13": "9780201119589",
+    "year": 1988,
+    "author": "Rosen, Kenneth H",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Elementary Topology: Second Edition",
+    "isbn13": "9780486665221",
+    "year": 1990,
+    "author": "Michael C. Gemignani",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Elements of Electromagnetics",
+    "isbn13": "9780195300482",
+    "year": 2006,
+    "author": "Sadiku, Matthew N. O.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Elements of Mechanism 4th Edition",
+    "year": 1930,
+    "author": "Schwamb; Merrill; James",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Elements of ML Programming, ML97 Edition",
+    "isbn13": "9780137903870",
+    "year": "1998",
+    "author": "Ullman, Jeffrey",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Elements of Radio 2nd Edition",
+    "year": 1948,
+    "author": "Marcus; Horton",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Elements of Steam Engineering Volume I",
+    "year": 1897,
+    "author": "ICS",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Elements of Steam Engineering Volume V",
+    "year": 1897,
+    "author": "ICS",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Embedded Systems: Real-Time Operating Systems for Arm Cortex M Microcontrollers",
+    "isbn13": "9781466468863",
+    "year": 2012,
+    "author": "Valvano, Jonathan",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Embedded Systems with ARM Cortex-M Microcontrollers in Assembly Language and C: Third Edition",
+    "isbn13": "9780982692660",
+    "year": 2017,
+    "author": "Zhu, Yifeng",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Empires of the Word",
+    "isbn13": "9780060935726",
+    "year": 2006,
+    "author": "Ostler, Nicholas",
+    "category": "History of Technology"
+  },
+  {
+    "title": "Encyclopedia of Computer Science",
+    "isbn13": "9780442803216",
+    "year": 1976,
+    "author": "Ralston",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Endless Loop: The History of the BASIC Programming Language",
+    "isbn13": "9781974277070",
+    "year": 2017,
+    "author": "Lorenzo, Mark Jones",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Engineering: A Compiler",
+    "isbn13": "9780120884780",
+    "year": 2011,
+    "author": "Cooper, Keith; Torczon, Linda",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Engineering Electromagnetics",
+    "year": 1958,
+    "author": "Hayt",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Engineering Electronics",
+    "year": 1938,
+    "author": "Fink",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Engineering in the Ancient World",
+    "isbn10": "0520227824",
+    "year": 2000,
+    "author": "Landels, J. G.",
+    "category": "History of Technology"
+  },
+  {
+    "title": "Engineering Mechanics: Dynamics (2nd Edition)",
+    "isbn13": "9780201180718",
+    "year": 1999,
+    "author": "Bedford, Anthony; Fowler, Wallace; Bedford, A",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Eniac: The Triumphs and Tragedies of the World's First Computer",
+    "isbn10": "0425176444",
+    "year": 2001,
+    "author": "McCartney, Scott",
+    "category": "History of Computing"
+  },
+  {
+    "title": "ENIAC in Action: Making and Remaking the Modern Computer",
+    "isbn13": "9780262033985",
+    "year": 2016,
+    "author": "Haigh, Thomas; Priestley, Mark; Rope, Crispin",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Essential Organic Chemistry",
+    "isbn13": "9780321596956",
+    "year": 2009,
+    "author": "Bruice, Paula Yurkanis",
+    "category": "Chemistry and Materials Science"
+  },
+  {
+    "title": "Essentials of Computer Organization and Architecture",
+    "isbn13": "9780763704445",
+    "year": 2003,
+    "author": "Null, Linda",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Essential Characteristics",
+    "year": 1973,
+    "author": "General Electric",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Euclid: The Thirteen Books of the Elements, Vol. 1: Books 1-2",
+    "isbn13": "9780486600888",
+    "year": 1956,
+    "author": "Thomas L. Heath; Euclid",
+    "category": "History of Mathematics"
+  },
+  {
+    "title": "Euclid: The Thirteen Books of the Elements, Vol. 2: Books 3-9",
+    "isbn13": "9780486600895",
+    "year": 1956,
+    "author": "Thomas L. Heath; Euclid",
+    "category": "History of Mathematics"
+  },
+  {
+    "title": "Euclid: The Thirteen Books of Elements, Vol. 3, Books 10-13",
+    "isbn13": "9780486600901",
+    "year": 1956,
+    "author": "Thomas L. Heath; Euclid",
+    "category": "History of Mathematics"
+  },
+  {
+    "title": "Euclid's Elements of Geometry",
+    "year": 1745,
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Experimental Researches in Electricity, Volume 1",
+    "isbn13": "9798393044657",
+    "year": 2023,
+    "author": "Faraday, Michael",
+    "category": "History of Technology"
+  },
+  {
+    "title": "Feedback Control of Dynamic Systems",
+    "isbn13": "9780136019695",
+    "year": 2009,
+    "author": "Franklin, Gene F.; Powell, J. David; Emami-Naeini, Abbas",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Faraday, Maxwell, and the Electromagnetic Field: How Two Men Revolutionized Physics",
+    "isbn13": "9781633886070",
+    "year": 2019,
+    "author": "Forbes, Nancy; Mahon, Basil",
+    "category": "History of Technology"
+  },
+  {
+    "title": "Field and Wave Electromagnetics",
+    "isbn13": "9780201012392",
+    "year": 1983,
+    "author": "Cheng, David K",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "File Structures: A Conceptual Toolkit",
+    "isbn13": "9780201120035",
+    "year": 1987,
+    "author": "Michael J Folk",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Fingerprints Of The Gods",
+    "isbn13": "9780517887295",
+    "year": 1995,
+    "author": "Graham Hancock"
+  },
+  {
+    "title": "Fishes of the world: An illustrated dictionary",
+    "isbn13": "9780026261807",
+    "year": 1975,
+    "author": "Wheeler, Alwyne C",
+    "category": "Biology"
+  },
+  {
+    "title": "Flexible Input, Dazzling Output With IBM i",
+    "isbn13": "9781583478325",
+    "year": 2014,
+    "author": "Rafael Victória-pereira",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "For Love of Insects",
+    "isbn13": "9780674018273",
+    "year": 2005,
+    "author": "Thomas Eisner",
+    "category": "Biology"
+  },
+  {
+    "title": "Fortran 77 and Numerical Methods for Engineers",
+    "isbn13": "9780534925628",
+    "year": 1991,
+    "author": "Borse, Garold J.",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Foundations of Mathematical Logic",
+    "isbn13": "9780486634623",
+    "year": 2010,
+    "author": "Haskell B. Curry",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Fourier Series",
+    "isbn13": "9780486633176",
+    "year": 1976,
+    "author": "Georgi P. Tolstov",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Fownes' Manual of Chemistry",
+    "year": 1878,
+    "author": "Bridges",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Free-Format RPG IV",
+    "isbn13": "9781583474136",
+    "year": 2015,
+    "author": "Martin, Jim",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "From 0 to 1",
+    "isbn10": "0195140257",
+    "year": 2002,
+    "author": "Akera; Nebeker",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Functional Programming in Scala",
+    "isbn13": "9781617290657",
+    "year": 2014,
+    "author": "Paul Chiusano; Rúnar Bjarnason",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Fundamentals of Astrodynamics",
+    "isbn13": "9780486600611",
+    "year": 1971,
+    "author": "Roger R. Bate; Donald D. Mueller; Jerry E. White",
+    "category": "Physics"
+  },
+  {
+    "title": "Fundamentals of Biology",
+    "year": 1928,
+    "author": "Haupt",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Fundamentals of Electric Circuits",
+    "isbn13": "9781259098598",
+    "year": 2012,
+    "author": "Alexander Sadiku",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Fundamentals of Logic Design",
+    "isbn13": "9780829902266",
+    "year": 1979,
+    "author": "Roth, Charles H",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Fundamentals of Physics Volume One, 10th Edition",
+    "isbn13": "9781118233764",
+    "year": 2016,
+    "author": "Jearl Walker",
+    "category": "Physics"
+  },
+  {
+    "title": "Fundamentals of Physics Volume Two, 10th Edition",
+    "isbn13": "9781118233764",
+    "year": 2016,
+    "author": "Jearl Walker",
+    "category": "Physics"
+  },
+  {
+    "title": "Fundamentals of Television Engineering",
+    "year": 1955,
+    "author": "Glasford",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Fundamentals of Vacuum Tubes",
+    "year": 1949,
+    "author": "Eastman",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Galactic and Extra-Galactic Radio Astronomy",
+    "isbn13": "9780387065045",
+    "year": 1974,
+    "author": "Verschuur, Gerrit L.; Kellermann, Kenneth I.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Galactic Radio Astronomy",
+    "isbn13": "9789027705020",
+    "year": 1974,
+    "author": "Union Staff International; F. J. Kerr; S. C. Simonson",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Game Coding Complete, Fourth Edition",
+    "isbn13": "9781133776574",
+    "year": 2012,
+    "author": "McShaffry, Mike; Graham, David",
+    "category": "Game Development, Graphics, and Audio"
+  },
+  {
+    "title": "Game Engine Architecture",
+    "isbn13": "9781466560017",
+    "year": 2014,
+    "author": "Gregory, Jason",
+    "category": "Game Development, Graphics, and Audio"
+  },
+  {
+    "title": "Game Programming Patterns",
+    "isbn13": "9780990582908",
+    "year": 2014,
+    "author": "Nystrom, Robert",
+    "category": "Game Development, Graphics, and Audio"
+  },
+  {
+    "title": "Game Theory: A Nontechnical Introduction",
+    "isbn13": "9780486296722",
+    "year": 1997,
+    "author": "Davis, Morton D.",
+    "category": "Mathematics"
+  },
+  {
+    "title": "General Chemistry: Principles and Modern Applications (8th Edition)",
+    "isbn13": "9780130143297",
+    "year": 2001,
+    "author": "Petrucci, Ralph H.; Harwood, William S.; Herring, Geoffrey",
+    "category": "Chemistry and Materials Science"
+  },
+  {
+    "title": "Genetics: A Conceptual Approach, 5th Edition",
+    "isbn13": "9781464109461",
+    "year": 2013,
+    "author": "Pierce, Benjamin A.",
+    "category": "Biology"
+  },
+  {
+    "title": "Genki I: An Integrated Course in Elementary Japanese Workbook",
+    "isbn13": "9784789014410",
+    "year": 2011,
+    "author": "Eri Banno",
+    "category": "Language"
+  },
+  {
+    "title": "Genki I: An Integrated Course in Elementary Japanese",
+    "isbn13": "9784789014403",
+    "year": 2011,
+    "author": "Eri Banno; Yoko Ikeda; Yutaka Ohno",
+    "category": "Language"
+  },
+  {
+    "title": "Geometry, Relativity and the Fourth Dimension",
+    "isbn13": "9780486234007",
+    "year": 1977,
+    "author": "Rudolf v.B. Rucker",
+    "category": "Physics"
+  },
+  {
+    "title": "Geometry of Complex Numbers",
+    "isbn13": "9780486638300",
+    "year": 1980,
+    "author": "Hans Schwerdtfeger",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Getting Started on the Sharp 1500 & Radio Shack PC-2",
+    "isbn13": "9780936200118",
+    "year": 1983,
+    "author": "Harvard C. Pennington",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Gilgamesh: A New English Version",
+    "isbn13": "9780743261692",
+    "year": 2006,
+    "category": "History"
+  },
+  {
+    "title": "Gödel's Proof",
+    "isbn13": "9780814758373",
+    "year": 2008,
+    "author": "Ernest Nagel; James Newman",
+    "category": "Mathematics"
+  },
+  {
+    "title": "GPU Gems 2",
+    "isbn13": "9780321335593",
+    "year": 2005,
+    "category": "Game Development, Graphics, and Audio"
+  },
+  {
+    "title": "GPU Gems 3",
+    "isbn13": "9780321515261",
+    "year": 2007,
+    "category": "Game Development, Graphics, and Audio"
+  },
+  {
+    "title": "Gray's Anatomy for Students",
+    "isbn13": "9780702051319",
+    "year": 2014,
+    "author": "Drake PhD, Richard; Vogl PhD, A. Wayne; Mitchell MB BS FRCS FRCR, Adam W. M.",
+    "category": "Biology"
+  },
+  {
+    "title": "Greek Science After Aristotle",
+    "isbn10": "0393043711",
+    "year": 1973,
+    "author": "Lloyd, G. E. R",
+    "category": "History of Technology"
+  },
+  {
+    "title": "Guide to Operations Portable Personal Computer",
+    "year": 1984,
+    "author": "IBM",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Guide to RISC Processors: for Programmers and Engineers",
+    "isbn13": "9780387210179",
+    "year": 2005,
+    "author": "Dandamudi, Sivarama P.",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Guns, Germs, and Steel",
+    "isbn13": "9780393061314",
+    "year": 2005,
+    "author": "Diamond Ph.D., Jared",
+    "category": "History"
+  },
+  {
+    "title": "Hacking: The Art of Exploitation, 2nd Edition",
+    "isbn13": "9781593271442",
+    "year": 2008,
+    "author": "Erickson, Jon",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Hagakure: The Book of the Samurai",
+    "isbn13": "9784770011060",
+    "year": 1992,
+    "author": "Yamamoto Tsunetomo"
+  },
+  {
+    "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+    "isbn13": "9781492032649",
+    "year": 2019,
+    "author": "Géron, Aurélien",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Heart of the Buddha's Teaching: Transforming Suffering into Peace, Joy, and Liberation",
+    "isbn13": "9780938077817",
+    "year": 1998,
+    "author": "Nhat Hanh, Thich",
+    "category": "Religion and Mythology"
+  },
+  {
+    "title": "High-Speed Data Processing",
+    "year": 1958,
+    "author": "Gotlieb; Hume",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Histories of the Electron: The Birth of Microphysics",
+    "isbn10": "0262524244",
+    "year": 2004,
+    "author": "Buchwald, Warwick",
+    "category": "History of Technology"
+  },
+  {
+    "title": "History of Strength of Materials",
+    "isbn13": "9780486611877",
+    "year": 1983,
+    "author": "Stephen P. Timoshenko",
+    "category": "History of Technology"
+  },
+  {
+    "title": "How to Brew: Everything You Need To Know To Brew Beer Right The First Time",
+    "isbn13": "9780937381885",
+    "year": 2006,
+    "author": "Palmer, John J."
+  },
+  {
+    "title": "How to Design, Build, & Program Your Own Working Computer System",
+    "isbn13": "9780830698103",
+    "year": 1979,
+    "author": "Haviland, Robert P",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "I/O Design: Data Management in Operating Systems",
+    "isbn13": "9780810457898",
+    "year": 1977,
+    "author": "Freeman; Donald E",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "IBM's Early Computers",
+    "isbn10": "0262022257",
+    "year": 1985,
+    "author": "Bashe, Charles J.; Johnson, Lyle R.; Palmer, John H.; Pugh, Emerson W.",
+    "category": "History of Computing"
+  },
+  {
+    "title": "IBM i Security Administration and Compliance",
+    "isbn13": "9781583473733",
+    "year": 2012,
+    "author": "Woodbury, Carol",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "IBM PC Assembly Language and Programming",
+    "isbn13": "9780131246034",
+    "year": 1995,
+    "author": "Abel, Peter",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "IBM System i APIs at Work",
+    "isbn13": "9781583470695",
+    "year": 2007,
+    "author": "Vining, Bruce; Pence, Doug; Hawkins, Ron",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Iliad & Odyssey",
+    "isbn13": "9781607102120",
+    "year": 2011,
+    "author": "Homer",
+    "category": "History"
+  },
+  {
+    "title": "In Search of Schrödinger's Cat",
+    "isbn13": "9780553342536",
+    "year": 1984,
+    "author": "Gribbin, John",
+    "category": "Physics"
+  },
+  {
+    "title": "Infinitesimal Calculus",
+    "isbn13": "9780486428864",
+    "year": 2003,
+    "author": "James M. Henle; Eugene M. Kleinberg",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Inside the Machine: An Illustrated Introduction to Microprocessors and Computer Architecture",
+    "isbn13": "9781593276683",
+    "year": 2006,
+    "author": "Stokes, Jon",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Inside The Vacuum Tube",
+    "isbn13": "9781013698903",
+    "year": 2021,
+    "author": "John Francis Rider",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Interactive Computer Graphics: A Top-Down Approach with OpenGL (3rd Edition)",
+    "isbn13": "9780201773439",
+    "year": 2002,
+    "author": "Angel, Edward",
+    "category": "Game Development, Graphics, and Audio"
+  },
+  {
+    "title": "Internal Combustion Engine Fundamentals",
+    "isbn13": "9780071004992",
+    "year": 1989,
+    "author": "Heywood, John E.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Introduction to Algol Programming",
+    "isbn13": "9789144004433",
+    "year": 1967,
+    "author": "Fröberg, Ekman",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Introduction to Artificial Intelligence: Second, Enlarged Edition",
+    "isbn13": "9780486248646",
+    "year": 1985,
+    "author": "Jackson Jr., Philip C.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Introduction to Astrophysics: The Stars",
+    "isbn13": "9780486607719",
+    "year": 2012,
+    "author": "Dufay, Jean",
+    "category": "Physics"
+  },
+  {
+    "title": "Introduction to Atomic and Nuclear Physics",
+    "year": 1960,
+    "author": "Semat, Henry",
+    "category": "Physics"
+  },
+  {
+    "title": "Introduction to Atomic Physics",
+    "year": 1949,
+    "author": "Oldenberg, Otto",
+    "category": "Physics"
+  },
+  {
+    "title": "Introduction to Automata Theory, Languages and Computation",
+    "isbn13": "9780201029888",
+    "year": 1979,
+    "author": "John E. Hopcroft; Jeffrey D. Ullman",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Introduction to Crystallography",
+    "isbn13": "9780486678399",
+    "year": 1994,
+    "author": "Donald E. Sands",
+    "category": "Chemistry and Materials Science"
+  },
+  {
+    "title": "Introduction to Electrocardiography",
+    "isbn13": "9780632009732",
+    "year": 1982,
+    "author": "Schamroth, Leo",
+    "category": "Biology"
+  },
+  {
+    "title": "Introduction to Electricity and Optics",
+    "year": 1950,
+    "author": "Frank",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Introduction to Electrodynamics",
+    "isbn13": "9781108420419",
+    "year": 2017,
+    "author": "Griffiths, David J.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Introduction To Fourier Optics",
+    "isbn13": "9780070242548",
+    "year": 1996,
+    "author": "Goodman, Joseph W",
+    "category": "Physics"
+  },
+  {
+    "title": "Introduction to Graph Theory",
+    "isbn13": "9788120321427",
+    "year": 2007,
+    "author": "Walker",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Introduction To Heat Transfer",
+    "isbn13": "9780471386490",
+    "year": 2001,
+    "author": "Incropera, Frank P.; DeWitt, David P.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Introduction to Industrial Electronics",
+    "year": 1951,
+    "author": "Benedict",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Introduction to Languages and the Theory of Computation",
+    "isbn13": "9780070406599",
+    "year": 1991,
+    "author": "Martin, John C.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Introduction to Logic: And to the Methodology of Deductive Sciences",
+    "isbn13": "9780486284620",
+    "year": 1995,
+    "author": "Tarski, Alfred",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Introduction to Materials Science for Engineers (7th Edition)",
+    "isbn13": "9780136012603",
+    "year": 2008,
+    "author": "Shackelford, James F.",
+    "category": "Chemistry and Materials Science"
+  },
+  {
+    "title": "Introduction to Mathematical Structures and Proofs",
+    "isbn13": "9780387979977",
+    "year": 1996,
+    "author": "Gerstein, Larry J.",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Introduction to Microwave Theory",
+    "year": 1962,
+    "author": "Atwater",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Introduction to Modern Virology",
+    "isbn13": "9781405136457",
+    "year": 2007,
+    "author": "Dimmock, Nigel J.; Easton, Andrew J.; Leppard, Keith N.",
+    "category": "Biology"
+  },
+  {
+    "title": "Introduction to Nanoelectronics: Science, Nanotechnology, Engineering, and Applications",
+    "isbn13": "9780521881722",
+    "year": 2008,
+    "author": "Mitin, Vladimir V.; Kochelap, Viatcheslav A.; Stroscio, Michael A.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Introduction to Nonlinear Analysis",
+    "year": 1958,
+    "author": "Cunningham",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Introduction to Optics (3rd Edition)",
+    "isbn13": "9780131499331",
+    "year": 2006,
+    "author": "Pedrotti, Frank L; Pedrotti, Leno M; Pedrotti, Leno S",
+    "category": "Physics"
+  },
+  {
+    "title": "Introduction to Partial Differential Equations: From Fourier Series to Boundary-Value Problems",
+    "isbn13": "9780486661582",
+    "year": 2010,
+    "author": "Broman, Arne",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Introduction to Physical Oceanography",
+    "isbn13": "9781577664291",
+    "year": 2005,
+    "author": "John A. Knauss",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Introduction to Plasma Physics",
+    "isbn13": "9780750301831",
+    "year": 1995,
+    "author": "R J, Goldston; Rutherford, Paul H",
+    "category": "Physics"
+  },
+  {
+    "title": "Introduction to Quantum Mechanics with Applications to Chemistry",
+    "isbn13": "9780486648712",
+    "year": 1985,
+    "author": "Pauling, Linus; Wilson Jr., E. Bright",
+    "category": "Chemistry and Materials Science"
+  },
+  {
+    "title": "Introduction to Real Analysis",
+    "isbn13": "9780486469133",
+    "year": 2008,
+    "author": "Schramm, Michael J.",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Introduction to the Study of Insects, 6th Edition",
+    "isbn13": "9780030253973",
+    "year": 1989,
+    "author": "Borror, Donald J.; Triplehorn, Charles A.; Johnson, Norman F.",
+    "category": "Biology"
+  },
+  {
+    "title": "Introduction to the Theory of Computation",
+    "isbn13": "9780534950972",
+    "year": 2006,
+    "author": "Sipser, Michael",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Introduction to Vector and Tensor Analysis",
+    "isbn13": "9780486618791",
+    "year": 1972,
+    "author": "Robert C. Wrede",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Jacquard's Web",
+    "isbn10": "0192805770",
+    "year": 2004,
+    "author": "Essinger, James",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Japan from Prehistory to Modern Times",
+    "isbn13": "9784805302767",
+    "year": 1993,
+    "author": "Hall, John Whitney",
+    "category": "History"
+  },
+  {
+    "title": "Java After Hours: 10 Projects You'll Never Do at Work",
+    "isbn13": "9780672327476",
+    "year": 2005,
+    "author": "Holzner, Steven",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Java Application Strategies For Iseries And As/400",
+    "isbn13": "9781583470251",
+    "year": 2001,
+    "author": "Don Denoncourt",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Java Extreme Programming Cookbook",
+    "isbn13": "9780596003876",
+    "year": 2003,
+    "author": "Eric M. Burke; Brian M. Coyner",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "JavaScript Application Cookbook: Programming JavaScript Applications",
+    "isbn13": "9781565925779",
+    "year": 1999,
+    "author": "Bradenbaugh, Jerry",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Journey through Genius: The Great Theorems of Mathematics",
+    "isbn13": "9780140147391",
+    "year": 1991,
+    "author": "Dunham, William",
+    "category": "History of Mathematics"
+  },
+  {
+    "title": "jQuery Cookbook: Solutions & Examples for jQuery Developers",
+    "isbn13": "9780596159771",
+    "year": 2009,
+    "author": "Lindley, Cody",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Kinematics and Dynamics of Machines",
+    "isbn13": "9780070406575",
+    "year": 1982,
+    "author": "Martin, G. H.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Language Implementation Patterns: Create Your Own Domain-Specific and General Programming Languages",
+    "isbn13": "9781934356456",
+    "year": 2010,
+    "author": "Terence Parr",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Large-Capacity Memory Techniques for Computing Systems",
+    "year": 1962,
+    "author": "Yovits",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Learn You a Haskell for Great Good!",
+    "isbn13": "9781593272838",
+    "year": 2011,
+    "author": "Lipovaca, Miran",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Learning PHP, MySQL & JavaScript: With jQuery, CSS & HTML5",
+    "isbn13": "9781491918661",
+    "year": 2014,
+    "author": "Nixon, Robin",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Learning Python, 3rd Edition",
+    "isbn13": "9780596513986",
+    "year": 2007,
+    "author": "Lutz, Mark",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Learning SciPy for Numerical and Scientific Computing - Second Edition",
+    "isbn13": "9781783987702",
+    "year": 2015,
+    "author": "G., Sergio J. Rojas; Christensen, Erik A; Blanco-Silva, Francisco J.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Level II BASIC Reference Manual",
+    "year": 1979,
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Linear Algebra with Applications",
+    "isbn13": "9780130337818",
+    "year": 2006,
+    "author": "Leon, Steven J.",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Linear Circuit Analysis: Time Domain, Phasor, and Laplace Transform Approaches",
+    "isbn13": "9780195136661",
+    "year": 2001,
+    "author": "DeCarlo, Raymond A.; Lin, Pen-Min",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Linear Operators for Quantum Mechanics",
+    "isbn13": "9780486453293",
+    "year": 2006,
+    "author": "Jordan, Thomas F.",
+    "category": "Physics"
+  },
+  {
+    "title": "Linux Device Drivers, 3rd Edition",
+    "isbn13": "9780596005900",
+    "year": 2005,
+    "author": "Jonathan Corbet; Alessandro Rubini; Greg Kroah-Hartman",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Linux System Programming: Talking Directly to the Kernel and C Library",
+    "isbn13": "9781449339531",
+    "year": 2013,
+    "author": "Love, Robert",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Lisp (3rd Edition)",
+    "isbn13": "9780201083194",
+    "year": 2019,
+    "author": "Winston, Patrick; Horn, Berthold",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Machine, Assembly, and Systems Programming For the IBM 360",
+    "year": 1969,
+    "author": "Payne",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Machine Elements in Mechanical Design (4th Edition)",
+    "isbn13": "9780130618856",
+    "year": 2003,
+    "author": "Mott, Robert L.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Machine Tool Practices (9th Edition)",
+    "isbn13": "9780135015087",
+    "year": 2009,
+    "author": "Kibbe, Richard R.; Meyer, Roland O.; Neely, John E.; White, Warren T.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Machines For Power Farming",
+    "year": 1957,
+    "author": "Stone; Gulvin",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Magnetic Amplifiers",
+    "year": 1955,
+    "author": "Dr. Herbert F. Storm",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Magnetohydrodynamic Generation of Electrical Power",
+    "year": 1964,
+    "author": "R.A. Coombe",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Makers of the Microchip: A Documentary History of Fairchild Semiconductor",
+    "isbn13": "9780262014243",
+    "year": 2010,
+    "author": "Lécuyer, Christophe; Brock, David C.",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Making Games for the Atari 2600",
+    "isbn13": "9781541021303",
+    "year": 2016,
+    "author": "Hugg, Steven",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Malware Analyst's Cookbook",
+    "isbn13": "9780470613030",
+    "year": 2010,
+    "author": "Ligh, Michael; Adair, Steven; Hartstein, Blake; Richard, Matthew",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Malware Data Science: Attack Detection and Attribution",
+    "isbn13": "9781593278595",
+    "year": 2018,
+    "author": "Saxe, Joshua; Sanders, Hillary",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Manufacturing Engineering and Technology (4th Edition)",
+    "isbn13": "9780201361315",
+    "year": 2000,
+    "author": "Kalpakjian, Serope; Schmid, Steven R.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Mastering IBM i",
+    "isbn13": "9781583473566",
+    "year": 2011,
+    "author": "Buck, Jim; Fottral, Jerry",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Mastering the AS/400",
+    "isbn13": "9781583040706",
+    "year": 2000,
+    "author": "Fottral, Jerry",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Mathematical Methods For Digital Computers",
+    "year": 1967,
+    "author": "Ralston; Wilf",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Mathematical Statistics with Applications",
+    "isbn13": "9780534377410",
+    "year": 2001,
+    "author": "Wackerly, Dennis; Mendenhall, William; Scheaffer, Richard L.",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Mathematical Thought from Ancient to Modern Times, Vol. 1",
+    "isbn10": "0195061357",
+    "year": 1990,
+    "author": "Kline, Morris",
+    "category": "History of Mathematics"
+  },
+  {
+    "title": "Mathematical Thought from Ancient to Modern Times, Vol. 2",
+    "isbn10": "0195061365",
+    "year": 1990,
+    "author": "Kline, Morris",
+    "category": "History of Mathematics"
+  },
+  {
+    "title": "Mathematical Thought from Ancient to Modern Times, Vol. 3",
+    "isbn10": "0195061373",
+    "year": 1990,
+    "author": "Kline, Morris",
+    "category": "History of Mathematics"
+  },
+  {
+    "title": "Mathematics for Quantum Mechanics: An Introductory Survey of Operators, Eigenvalues, and Linear Vector Spaces",
+    "isbn13": "9780486453088",
+    "year": 2006,
+    "author": "Jackson, John David",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Maven: The Definitive Guide",
+    "isbn13": "9780596517335",
+    "year": 2008,
+    "author": "Sonatype",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Mechanical Behavior of Materials: Engineering Methods for Deformation, Fracture, and Fatigue (2nd Edition)",
+    "isbn13": "9780139057205",
+    "year": 1999,
+    "author": "Dowling, Norman E.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Mechanical Engineering Design",
+    "isbn13": "9780072921939",
+    "year": 2003,
+    "author": "Shigley,Joseph; Mischke,Charles; Budynas,Richard; Shigley, Joseph; Mischke, Charles; Budynas, Richard",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Mechanical Vibrations",
+    "isbn13": "9780486647852",
+    "year": 1985,
+    "author": "J. P. Den Hartog",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Mechanics Of Materials",
+    "isbn13": "9780131913455",
+    "year": 2004,
+    "author": "Hibbeler, R. C.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Microelectronic Circuits",
+    "isbn13": "9780195323030",
+    "year": 2009,
+    "author": "Sedra, Adel S.; Smith, Kenneth C.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Microprocessor Design Using Verilog HDL",
+    "isbn13": "9780963013354",
+    "year": 2017,
+    "author": "Dalrymple, Monte",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Microprocessor Systems Design",
+    "isbn13": "9780135814130",
+    "year": 1977,
+    "author": "Klingman, Edwin E.",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Mindfulness: A Practical Guide to Awakening",
+    "isbn13": "9781622030651",
+    "year": 2013,
+    "author": "Joseph Goldstein"
+  },
+  {
+    "title": "ML for the Working Programmer, 2nd Edition",
+    "isbn13": "9780521565431",
+    "year": 1996,
+    "author": "L. C. Paulson",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Modern Compiler Implementation in C",
+    "isbn13": "9780521607650",
+    "year": 2004,
+    "author": "Appel, Andrew W.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Modern Digital and Analog Communication Systems",
+    "isbn13": "9780195331455",
+    "year": 2009,
+    "author": "Lathi, B. P.; Ding, Zhi",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Modern Physics",
+    "isbn13": "9780716775508",
+    "year": 2007,
+    "author": "Tipler, Paul A.; Llewellyn, Ralph",
+    "category": "Physics"
+  },
+  {
+    "title": "Molecular Genetics of Bacteria, Third Edition",
+    "isbn13": "9781555813994",
+    "year": 2007,
+    "author": "Larry Snyder; Wendy Champness",
+    "category": "Biology"
+  },
+  {
+    "title": "More BASIC Computer Games",
+    "isbn13": "9780894801372",
+    "year": 1979,
+    "author": "Ahl, David H. Editor",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Motors for Makers: A Guide to Steppers, Servos, and Other Electrical Machines",
+    "isbn13": "9780134032832",
+    "year": 2015,
+    "author": "Scarpino, Matthew Scarpino",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "MySQL Cookbook",
+    "isbn13": "9780596527082",
+    "year": 2007,
+    "author": "DuBois, Paul",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Mythical Man-Month, The: Essays on Software Engineering, Anniversary Edition",
+    "isbn13": "9780201835953",
+    "year": 1995,
+    "author": "Brooks Jr., Frederick",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Mythology",
+    "isbn13": "9780316223331",
+    "year": 2013,
+    "author": "Hamilton, Edith",
+    "category": "Religion and Mythology"
+  },
+  {
+    "title": "Naive Set Theory",
+    "isbn13": "9781950217014",
+    "year": 2019,
+    "author": "Halmos, Paul R.",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Naked Statues, Fat Gladiators, and War Elephants",
+    "isbn13": "9781633887022",
+    "year": 2021,
+    "author": "Ryan, Garrett",
+    "category": "History"
+  },
+  {
+    "title": "Natural Philosophy",
+    "year": 1832,
+    "author": "Baldwin; Cradock; Paternoster-Row",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Neue Horizonte",
+    "isbn13": "9781111344191",
+    "year": 2013,
+    "author": "Dollenmayer, David; Hansen, Thomas",
+    "category": "Language"
+  },
+  {
+    "title": "New Encyclopedia of Machine Shop Practice",
+    "year": 1941,
+    "author": "George W. Barnwell",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "No Longer Human (Junji Ito)",
+    "isbn13": "9781974707096",
+    "year": 2019,
+    "author": "Ito, Junji",
+    "category": "Fiction"
+  },
+  {
+    "title": "No-Nonsense Classical Mechanics: A Student-Friendly Introduction",
+    "isbn13": "9781096195382",
+    "year": 2019,
+    "author": "Schwichtenberg, Jakob",
+    "category": "Physics"
+  },
+  {
+    "title": "No-Nonsense Electrodynamics: A Student Friendly Introduction",
+    "isbn13": "9781790842117",
+    "year": 2018,
+    "author": "Schwichtenberg, Jakob",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Node.js for PHP Developers: Porting PHP to Node.js",
+    "isbn13": "9781449333607",
+    "year": 2013,
+    "author": "Howard, Daniel",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Norse Mythology",
+    "isbn13": "9780393609097",
+    "year": 2017,
+    "author": "Gaiman, Neil",
+    "category": "Religion and Mythology"
+  },
+  {
+    "title": "Number",
+    "isbn10": "0449906930",
+    "year": 1992,
+    "author": "McLeish, John",
+    "category": "History of Mathematics"
+  },
+  {
+    "title": "Number Theory",
+    "isbn13": "9780486682525",
+    "year": 1994,
+    "author": "George E. Andrews",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Number Words and Number Symbols",
+    "isbn10": "0486270963",
+    "year": 2011,
+    "author": "Menninger, Karl",
+    "category": "History of Mathematics"
+  },
+  {
+    "title": "Numerical and Statistical Methods for Bioengineering: Applications in MATLAB",
+    "isbn13": "9780521871587",
+    "year": 2010,
+    "author": "King, Michael R.; Mody, Nipa A.",
+    "category": "Biology"
+  },
+  {
+    "title": "Numerical Electromagnetics: The FDTD Method",
+    "isbn13": "9780521190695",
+    "year": 2011,
+    "author": "Inan, Umran S.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Numerical Mathematics and Computing",
+    "isbn13": "9780534351847",
+    "year": 1999,
+    "author": "Cheney, E. Ward; Kincaid, David R.",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Numerical Methods and Computers",
+    "year": 1966,
+    "author": "Shan S. Kuo",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Numerical Recipes in C: The Art of Scientific Computing, Second Edition",
+    "isbn13": "9780521431088",
+    "year": 1992,
+    "author": "Press, William H.; Flannery, Brian P.; Teukolsky, Saul A.; Vetterling, William T.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Oceanography",
+    "isbn13": "9780534530822",
+    "year": 1999,
+    "author": "Garrison, Tom",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "On the Principles and Development of the Calculator and Other Seminal Writings",
+    "isbn13": "9780486246918",
+    "year": 2012,
+    "author": "Babbage, Charles",
+    "category": "History of Computing"
+  },
+  {
+    "title": "OpenGL Superbible",
+    "isbn13": "9780672337475",
+    "year": 2015,
+    "author": "Sellers, Graham; Wright Jr., Richard; Haemel, Nicholas",
+    "category": "Game Development, Graphics, and Audio"
+  },
+  {
+    "title": "Operating System Concepts, Seventh Edition",
+    "isbn13": "9780471694663",
+    "year": 2004,
+    "author": "Silberschatz, Abraham; Galvin, Peter B.; Gagne, Greg",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Operating Systems: Internals and Design Principles (5th Edition)",
+    "isbn13": "9780131479548",
+    "year": 2004,
+    "author": "Stallings, William",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Operating Systems: Three Easy Pieces",
+    "isbn13": "9781985086593",
+    "year": 2018,
+    "author": "Arpaci-Dusseau, Remzi H; Arpaci-Dusseau, Andrea C",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Opticks",
+    "isbn13": "9780486602059",
+    "year": 2012,
+    "author": "Sir Isaac Newton; I. Bernard Cohen; Albert Einstein; Sir Edmund Whittaker",
+    "category": "History of Technology"
+  },
+  {
+    "title": "Optics",
+    "isbn13": "9780201838879",
+    "year": 1997,
+    "author": "Hecht, Eugene; Zajac, Alfred",
+    "category": "Physics"
+  },
+  {
+    "title": "Organic Semiconductors",
+    "year": 1962,
+    "author": "Brophy; Buttrey",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Oxford Companion to World Mythology",
+    "isbn13": "9780195387087",
+    "year": 2009,
+    "author": "Leeming, David",
+    "category": "Religion and Mythology"
+  },
+  {
+    "title": "Partial Differential Equations for Scientists and Engineers",
+    "isbn13": "9780486676203",
+    "year": 1993,
+    "author": "Stanley J. Farlow",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Pass Your Amateur Radio General Class Test - The Easy Way: 2019-2023 Edition",
+    "isbn13": "9781796995497",
+    "year": 2019,
+    "author": "K4IA, Craig Buck",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Pass Your Amateur Radio Technician Class Test - The Easy Way: 2018-2022 Edition",
+    "isbn13": "9781985125643",
+    "year": 2018,
+    "author": "K4IA, Craig Buck",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Perl One-Liners",
+    "isbn13": "9781593275204",
+    "year": 2013,
+    "author": "Krumins, Peteris",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "PC Interrupts: A Programmer's Reference to BIOS, DOS, and Third Party Calls",
+    "isbn13": "9780201577976",
+    "year": 1991,
+    "author": "Ralf Brown",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Physical Chemistry: A Molecular Approach",
+    "isbn13": "9788130919195",
+    "year": 2011,
+    "author": "McQuarrie, Donald A.",
+    "category": "Chemistry and Materials Science"
+  },
+  {
+    "title": "Physics for Scientists and Engineers",
+    "isbn13": "9780534408428",
+    "year": 2003,
+    "author": "Serway, Raymond A.; Jewett, John W.",
+    "category": "Physics"
+  },
+  {
+    "title": "Physics of Solids in Intense Magnetic Fields",
+    "year": 1969,
+    "author": "E.D. Haidemenakis",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Plasma Physics And Magnetofluid Mechanics",
+    "isbn13": "9781258228859",
+    "year": 1963,
+    "author": "Ali Bulent Cambel",
+    "category": "Physics"
+  },
+  {
+    "title": "Practical Binary Analysis: Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly",
+    "isbn13": "9781593279127",
+    "year": 2018,
+    "author": "Andriesse, Dennis",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Practical C Programming",
+    "isbn13": "9781565923065",
+    "year": 1997,
+    "author": "Oualline, Steve",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Practical Electronics for Inventors, Fourth Edition",
+    "isbn13": "9781259587542",
+    "year": 2016,
+    "author": "Scherz, Paul; Monk, Simon",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Practical Forensic Imaging: Securing Digital Evidence with Linux Tools",
+    "isbn13": "9781593277932",
+    "year": 2016,
+    "author": "Nikkel, Bruce",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Practical Malware Analysis",
+    "isbn13": "9781593272906",
+    "year": 2012,
+    "author": "Michael Sikorski; Andrew Honig",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Practical Reverse Engineering: x86, x64, ARM, Windows Kernel, Reversing Tools, and Obfuscation",
+    "isbn13": "9781118787311",
+    "year": 2014,
+    "author": "Dang, Bruce; Gazet, Alexandre; Bachaalany, Elias",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Prescott's Microbiology",
+    "isbn13": "9781259281594",
+    "year": 2016,
+    "author": "Willey, Joanne; Sherwood, Linda; Woolverton, Christopher J.",
+    "category": "Biology"
+  },
+  {
+    "title": "Principles and Applications of Electrochemistry Volume II",
+    "year": 1948,
+    "author": "Koehler",
+    "category": "Chemistry and Materials Science"
+  },
+  {
+    "title": "Principles and Practice of Electrical Engineering 6th Edition",
+    "year": 1947,
+    "author": "Gray; Wallace",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Principles Of Biochemistry",
+    "isbn13": "9780131453067",
+    "year": 2005,
+    "author": "Horton, Robert A; Moran, Laurence A.; Scrimgeour, Gray; Perry, Marc; Rawn, David",
+    "category": "Chemistry and Materials Science"
+  },
+  {
+    "title": "Principles of Electricity applied to Telephone and Telegraph Work",
+    "lccn": "41003622",
+    "year": 1939,
+    "author": "American Telephone and Telegraph Company",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Principles of Electronic Materials and Devices 3rd Edition",
+    "isbn13": "9780070648203",
+    "year": 2012,
+    "author": "KASAP",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Principles of Programming",
+    "year": 1961,
+    "author": "IBM",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Principles of Radio-Telegraphy",
+    "year": 1919,
+    "author": "Janksy",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Probability and Statistics for Engineering and the Sciences",
+    "isbn13": "9788131518397",
+    "year": 2012,
+    "author": "Jay Devore",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Professional CUDA C Programming",
+    "isbn13": "9781118739327",
+    "year": 2014,
+    "author": "Cheng, John; Grossman, Max; McKercher, Ty",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Programming Android",
+    "isbn13": "9781449389697",
+    "year": 2011,
+    "author": "Mednieks, Zigurd; Dornin, Laird; Meike, G. Blake; Nakamura, Masumi",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Programming Boot Sector Games",
+    "isbn13": "9780359816316",
+    "year": 2019,
+    "author": "Toledo Gutierrez, Oscar",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Programming C#: Building .NET Applications with C#",
+    "isbn13": "9780596006990",
+    "year": 2005,
+    "author": "Liberty, Jesse",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Programming ColdFusion MX, 2nd Edition",
+    "isbn13": "9780596003807",
+    "year": 2003,
+    "author": "Rob Brooks-Bilson",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Programming in Lua, Fourth Edition",
+    "isbn13": "9788590379867",
+    "year": 2016,
+    "author": "Ierusalimschy, Roberto",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Programming in Modula-2",
+    "isbn13": "9780387150789",
+    "year": 1985,
+    "author": "Wirth, Niklaus",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Programming in RPG/400 (2nd Edition)",
+    "isbn13": "9781882419234",
+    "year": 1995,
+    "author": "Yaeger, Judy",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Programming Groovy 2",
+    "isbn13": "9781937785307",
+    "year": 2013,
+    "author": "Subramaniam, Venkat",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Programming Languages: Design and Implementation (4th Edition)",
+    "isbn13": "9780130276780",
+    "year": 2000,
+    "author": "Pratt, Terrence W.; Zelkowitz, Marvin V.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Programming Languages: History and Fundamentals",
+    "isbn13": "9780137299881",
+    "year": 1969,
+    "author": "Sammet, Jean E.",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Programming Massively Parallel Processors: A Hands-on Approach",
+    "isbn13": "9780128119860",
+    "year": 2016,
+    "author": "Kirk, David B.; Hwu, Wen-mei W.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Programming Perl",
+    "isbn13": "9780596004927",
+    "year": 2012,
+    "author": "Christiansen, Tom; foy, brian d; Wall, Larry; Orwant, Jon",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Programming Techniques for Level II BASIC",
+    "year": 1980,
+    "author": "Barden, William",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Programming the IBM 1130",
+    "year": 1969,
+    "author": "Hughes",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Programming the Universe: A Quantum Computer Scientist Takes on the Cosmos",
+    "isbn13": "9781400033867",
+    "year": 2007,
+    "author": "Lloyd, Seth",
+    "category": "Physics"
+  },
+  {
+    "title": "Programming with 64-Bit ARM Assembly Language",
+    "isbn13": "9781484258804",
+    "year": 2020,
+    "author": "Smith, Stephen",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Prolog Programming for Artificial Intelligence",
+    "isbn13": "9780201142242",
+    "year": 1986,
+    "author": "Bratko, Ivan",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Purple Team Field Manual",
+    "isbn13": "9798682974061",
+    "year": 2020,
+    "author": "Bryant, Tim",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Python Cookbook",
+    "isbn13": "9780596007973",
+    "year": 2005,
+    "author": "Martelli, Alex; Ravenscroft, Anna; Ascher, David",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Python Machine Learning, 1st Edition",
+    "isbn13": "9781783555130",
+    "year": 2015,
+    "author": "Raschka, Sebastian",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "QED: The Strange Theory of Light and Matter",
+    "isbn13": "9780691024172",
+    "year": 1988,
+    "author": "Feynman, Richard P.",
+    "category": "Physics"
+  },
+  {
+    "title": "Qshell for Iseries",
+    "isbn13": "9781583470466",
+    "year": 2004,
+    "author": "Holt, Ted; Kulack, Fred",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Quantum Chemistry",
+    "isbn13": "9780935702132",
+    "year": 1983,
+    "author": "McQuarrie, Donald A.",
+    "category": "Chemistry and Materials Science"
+  },
+  {
+    "title": "Quantum Computing for Computer Scientists",
+    "isbn13": "9780521879965",
+    "year": 2008,
+    "author": "Yanofsky, Noson S.; Mannucci, Mirco A.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Quantum Computing Since Democritus",
+    "isbn13": "9780521199568",
+    "year": 2013,
+    "author": "Aaronson, Scott",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Quantum Electrodynamics",
+    "isbn13": "9783540580928",
+    "year": 1996,
+    "author": "Walter Greiner; Joachim Reinhardt",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Quantum Mechanics: The Theoretical Minimum",
+    "isbn13": "9780465062904",
+    "year": 2015,
+    "author": "Susskind, Leonard; Friedman, Art",
+    "category": "Physics"
+  },
+  {
+    "title": "Quantum Mechanics in Simple Matrix Form",
+    "isbn13": "9780486445304",
+    "year": 2005,
+    "author": "Jordan, Thomas F.",
+    "category": "Physics"
+  },
+  {
+    "title": "Quantum Mechanics On The Personal Computer",
+    "isbn13": "9783540574705",
+    "year": 1994,
+    "author": "Siegmund Brandt; Hans D. Dahmen",
+    "category": "Physics"
+  },
+  {
+    "title": "Quantum Theory",
+    "isbn13": "9780486659695",
+    "year": 1989,
+    "author": "David Bohm",
+    "category": "Physics"
+  },
+  {
+    "title": "Radio Engineering",
+    "year": 1947,
+    "author": "Terman",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Radio Shack: Computer Programming in BASIC for Everyone",
+    "isbn13": "9780395147160",
+    "year": 1973,
+    "author": "Thomas A. Dwyer; Michael S Kaufman",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Red Team Field Manual",
+    "isbn13": "9781494295509",
+    "year": 2014,
+    "author": "Clark, Ben",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Regular Expression Pocket Reference",
+    "isbn13": "9780596514273",
+    "year": 2007,
+    "author": "Stubblebine, Tony",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Relational Theory for Computer Professionals: What Relational Databases Are Really All About",
+    "isbn13": "9781449369439",
+    "year": 2013,
+    "author": "Date, C. J.",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Retro Game Dev: C64 Edition",
+    "isbn13": "9780692980651",
+    "year": 2017,
+    "author": "Morris, Derek",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "RISC System/6000 PowerPC System Architecture",
+    "isbn13": "9781558603448",
+    "year": 1994,
+    "author": "International Business Machines, Inc.",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "RPG II, RPG III, and RPG/400",
+    "isbn13": "9780878352463",
+    "year": 1990,
+    "author": "Shelly, Gary B",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "RPG TnT",
+    "isbn13": "9781583473641",
+    "year": 2011,
+    "author": "Cozzi, Bob",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Ruby Cookbook",
+    "isbn13": "9781449373719",
+    "year": 2015,
+    "author": "Carlson, Lucas; Richardson, Leonard",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Ruby on Rails: Up and Running",
+    "isbn13": "9780596101329",
+    "year": 2006,
+    "author": "Bruce Tate; Curt Hibbs",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Scholar's ABC of Electricity",
+    "year": 1896,
+    "author": "WM. H. Meadowcroft",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Schrodinger's Kittens and the Search for Reality",
+    "isbn13": "9780316328197",
+    "year": 1996,
+    "author": "Gribbin, John",
+    "category": "Physics"
+  },
+  {
+    "title": "Science and Technology in World History",
+    "isbn13": "9781421417752",
+    "year": 2015,
+    "author": "McClellan III, James E.; Dorn, Harold",
+    "category": "History of Technology"
+  },
+  {
+    "title": "Science Awakening",
+    "isbn13": "9789001931025",
+    "year": 1975,
+    "author": "Waerden; B. L. Van Der",
+    "category": "History of Technology"
+  },
+  {
+    "title": "See MIPS Run",
+    "isbn10": "0120884216",
+    "year": 2006,
+    "author": "Sweetman, Dominic",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Semiconductor Physics",
+    "isbn13": "9780387811864",
+    "year": 1973,
+    "author": "Seeger, Karlheinz",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Serious Cryptography: A Practical Introduction to Modern Encryption",
+    "isbn13": "9781593278267",
+    "year": 2017,
+    "author": "Aumasson, Jean-Philippe",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages",
+    "isbn13": "9781934356593",
+    "year": 2010,
+    "author": "Tate, Bruce",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Signals, Systems and Inference",
+    "isbn13": "9780133943283",
+    "year": 2015,
+    "author": "Oppenheim, Alan; Verghese, George",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Signals & Systems",
+    "isbn13": "9788120312463",
+    "year": 2008,
+    "author": "Alan V. Oppenheim; Alan S. Willsky",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Six Easy Pieces: Essentials of Physics Explained by Its Most Brilliant Teacher",
+    "isbn13": "9780465025275",
+    "year": 2011,
+    "author": "Feynman, Richard P.; Leighton, Robert B.; Sands, Matthew",
+    "category": "Physics"
+  },
+  {
+    "title": "Smalltalk 80: The Language",
+    "isbn13": "9780201136883",
+    "year": 1989,
+    "author": "Goldberg, Adele; Robson, David",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Smalltalk Best Practice Patterns",
+    "isbn13": "9780134769042",
+    "year": 1996,
+    "author": "Beck, Kent",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Solid State Chemistry: An Introduction, Fourth Edition",
+    "isbn13": "9781439847909",
+    "year": 2012,
+    "author": "Moore, Elaine A.; Smart, Lesley E.",
+    "category": "Chemistry and Materials Science"
+  },
+  {
+    "title": "Spatial Structure and the Microcomputer: Selected Mathematical Techniques",
+    "isbn13": "9780333392843",
+    "year": 1987,
+    "author": "Barrett, A.N.; Mackay, Alan L.",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Special Relativity and Classical Field Theory: The Theoretical Minimum",
+    "isbn13": "9781541674066",
+    "year": 2019,
+    "author": "Susskind, Leonard; Friedman, Art",
+    "category": "Physics"
+  },
+  {
+    "title": "SPQR: A History of Ancient Rome",
+    "isbn13": "9780871404237",
+    "year": 2015,
+    "author": "Beard, Mary",
+    "category": "History"
+  },
+  {
+    "title": "SQL Cookbook: Query Solutions and Techniques for Database Developers",
+    "isbn13": "9780596009762",
+    "year": 2006,
+    "author": "Molinaro, Anthony",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "SQL Pocket Guide",
+    "isbn13": "9781449394097",
+    "year": 2010,
+    "author": "Gennick, Jonathan",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Some Assembly Required: Assembly Language Programming with the AVR Microcontroller",
+    "isbn13": "9781439820643",
+    "year": 2011,
+    "author": "Margush, Timothy S",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Standard Handbook for Electrical Engineers 6th Edition",
+    "year": 1933,
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Starting Forth",
+    "isbn13": "9780138429300",
+    "year": 1981,
+    "author": "Brodie, Leo",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Steam Engine Design",
+    "isbn13": "9780917914102",
+    "year": 1983,
+    "author": "International Correspondence Schools",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Structure and Interpretation of Classical Mechanics",
+    "isbn13": "9780262194556",
+    "year": 2001,
+    "author": "Sussman, Gerald Jay; Wisdom, Jack",
+    "category": "Physics"
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - 2nd Edition",
+    "isbn13": "9780262510875",
+    "year": 1996,
+    "author": "Abelson, Harold; Sussman, Gerald Jay",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Structured COBOL Programming",
+    "isbn13": "9780471632870",
+    "year": 1988,
+    "author": "Stern, Nancy B.; Stern, Robert A.",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Subfiles in Free-Format RPG",
+    "isbn13": "9781583470947",
+    "year": 2011,
+    "author": "Vandever, Kevin",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Systems Engineering Principles and Practice, 2nd Edition",
+    "isbn13": "9788126563784",
+    "year": 2016,
+    "author": "Alexander Kossiakoff ET ALL",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "TCP/IP Sockets in C",
+    "isbn13": "9781558608269",
+    "year": 2001,
+    "author": "Donahoo, Michael J.; Calvert, Kenneth L.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "TCP/IP Sockets in C#",
+    "isbn13": "9780124660519",
+    "year": 2004,
+    "author": "Makofske, David; Donahoo, Michael J.; Calvert, Kenneth L.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Technology in the Ancient World",
+    "isbn10": "0880298936",
+    "year": 1992,
+    "author": "Henry Hodges",
+    "category": "History of Technology"
+  },
+  {
+    "title": "Tensor Analysis for Physicists, Second Edition",
+    "isbn13": "9780486655826",
+    "year": 2011,
+    "author": "Schouten, J. A.",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Testing Java Microservices",
+    "isbn13": "9781617292897",
+    "year": 2018,
+    "author": "Alex Soto Bueno; Andy Gumbrecht; Jason Porter",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Annotated Turing",
+    "isbn13": "9780470229057",
+    "year": 2008,
+    "author": "Petzold, Charles",
+    "category": "History of Computing"
+  },
+  {
+    "title": "The Apollo Guidance Computer: Architecture and Operation",
+    "isbn13": "9781441908766",
+    "year": 2010,
+    "author": "O'Brien, Frank",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "The ARRL Handbook for Radio Communications",
+    "isbn13": "9781625951502",
+    "year": 2021,
+    "author": "ARRL Inc.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "The Art of Assembly Language, 2nd Edition",
+    "isbn13": "9781593272074",
+    "year": 2010,
+    "author": "Hyde, Randall",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Art of Electronics",
+    "isbn13": "9780521809269",
+    "year": 2015,
+    "author": "Horowitz, Paul; Hill, Winfield",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "The Art of Happiness, 10th Anniversary Edition",
+    "isbn13": "9781594488894",
+    "year": 2009,
+    "author": "Lama, Dalai",
+    "category": "Religion and Mythology"
+  },
+  {
+    "title": "The Art of Prolog",
+    "isbn13": "9780262192507",
+    "year": 1986,
+    "author": "Sterling, Leon; Shapiro, Ehud",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Art of War",
+    "isbn13": "9780195014761",
+    "year": 1971,
+    "author": "Sun Tzu"
+  },
+  {
+    "title": "The AS/400 & IBM i RPG & RPGIV Programming Guide",
+    "isbn13": "9780998268316",
+    "year": 2016,
+    "author": "Kelly, Brian W.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The AS/400 and IBM i Pocket Developers Guide",
+    "isbn13": "9780998084879",
+    "year": 2016,
+    "author": "Kelly, Brian W.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Audio Programming Book",
+    "isbn13": "9780262014465",
+    "year": 2010,
+    "author": "Boulanger; Lazzarini",
+    "category": "Game Development, Graphics, and Audio"
+  },
+  {
+    "title": "The BASIC Cookbook",
+    "isbn13": "9780830699018",
+    "year": 1978,
+    "author": "Tracton, Ken",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "The Book of Yokai: Mysterious Creatures of Japanese Folklore",
+    "isbn13": "9780520271029",
+    "year": 2015,
+    "author": "Foster, Michael Dylan",
+    "category": "Religion and Mythology"
+  },
+  {
+    "title": "The C Programming Language",
+    "isbn13": "9780131101630",
+    "year": 1978,
+    "author": "Brian W. Kernighan; Dennis M. Ritchie",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Car Hacker's Handbook: A Guide for the Penetration Tester",
+    "isbn13": "9781593277031",
+    "year": 2016,
+    "author": "Smith, Craig",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "The Chip: How Two Americans Invented the Microchip and Launched a Revolution",
+    "isbn10": "0375758283",
+    "year": 2001,
+    "author": "Reid, T.R.",
+    "category": "History of Computing"
+  },
+  {
+    "title": "The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography",
+    "isbn13": "9780385495325",
+    "year": 2000,
+    "author": "Singh, Simon",
+    "category": "History of Computing"
+  },
+  {
+    "title": "The CNC Cookbook",
+    "isbn13": "9780982110300",
+    "year": 2009,
+    "author": "E Hess",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "The Complete Patents of Nikola Tesla",
+    "isbn13": "9781566192668",
+    "year": 1994,
+    "category": "History of Technology"
+  },
+  {
+    "title": "The Crest of the Peacock: Non-European Roots of Mathematics",
+    "isbn13": "9780691135267",
+    "year": 2010,
+    "author": "Joseph, George Gheverghese",
+    "category": "History of Mathematics"
+  },
+  {
+    "title": "The Crusades: The Authoritative History of the War for the Holy Land",
+    "isbn13": "9780060787295",
+    "year": 2011,
+    "author": "Asbridge, Thomas",
+    "category": "History"
+  },
+  {
+    "title": "The Cyclotron",
+    "year": 1948,
+    "author": "W.B. Mann",
+    "category": "Physics"
+  },
+  {
+    "title": "The Dawn of Software Engineering: from Turing to Dijkstra",
+    "isbn13": "9789491386022",
+    "year": 2012,
+    "author": "Daylight, Edgar G.; Wirth, Niklaus; Hoare, Tony; Liskov, Barbara; Naur, Peter",
+    "category": "History of Computing"
+  },
+  {
+    "title": "The Design of the UNIX Operating System",
+    "isbn13": "9780132017992",
+    "year": 1986,
+    "author": "Bach, Maurice",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Development of Modern Chemistry",
+    "isbn13": "9780486642352",
+    "year": 2012,
+    "author": "Ihde, Aaron J.",
+    "category": "History of Technology"
+  },
+  {
+    "title": "The Difference Engine: Charles Babbage and the Quest to Build the First Computer",
+    "isbn10": "0670910201",
+    "year": 2001,
+    "author": "Swade, Doron",
+    "category": "History of Computing"
+  },
+  {
+    "title": "The Diversity of Fishes",
+    "isbn13": "9780865422568",
+    "year": 1997,
+    "author": "Helfman, Gene; Collette, Bruce; Facey, Douglas",
+    "category": "Biology"
+  },
+  {
+    "title": "The Divine Comedy",
+    "isbn13": "9781607109914",
+    "year": 2013,
+    "author": "Alighieri, Dante"
+  },
+  {
+    "title": "The Electrical Engineers Handbook",
+    "year": 1908,
+    "author": "ICS",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "The Electromagnetic Field",
+    "isbn13": "9780486656601",
+    "year": 2010,
+    "author": "Shadowitz, Albert",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "The Elements of Computing Systems: Building a Modern Computer from First Principles",
+    "isbn13": "9780262640688",
+    "year": 2005,
+    "author": "Nisan, Noam; Schocken, Shimon",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "The Elements of Mechanical and Electrical Engineering Volume II",
+    "year": 1898,
+    "author": "ICS",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "The Exact Sciences in Antiquity",
+    "isbn10": "9780486223322",
+    "year": 1969,
+    "author": "Neugebauer, O.",
+    "category": "History of Technology"
+  },
+  {
+    "title": "The Definitive ANTLR 4 Reference",
+    "isbn13": "9781934356999",
+    "year": 2013,
+    "author": "Parr, Terence",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Fabric of Civilization",
+    "isbn13": "9781541617605",
+    "year": 2020,
+    "author": "Postrel, Virginia",
+    "category": "History of Technology"
+  },
+  {
+    "title": "The Fall of Rome: And the End of Civilization",
+    "isbn13": "9780192807281",
+    "year": 2006,
+    "author": "Ward-Perkins, Bryan",
+    "category": "History"
+  },
+  {
+    "title": "The First Electronic Computer: The Atanasoff Story",
+    "isbn10": "0472081047",
+    "year": 1989,
+    "author": "Burks, Alice R.; Burks, Arthur W.",
+    "category": "History of Computing"
+  },
+  {
+    "title": "The Five Dysfunctions of a Team: A Leadership Fable",
+    "isbn13": "9780787960759",
+    "year": 2002,
+    "author": "Lencioni, Patrick M.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Forgotten Genius of Oliver Heaviside",
+    "isbn13": "9781633883314",
+    "year": 2017,
+    "author": "Mahon, Basil",
+    "category": "History of Technology"
+  },
+  {
+    "title": "The Foundations of Modern Science in the Middle Ages",
+    "isbn13": "9780521567626",
+    "year": 1996,
+    "author": "Grant, Edward",
+    "category": "History of Technology"
+  },
+  {
+    "title": "The Golden Ratio: The Story of PHI, the World's Most Astonishing Number",
+    "isbn13": "9780767908160",
+    "year": 2003,
+    "author": "Livio, Mario",
+    "category": "History of Mathematics"
+  },
+  {
+    "title": "The Heart of Meditation: Discovering Innermost Awareness",
+    "isbn13": "9781559394536",
+    "year": 2016,
+    "author": "The Dalai Lama; Hopkins, Jeffrey",
+    "category": "Religion and Mythology"
+  },
+  {
+    "title": "The Historical Roots of Elementary Mathematics",
+    "isbn10": "0486255638",
+    "year": 1988,
+    "author": "Bunt, Lucas N. H.; Jones, Phillip S.; Bedient, Jack D.",
+    "category": "History of Mathematics"
+  },
+  {
+    "title": "The History of U.S. Electronic Warfare (Vol. 1)",
+    "isbn13": "9789996430886",
+    "year": 1984,
+    "author": "Price, Anthony",
+    "category": "History of Technology"
+  },
+  {
+    "title": "The History of U.S. Electronic Warfare (Vol. 2)",
+    "isbn13": "9789991416892",
+    "year": 1989,
+    "author": "Price, Alfred",
+    "category": "History of Technology"
+  },
+  {
+    "title": "The Hobbit",
+    "isbn13": "9780618260300",
+    "year": 2002,
+    "author": "Tolkien, J.R.R.",
+    "category": "Fiction"
+  },
+  {
+    "title": "The Home Radio How to Make and Use It",
+    "year": 1922,
+    "author": "A. Hyatt Verrill",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "The Homopolar Handbook",
+    "isbn13": "9780964107014",
+    "year": 1994,
+    "author": "Valone, Thomas",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "The Illustrated Brief History of Time",
+    "isbn10": "0553103741",
+    "year": 1996,
+    "author": "Stephen William Hawking",
+    "category": "History of Technology"
+  },
+  {
+    "title": "The Influence of Computers and Informatics on Mathematics and its Teaching",
+    "isbn13": "9780521324021",
+    "year": 1986,
+    "category": "Mathematics"
+  },
+  {
+    "title": "The Joy of Kotlin",
+    "isbn13": "9781617295362",
+    "year": 2019,
+    "author": "Saumont, Pierre-Yves",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Making of Modern Japan",
+    "isbn13": "9780669200201",
+    "year": 1995,
+    "author": "Pyle, Kenneth",
+    "category": "History"
+  },
+  {
+    "title": "The Manga Guide to Microprocessors",
+    "isbn13": "9781593278175",
+    "year": 2017,
+    "author": "Shibuya, Michio; Tonagi, Takashi; Office Sawa",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Modern Application of Electricity",
+    "year": 1882,
+    "author": "Hospitalier",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "The Modern Clock",
+    "year": 1978,
+    "author": "Goodrich, Ward L.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "The Modern RPG IV Language",
+    "isbn13": "9781583470640",
+    "year": 2006,
+    "author": "Robert Cozzi",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Nature of Code: Simulating Natural Systems with Processing",
+    "isbn13": "9780985930806",
+    "year": 2012,
+    "author": "Shiffman, Daniel",
+    "category": "Game Development, Graphics, and Audio"
+  },
+  {
+    "title": "The Paper Computer Unfolded: A Twenty-First Century Guide to the Bell Labs CARDIAC",
+    "isbn13": "9781537421131",
+    "year": 2017,
+    "author": "Lorenzo, Mark Jones",
+    "category": "History of Computing"
+  },
+  {
+    "title": "The Peter Norton PC Programmer's Bible",
+    "isbn13": "9781556155550",
+    "year": 1993,
+    "author": "Norton, Peter; Aitken, Peter; Wilton, Richard",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "The Peter Norton Programmer's Guide to the IBM PC",
+    "isbn13": "9780914845461",
+    "year": 1985,
+    "author": "Norton, Peter",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "The Phoenix Project",
+    "isbn13": "9781942788294",
+    "year": 2018,
+    "author": "Kim, Gene; Behr, Kevin; Spafford, George",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Physical Theory of Transistors",
+    "year": 1961,
+    "author": "Valdes",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "The Pneumatics of Hero of Alexandria",
+    "isbn13": "9781449562878",
+    "year": 2009,
+    "author": "Alexandria, Hero of",
+    "category": "History of Technology"
+  },
+  {
+    "title": "The Principia",
+    "isbn13": "9780520290747",
+    "year": 2016,
+    "author": "Newton, Sir Isaac",
+    "category": "History of Technology"
+  },
+  {
+    "title": "The Programmer's Guide To Iseries Navigator",
+    "isbn13": "9781583470473",
+    "year": 2006,
+    "author": "Paul Tuohy",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Ranger's Apprentice: The Ruins of Gorlan",
+    "isbn13": "9780142406632",
+    "year": 2006,
+    "author": "Flanagan, John",
+    "category": "Fiction"
+  },
+  {
+    "title": "The Rexx Language: A Practical Approach to Programming",
+    "isbn13": "9780137806515",
+    "year": 1990,
+    "author": "Cowlishaw, Michael",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Story of Writing",
+    "isbn13": "9780500286609",
+    "year": 2007,
+    "author": "Robinson, Andrew",
+    "category": "History of Technology"
+  },
+  {
+    "title": "The Strangest Man: The Hidden Life of Paul Dirac, Mystic of the Atom",
+    "isbn13": "9780465022106",
+    "year": 2011,
+    "author": "Farmelo, Graham",
+    "category": "History of Technology"
+  },
+  {
+    "title": "The Unicorn Project",
+    "isbn13": "9781942788768",
+    "year": 2019,
+    "author": "Kim, Gene",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Universal History of Computing",
+    "isbn13": "9780471441472",
+    "year": 2001,
+    "author": "Ifrah, Georges",
+    "category": "History of Computing"
+  },
+  {
+    "title": "The Universal History of Numbers: From Prehistory to the Invention of the Computer",
+    "isbn10": "0471375683",
+    "year": 2021,
+    "author": "Georges Ifrah",
+    "category": "History of Computing"
+  },
+  {
+    "title": "The Unix Programming Environment",
+    "isbn13": "9780139376818",
+    "year": 1983,
+    "author": "Brian W. Kernighan; Rob Pike",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Way of Kings: Book One of the Stormlight Archive",
+    "isbn13": "9780765326355",
+    "year": 2010,
+    "author": "Sanderson, Brandon",
+    "category": "Fiction"
+  },
+  {
+    "title": "The Works of Archimedes",
+    "isbn10": "1420934678",
+    "year": 2010,
+    "author": "Archimedes",
+    "category": "History of Technology"
+  },
+  {
+    "title": "The World's Religions",
+    "isbn13": "9780061660184",
+    "year": 2009,
+    "author": "Smith, Huston",
+    "category": "Religion and Mythology"
+  },
+  {
+    "title": "Theoretical Nuclear Physics",
+    "year": 1966,
+    "author": "Blatt; Weisskopf",
+    "category": "Physics"
+  },
+  {
+    "title": "Theoretical Physics",
+    "isbn13": "9780486652276",
+    "year": 1987,
+    "author": "Georg Joos; Ira M. Freeman",
+    "category": "Physics"
+  },
+  {
+    "title": "Theory and Design for Mechanical Measurements",
+    "isbn13": "9781118881279",
+    "year": 2014,
+    "author": "Figliola, Richard S.; Beasley, Donald E.",
+    "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Thermodynamics",
+    "isbn13": "9780486603612",
+    "year": 1956,
+    "author": "Fermi, Enrico",
+    "category": "Physics"
+  },
+  {
+    "title": "Thermodynamics",
+    "isbn13": "9789339221652",
+    "year": 2017,
+    "author": "Cengel Boles",
+    "category": "Physics"
+  },
+  {
+    "title": "Three Degrees Above Zero",
+    "isbn10": "0684181703",
+    "year": 1984,
+    "author": "Bernstein, Peter L.",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Tomcat: The Definitive Guide",
+    "isbn13": "9780596101060",
+    "year": 2007,
+    "author": "Brittain, Jason; Darwin, Ian F.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Treatise on Electricity and Magnetism, Vol. 1",
+    "isbn13": "9780486606361",
+    "year": 1954,
+    "author": "Maxwell, James Clerk",
+    "category": "History of Technology"
+  },
+  {
+    "title": "TRS-80 Assembly Language Programming",
+    "year": 1979,
+    "author": "Barden",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "TRS-80 Model III Operation and BASIC Language Reference Manual",
+    "year": 1980,
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "TRS-80 Programs",
+    "isbn13": "9780918398277",
+    "year": 1980,
+    "author": "Rugg; Feldman",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "TRS-80 Users Manual For Level 1",
+    "year": 1978,
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "TTL Cookbook",
+    "isbn13": "9780672210358",
+    "year": 1974,
+    "author": "Lancaster, Donald",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Ultra High Frequency Techniques",
+    "isbn13": "9786000972684",
+    "year": 1942,
+    "author": "J Brainerd",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Ultimate Guide to U.S. Army Survival Skills, Tactics, and Techniques",
+    "isbn13": "9781435114029",
+    "year": 2017
+  },
+  {
+    "title": "Understanding Digital Computers",
+    "year": 1979,
+    "author": "Mims",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Understanding Digital Signal Processing",
+    "isbn13": "9780201634679",
+    "year": 1996,
+    "author": "Lyons, Richard G.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Understanding the Linux Kernel, Third Edition",
+    "isbn13": "9780596005658",
+    "year": 2005,
+    "author": "Bovet, Daniel P.; Cesati, Marco",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Understanding Linux Network Internals: Guided Tour to Networking on Linux",
+    "isbn13": "9780596002558",
+    "year": 2006,
+    "author": "Benvenuti, Christian",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "University Physics with Modern Physics (14th Edition)",
+    "isbn13": "9780321973610",
+    "year": 2015,
+    "author": "Young, Hugh D.; Freedman, Roger A.",
+    "category": "Physics"
+  },
+  {
+    "title": "Unix Made Easy",
+    "isbn13": "9780078815768",
+    "year": 1990,
+    "author": "Muster, John",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Vacuum-tube and Semiconductor Electronics",
+    "year": 1958,
+    "author": "Millman",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Vril: The Power of the Coming Race",
+    "isbn13": "9781448636921",
+    "year": 2009,
+    "author": "Bulwer-Lytton, Edward"
+  },
+  {
+    "title": "Web Database Applications with PHP & MySQL, 2nd Edition",
+    "isbn13": "9780596005436",
+    "year": 2004,
+    "author": "Hugh E. Williams; David Lane",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Wicked Cool Ruby Scripts",
+    "isbn13": "9781593271824",
+    "year": 2008,
+    "author": "Pugh, Steve",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Writing A Compiler In Go",
+    "isbn13": "9783982016108",
+    "year": 2018,
+    "author": "Ball, Thorsten",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Writing Compilers and Interpreters",
+    "isbn13": "9780471113539",
+    "year": 1996,
+    "author": "Mak, Ronald",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "XSLT Cookbook",
+    "isbn13": "9780596003722",
+    "year": 2002,
+    "author": "Sal Mangano",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Your Commodore 64: A Guide to the Commodore 64 Computer",
+    "isbn13": "9780881341140",
+    "year": 1983,
+    "author": "Heilborn, John",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Zen of Graphics Programming: The Ultimate Guide to Writing Fast PC Graphics",
+    "isbn13": "9781883577087",
+    "year": 1994,
+    "author": "Abrash, Michael",
+    "category": "Game Development, Graphics, and Audio"
+  },
+  {
+    "title": "Zoology",
+    "isbn13": "9780073524177",
+    "year": 2012,
+    "author": "Stephen Miller",
+    "category": "Biology"
+  },
+  {
+    "title": "ZX Spectrum Games Code Club: Twenty fun games to code and learn",
+    "isbn13": "9780993474408",
+    "year": 2015,
+    "author": "Plowman, Gary",
+    "category": "Vintage Programming"
+  }
+]

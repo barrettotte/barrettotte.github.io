@@ -1,0 +1,63 @@
+{{ define "main" }}
+  <article id="library">
+    <div class="content">
+      <div class="library-top">
+        <h1>{{- .Title -}}</h1>
+        {{- .Content -}}
+
+        <span>I currently have <strong>{{ len .Site.Data.books }}</strong> books.</span>
+
+        {{ $oldest := index (sort .Site.Data.books "year") 0 }}
+        <span>My oldest book was published in <strong>{{ $oldest.year }}</strong>.</span>
+      </div>
+
+      {{ $categories := slice }}
+      {{ range .Site.Data.books }}
+        {{ if isset . "category" }}
+          {{ $categories = $categories | append .category }}
+        {{ else }}
+          {{ $categories = $categories | append "Uncategorized" }}
+        {{ end }}
+      {{ end }}
+      {{ $categories = $categories | uniq | sort }}
+
+      {{ range $categories | sort }}
+        {{ $category := . }}
+        {{ $books := slice }}
+
+        {{ if ne $category "Uncategorized" }}
+          {{ $books = where $.Site.Data.books "category" $category }}
+        {{ else }}
+          {{ $books = where $.Site.Data.books "category" nil }}
+        {{ end }}
+
+        <h2 style="text-transform: capitalize">{{ $category }} ({{ len $books }})</h2>
+
+        <ul class="library-list">
+          {{ range $books }}
+            <li>
+              {{ $author := substr .date 0 4 }}
+  
+              {{ if isset . "isbn10" }}
+                <a href="https://isbnsearch.org/isbn/{{ .isbn10 }}">{{ .title }}</a>
+              {{ else if isset . "isbn13" }}
+                <a href="https://isbnsearch.org/isbn/{{ .isbn13 }}">{{ .title }}</a>
+              {{ else if isset . "lccn" }}
+                <a href="https://lccn.loc.gov/{{ .lccn }}">{{ .title }}</a>
+              {{ else }}
+                <u>{{ .title }}</u>
+              {{ end }}
+  
+              {{ if isset . "author" }}
+                by {{ .author }}
+              {{ end }}
+  
+              ({{ .year }})
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+
+    </div>
+  </article>
+{{ end }}
