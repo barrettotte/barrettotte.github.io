@@ -93,14 +93,11 @@ article.post header div.meta {
     overflow: hidden;
 }
 
-/* show text on hover ... idk not a fan of this approach
-
-.post-list > .post-item:hover {
+/* .post-list > .post-item:hover {
     overflow: visible;
     white-space: normal;
     height: auto;
-}
-*/
+} */
 
 .icon:hover, .post-list > h2 {
     color: var(--color-accent-1);
@@ -218,7 +215,8 @@ article.post header div.meta {
     margin-top: 10px;
 }
 
-/******************* computing ********************/
+/******************* computing *******************/
+
 #computing .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -270,6 +268,24 @@ article.post header div.meta {
     border-bottom: 1px solid var(--color-accent-1);
 }
 
+/******************* library *********************/
+
+.library-top {
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.library-list > li {
+    /* margin: 25px 0; */
+    padding: 0px 0px 0px 5px;
+    /* list-style-type: none; */
+}
+
+.library-list {
+    padding: 0px 0px 0px 5px;
+}
+
 /******************* 404 page ********************/
 
 #not-found {
@@ -318,7 +334,8 @@ article.post header div.meta {
     }
 }
 
-/******************* Mobile ********************/
+/******************* mobile **********************/
+
 @media screen and (max-width: 480px) {
     html, body {
         font-size: 0.85rem;
