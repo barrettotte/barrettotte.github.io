@@ -808,9 +808,16 @@
     {
       "name": "deep-fryer",
       "url": "https://github.com/barrettotte/deep-fryer",
-      "desc": "An image \"deep fryer\" to learn a little CUDA and parallel programming ",
+      "desc": "An image \"deep fryer\" to learn a little CUDA and parallel programming",
       "date": "2023-07",
       "tags": ["c", "cuda", "parallel", "graphics"]
+    },
+    {
+      "name": "faraday-disk",
+      "url": "https://github.com/barrettotte/faraday-disk",
+      "desc": "A Faraday disk built to learn about electromagnetism and early generators",
+      "date": "2023-08",
+      "tags": ["physics", "electromagnetism"]
     }
   ]
 }
