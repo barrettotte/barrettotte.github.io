@@ -11,7 +11,7 @@
             {{ $terms = union $terms .tags }}  
           {{ end }}
 
-          <!-- post tags -->
+          <!-- byte tags -->
           {{ range $term := .Data.Terms }}
             {{ $terms = union $terms (slice $term.Page.Title) }}
           {{ end }}

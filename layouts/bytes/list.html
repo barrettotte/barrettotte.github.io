@@ -1,0 +1,32 @@
+{{ define "main"}}
+  <div id="archive">
+    <h1>Bytes</h1>
+    <p>Small things I've worked on that never became projects/repos.</p>
+
+    <ul class="post-list">
+      {{ range (sort .Site.Data.bytes "date" "desc") }}
+        {{ $pageYear := substr .date 0 4 }}
+        {{ if (ne $pageYear ($.Scratch.Get "year")) }}
+          {{ $.Scratch.Set "year" $pageYear }}
+          <h2>{{ $pageYear }}</h2>
+        {{ end }}
+
+        {{ if not .hidden }}
+          <li class="post-item">
+            <time>{{ .date }}</time>
+            <span>
+              {{ if .byteUrl }}
+                <a href="https://github.com/barrettotte/bytes/tree/master/{{ .byteUrl }}">{{ .name }}</a>
+              {{ else if .url }}
+                <a href="{{ .url }}">{{ .name }}</a>
+              {{ else }}
+                <span style="text-decoration:underline;">{{ .name }}</span>
+              {{ end }}
+            </span>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+
+  </div>
+{{ end }}

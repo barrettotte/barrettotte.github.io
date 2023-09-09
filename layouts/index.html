@@ -3,7 +3,7 @@
     <img class="home-img" src="/img/home.jpg" alt="My computer setup"/>
   </a>
 
-  <section id="posts">
+  <section id="projects">
     <span class="h1">
       <a href="/projects">Featured Projects</a>
     </span>
@@ -20,24 +20,4 @@
     </ul>
   </section>
 
-  <section id="projects">
-    <span class="h1">
-      <a href="/posts">Recent Posts</a>
-    </span>
-    {{ $dataFormat := .Site.Params.dateFormat | default "2006-01-02" }}
-    {{ $mainPosts := (sort ( where site.RegularPages "Type" "in" site.Params.mainSections ) "Date" "desc") }}
-
-    <ul class="post-list">
-      {{ .Scratch.Set "count" .Site.Params.postsOnHomePage }}
-
-      {{ range (first (.Scratch.Get "count") $mainPosts) }}
-        <li class="post-item">
-          <time datetime="{{ time .Date }}">
-            {{ .Date.Format $dataFormat }}
-          </time>
-          <span><a href="{{ .Permalink }}">{{ if .Title }} {{- .Title -}} {{ else }} {{- print "Untitled" -}}{{ end }}</a></span>
-        </li>
-      {{ end }}
-    </ul>
-  </section>
 {{ end }}

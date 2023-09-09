@@ -2,8 +2,8 @@
   "list": [
     {
       "name": "Hello World",
-      "url": null,
-      "desc": "My first program",
+      "url": "https://github.com/barrettotte/bytes/blob/master/misc-code/first-program.cpp",
+      "desc": "My first program (C++)",
       "date": "2011-09",
       "tags": ["c++", "high-school"]
     },
@@ -625,7 +625,8 @@
       "url": "https://github.com/barrettotte/candlestick-mic",
       "desc": "Old candlestick phone as a headset",
       "date": "2022-01",
-      "tags": ["hardware", "vintage", "cad"]
+      "tags": ["hardware", "vintage", "cad"],
+      "featured": true
     },
     {
       "name": "rusty-lc3-vm",
@@ -639,7 +640,8 @@
       "url": "https://github.com/barrettotte/thule-json",
       "desc": "Minimal and unsafe json parser",
       "date": "2022-03",
-      "tags": ["c", "parsing"]
+      "tags": ["c", "parsing"],
+      "featured": true
     },
     {
       "name": "spotify-code-3d",
@@ -753,7 +755,8 @@
       "url": "https://github.com/barrettotte/memento-mori",
       "desc": "A reminder to stop wasting time",
       "date": "2023-01",
-      "tags": ["arduino", "hardware", "c++", "esp8266", "cad", "eda"]
+      "tags": ["arduino", "hardware", "c++", "esp8266", "cad", "eda"],
+      "featured": true
     },
     {
       "name": "cat-feeder",
@@ -788,7 +791,8 @@
       "url": "https://github.com/barrettotte/smarter-ac-unit",
       "desc": "Making my AC unit a little smarter with MQTT and Home Assistant",
       "date": "2023-06",
-      "tags": ["arduino", "hardware", "c++", "esp8266", "cad", "eda", "infrared", "mqtt", "home-assistant", "smart-device"]
+      "tags": ["arduino", "hardware", "c++", "esp8266", "cad", "eda", "infrared", "mqtt", "home-assistant", "smart-device"],
+      "featured": true
     },
     {
       "name": "ctf",
@@ -818,6 +822,14 @@
       "desc": "A Faraday disk built to learn about electromagnetism and early generators",
       "date": "2023-08",
       "tags": ["physics", "electromagnetism"]
+    },
+    {
+      "name": "bytes",
+      "url": "https://github.com/barrettotte/bytes",
+      "desc": "Small things",
+      "date": "2023-09",
+      "tags": [],
+      "hidden": true
     }
   ]
 }
