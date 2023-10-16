@@ -475,7 +475,8 @@
       "url": "https://github.com/barrettotte/Subarashii-CPU",
       "desc": "A simple 16-bit RISC CPU",
       "date": "2020-07",
-      "tags": ["verilog", "cpu-design", "hardware"]
+      "tags": ["verilog", "cpu-design", "hardware"],
+      "featured": true
     },
     {
       "name": "RPGLE-BF",
@@ -640,8 +641,7 @@
       "url": "https://github.com/barrettotte/thule-json",
       "desc": "Minimal and unsafe json parser",
       "date": "2022-03",
-      "tags": ["c", "parsing"],
-      "featured": true
+      "tags": ["c", "parsing"]
     },
     {
       "name": "spotify-code-3d",
@@ -755,8 +755,7 @@
       "url": "https://github.com/barrettotte/memento-mori",
       "desc": "A reminder to stop wasting time",
       "date": "2023-01",
-      "tags": ["arduino", "hardware", "c++", "esp8266", "cad", "eda"],
-      "featured": true
+      "tags": ["arduino", "hardware", "c++", "esp8266", "cad", "eda"]
     },
     {
       "name": "cat-feeder",
@@ -791,8 +790,7 @@
       "url": "https://github.com/barrettotte/smarter-ac-unit",
       "desc": "Making my AC unit a little smarter with MQTT and Home Assistant",
       "date": "2023-06",
-      "tags": ["arduino", "hardware", "c++", "esp8266", "cad", "eda", "infrared", "mqtt", "home-assistant", "smart-device"],
-      "featured": true
+      "tags": ["arduino", "hardware", "c++", "esp8266", "cad", "eda", "infrared", "mqtt", "home-assistant", "smart-device"]
     },
     {
       "name": "ctf",

@@ -2,11 +2,23 @@
   <div id="archive">
     <h1>Projects</h1>
     <ul class="post-list">
-      {{ range (sort .Site.Data.projects.list "date" "desc") }}
+      {{ $projects := .Site.Data.projects.list }}
+
+      {{ range (sort $projects "date" "desc") }}
         {{ $pageYear := substr .date 0 4 }}
+
         {{ if (ne $pageYear ($.Scratch.Get "year")) }}
           {{ $.Scratch.Set "year" $pageYear }}
-          <h2>{{ $pageYear }}</h2>
+          {{ $byYear := slice }}
+
+          {{ range $projects }}
+            {{ $year := printf "%4s" (index (split .date "-") 0) }}
+            {{ if eq $pageYear $year }}
+              {{ $byYear = $byYear | append . }}
+            {{ end }}
+          {{ end }}
+
+          <h2>{{ $pageYear }} ({{ len $byYear }})</h2>
         {{ end }}
 
         {{ if not .hidden }}
