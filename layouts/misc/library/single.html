@@ -36,8 +36,6 @@
         <ul class="library-list">
           {{ range $books }}
             <li>
-              {{ $author := substr .date 0 4 }}
-  
               {{ if isset . "isbn10" }}
                 <a href="https://isbnsearch.org/isbn/{{ .isbn10 }}">{{ .title }}</a>
               {{ else if isset . "isbn13" }}

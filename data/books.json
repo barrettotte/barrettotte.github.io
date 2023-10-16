@@ -1,5 +1,12 @@
 [
   {
+    "title": "1491: New Revelations of the Americas Before Columbus",
+    "isbn13": "9781400032051",
+    "year": 2006,
+    "author": "Mann, Charles C.",
+    "category": "History"
+  },
+  {
     "title": "1800 Mechanical Movements, Devices and Appliances",
     "isbn13": "9780486457437",
     "year": 2007,
@@ -519,6 +526,13 @@
     "category": "Cyber Security"
   },
   {
+    "title": "Blood Meridian",
+    "isbn13": "9780679728757",
+    "year": 2020,
+    "author": "Cormac McCarthy",
+    "category": "Fiction"
+  },
+  {
     "title": "Blue Team Field Manual",
     "isbn13": "9781541016361",
     "year": 2017,
@@ -587,6 +601,12 @@
     "year": 1995,
     "author": "Zajonc, Arthur",
     "category": "History of Technology"
+  },
+  {
+    "title": "Chariots of the Gods",
+    "isbn13": "9780425166802",
+    "year": 1999,
+    "author": "Erich Von Daniken"
   },
   {
     "title": "Chemistry: Principles, Patterns, and Applications",
@@ -890,6 +910,13 @@
     "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
+    "title": "Deep Learning for Coders with Fastai and PyTorch: AI Applications Without a PhD",
+    "isbn13": "9781492045526",
+    "year": 2020,
+    "author": "Howard, Jeremy; Gugger, Sylvain",
+    "category": "Data Science, Machine Learning, and Parallel Programming"
+  },
+  {
     "title": "Design of Analog CMOS Integrated Circuits",
     "isbn13": "9780072380323",
     "year": 2000,
@@ -1172,6 +1199,13 @@
     "year": 1976,
     "author": "Ralston",
     "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Ender's Game (The Ender Quintet, 1)",
+    "isbn13": "9781250773029",
+    "year": 2021,
+    "author": "Card, Orson Scott",
+    "category": "Fiction"
   },
   {
     "title": "Endless Loop: The History of the BASIC Programming Language",
@@ -2003,6 +2037,12 @@
     "year": 1982,
     "author": "Martin, G. H.",
     "category": "Mechanical Engineering"
+  },
+  {
+    "title": "KJV Holy Bible",
+    "isbn13": "9781432132880",
+    "year": 2020,
+    "category": "Religion and Mythology"
   },
   {
     "title": "Language Implementation Patterns: Create Your Own Domain-Specific and General Programming Languages",
@@ -3233,6 +3273,12 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "The Alchemist",
+    "isbn13": "9780062315007",
+    "year": 2022,
+    "author": "Paulo Coelho"
+  },
+  {
     "title": "The Annotated Turing",
     "isbn13": "9780470229057",
     "year": 2008,
@@ -3582,6 +3628,19 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "The Kybalion: Centenary Edition",
+    "isbn13": "9780143131687",
+    "year": 2018,
+    "author": "Three Initiates",
+    "category": "Religion and Mythology"
+  },
+  {
+    "title": "The Mahabharata",
+    "isbn13": "9780140446814",
+    "year": 2009,
+    "category": "Religion and Mythology"
+  },
+  {
     "title": "The Making of Modern Japan",
     "isbn13": "9780669200201",
     "year": 1995,
@@ -3837,6 +3896,12 @@
     "year": 1974,
     "author": "Lancaster, Donald",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Twelfth Planet: Book I of the Earth Chronicles",
+    "isbn13": "9780061379130",
+    "year": 2007,
+    "author": "Sitchin, Zecharia"
   },
   {
     "title": "Ultra High Frequency Techniques",
