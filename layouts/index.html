@@ -1,7 +1,5 @@
 {{ define "main" }}
-  <a href="/img/home.jpg">
-    <img class="home-img" src="/img/home.jpg" alt="My computer setup"/>
-  </a>
+  {{ partial "carousel.html" (dict "context" . "items" "1" "height" "66.66667" "unit" "%" "duration" "7000") }}
 
   <section id="projects">
     <span class="h1">

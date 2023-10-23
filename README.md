@@ -15,3 +15,4 @@ A simple personal site using [Hugo](https://gohugo.io/).
 
 - Based on [Cactus Theme](https://themes.gohugo.io/themes/hugo-theme-cactus/)
 - https://cloudcannon.com/blog/the-ultimate-guide-to-hugo-sections/
+- https://hugocodex.org/add-ons/slider-carousel/
