@@ -90,25 +90,25 @@
     "category": "3d-print"
   },
   {
-    "name": "ctf: Hack The Boo 2022",
+    "name": "CTF: Hack The Boo 2022",
     "url": "https://github.com/barrettotte/ctf/blob/master/hacktheboo-2022",
     "date": "2022-10-27",
     "category": "ctf"
   },
   {
-    "name": "ctf: Cyber Apocalypse 2023",
+    "name": "CTF: Cyber Apocalypse 2023",
     "url": "https://github.com/barrettotte/ctf/blob/master/cyber-apocalypse-2023",
     "date": "2023-03-23",
     "category": "ctf"
   },
   {
-    "name": "ctf: PlaidCTF 2023",
+    "name": "CTF: PlaidCTF 2023",
     "url": "https://github.com/barrettotte/ctf/blob/master/plaid-ctf-2023",
     "date": "2023-04-16",
     "category": "ctf"
   },
   {
-    "name": "ctf: UMDCTF 2023",
+    "name": "CTF: UMDCTF 2023",
     "date": "2023-04-30",
     "category": "ctf"
   },
@@ -161,45 +161,51 @@
     "category": "3d-print"
   },
   {
-    "name": "kaggle: titanic",
+    "name": "Kaggle: titanic",
     "url": "https://github.com/barrettotte/kaggle/tree/master/titanic",
     "category": "kaggle",
     "date": "2023-10-05"
   },
   {
-    "name": "kaggle: Digit Recognizer",
+    "name": "Kaggle: Digit Recognizer",
     "url": "https://github.com/barrettotte/kaggle/tree/master/digit-recognizer",
     "category": "kaggle",
     "date": "2023-10-05"
   },
   {
-    "name": "kaggle: Plant Seedling Classification",
+    "name": "Kaggle: Plant Seedling Classification",
     "url": "https://github.com/barrettotte/kaggle/tree/master/plant-seedling-classification",
     "category": "kaggle",
     "date": "2023-10-06"
   },
   {
-    "name": "kaggle: Housing Prices",
+    "name": "Kaggle: Housing Prices",
     "url": "https://github.com/barrettotte/kaggle/tree/master/home-data-for-ml-course",
     "category": "kaggle",
     "date": "2023-10-09"
   },
   {
-    "name": "ctf: SunshineCTF 2023",
+    "name": "CTF: SunshineCTF 2023",
     "url": "https://github.com/barrettotte/ctf/blob/master/sunshine-ctf-2023",
     "category": "ctf",
     "date": "2023-10-09"
   },
   {
-    "name": "kaggle: Software Defects Binary Classification",
+    "name": "Kaggle: Software Defects Binary Classification",
     "url": "https://github.com/barrettotte/kaggle/tree/master/playground-s3e23",
     "category": "kaggle",
     "date": "2023-10-10"
   },
   {
-    "name": "ctf: TCP1P CTF 2023",
+    "name": "CTF: TCP1P CTF 2023",
     "url": "https://github.com/barrettotte/ctf/blob/master/tcp1p-2023",
     "category": "ctf",
     "date": "2023-10-15"
+  },
+  {
+    "name": "CTF: DEADFACE CTF 2023",
+    "url": "https://github.com/barrettotte/ctf/blob/master/deadface-ctf-2023",
+    "category": "ctf",
+    "date": "2023-10-21"
   }
 ]

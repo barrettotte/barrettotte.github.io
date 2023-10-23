@@ -54,7 +54,8 @@ article.post header div.meta {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 2.0rem;
+    padding-top: 1.0rem;
+    padding-bottom: 1.0rem;
 }
 
 .article-tag {
@@ -82,7 +83,8 @@ article.post header div.meta {
 }
 
 #projects {
-    margin-top: 1.25rem;
+    margin-top: 1.0rem;
+    margin-bottom: 1.0rem;
 }
 
 .post-list > .post-item {
@@ -101,6 +103,10 @@ article.post header div.meta {
 
 .icon:hover, .post-list > h2 {
     color: var(--color-accent-1);
+}
+
+#archive, article {
+    margin-bottom: 2.0rem;
 }
 
 #archive .post-list .post-item, #archive .project-list .project-item {
@@ -334,7 +340,9 @@ article.post header div.meta {
     }
 }
 
-/******************* mobile **********************/
+/*************************************************/
+/*                   mobile                      */
+/*************************************************/
 
 @media screen and (max-width: 480px) {
     html, body {
@@ -369,8 +377,12 @@ article.post header div.meta {
     }
 
     li {
-        padding-bottom: 0.50rem;
         word-wrap: break-word;
+    }
+
+    #header #nav {
+        display: flex;
+        justify-content: center;
     }
 
     #title > h1 > a {
@@ -400,21 +412,6 @@ article.post header div.meta {
         display: inline;
     }
 
-    #header #nav ul {
-        display: flex;
-        margin: 0 auto;
-    }
-
-    #header #nav ul li, #header #nav li:not(:first-child) {
-        display: inline-block;
-        list-style: none;
-        border-right: none;
-        padding: 25px 0px 10px 0px;
-        font-size: 0.85rem;
-        text-align: center;
-        margin-right: 5px;
-    }
-
     #footer {
         height: 25px;
     }
@@ -433,5 +430,9 @@ article.post header div.meta {
 
     #computing .gallery > li {
         width: 100%;
+    }
+
+    .content {
+        padding-top: 2rem;
     }
 }
