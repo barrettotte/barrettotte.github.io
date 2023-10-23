@@ -2,12 +2,11 @@
 
 {{ .context.Scratch.Set "height" .height }}
 {{ .context.Scratch.Set "unit" .unit }}
-{{ .context.Scratch.Set "items" .items }}
 
-<div id="carousel10" class="carousel" duration="{{ .duration }}" items="{{ .items }}">
+<div id="carousel10" class="carousel" duration="{{ .duration }}">
   <ul>
     {{ range $index, $slide := .context.Site.Data.carousel.images }}
-      <li id="c10_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $.context.Scratch.Get "items" }}); padding-bottom: {{ $.context.Scratch.Get "height" }}{{ $.context.Scratch.Get "unit" }};">
+      <li id="c10_slide{{ add $index 1}}" style="min-width: 100%; padding-bottom: {{ $.context.Scratch.Get "height" }}{{ $.context.Scratch.Get "unit" }};">
         <img src="{{ $slide.image }}" alt=""/>
         <!-- <div><div>{{ $slide.content_html }}</div></div> -->
       </li>

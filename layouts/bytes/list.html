@@ -20,7 +20,9 @@
             {{ end }}
           {{ end }}
 
-          <h2>{{ $pageYear }} ({{ len $byYear }})</h2>
+          <h2 id="{{ $pageYear | urlize }}">
+            <a href="#{{ $pageYear | urlize }}">{{ $pageYear }}</a> ({{ len $byYear }})
+          </h2>
         {{ end }}
 
         {{ if not .hidden }}

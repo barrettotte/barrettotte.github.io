@@ -10,7 +10,7 @@
     flex-wrap: nowrap;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    /* background: gray; */
+    background: var(--color-background);
     scrollbar-width: none;
     margin: 0;
     padding: 0;
@@ -39,7 +39,10 @@
 
 .carousel ul li > img {
     object-fit: cover;
-    /* object-fit: scale-down; */
+}
+
+.carousel ul li:not(.carousel-selected) {
+    visibility: hidden;
 }
 
 .carousel ul li > div {
@@ -77,7 +80,7 @@
     border: 2px solid var(--color-accent-1);
 }
 
-.carousel ol li.selected a {
+.carousel ol li.carousel-selected a {
     border: 2px solid var(--color-accent-1);
     background-color: var(--color-accent-1);
 }

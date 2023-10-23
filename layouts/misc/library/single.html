@@ -31,7 +31,9 @@
           {{ $books = where $.Site.Data.books "category" nil }}
         {{ end }}
 
-        <h2 style="text-transform: capitalize">{{ $category }} ({{ len $books }})</h2>
+        <h2 id="{{ $category | urlize }}" style="text-transform: capitalize">
+          <a href="#{{ $category | urlize }}">{{ $category }}</a> ({{ len $books }})
+        </h2>
 
         <ul class="library-list">
           {{ range $books }}
