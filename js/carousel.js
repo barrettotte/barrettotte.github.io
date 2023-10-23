@@ -15,8 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
         nextarrow.style.display = 'block';
         prevarrow.style.display = 'block';
         ele.scrollLeft = 0;
-        bullets[0].classList.add('selected');
-        slides[0].classList.add('selected');
+        bullets[0].classList.add('carousel-selected');
+        slides[0].classList.add('carousel-selected');
+
         if (amountvisible > 1) {
             var removeels = carousel.querySelectorAll('ol li:nth-last-child(-n + ' + (amountvisible - 1) + ')');
             removeels.forEach(function (removeel) {
@@ -26,15 +27,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const setSelected = function () {
             bullets.forEach(function (bullet) {
-                bullet.classList.remove('selected');
+                bullet.classList.remove('carousel-selected');
             });
             slides.forEach(function (slide) {
-                slide.classList.remove('selected');
+                slide.classList.remove('carousel-selected');
             });
             const scrolllength = carousel.querySelector('ul li:nth-child(2)').offsetLeft - carousel.querySelector('ul li:nth-child(1)').offsetLeft;
             const nthchild = (Math.round((ele.scrollLeft / scrolllength) + 1));
-            carousel.querySelector('ol li:nth-child(' + nthchild + ')').classList.add('selected');
-            carousel.querySelector('ul li:nth-child(' + nthchild + ')').classList.add('selected');
+            carousel.querySelector('ol li:nth-child(' + nthchild + ')').classList.add('carousel-selected');
+            carousel.querySelector('ul li:nth-child(' + nthchild + ')').classList.add('carousel-selected');
+
             if (carousel.parentElement.parentElement.querySelector('.dynamictitle')) {
                 const title = carousel.querySelector('ul li:nth-child(' + nthchild + ') img').getAttribute('title');
                 if (title) carousel.parentElement.parentElement.querySelector('.dynamictitle').innerHTML = title;
@@ -47,16 +49,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         const nextSlide = function () {
-            if (!carousel.querySelector('ol li:last-child').classList.contains('selected')) {
-                carousel.querySelector('ol li.selected').nextElementSibling.querySelector('a').click();
+            if (!carousel.querySelector('ol li:last-child').classList.contains('carousel-selected')) {
+                carousel.querySelector('ol li.carousel-selected').nextElementSibling.querySelector('a').click();
             } else {
                 carousel.querySelector('ol li:first-child a').click();
             }
         }
 
         const prevSlide = function () {
-            if (!carousel.querySelector('ol li:first-child').classList.contains('selected')) {
-                carousel.querySelector('ol li.selected').previousElementSibling.querySelector('a').click();
+            if (!carousel.querySelector('ol li:first-child').classList.contains('carousel-selected')) {
+                carousel.querySelector('ol li.carousel-selected').previousElementSibling.querySelector('a').click();
             } else {
                 carousel.querySelector('ol li:last-child a').click();
             }
@@ -94,7 +96,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (ele != document.querySelector(".carousel:hover ul") && ele.classList.contains('interacted') == false) {
                     nextarrow.click();
                 }
-            }, carousel.getAttribute('duration'));
+            }, 
+            carousel.getAttribute('duration'));
         }
     });
 });
