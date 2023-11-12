@@ -161,6 +161,24 @@
     "category": "3d-print"
   },
   {
+    "name": "Electroscope",
+    "byteUrl": "electrostatics/electroscope",
+    "category": "3d-print",
+    "date": "2023-09-14"
+  },
+  {
+    "name": "Flip 5 Stand",
+    "byteUrl": "3d-prints/desk-designs/flip-5-stand",
+    "category": "3d-print",
+    "date": "2023-09-20"
+  },
+  {
+    "name": "Desk Small Tray",
+    "byteUrl": "3d-prints/desk-designs/small-tray",
+    "category": "3d-print", 
+    "date": "2023-09-29"
+  },
+  {
     "name": "Kaggle: titanic",
     "url": "https://github.com/barrettotte/kaggle/tree/master/titanic",
     "category": "kaggle",
@@ -207,5 +225,47 @@
     "url": "https://github.com/barrettotte/ctf/blob/master/deadface-ctf-2023",
     "category": "ctf",
     "date": "2023-10-21"
+  },
+  {
+    "name": "CTF: Hack The Boo 2023",
+    "url": "https://github.com/barrettotte/ctf/blob/master/hacktheboo-2023",
+    "category": "ctf",
+    "date": "2023-10-27"
+  },
+  {
+    "name": "Kaggle: Plant Pathology 2021",
+    "url": "https://github.com/barrettotte/kaggle/tree/master/plant-pathology-2021",
+    "category": "kaggle",
+    "date": "2023-10-29"
+  },
+  {
+    "name": "USB Microscope Stand",
+    "byteUrl": "3d-prints/usb-microscope-stand",
+    "category": "3d-print",
+    "date": "2023-10-31"
+  },
+  {
+    "name": "Electrophorus",
+    "byteUrl": "electrostatics/electrophorus",
+    "category": "3d-print",
+    "date": "2023-11-09"
+  },
+  {
+    "name": "Kaggle: DEFCON31 AI Village CTF",
+    "url": "https://github.com/barrettotte/kaggle/tree/master/ai-ctf-defcon31",
+    "category": "kaggle",
+    "date": "2023-11-09"
+  },
+  {
+    "name": "AC Unit Power Cover",
+    "byteUrl": "3d-prints/ac-power-cover",
+    "category": "3d-print",
+    "date": "2023-11-11"
+  },
+  {
+    "name": "CakeCTF 2023",
+    "url": "https://github.com/barrettotte/ctf/blob/master/cakectf-2023",
+    "category": "ctf",
+    "date": "2023-11-12"
   }
 ]

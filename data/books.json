@@ -931,6 +931,13 @@
     "category": "Mechanical Engineering"
   },
   {
+    "title": "Designing Data-Intensive Applications",
+    "isbn13": "9781449373320",
+    "year": 2017,
+    "author": "Kleppmann, Martin",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
     "title": "Designing Great Beers: The Ultimate Guide to Brewing Classic Beer Styles",
     "isbn13": "9780937381502",
     "year": 1998,
@@ -1042,6 +1049,13 @@
     "year": 2021,
     "author": "Hambley, Allan R.",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electricity in the 17th & 18th Centuries: A Study in Early Modern Physics",
+    "isbn13": "9780486406886",
+    "year": 1999,
+    "author": "Heilbron, J. L.",
+    "category": "History of Technology"
   },
   {
     "title": "Electromechanical Motion Devices",
