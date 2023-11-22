@@ -42,9 +42,7 @@
                 <i class="far fa-lg fa-lightbulb fa-fw"></i>
               {{ end }}
 
-              {{ if .byteUrl }}
-                <a href="https://github.com/barrettotte/bytes/tree/master/{{ .byteUrl }}">{{ .name }}</a>
-              {{ else if .url }}
+              {{ if .url }}
                 <a href="{{ .url }}">{{ .name }}</a>
               {{ else }}
                 <span style="text-decoration:underline;">{{ .name }}</span>

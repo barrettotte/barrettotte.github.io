@@ -2,7 +2,7 @@
   <div id="archive">
     <h1>Projects</h1>
     <ul class="post-list">
-      {{ $projects := .Site.Data.projects.list }}
+      {{ $projects := where .Site.Data.projects.list "hidden" nil }}
 
       {{ range (sort $projects "date" "desc") }}
         {{ $pageYear := substr .date 0 4 }}

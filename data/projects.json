@@ -796,7 +796,6 @@
       "name": "ctf",
       "url": "https://github.com/barrettotte/ctf",
       "desc": "CTFs, cybersecurity courses, and other cyber junk",
-      "date": "2023-06",
       "tags": [],
       "hidden": true
     },
@@ -825,9 +824,15 @@
       "name": "bytes",
       "url": "https://github.com/barrettotte/bytes",
       "desc": "Small things",
-      "date": "2023-09",
       "tags": [],
       "hidden": true
+    },
+    {
+      "name": "what-the-ohm",
+      "url": "https://github.com/barrettotte/what-the-ohm",
+      "desc": "A deep learning model to identify resistor bands",
+      "date": "2023-11",
+      "tags": ["deep-learning", "machine-learning", "pytorch", "jupyter", "python"]
     }
   ]
 }

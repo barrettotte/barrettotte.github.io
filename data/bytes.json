@@ -1,91 +1,91 @@
 [
   {
     "name": "My First Program (C++)",
-    "byteUrl": "misc-code/first-program.cpp",
+    "url": "https://github.com/barrettotte/bytes/tree/master/misc-code/first-program.cpp",
     "date": "2011-09-06",
     "category": "coding"
   },
   {
     "name": "Simulating Fishing Rod Bend in Unity",
-    "byteUrl": "old-posts/2017/1/index.md",
+    "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2017/1/index.md",
     "date": "2017-05-01",
     "category": "coding"
   },
   {
     "name": "ColdFusion Service Pinger",
-    "byteUrl": "old-posts/2018/2/index.md",
+    "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2018/2/index.md",
     "date": "2018-12-01",
     "category": "coding"
   },
   {
     "name": "IBM i Pull Code Utility",
-    "byteUrl": "old-posts/2019/2/index.md",
+    "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2019/2/index.md",
     "date": "2019-08-19",
     "category": "coding"
   },
   {
     "name": "ColdFusion Neural Network",
-    "byteUrl": "misc-code/cf-neural-net",
+    "url": "https://github.com/barrettotte/bytes/tree/master/misc-code/cf-neural-net",
     "date": "2019-10-01",
     "category": "coding"
   },
   {
     "name": "IBM i Joke Program",
-    "byteUrl": "old-posts/2020/1/index.md",
+    "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2020/1/index.md",
     "date": "2020-02-20",
     "category": "coding"
   },
   {
     "name": "Send a Text Message with Twilio and DB2 SQL",
-    "byteUrl": "old-posts/2020/3/index.md",
+    "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2020/3/index.md",
     "date": "2020-04-23",
     "category": "coding"
   },
   {
     "name": "Projectile Motion in Pygame",
-    "byteUrl": "misc-code/pygame-projectile",
+    "url": "https://github.com/barrettotte/bytes/tree/master/misc-code/pygame-projectile",
     "date": "2020-09-07",
     "category": "coding"
   },
   {
     "name": "DB2 SQL Generate Groovy Object",
-    "byteUrl": "misc-code/db2-sql-gen-groovy",
+    "url": "https://github.com/barrettotte/bytes/tree/master/misc-code/db2-sql-gen-groovy",
     "date": "2021-06-01",
     "category": "coding"
   },
   {
     "name": "DB2 SQL Dynamic Insert JSON",
-    "byteUrl": "misc-code/db2-sql-gen-insert",
+    "url": "https://github.com/barrettotte/bytes/tree/master/misc-code/db2-sql-gen-insert",
     "date": "2021-06-15",
     "category": "coding"
   },
   {
     "name": "Standing Desk Control Cover",
-    "byteUrl": "3d-prints/desk-designs/jarvis-controller-cover",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-prints/desk-designs/jarvis-controller-cover",
     "date": "2021-10-08",
     "category": "3d-print"
   },
   {
     "name": "ColdFusion log4shell",
-    "byteUrl": "old-posts/2021/3/index.md",
+    "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2021/3/index.md",
     "date": "2021-12-13",
     "category": "coding"
   },
   {
     "name": "Simple Vacuum Tube Amplifier",
-    "byteUrl": "old-posts/2022/2/index.md",
+    "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2022/2/index.md",
     "date": "2022-08-28",
     "category": "electronics"
   },
   {
     "name": "Small Whiteboard Holder",
-    "byteUrl": "3d-prints/desk-designs/whiteboard-holder-small",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-prints/desk-designs/whiteboard-holder-small",
     "date": "2022-09-21",
     "category": "3d-print"
   },
   {
     "name": "Server Rack Top Extension",
-    "byteUrl": "3d-prints/server-top-holders",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-prints/server-top-holders",
     "date": "2022-10-11",
     "category": "3d-print"
   },
@@ -114,72 +114,72 @@
   },
   {
     "name": "Monitor Power Brick Holders",
-    "byteUrl": "3d-prints/desk-designs/monitor-power-tower",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-prints/desk-designs/monitor-power-tower",
     "date": "2023-07-13",
     "category": "3d-print"
   },
   {
     "name": "Desk Phone Holder",
-    "byteUrl": "3d-prints/desk-designs/desk-phone-mount",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-prints/desk-designs/desk-phone-mount",
     "date": "2023-07-28",
     "category": "3d-print"
   },
   {
     "name": "Nitrile Glove Holder/Dispenser",
-    "byteUrl": "3d-prints/resin-designs/glove-dispenser",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-prints/resin-designs/glove-dispenser",
     "date": "2023-08-01",
     "category": "3d-print"
   },
   {
     "name": "Elegoo Saturn 2 Exhaust Venting",
-    "byteUrl": "3d-prints/resin-designs/saturn-2-venting",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-prints/resin-designs/saturn-2-venting",
     "date": "2023-08-02",
     "category": "3d-print"
   },
   {
     "name": "Exhaust Duct Support",
-    "byteUrl": "3d-prints/resin-designs/duct-holder",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-prints/resin-designs/duct-holder",
     "date": "2023-08-07",
     "category": "3d-print"
   },
   {
     "name": "Part Organizer Dividers",
-    "byteUrl": "3d-prints/tray-divider",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-prints/tray-divider",
     "date": "2023-08-09",
     "category": "3d-print"
   },
   {
     "name": "RTL SDR Cable Support",
-    "byteUrl": "3d-prints/rtl-sdr-support",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-prints/rtl-sdr-support",
     "date": "2023-08-20",
     "category": "3d-print"
   },
   {
     "name": "Laundry Bin Handle",
-    "byteUrl": "3d-prints/laundry-handle",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-prints/laundry-handle",
     "date": "2023-08-22",
     "category": "3d-print"
   },
   {
     "name": "Electroscope",
-    "byteUrl": "electrostatics/electroscope",
-    "category": "3d-print",
+    "url": "https://github.com/barrettotte/bytes/tree/master/electrostatics/electroscope",
+    "category": "electronics",
     "date": "2023-09-14"
   },
   {
     "name": "Flip 5 Stand",
-    "byteUrl": "3d-prints/desk-designs/flip-5-stand",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-prints/desk-designs/flip-5-stand",
     "category": "3d-print",
     "date": "2023-09-20"
   },
   {
     "name": "Desk Small Tray",
-    "byteUrl": "3d-prints/desk-designs/small-tray",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-prints/desk-designs/small-tray",
     "category": "3d-print", 
     "date": "2023-09-29"
   },
   {
-    "name": "Kaggle: titanic",
+    "name": "Kaggle: Titanic",
     "url": "https://github.com/barrettotte/kaggle/tree/master/titanic",
     "category": "kaggle",
     "date": "2023-10-05"
@@ -240,14 +240,14 @@
   },
   {
     "name": "USB Microscope Stand",
-    "byteUrl": "3d-prints/usb-microscope-stand",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-prints/usb-microscope-stand",
     "category": "3d-print",
     "date": "2023-10-31"
   },
   {
     "name": "Electrophorus",
-    "byteUrl": "electrostatics/electrophorus",
-    "category": "3d-print",
+    "url": "https://github.com/barrettotte/bytes/tree/master/electrostatics/electrophorus",
+    "category": "electronics",
     "date": "2023-11-09"
   },
   {
@@ -258,14 +258,20 @@
   },
   {
     "name": "AC Unit Power Cover",
-    "byteUrl": "3d-prints/ac-power-cover",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-prints/ac-power-cover",
     "category": "3d-print",
     "date": "2023-11-11"
   },
   {
     "name": "CakeCTF 2023",
-    "url": "https://github.com/barrettotte/ctf/blob/master/cakectf-2023",
+    "url": "https://github.com/barrettotte/ctf#ctfs",
     "category": "ctf",
     "date": "2023-11-12"
+  },
+  {
+    "name": "Leyden Jar",
+    "url": "https://github.com/barrettotte/bytes/tree/master/electrostatics/leyden-jar",
+    "category": "electronics",
+    "date": "2023-11-16"
   }
 ]
