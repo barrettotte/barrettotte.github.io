@@ -5,19 +5,19 @@ section: about
 
 # About
 
+Lifelong student trying to learn a little of everything.
+
 ## General
-
-**tldr;** Lifelong student aspiring to learn a little of everything.
-
-<br>
 
 <div class="about-top-row">
   <div class="about-top-col">
     <h3>Interests</h3>
     <ul>
-      <li>History of Computing/Technology</li>
-      <li>Computer Architecture</li>
+      <li>History of computing/technology</li>
+      <li>Computer architecture</li>
       <li>Electronics</li>
+      <li>Low-level programming</li>
+      <li>Electromagnetism</li>
     </ul>
   </div>
   <div class="about-top-col">
@@ -26,6 +26,8 @@ section: about
       <li>Tinkering</li>
       <li>Self-studying</li>
       <li>Weightlifting</li>
+      <li>Watching anime</li>
+      <li>Video games</li>
     </ul>
   </div>
 </div>
@@ -34,7 +36,7 @@ section: about
 
 ## Career
 
-In summary, I'm a software engineer with the bulk of my experience in **Java**, **Angular**, and **Postgres**.
+In summary, I'm a software engineer with the bulk of my experience in **Java** and **Postgres**.
 My resume with more detail is available at 
 <a href="https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf" target="_blank" rel="noopener noreferrer">/resume</a>.
 
@@ -42,13 +44,13 @@ My resume with more detail is available at
 
 Large projects/efforts that I will train myself to complete one day via self-study and smaller side projects.
 
+- Build a mechanical clock
 - Build a mechanical calculator
+- Make a transistor from scratch
+- Make a vacuum tube from scratch
+- Build a homebrew CPU with an OS and more
+- Build a radio astronomy station
 - Build a basic scanning electron microscope
 - Build a fusor
-- Build a radio astronomy station
-- Make a Transistor from scratch
-- Make a Vacuum Tube from scratch
-- Setup a small home chemistry/biology lab
 - Create and publish a small game to Steam
-- Design and build a homebrew CPU with a basic operating system and more
 - Complete *From Stones to Qubits* project
