@@ -999,6 +999,13 @@
     "category": "Mathematics"
   },
   {
+    "title": "Do Androids Dream of Electric Sheep?",
+    "isbn13": "9781407230023",
+    "year": 2021,
+    "author": "Dick, Philip K.",
+    "category": "Fiction"
+  },
+  {
     "title": "Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability (3rd Edition)",
     "isbn13": "9780321965516",
     "year": 2013,
@@ -2147,6 +2154,12 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "Logical Chess: Move By Move",
+    "isbn13": "9780713484649",
+    "year": 2003,
+    "author": "Chernev, Irving"
+  },
+  {
     "title": "Machine, Assembly, and Systems Programming For the IBM 360",
     "year": 1969,
     "author": "Payne",
@@ -3059,6 +3072,13 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "Scala for the Impatient",
+    "isbn13": "9780138033651",
+    "year": 2022,
+    "author": "Horstmann, Cay S.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
     "title": "Scholar's ABC of Electricity",
     "year": 1896,
     "author": "WM. H. Meadowcroft",
@@ -3567,6 +3587,12 @@
     "category": "History of Technology"
   },
   {
+    "title": "The Game of Chess",
+    "isbn13": "9781880673942",
+    "year": 1994,
+    "author": "Siegbert Tarrasch"
+  },
+  {
     "title": "The Golden Ratio: The Story of PHI, the World's Most Astonishing Number",
     "isbn13": "9780767908160",
     "year": 2003,
@@ -3776,6 +3802,12 @@
     "year": 2011,
     "author": "Farmelo, Graham",
     "category": "History of Technology"
+  },
+  {
+    "title": "The Tibetan Book of the Dead: First Complete Translation ",
+    "isbn13": "9780143104940",
+    "year": 2007,
+    "category": "Religion and Mythology"
   },
   {
     "title": "The Unicorn Project",
@@ -4023,6 +4055,12 @@
     "year": 1983,
     "author": "Heilborn, John",
     "category": "Vintage Programming"
+  },
+  {
+    "title": "Zen and the Art of Motorcycle Maintenance: An Inquiry into Values",
+    "isbn13": "9780061673733",
+    "year": 2008,
+    "author": "Pirsig, Robert M."
   },
   {
     "title": "Zen of Graphics Programming: The Ultimate Guide to Writing Fast PC Graphics",

@@ -833,6 +833,30 @@
       "desc": "A deep learning model to identify resistor bands",
       "date": "2023-11",
       "tags": ["deep-learning", "machine-learning", "pytorch", "jupyter", "python"]
+    },
+    {
+      "name": "enigma-scala",
+      "url": "https://github.com/barrettotte/enigma-scala",
+      "desc": "Simple enigma machine encrypt in scala",
+      "date": "2023-12"
+    },
+    {
+      "name": "wimshurst-machine",
+      "url": "https://github.com/barrettotte/wimshurst-machine",
+      "desc": "A Wimshurst machine made to learn about electrostatic generators",
+      "date": "2023-12"
+    },
+    {
+      "name": "coulomb",
+      "url": "https://github.com/barrettotte/coulomb",
+      "desc": "My development environment",
+      "date": "2023-12"
+    },
+    {
+      "name": "fishtank-s02-qol",
+      "url": "https://github.com/barrettotte/fishtank-s02-qol",
+      "desc": "Adds some quality of life features for Fishtank season 2 that I wanted",
+      "date": "2023-12"
     }
   ]
 }
