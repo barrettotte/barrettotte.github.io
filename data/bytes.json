@@ -281,6 +281,12 @@
     "date": "2023-11-16"
   },
   {
+    "name": "TV Foot CRT",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-printing/tv-foot-crt",
+    "category": "3d-print",
+    "date": "2023-12-20"
+  },
+  {
     "name": "Sony Trinitron External Display",
     "url": "https://github.com/barrettotte/bytes/tree/master/sony-trinitron#external-display",
     "category": "electronics",
