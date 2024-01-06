@@ -353,6 +353,12 @@
     "category": "Data Science, Machine Learning, and Parallel Programming"
   },
   {
+    "title": "Applied X-Rays",
+    "year": 1940,
+    "author": "George L. Clark",
+    "category": "Physics"
+  },
+  {
     "title": "Approaching the Buddhist Path",
     "year": 2017,
     "author": "Lama, Dalai; Chodron, Thubten",
@@ -613,6 +619,12 @@
     "isbn13": "9780805383171",
     "year": 2006,
     "author": "Averill, Bruce A.; Eldredge, Patricia",
+    "category": "Chemistry and Materials Science"
+  },
+  {
+    "title": "Chemistry of Powder and Explosives",
+    "year": 1943,
+    "author": "Tenney L. Davis",
     "category": "Chemistry and Materials Science"
   },
   {
@@ -1934,6 +1946,12 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "Introduction to Nuclear Reactor Theory",
+    "year": 1966,
+    "author": "Lamarsh",
+    "category": "Physics"
+  },
+  {
     "title": "Introduction to Optics (3rd Edition)",
     "isbn13": "9780131499331",
     "year": 2006,
@@ -3235,6 +3253,13 @@
     "year": 1983,
     "author": "International Correspondence Schools",
     "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Storage Batteries: A General Treatise on the Physics and Chemistry of Secondary Batteries",
+    "isbn13": "9780471908166",
+    "year": 1955,
+    "author": "George W. Vinal",
+    "category": "Chemistry and Materials Science"
   },
   {
     "title": "Structure and Interpretation of Classical Mechanics",

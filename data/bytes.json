@@ -1,63 +1,63 @@
 [
   {
     "name": "My First Program (C++)",
-    "url": "https://github.com/barrettotte/bytes/tree/master/misc-code/first-program.cpp",
+    "url": "https://github.com/barrettotte/bytes/tree/master/code/first-program.cpp",
     "date": "2011-09-06",
-    "category": "coding"
+    "category": "code"
   },
   {
     "name": "Simulating Fishing Rod Bend in Unity",
     "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2017/1/index.md",
     "date": "2017-05-01",
-    "category": "coding"
+    "category": "code"
   },
   {
     "name": "ColdFusion Service Pinger",
     "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2018/2/index.md",
     "date": "2018-12-01",
-    "category": "coding"
+    "category": "code"
   },
   {
     "name": "IBM i Pull Code Utility",
     "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2019/2/index.md",
     "date": "2019-08-19",
-    "category": "coding"
+    "category": "code"
   },
   {
     "name": "ColdFusion Neural Network",
-    "url": "https://github.com/barrettotte/bytes/tree/master/misc-code/cf-neural-net",
+    "url": "https://github.com/barrettotte/bytes/tree/master/code/cf-neural-net",
     "date": "2019-10-01",
-    "category": "coding"
+    "category": "code"
   },
   {
     "name": "IBM i Joke Program",
     "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2020/1/index.md",
     "date": "2020-02-20",
-    "category": "coding"
+    "category": "code"
   },
   {
     "name": "Send a Text Message with Twilio and DB2 SQL",
     "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2020/3/index.md",
     "date": "2020-04-23",
-    "category": "coding"
+    "category": "code"
   },
   {
     "name": "Projectile Motion in Pygame",
-    "url": "https://github.com/barrettotte/bytes/tree/master/misc-code/pygame-projectile",
+    "url": "https://github.com/barrettotte/bytes/tree/master/code/pygame-projectile",
     "date": "2020-09-07",
-    "category": "coding"
+    "category": "code"
   },
   {
     "name": "DB2 SQL Generate Groovy Object",
-    "url": "https://github.com/barrettotte/bytes/tree/master/misc-code/db2-sql-gen-groovy",
+    "url": "https://github.com/barrettotte/bytes/tree/master/code/db2-sql-gen-groovy",
     "date": "2021-06-01",
-    "category": "coding"
+    "category": "code"
   },
   {
     "name": "DB2 SQL Dynamic Insert JSON",
-    "url": "https://github.com/barrettotte/bytes/tree/master/misc-code/db2-sql-gen-insert",
+    "url": "https://github.com/barrettotte/bytes/tree/master/code/db2-sql-gen-insert",
     "date": "2021-06-15",
-    "category": "coding"
+    "category": "code"
   },
   {
     "name": "Standing Desk Control Cover",
@@ -69,7 +69,7 @@
     "name": "ColdFusion log4shell",
     "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2021/3/index.md",
     "date": "2021-12-13",
-    "category": "coding"
+    "category": "code"
   },
   {
     "name": "Ender 3 Octoprint",
@@ -79,7 +79,7 @@
   },
   {
     "name": "Simple Vacuum Tube Amplifier",
-    "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2022/2/index.md",
+    "url": "https://github.com/barrettotte/bytes/tree/master/electronics/vacuum-tube-amplifier",
     "date": "2022-08-28",
     "category": "electronics"
   },
@@ -168,7 +168,7 @@
   },
   {
     "name": "Electroscope",
-    "url": "https://github.com/barrettotte/bytes/tree/master/electrostatics/electroscope",
+    "url": "https://github.com/barrettotte/bytes/tree/master/electronics/electroscope",
     "category": "electronics",
     "date": "2023-09-14"
   },
@@ -252,7 +252,7 @@
   },
   {
     "name": "Electrophorus",
-    "url": "https://github.com/barrettotte/bytes/tree/master/electrostatics/electrophorus",
+    "url": "https://github.com/barrettotte/bytes/tree/master/electronics/electrophorus",
     "category": "electronics",
     "date": "2023-11-09"
   },
@@ -270,7 +270,7 @@
   },
   {
     "name": "Leyden Jar",
-    "url": "https://github.com/barrettotte/bytes/tree/master/electrostatics/leyden-jar",
+    "url": "https://github.com/barrettotte/bytes/tree/master/electronics/leyden-jar",
     "category": "electronics",
     "date": "2023-11-16"
   },
@@ -282,14 +282,26 @@
   },
   {
     "name": "Sony Trinitron External Display",
-    "url": "https://github.com/barrettotte/bytes/tree/master/sony-trinitron#external-display",
+    "url": "https://github.com/barrettotte/bytes/tree/master/electronics/tv/sony-trinitron#external-display",
     "category": "electronics",
     "date": "2023-12-23"
   },
   {
     "name": "Sony Trinitron Remote Holder",
-    "url": "https://github.com/barrettotte/bytes/tree/master/sony-trinitron#remote-holder",
+    "url": "https://github.com/barrettotte/bytes/tree/master/electronics/tv/sony-trinitron#remote-holder",
     "category": "3d-print",
     "date": "2023-12-26"
+  },
+  {
+    "name": "Zenith 1980 External Display",
+    "url": "https://github.com/barrettotte/bytes/tree/master/electronics/tv/zenith-1980",
+    "category": "electronics",
+    "date": "2023-12-31"
+  },
+  {
+    "name": "Vtuber Joke",
+    "url": "https://github.com/barrettotte/bytes/tree/master/misc/vtuber",
+    "category": "misc",
+    "date": "2024-01-05"
   }
 ]

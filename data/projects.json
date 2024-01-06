@@ -857,6 +857,12 @@
       "url": "https://github.com/barrettotte/fishtank-s02-qol",
       "desc": "Adds some quality of life features for Fishtank season 2 that I wanted",
       "date": "2023-12"
+    },
+    {
+      "name": "screensaver-asm",
+      "url": "https://github.com/barrettotte/screensaver-asm",
+      "desc": "A bouncing square screensaver-like thing in x86 real mode",
+      "date": "2024-01"
     }
   ]
 }

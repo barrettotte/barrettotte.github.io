@@ -36,10 +36,12 @@
                 <i class="fab fa-lg fa-kaggle fa-fw"></i>
               {{ else if eq .category "3d-print" }}
                 <i class="fa fa-lg fa-cubes fa-fw"></i>
-              {{ else if eq .category "coding" }}
+              {{ else if eq .category "code" }}
                 <i class="fa fa-lg fa-code fa-fw"></i>
               {{ else if eq .category "electronics" }}
                 <i class="far fa-lg fa-lightbulb fa-fw"></i>
+              {{ else }}
+                <i class="fa fa-lg fa-link fa-fw"></i>
               {{ end }}
 
               {{ if .url }}
