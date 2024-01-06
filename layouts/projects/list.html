@@ -1,6 +1,7 @@
 {{ define "main"}}
   <div id="archive">
     <h1>Projects</h1>
+    <p>Things I've worked on.</p>
     <ul class="post-list">
       {{ $projects := where .Site.Data.projects.list "hidden" nil }}
 
@@ -28,9 +29,9 @@
             <time datetime="{{ time (printf "%s%s" .date "-01") }}">{{ .date }}</time>
             <span>
               {{ if .url }}
-                <a href="{{ .url }}">{{ .name }}</a>: {{ .desc | markdownify }}
+                <a href="{{ .url }}">{{ .name }}</a><div class="post-desc">: {{ .desc | markdownify }}</div>
               {{ else }}
-                <span style="text-decoration:underline;">{{ .name }}</span>: {{ .desc | markdownify }}
+                <span style="text-decoration:underline">{{ .name }}</span><div class="post-desc">: {{ .desc | markdownify }}</div>
               {{ end }}
             </span>
           </li>
