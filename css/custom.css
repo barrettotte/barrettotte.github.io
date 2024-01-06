@@ -83,10 +83,17 @@ article.post header div.meta {
 
 .post-list > .post-item {
     display: list-item;
-    margin-left: 2rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.post-list > .post-item:hover {
+    overflow: visible;
+}
+
+.post-desc {
+    display: inline;
 }
 
 .icon:hover, .post-list > h2 {
@@ -99,7 +106,7 @@ article.post header div.meta {
 
 #archive .post-list .post-item, #archive .project-list .project-item {
     display: list-item;
-    margin-left: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .post-item > time {
@@ -353,7 +360,7 @@ article.post header div.meta {
     }
 
     #archive .post-list .post-item, #archive .project-list .project-item {
-        margin-left: 0;
+        margin-left: 10px;
     }
 
     .post > .content > ul {
