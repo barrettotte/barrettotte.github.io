@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <article id="computing">
+  <article id="museum">
     <div class="content">
       <h1>{{- .Title -}}</h1>
       {{- .Content -}}
@@ -8,7 +8,7 @@
         <a href="#computers">Computers</a>
       </h2>
       <ul class="gallery">
-        {{ range (sort .Site.Data.computing.computers "name") }}
+        {{ range (sort .Site.Data.museum.computers "name") }}
           <li>
             <a href="{{- .img -}}">
               <img src="{{- .img -}}" alt="{{- .name -}}"/>
@@ -22,7 +22,7 @@
         <a href="#misc">Misc</a>
       </h2>
       <ul class="gallery">
-        {{ range (sort .Site.Data.computing.misc "name") }}
+        {{ range (sort .Site.Data.museum.misc "name") }}
           <li>
             <a href="{{- .img -}}">
               <img src="{{- .img -}}" alt="{{- .name -}}"/>

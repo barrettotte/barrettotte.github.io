@@ -216,9 +216,9 @@ article.post header div.meta {
     margin-top: 10px;
 }
 
-/******************* computing *******************/
+/******************* museum *******************/
 
-#computing .gallery {
+#museum .gallery {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -226,14 +226,14 @@ article.post header div.meta {
     padding-left: 0;
 }
 
-#computing .gallery > li {
+#museum .gallery > li {
     list-style: none;
     height: 300px;
     cursor: pointer;
     position: relative;
 }
 
-#computing .gallery li a img {
+#museum .gallery li a img {
     object-fit: cover;
     width: 100%;
     height: 100%;
