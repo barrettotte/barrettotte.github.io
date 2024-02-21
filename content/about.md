@@ -36,7 +36,8 @@ Lifelong student trying to learn a little of everything.
 
 ## Career
 
-In summary, I'm a software engineer with the majority of my experience in **Java** and **Postgres**.
+In summary, I'm a software engineer with the majority of my experience in 
+backend development with **Java** and **Postgres**.
 
 My resume with more detail is available at 
 <a href="https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf" target="_blank" rel="noopener noreferrer">/resume</a>.
@@ -53,7 +54,7 @@ Some large projects/efforts that I will train myself to complete one day via sel
 - Build a radio astronomy station
 - Build a basic scanning electron microscope
 - Build a fusor
-- Create and publish a small game to Steam
+- Create a co-op game and publish to Steam
 - Complete *From Stones to Qubits* project
 
 I have a lot more goals, but it would be excessive to list all of them here.
@@ -64,16 +65,18 @@ Besides computer related topics, I plan to chip away at the following topics ove
 
 - General Physics and various subtopics
 - General Chemistry and various subtopics
-- General Biology and Microbiology
+- General Biology and various subtopics
+- Electrodynamics
+- Astronomy
 - Entomology
 - Mineralogy
 - Semiconductor Engineering
-- Mechanical Engineering
+- Mechanical Engineering and Machining
 - Automotive Engineering
-- Watchmaking
+- Watchmaking and Clockmaking
 - Linguistics and Languages
 - Ancient History and World History
 - Various Religions
-- Astronomy
 
-There's probably more and I hope I have enough time and energy to keep learning everything.
+There's definitely more than what is listed here. Obviously this is way too much. 
+But, I hope I have enough time, energy, and motivation to keep learning everything.
