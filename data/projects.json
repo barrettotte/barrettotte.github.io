@@ -15,11 +15,18 @@
       "tags": ["c++", "high-school"]
     },
     {
-      "name": "SlothGame",
+      "name": "Sloth Game",
       "url": null,
       "desc": "A bad clone of Frogger in Java for high school course",
       "date": "2012-12",
       "tags": ["java", "high-school"]
+    },
+    {
+      "name": "Chase Game",
+      "url": null,
+      "desc": "Basic chase game in GameMaker Studio",
+      "date": "2013-01",
+      "tags": ["gamedev"]
     },
     {
       "name": "Atomic Minecraft Mod",
@@ -38,7 +45,7 @@
     {
       "name": "One Rep Max Calc",
       "url": null,
-      "desc": "Java GUI program to calculate one rep max for lifting",
+      "desc": "Java GUI to calculate one rep max for lifting",
       "date": "2013-12",
       "tags": ["java"]
     },
@@ -78,10 +85,24 @@
       "tags": ["html", "css", "webdev", "javascript", "php"]
     },
     {
+      "name": "Asm Grade Calculator",
+      "url": null,
+      "desc": "Calculate student grades from text file with x86 assembly",
+      "date": "2015-03",
+      "tags": ["assembly", "college"]
+    },
+    {
       "name": "Tetris",
       "url": null,
       "desc": "Tetris clone in Unity Engine",
       "date": "2015-06",
+      "tags": ["c#", "unity", "gamedev"]
+    },
+    {
+      "name": "Survival Game",
+      "url": null,
+      "desc": "Survival game (abandoned)",
+      "date": "2015-11",
       "tags": ["c#", "unity", "gamedev"]
     },
     {
@@ -90,6 +111,13 @@
       "desc": "One Button Game Jam Entry Summer 2016",
       "date": "2016-08",
       "tags": ["c#", "unity", "gamedev", "event"]
+    },
+    {
+      "name": "Space Survival Game",
+      "url": null,
+      "desc": "Space survival game (abandoned)",
+      "date": "2016-11",
+      "tags": ["c#", "unity", "gamedev"]
     },
     {
       "name": "Gainz-Goblin",
@@ -111,6 +139,13 @@
       "desc": "Very basic snake game in x86 assembly",
       "date": "2017-05",
       "tags": ["x86", "assembly", "gamedev"]
+    },
+    {
+      "name": "Medieval Shopkeep Game",
+      "url": null,
+      "desc": "Medieval Shopkeep Game (abandoned)",
+      "date": "2017-05",
+      "tags": ["c#", "unity", "gamedev"]
     },
     {
       "name": "Recursive-Descent-GUI-Parser",
@@ -863,6 +898,18 @@
       "url": "https://github.com/barrettotte/screensaver-asm",
       "desc": "A bouncing square screensaver-like thing in x86 real mode",
       "date": "2024-01"
+    },
+    {
+      "name": "pi-learn-os",
+      "url": "https://github.com/barrettotte/pi-learn-os",
+      "desc": "A toy Raspberry Pi 3B kernel for learning (unfinished)",
+      "date": "2024-01"
+    },
+    {
+      "name": "barrel-shifter-16",
+      "url": "https://github.com/barrettotte/barrel-shifter-16",
+      "desc": "16-bit barrel shifter",
+      "date": "2024-02"
     }
   ]
 }

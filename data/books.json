@@ -765,6 +765,13 @@
     "category": "Computer Engineering"
   },
   {
+    "title": "Computer Organization and Design RISC-V Edition: The Hardware Software Interface",
+    "isbn13": "9780128203316",
+    "year": 2020,
+    "author": "Patterson, David A.; Hennessy, John L.",
+    "category": "Computer Engineering"
+  },
+  {
     "title": "Computer Programming Fundamentals: Based on the IBM System/360",
     "year": 1970,
     "author": "Leeds; Weinberg",
@@ -981,6 +988,13 @@
     "isbn13": "9780128000564",
     "year": 2015,
     "author": "Harris, Sarah; Harris, David",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Digital Design with RTL Design, VHDL, and Verilog",
+    "isbn13": "9780470531082",
+    "year": 2010,
+    "author": "Vahid, Frank",
     "category": "Computer Engineering"
   },
   {
@@ -1232,6 +1246,13 @@
     "year": 1976,
     "author": "Ralston",
     "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Encyclopedia of Electronic Circuits Volume 2",
+    "isbn13": "9780830691388",
+    "year": 1988,
+    "author": "Graf, Rudolf F.; Sheets, William",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "Ender's Game (The Ender Quintet, 1)",
@@ -2251,6 +2272,13 @@
     "category": "Mechanical Engineering"
   },
   {
+    "title": "Master Handbook of 1001 Practical Electronic Circuits",
+    "isbn13": "9780830648009",
+    "year": 1975,
+    "author": "Kendall Sessions",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Mastering IBM i",
     "isbn13": "9781583473566",
     "year": 2011,
@@ -3152,6 +3180,12 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "Shīpīyū No Tsukurikata: Aishī Jikko No Otegaru Shīpīyū Sekkei Chōnyūmon Shoho No Dejitaru Kairo Dōsa No Kihon Genri To Seisaku",
+    "isbn13": "9784839909864",
+    "year": 2003,
+    "category": "Computer Engineering"
+  },
+  {
     "title": "Signals, Systems and Inference",
     "isbn13": "9780133943283",
     "year": 2015,
@@ -3412,6 +3446,12 @@
     "year": 2010,
     "author": "Boulanger; Lazzarini",
     "category": "Game Development, Graphics, and Audio"
+  },
+  {
+    "title": "The Autobiography of Nikola Tesla and Other Works",
+    "isbn13": "9781645174387",
+    "year": 2021,
+    "author": "Tesla, Nikola; Martin, Thomas Commerford"
   },
   {
     "title": "The BASIC Cookbook",
@@ -3686,6 +3726,12 @@
     "category": "Mathematics"
   },
   {
+    "title": "The Inventions Researches and Writings of Nikola Tesla",
+    "isbn13": "9781493646289",
+    "year": 2013,
+    "author": "Martin, Thomas Commerford"
+  },
+  {
     "title": "The Joy of Kotlin",
     "isbn13": "9781617295362",
     "year": 2019,
@@ -3792,6 +3838,12 @@
     "year": 2016,
     "author": "Newton, Sir Isaac",
     "category": "History of Technology"
+  },
+  {
+    "title": "The Problem of Increasing Human Energy",
+    "isbn13": "9798668027521",
+    "year": 2020,
+    "author": "Tesla, Nikola"
   },
   {
     "title": "The Programmer's Guide To Iseries Navigator",
