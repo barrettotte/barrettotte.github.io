@@ -10,7 +10,7 @@
 
       {{ $longTerm := where .Site.Data.projects.list "long" true }}
       <h2 id="long-term">
-        <a href="#long-term">Long Term</a> ({{ len $longTerm }})
+        <a href="#long-term">Ongoing</a> ({{ len $longTerm }})
       </h2>
 
       {{ range (sort $longTerm "date" "desc") }}
