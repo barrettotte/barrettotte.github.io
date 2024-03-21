@@ -1,18 +1,7 @@
 images: 
-  - image: /img/carousel/cave.jpg
-    desc: "My cave"
-  
+  - image: /img/carousel/cave.png
   - image: /img/carousel/candlestick-mic.png
-    desc: "Candlestick Mic"
-
   - image: /img/carousel/faraday-disk.png
-    desc: "Faraday desc:isk"
-
   - image: /img/carousel/trs80-4p.png
-    desc: "TRS-80 4P"
-
   - image: /img/carousel/angstrom-cpu.png
-    desc: "Angstrom CPU circuit diagram"
-
   - image: /img/carousel/terrain-generation-study.png
-    desc: "Terrain generation study"

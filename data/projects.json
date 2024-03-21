@@ -910,6 +910,12 @@
       "url": "https://github.com/barrettotte/barrel-shifter-16",
       "desc": "16-bit barrel shifter",
       "date": "2024-02"
+    },
+    {
+      "name": "cpu",
+      "desc": "My homebrew 16-bit CPU (name TBD)",
+      "date": "2024-02",
+      "long": true
     }
   ]
 }

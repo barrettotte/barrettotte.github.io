@@ -4,6 +4,29 @@
     <p>Things I've worked on.</p>
     <ul class="post-list">
       {{ $projects := where .Site.Data.projects.list "hidden" nil }}
+      {{ $projects := where $projects "long" nil }}
+
+      <!-- Long term projects -->
+
+      {{ $longTerm := where .Site.Data.projects.list "long" true }}
+      <h2 id="long-term">
+        <a href="#long-term">Long Term</a> ({{ len $longTerm }})
+      </h2>
+
+      {{ range (sort $longTerm "date" "desc") }}
+        <li class="post-item">
+          <time datetime="{{ time (printf "%s%s" .date "-01") }}">{{ .date }}</time>
+          <span>
+            {{ if .url }}
+              <a href="{{ .url }}">{{ .name }}</a><div class="post-desc">: {{ .desc | markdownify }}</div>
+            {{ else }}
+              <span style="text-decoration:underline">{{ .name }}</span><div class="post-desc">: {{ .desc | markdownify }}</div>
+            {{ end }}
+          </span>
+        </li>
+      {{ end }}
+
+      <!-- Projects by year -->
 
       {{ range (sort $projects "date" "desc") }}
         {{ $pageYear := substr .date 0 4 }}
