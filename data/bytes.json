@@ -303,5 +303,11 @@
     "url": "https://github.com/barrettotte/bytes/tree/master/misc/vtuber",
     "category": "misc",
     "date": "2024-01-05"
+  },
+  {
+    "name": "CTF: Cyber Apocalypse 2024",
+    "url": "https://github.com/barrettotte/ctf/blob/master/cyber-apocalypse-2024",
+    "category": "ctf",
+    "date": "2024-03-13"
   }
 ]

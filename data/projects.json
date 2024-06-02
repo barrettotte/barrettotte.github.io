@@ -101,7 +101,7 @@
     {
       "name": "Survival Game",
       "url": null,
-      "desc": "Survival game (abandoned)",
+      "desc": "3D Survival game in Unity (abandoned)",
       "date": "2015-11",
       "tags": ["c#", "unity", "gamedev"]
     },
@@ -115,7 +115,7 @@
     {
       "name": "Space Survival Game",
       "url": null,
-      "desc": "Space survival game (abandoned)",
+      "desc": "3D Space survival game in Unity (abandoned)",
       "date": "2016-11",
       "tags": ["c#", "unity", "gamedev"]
     },
@@ -143,7 +143,7 @@
     {
       "name": "Medieval Shopkeep Game",
       "url": null,
-      "desc": "Medieval Shopkeep Game (abandoned)",
+      "desc": "3D Medieval Shopkeep Game in Unity (abandoned)",
       "date": "2017-05",
       "tags": ["c#", "unity", "gamedev"]
     },
@@ -912,14 +912,20 @@
       "date": "2024-02"
     },
     {
+      "name": "query-sandbox",
+      "url": "https://github.com/barrettotte/query-sandbox",
+      "desc": "A sandbox for messing around with various queries",
+      "date": "2024-05"
+    },
+    {
       "name": "from-stones-to-qubits",
       "desc": "A book on the history of computing and technology",
       "date": "2023-01",
       "long": true
     },
     {
-      "name": "cpu",
-      "desc": "My homebrew 16-bit CPU (name TBD)",
+      "name": "agartha-16",
+      "desc": "My homebrew 16-bit CPU",
       "date": "2024-02",
       "long": true
     }

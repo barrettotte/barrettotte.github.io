@@ -333,6 +333,13 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "Antenna Physics: An Introduction",
+    "isbn13": "9781625951359",
+    "year": 2022,
+    "author": "Robert J. Zavrel, Jr.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Applied Cryptography: Protocols, Algorithms, and Source Code in C",
     "isbn13": "9780471117094",
     "year": 2007,
@@ -405,6 +412,13 @@
     "year": 2009,
     "author": "Duntemann, Jeff",
     "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Assyria: The Rise and Fall of the World's First Empire",
+    "isbn13": "9781541674400",
+    "year": 2023,
+    "author": "Frahm, Eckart",
+    "category": "History"
   },
   {
     "title": "Astronomy & Maths in Ancient China: The 'Zhou Bi Suan Jing'",
@@ -1078,6 +1092,12 @@
     "category": "Physics"
   },
   {
+    "title": "Electric Universe: The Shocking True Story of Electricity",
+    "isbn13": "9781400045501",
+    "year": 2005,
+    "author": "David Bodanis"
+  },
+  {
     "title": "Electrical Engineering Experiments",
     "year": 1939,
     "author": "Reed; Corcoran",
@@ -1091,11 +1111,30 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "Théorie raisonnée de l'Electricité et du Magnétisme",
+    "year": 1787,
+    "author": "Haüy",
+    "category": "Antiquarian"
+  },
+  {
     "title": "Electricity in the 17th & 18th Centuries: A Study in Early Modern Physics",
     "isbn13": "9780486406886",
     "year": 1999,
     "author": "Heilbron, J. L.",
     "category": "History of Technology"
+  },
+  {
+    "title": "Electromagnetic Theory",
+    "isbn13": "9781549664519",
+    "year": 2017,
+    "author": "Oliver Heaviside; James Zimmerhoff",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electromagnetism and Relativity",
+    "year": 1959,
+    "author": "E.G Cullwick",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "Electromechanical Motion Devices",
@@ -1146,6 +1185,13 @@
     "title": "Electronic Switching, Timing, and Pulsing Circuits",
     "year": 1959,
     "author": "Pettit",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electronic Warfare (FM 3-36)",
+    "isbn13": "9781974477029",
+    "year": 2017,
+    "author": "Department of the Army",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
@@ -1274,6 +1320,12 @@
     "year": 2017,
     "author": "Lorenzo, Mark Jones",
     "category": "History of Computing"
+  },
+  {
+    "title": "Energy Conversion",
+    "year": 1967,
+    "author": "Edward M. Walsh",
+    "category": "Physics"
   },
   {
     "title": "Engineering: A Compiler",
@@ -1682,6 +1734,11 @@
     "category": "History"
   },
   {
+    "title": "Gunsmithing",
+    "year": 1950,
+    "author": "Roy F. Dunlap"
+  },
+  {
     "title": "Hacking: The Art of Exploitation, 2nd Edition",
     "isbn13": "9781593271442",
     "year": 2008,
@@ -2013,6 +2070,13 @@
     "year": 1985,
     "author": "Pauling, Linus; Wilson Jr., E. Bright",
     "category": "Chemistry and Materials Science"
+  },
+  {
+    "title": "Introduction to Radar Systems",
+    "isbn13": "9780070579095",
+    "year": 1980,
+    "author": "Skolnik, Merrill I.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "Introduction to Real Analysis",
@@ -2431,6 +2495,13 @@
     "category": "Physics"
   },
   {
+    "title": "Molecular Electromagnetism",
+    "isbn13": "9780471102922",
+    "year": 1985,
+    "author": "Alan Hinchliffe & Robert W. Munn",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Molecular Genetics of Bacteria, Third Edition",
     "isbn13": "9781555813994",
     "year": 2007,
@@ -2725,6 +2796,20 @@
     "year": 1963,
     "author": "Ali Bulent Cambel",
     "category": "Physics"
+  },
+  {
+    "title": "PostgreSQL Query Optimization: The Ultimate Guide to Building Efficient Queries",
+    "isbn13": "9798868800689",
+    "year": 2024,
+    "author": "Dombrovskaya, Henrietta; Novikov, Boris; Bailliekova, Anna",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "PostgreSQL: Up and Running: A Practical Guide to the Advanced Open Source Database",
+    "isbn13": "9781491963418",
+    "year": 2017,
+    "author": "Obe, Regina; Hsu, Leo",
+    "category": "Computer Science and Software Engineering"
   },
   {
     "title": "Practical Binary Analysis: Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly",
@@ -3043,6 +3128,13 @@
     "category": "Physics"
   },
   {
+    "title": "Radio and Radar Astronomy Projects for Beginners",
+    "isbn13": "9783030549053",
+    "year": 2020,
+    "author": "Arnold, Steven",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Radio Engineering",
     "year": 1947,
     "author": "Terman",
@@ -3235,6 +3327,13 @@
     "category": "Chemistry and Materials Science"
   },
   {
+    "title": "Spark from the Deep: How Shocking Experiments with Strongly Electric Fish Powered Scientific Discovery (Animals, History, Culture)",
+    "isbn13": "9781421409818",
+    "year": 2013,
+    "author": "Turkel, William J.",
+    "category": "History of Technology"
+  },
+  {
     "title": "Spatial Structure and the Microcomputer: Selected Mathematical Techniques",
     "isbn13": "9780333392843",
     "year": 1987,
@@ -3386,6 +3485,18 @@
     "category": "History of Computing"
   },
   {
+    "title": "The Anunnaki Bible: The Sumerian Text's Origin of the Judeo Christian Bibles",
+    "isbn13": "9781480954502",
+    "year": 2018,
+    "author": "Blackwell, Donald M"
+  },
+  {
+    "title": "The Anunnaki Chronicles: A Zecharia Sitchin Reader",
+    "isbn13": "9781591432296",
+    "year": 2015,
+    "author": "Sitchin, Zecharia"
+  },
+  {
     "title": "The Apollo Guidance Computer: Architecture and Operation",
     "isbn13": "9781441908766",
     "year": 2010,
@@ -3466,6 +3577,18 @@
     "year": 1978,
     "author": "Tracton, Ken",
     "category": "Vintage Programming"
+  },
+  {
+    "title": "The Body Electric: Electromagnetism And The Foundation Of Life",
+    "isbn13": "9780688069711",
+    "year": 1998,
+    "author": "Becker, Robert; Selden, Gary"
+  },
+  {
+    "title": "The Book of Enoch",
+    "year": 1893,
+    "author": "R.H. Charles",
+    "category": "Religion and Mythology"
   },
   {
     "title": "The Book of Yokai: Mysterious Creatures of Japanese Folklore",
@@ -3792,11 +3915,38 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "The Mythology of the Aryan Nations",
+    "isbn13": "9781410211651",
+    "year": 2004,
+    "author": "Cox, Sir George W",
+    "category": "Religion and Mythology"
+  },
+  {
+    "title": "The Nag Hammadi Scriptures",
+    "isbn13": "9780061626005",
+    "year": 2009,
+    "author": "Meyer, Marvin",
+    "category": "Religion and Mythology"
+  },
+  {
     "title": "The Nature of Code: Simulating Natural Systems with Processing",
     "isbn13": "9780985930806",
     "year": 2012,
     "author": "Shiffman, Daniel",
     "category": "Game Development, Graphics, and Audio"
+  },
+  {
+    "title": "The Navajo Language",
+    "year": 1976,
+    "author": "Young; Morgan",
+    "category": "Language"
+  },
+  {
+    "title": "The Orthodox Study Bible, Hardcover: Ancient Christianity Speaks to Today's World",
+    "isbn13": "9780718003593",
+    "year": 2008,
+    "author": "St. Athanasius Academy of Orthodox Theology",
+    "category": "Religion and Mythology"
   },
   {
     "title": "The Paper Computer Unfolded: A Twenty-First Century Guide to the Bell Labs CARDIAC",
@@ -3872,6 +4022,11 @@
     "year": 1990,
     "author": "Cowlishaw, Michael",
     "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Spaceships of Ezekiel",
+    "year": 1974,
+    "author": "Josef F. Blumrich"
   },
   {
     "title": "The Story of Writing",
@@ -3974,6 +4129,13 @@
     "isbn13": "9789339221652",
     "year": 2017,
     "author": "Cengel Boles",
+    "category": "Physics"
+  },
+  {
+    "title": "Thermoelectricity",
+    "isbn13": "9780486453040",
+    "year": 2006,
+    "author": "MacDonald, D. K. C.",
     "category": "Physics"
   },
   {
@@ -4091,6 +4253,13 @@
     "year": 1958,
     "author": "Millman",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Vis-à-Vis: Beginning French, 6th Edition (English and French Edition)",
+    "isbn13": "9780073386478",
+    "year": 2014,
+    "author": "Amon, Evelyne; Muyskens, Judith; Omaggio Hadley, Alice C.",
+    "category": "Language"
   },
   {
     "title": "Vril: The Power of the Coming Race",
