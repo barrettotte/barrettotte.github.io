@@ -1,11 +1,22 @@
 {{ define "main"}}
   <div id="archive">
     <h1>Bytes</h1>
-    <p>Small random/miscellaneous things I've worked on.</p>
+
+    {{ $bytes := .Site.Data.bytes }}
+
+    {{ $years := slice }}
+    {{ range $bytes }}
+      {{ $year := substr .date 0 4 }}
+      {{ $years = $years | append $year }}
+    {{ end }}
+
+    {{ $years = sort $years }}
+    {{ $minYear := index $years 0 }}
+    {{ $maxYear := index $years (sub (len $years) 1) }}
+
+    <p>Small random/miscellaneous things I've worked on {{ $minYear }}-{{ $maxYear }}.</p>
 
     <ul class="post-list">
-      {{ $bytes := .Site.Data.bytes }}
-
       {{ range (sort $bytes "date" "desc") }}
         {{ $pageYear := substr .date 0 4 }}
         

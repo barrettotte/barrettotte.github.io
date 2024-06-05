@@ -1,13 +1,24 @@
 {{ define "main"}}
   <div id="archive">
     <h1>Projects</h1>
-    <p>Things I've worked on.</p>
+    
+    {{ $projects := where .Site.Data.projects.list "hidden" nil }}
+    {{ $projects := where $projects "long" nil }}
+
+    {{ $years := slice }}
+    {{ range $projects }}
+      {{ $year := substr .date 0 4 }}
+      {{ $years = $years | append $year }}
+    {{ end }}
+
+    {{ $years = sort $years }}
+    {{ $minYear := index $years 0 }}
+    {{ $maxYear := index $years (sub (len $years) 1) }}
+
+    <p>Things I've worked on {{ $minYear }}-{{ $maxYear }}.</p>
+
     <ul class="post-list">
-      {{ $projects := where .Site.Data.projects.list "hidden" nil }}
-      {{ $projects := where $projects "long" nil }}
-
       <!-- Long term projects -->
-
       {{ $longTerm := where .Site.Data.projects.list "long" true }}
       <h2 id="long-term">
         <a href="#long-term">Ongoing</a> ({{ len $longTerm }})
