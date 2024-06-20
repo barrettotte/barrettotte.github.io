@@ -18,8 +18,9 @@
 
     <!-- Section links -->
     <div id="section-links">
+      <h2 class="color-accent-1">By Year</h2>
       <ul class="horizontal-list">
-        {{ range (sort $years) }}
+        {{ range (sort $years "value" "desc") }}
           <li><a href="/bytes/#{{ . }}">{{ . }}</a></li>
         {{ end }}
       </ul>

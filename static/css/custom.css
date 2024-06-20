@@ -117,6 +117,16 @@ article.post header div.meta {
     margin-bottom: 25px;
 }
 
+#section-links > a {
+    text-decoration: none;
+}
+
+#section-links > a:hover {
+    color: var(--color-accent-1);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
 .horizontal-list {
     display: grid;
     grid-template-columns: repeat(10, 1fr);

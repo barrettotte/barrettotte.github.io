@@ -20,10 +20,10 @@
     <!-- Section links -->
     <div id="section-links">
       <a href="/projects/#section-links">
-        <h2 class="color-accent-1">Projects By Year</h2>
+        <h2 class="color-accent-1">By Year</h2>
       </a>
       <ul class="horizontal-list">
-        {{ range (sort $years) }}
+        {{ range (sort $years "value" "desc") }}
           <li><a href="/projects/#{{ . }}">{{ . }}</a></li>
         {{ end }}
       </ul>
