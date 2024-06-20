@@ -1,14 +1,15 @@
 {{ define "main" }}
   <article id="library">
     <div class="content">
+
       <div class="library-top">
         <h1>{{- .Title -}}</h1>
         {{- .Content -}}
 
-        <span>I currently have <strong>{{ len .Site.Data.books }}</strong> books.</span>
+        <span>I currently have {{ len .Site.Data.books }} books.</span>
 
         {{ $oldest := index (sort .Site.Data.books "year") 0 }}
-        <span>My oldest book was published in <strong>{{ $oldest.year }}</strong>.</span>
+        <span>My oldest book was published in {{ $oldest.year }}.</span>
       </div>
 
       {{ $categories := slice }}
@@ -20,6 +21,18 @@
         {{ end }}
       {{ end }}
       {{ $categories = $categories | uniq | sort }}
+
+      <!-- Section links -->
+      <div id="section-links">
+        <a href="/misc/library/#section-links">
+          <h2 class="color-accent-1">Books By Category</h2>
+        </a>
+        <ul>
+          {{ range (sort $categories) }}
+            <li><a href="/misc/library/#{{ . | urlize }}">{{ . }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
 
       {{ range $categories | sort }}
         {{ $category := . }}
@@ -60,4 +73,7 @@
 
     </div>
   </article>
+
+  {{ partial "scroll-to-top.html" (dict "context" . "target" "/misc/library/#" ) }}
+
 {{ end }}

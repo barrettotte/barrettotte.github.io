@@ -10,11 +10,20 @@
       {{ $years = $years | append $year }}
     {{ end }}
 
-    {{ $years = sort $years }}
+    {{ $years = sort (uniq $years) }}
     {{ $minYear := index $years 0 }}
     {{ $maxYear := index $years (sub (len $years) 1) }}
 
     <p>Small random/miscellaneous things I've worked on {{ $minYear }}-{{ $maxYear }}.</p>
+
+    <!-- Section links -->
+    <div id="section-links">
+      <ul class="horizontal-list">
+        {{ range (sort $years) }}
+          <li><a href="/bytes/#{{ . }}">{{ . }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
 
     <ul class="post-list">
       {{ range (sort $bytes "date" "desc") }}
@@ -65,6 +74,8 @@
         {{ end }}
       {{ end }}
     </ul>
-
   </div>
+
+  {{ partial "scroll-to-top.html" (dict "context" . "target" "/bytes/#" ) }}
+
 {{ end }}

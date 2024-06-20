@@ -11,13 +11,26 @@
       {{ $years = $years | append $year }}
     {{ end }}
 
-    {{ $years = sort $years }}
+    {{ $years = sort (uniq $years) }}
     {{ $minYear := index $years 0 }}
     {{ $maxYear := index $years (sub (len $years) 1) }}
 
     <p>Things I've worked on {{ $minYear }}-{{ $maxYear }}.</p>
 
+    <!-- Section links -->
+    <div id="section-links">
+      <a href="/projects/#section-links">
+        <h2 class="color-accent-1">Projects By Year</h2>
+      </a>
+      <ul class="horizontal-list">
+        {{ range (sort $years) }}
+          <li><a href="/projects/#{{ . }}">{{ . }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+
     <ul class="post-list">
+
       <!-- Long term projects -->
       {{ $longTerm := where .Site.Data.projects.list "long" true }}
       <h2 id="long-term">
@@ -38,7 +51,6 @@
       {{ end }}
 
       <!-- Projects by year -->
-
       {{ range (sort $projects "date" "desc") }}
         {{ $pageYear := substr .date 0 4 }}
 
@@ -73,4 +85,6 @@
       {{ end }}
     </ul>
   </div>
+  
+  {{ partial "scroll-to-top.html" (dict "context" . "target" "/projects/#" ) }}
 {{ end }}

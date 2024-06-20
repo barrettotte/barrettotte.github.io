@@ -1,0 +1,7 @@
+{{ .context.Scratch.Set "target" .target }}
+
+<div id="scroll-to-top">
+  <a href="{{ $.context.Scratch.Get "target" }}">
+    <span>Scroll to Top</span><i class="fas fa-2xl fa-circle-chevron-up fa-fw"></i>
+  </a>
+</div>
