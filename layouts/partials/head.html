@@ -13,12 +13,12 @@
   {{- $styles := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "scss/style.scss" . | resources.ToCSS $options | resources.Fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ $styles.Permalink | absURL }}" integrity="{{ $styles.Data.Integrity }}">
 
-  <link rel="stylesheet" href={{ "lib/font-awesome/css/all.min.css" | absURL }}>
+  <link rel="stylesheet" href={{ "lib/font-awesome-free-6.5.2-web/css/all.min.css" | absURL }}>
   <link rel="stylesheet" href={{ "css/custom.css" | absURL}}>
 
-  <link rel="prefetch" href="{{ "lib/font-awesome/webfonts/fa-brands-400.woff2" | absURL }}" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="prefetch" href="{{ "lib/font-awesome/webfonts/fa-regular-400.woff2" | absURL }}" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="prefetch" href="{{ "lib/font-awesome/webfonts/fa-solid-900.woff2" | absURL }}" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="prefetch" href="{{ "lib/font-awesome-free-6.5.2-web/webfonts/fa-brands-400.woff2" | absURL }}" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="prefetch" href="{{ "lib/font-awesome-free-6.5.2-web/webfonts/fa-regular-400.woff2" | absURL }}" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="prefetch" href="{{ "lib/font-awesome-free-6.5.2-web/webfonts/fa-solid-900.woff2" | absURL }}" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="prefetch" href="{{ "lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" | absURL }}" as="font" type="font/woff2" crossorigin="anonymous">
 
   <link rel="icon" href={{ "img/favicon.svg" | absURL }} />
