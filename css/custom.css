@@ -106,7 +106,54 @@ article.post header div.meta {
 
 #archive .post-list .post-item, #archive .project-list .project-item {
     display: list-item;
-    margin-bottom: 0.5rem;
+}
+
+.color-accent-1 {
+    color: var(--color-accent-1);
+}
+
+#section-links {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#section-links > a {
+    text-decoration: none;
+}
+
+#section-links > a:hover {
+    color: var(--color-accent-1);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.horizontal-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.horizontal-list li {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.horizontal-list li:nth-child(4n) {
+    margin-right: 0;
+}
+
+#scroll-to-top {
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+#scroll-to-top i {
+    margin-left: 10px;
+    text-decoration: none;
 }
 
 .post-item > time {
@@ -339,10 +386,11 @@ article.post header div.meta {
 /*                   mobile                      */
 /*************************************************/
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     html, body {
         font-size: 0.85rem;
         overflow-x: hidden;
+        scroll-behavior: smooth;
     }
 
     #posts > ul > li, #projects > ul > li, #archive > ul > li {
