@@ -14,7 +14,7 @@
     {{ $minYear := index $years 0 }}
     {{ $maxYear := index $years (sub (len $years) 1) }}
 
-    <p>Small random/miscellaneous things I've worked on {{ $minYear }}-{{ $maxYear }}.</p>
+    <p>Small miscellaneous things I've worked on {{ $minYear }}-{{ $maxYear }}.</p>
 
     <!-- Section links -->
     <div id="section-links">
@@ -61,6 +61,8 @@
                 <i class="fa fa-lg fa-code fa-fw"></i>
               {{ else if eq .category "electronics" }}
                 <i class="far fa-lg fa-lightbulb fa-fw"></i>
+              {{ else if eq .category "cert" }}
+                <i class="fa fa-lg fa-scroll fa-fw"></i>
               {{ else }}
                 <i class="fa fa-lg fa-link fa-fw"></i>
               {{ end }}

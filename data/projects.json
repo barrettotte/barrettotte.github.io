@@ -918,6 +918,18 @@
       "date": "2024-05"
     },
     {
+      "name": "fpga-dev-vscode",
+      "url": "https://github.com/barrettotte/fpga-dev-vscode",
+      "desc": "Simple FPGA development workflow with VS Code",
+      "date": "2024-07"
+    },
+    {
+      "name": "vga-square",
+      "url": "https://github.com/barrettotte/vga-square",
+      "desc": "Bounce a square around a VGA display using FPGA",
+      "date": "2024-07"
+    },
+    {
       "name": "from-stones-to-qubits",
       "desc": "A book on the history of computing and technology",
       "date": "2023-01",

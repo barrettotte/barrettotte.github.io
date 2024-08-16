@@ -251,6 +251,12 @@
     "date": "2023-10-31"
   },
   {
+    "name": "Kaggle: Resistor Dataset",
+    "url": "https://www.kaggle.com/datasets/barrettotte/resistors",
+    "category": "kaggle",
+    "date": "2023-11-07"
+  },
+  {
     "name": "Electrophorus",
     "url": "https://github.com/barrettotte/bytes/tree/master/electronics/electrophorus",
     "category": "electronics",
@@ -305,9 +311,32 @@
     "date": "2024-01-05"
   },
   {
+    "name": "Whiteboard Holder v2",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-printing/desk-designs/whiteboard-holder-v2",
+    "category": "3d-print",
+    "date": "2024-01-25"
+  },
+  {
+    "name": "Laptop Holder",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-printing/desk-designs/mac-holder",
+    "category": "3d-print",
+    "date": "2024-01-30"
+  },
+  {
+    "name": "CNC Controller Holder",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-printing/cnc-designs/cnc-controller-holder",
+    "category": "3d-print",
+    "date": "2024-03-04"
+  },
+  {
     "name": "CTF: Cyber Apocalypse 2024",
     "url": "https://github.com/barrettotte/ctf/blob/master/cyber-apocalypse-2024",
     "category": "ctf",
     "date": "2024-03-13"
+  },
+  {
+    "name": "CompTIA Security+ Certification",
+    "category": "cert",
+    "date": "2024-07-02"
   }
 ]

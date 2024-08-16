@@ -219,6 +219,26 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "Advanced MS-DOS Programming",
+    "isbn13": "9780914845775",
+    "year": 1988,
+    "author": "Duncan, Ray",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Aether and Gravitation",
+    "isbn13": "9781006670541",
+    "year": 2024,
+    "author": "Hooper, William George",
+    "category": "Physics"
+  },
+  {
+    "title": "Agartha: The Earth's Inner World",
+    "isbn13": "9789198336368",
+    "year": 2018,
+    "author": "Stjerna, Mariana"
+  },
+  {
     "title": "Amateur Telescope Making",
     "year": 1941,
     "author": "Ingalls, Albert G.",
@@ -428,6 +448,13 @@
     "category": "History of Technology"
   },
   {
+    "title": "Astronomy and Cosmology: A Modern Course",
+    "isbn13": "9780716703518",
+    "year": 1975,
+    "author": "Hoyle, Fred",
+    "category": "Physics"
+  },
+  {
     "title": "Atomic Spectra and Atomic Structure",
     "isbn13": "9780486601151",
     "year": 2010,
@@ -529,6 +556,13 @@
     "isbn13": "9780262195843",
     "year": 2008,
     "author": "Schwartz, Russell",
+    "category": "Biology"
+  },
+  {
+    "title": "Biological Warfare: Pathogen Perspectives",
+    "isbn13": "9780692441213",
+    "year": 2015,
+    "author": "Jen, Phil Yuan Pei; Houston, Edward; Duffus, Amanda; Durojaiye, Mustapha",
     "category": "Biology"
   },
   {
@@ -699,6 +733,20 @@
     "isbn13": "9780071841245",
     "year": 2014,
     "author": "Conklin, Wm. Arthur; White, Greg; Williams, Dwayne; Cothren, Chuck; Davis, Roger",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "CompTIA Security+ Study Guide Exam SY0-701",
+    "isbn13": "9781394211418",
+    "year": 2024,
+    "author": "Chapple, Mike; Seidl, David",
+    "category": "Cyber Security"
+  },
+  {
+    "title": "CompTIA Security+ Practice Tests: Exam SY0-701",
+    "isbn13": "9781394211388",
+    "year": 2024,
+    "author": "Seidl, David",
     "category": "Cyber Security"
   },
   {
@@ -1111,12 +1159,6 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
-    "title": "Théorie raisonnée de l'Electricité et du Magnétisme",
-    "year": 1787,
-    "author": "Haüy",
-    "category": "Antiquarian"
-  },
-  {
     "title": "Electricity in the 17th & 18th Centuries: A Study in Early Modern Physics",
     "isbn13": "9780486406886",
     "year": 1999,
@@ -1395,6 +1437,13 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "Ethereal Aether: A History of the Michelson-Morley-Miller Aether-Drift Experiments",
+    "isbn13": "9780292720008",
+    "year": 1972,
+    "author": "Swenson, Lloyd S.",
+    "category": "Physics"
+  },
+  {
     "title": "Euclid: The Thirteen Books of the Elements, Vol. 1: Books 1-2",
     "isbn13": "9780486600888",
     "year": 1956,
@@ -1440,6 +1489,11 @@
     "year": 2019,
     "author": "Forbes, Nancy; Mahon, Basil",
     "category": "History of Technology"
+  },
+  {
+    "title": "Faraday's Lost Aether",
+    "year": 1996,
+    "author": "L.W. Kruger"
   },
   {
     "title": "Field and Wave Electromagnetics",
@@ -1495,6 +1549,13 @@
     "year": 2010,
     "author": "Haskell B. Curry",
     "category": "Mathematics"
+  },
+  {
+    "title": "Foundations of Parasitology",
+    "isbn13": "9780072348989",
+    "year": 2004,
+    "author": "Roberts,Larry; Janovy, Jr.,John; Schmidt,P.",
+    "category": "Biology"
   },
   {
     "title": "Fourier Series",
@@ -1556,6 +1617,13 @@
     "year": 1979,
     "author": "Roth, Charles H",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Fundamentals of Molecular Virology",
+    "isbn13": "9780471351511",
+    "year": 2006,
+    "author": "Acheson, Nicholas H.",
+    "category": "Biology"
   },
   {
     "title": "Fundamentals of Physics Volume One, 10th Edition",
@@ -1841,6 +1909,12 @@
     "category": "History"
   },
   {
+    "title": "Improvised Munitions Handbook TM 31-210",
+    "isbn13": "9781774642399",
+    "year": 2021,
+    "author": "Department of the Army"
+  },
+  {
     "title": "In Search of Schrödinger's Cat",
     "isbn13": "9780553342536",
     "year": 1984,
@@ -1853,6 +1927,13 @@
     "year": 2003,
     "author": "James M. Henle; Eugene M. Kleinberg",
     "category": "Mathematics"
+  },
+  {
+    "title": "Inside the AS/400: Second Edition",
+    "isbn13": "9781882419661",
+    "year": 1996,
+    "author": "Soltis, Frank G.",
+    "category": "Vintage Programming"
   },
   {
     "title": "Inside the Machine: An Illustrated Introduction to Microprocessors and Computer Architecture",
@@ -3217,6 +3298,13 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "Satellite Communications Systems: Systems, Techniques and Technology",
+    "isbn13": "9780470714584",
+    "year": 2010,
+    "author": "Maral, Gerard; Bousquet, Michel",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Scala for the Impatient",
     "isbn13": "9780138033651",
     "year": 2022,
@@ -3795,6 +3883,13 @@
     "category": "History of Mathematics"
   },
   {
+    "title": "The Hardware Hacking Handbook: Breaking Embedded Security with Hardware Attacks",
+    "isbn13": "9781593278748",
+    "year": 2021,
+    "author": "Jasper van Woudenberg; Colin O'Flynn",
+    "category": "Cyber Security"
+  },
+  {
     "title": "The Heart of Meditation: Discovering Innermost Awareness",
     "isbn13": "9781559394536",
     "year": 2016,
@@ -4010,11 +4105,23 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "The Radio Amateur's Handbook (1940)",
+    "year": 1940,
+    "author": "ARRL Inc.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "The Ranger's Apprentice: The Ruins of Gorlan",
     "isbn13": "9780142406632",
     "year": 2006,
     "author": "Flanagan, John",
     "category": "Fiction"
+  },
+  {
+    "title": "The Real History of the Rosicrucians",
+    "year": 1887,
+    "author": "Arthur Edward Waite",
+    "category": "History"
   },
   {
     "title": "The Rexx Language: A Practical Approach to Programming",
@@ -4096,6 +4203,12 @@
     "year": 2009,
     "author": "Smith, Huston",
     "category": "Religion and Mythology"
+  },
+  {
+    "title": "Théorie raisonnée de l'Electricité et du Magnétisme",
+    "year": 1787,
+    "author": "Haüy",
+    "category": "Antiquarian"
   },
   {
     "title": "Theoretical Nuclear Physics",
@@ -4266,6 +4379,13 @@
     "isbn13": "9781448636921",
     "year": 2009,
     "author": "Bulwer-Lytton, Edward"
+  },
+  {
+    "title": "Waves and Ripples in Air, Water, and Æther",
+    "isbn13": "9781632703378",
+    "year": 2023,
+    "author": "Flemming, J.A.",
+    "category": "Physics"
   },
   {
     "title": "Web Database Applications with PHP & MySQL, 2nd Edition",
