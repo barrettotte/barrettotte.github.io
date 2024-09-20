@@ -1,0 +1,59 @@
+{{ define "main" }}
+  <div id="archive">
+    <h1>About Me</h1>
+
+    <h2 class="color-accent-1">General</h2>
+    {{ $aboutData := .Site.Data.about }}
+
+    <p>I'm a software engineer that loves to tinker and teach myself new things.</p>
+    <p>
+      I have deep knowledge of a few subjects, but I'm more of a generalist than a specialist.
+      I feel like knowing a lot of different subjects has greatly improved my problem solving and learning abilities.
+    </p>
+    <p>Life is too short and there are tons of interesting things, so why limit youself to one subject?</p>
+
+    <div class="about-top-row">
+      <div class="about-top-col">
+        <h3 class="color-accent-1">Interests</h3>
+        <ul>
+          {{ range $aboutData.interests }}
+            <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="about-top-col">
+        <h3 class="color-accent-1">Hobbies</h3>
+        <ul>
+          {{ range $aboutData.hobbies }}
+            <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+
+    {{ $languages := $aboutData.favoriteLanguages }}
+    {{ $languageCount := sub (len $languages) 1 }}
+    <p>
+      My favorite programming languages are
+      {{ range $i, $lang := $languages }}
+        {{ if eq $i $languageCount }}
+          and {{ $lang }}.
+        {{ else if lt $i $languageCount }}
+          {{ $lang }}, 
+        {{ end }}
+      {{ end }}
+    </p>
+
+    <h2 class="color-accent-1">Career</h2>
+
+    {{ $start := time ($aboutData.careerStart) }}
+    {{ $yearsElapsed := $start.Year | sub now.Year }}
+    <p>
+      In summary, I'm a software engineer with {{ $yearsElapsed }} years of professional experience.
+      The majority of my experience is backend development with <strong>Java</strong> and <strong>Postgres</strong>.
+    </p>
+    <p>My resume with more detail is available at <a href="{{ .Site.Params.links.resume }}" target="_blank" rel="noopener noreferrer">/resume</a>.</p>
+    <p>Based on my interests, I hope to eventually find myself in some kind of role that intersects cybersecurity and computer engineering, but we'll see.</p>
+
+  </div>
+{{ end }}

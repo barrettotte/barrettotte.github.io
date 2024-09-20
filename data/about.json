@@ -1,0 +1,23 @@
+{
+    "interests": [
+        "History of computing/technology",
+        "Computer architecture",
+        "Electronics",
+        "Low-level programming",
+        "Electromagnetism"
+    ],
+    "hobbies": [
+        "Tinkering",
+        "Weightlifting",
+        "Self-studying",
+        "Anime",
+        "Video games"
+    ],
+    "favoriteLanguages": [
+        "C",
+        "Assembly",
+        "Python",
+        "Go"
+    ],
+    "careerStart": "2018-06-04"
+}
