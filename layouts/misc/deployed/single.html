@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article id="library">
+  <div class="content">
+    <h1>Deployed Projects</h1>
+
+    <ul>
+      {{ $projects := where .Site.Data.projects.list "deployUrl" "ne" nil }}
+
+      {{ range (sort $projects "date" "desc") }}
+        <li><a href="{{ .deployUrl }}">{{ .name }}</a></li>
+      {{ end }}
+    </ul>
+
+  </div>
+</article>
+{{ end }}
