@@ -50,21 +50,20 @@
           <li class="post-item">
             <time datetime="{{ time (printf "%s" .date) }}">{{ .date }}</time>
             <span>
-
               {{ if eq .category "ctf" }}
-                <i class="far fa-lg fa-flag fa-fw"></i>
+                <i class="far fa-md fa-flag fa-fw"></i>
               {{ else if eq .category "kaggle" }}
-                <i class="fab fa-lg fa-kaggle fa-fw"></i>
+                <i class="fab fa-md fa-kaggle fa-fw"></i>
               {{ else if eq .category "3d-print" }}
-                <i class="fa fa-lg fa-cubes fa-fw"></i>
+                <i class="fa fa-md fa-cube fa-fw"></i>
               {{ else if eq .category "code" }}
-                <i class="fa fa-lg fa-code fa-fw"></i>
+                <i class="fa fa-md fa-code fa-fw"></i>
               {{ else if eq .category "electronics" }}
-                <i class="far fa-lg fa-lightbulb fa-fw"></i>
+                <i class="far fa-md fa-lightbulb fa-fw"></i>
               {{ else if eq .category "cert" }}
-                <i class="fa fa-lg fa-scroll fa-fw"></i>
+                <i class="fa fa-md fa-scroll fa-fw"></i>
               {{ else }}
-                <i class="fa fa-lg fa-link fa-fw"></i>
+                <i class="fa fa-md fa-link fa-fw"></i>
               {{ end }}
 
               {{ if .url }}
