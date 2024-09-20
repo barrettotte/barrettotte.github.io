@@ -1,5 +1,19 @@
 [
   {
+    "title": "Радиолюбитель Кубаркин, Наши приемные лампы (radio amateur Kubarkin, Our Reception Lamps)",
+    "isbn13": "",
+    "year": 1930,
+    "author": "Kubarkin",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "1177 B.C.: The Year Civilization Collapsed",
+    "isbn13": "9780691208015",
+    "year": 2021,
+    "author": "Eric H. Cline",
+    "category": "History"
+  },
+  {
     "title": "1491: New Revelations of the Americas Before Columbus",
     "isbn13": "9781400032051",
     "year": 2006,
@@ -184,6 +198,12 @@
     "category": "Mathematics"
   },
   {
+    "title": "A Treatise on Electricity",
+    "year": 1925,
+    "author": "Pidduck",
+    "category": "Antiquarian"
+  },
+  {
     "title": "Abstracting Away the Machine: The History of the FORTRAN Programming Language",
     "isbn13": "9781082395949",
     "year": 2019,
@@ -237,6 +257,12 @@
     "isbn13": "9789198336368",
     "year": 2018,
     "author": "Stjerna, Mariana"
+  },
+  {
+    "title": "Alternating Current Electricity",
+    "year": 1916,
+    "author": "Timbie; Higbie",
+    "category": "Antiquarian"
   },
   {
     "title": "Amateur Telescope Making",
@@ -657,6 +683,13 @@
     "category": "History of Technology"
   },
   {
+    "title": "Cellular Signal Processing: An Introduction to the Molecular Mechanisms of Signal Transduction",
+    "isbn13": "9780815345343",
+    "year": 2017,
+    "author": "Friedrich Marks; Ursula Klingmüller; Karin Müller-Decker",
+    "category": "Biology"
+  },
+  {
     "title": "Chariots of the Gods",
     "isbn13": "9780425166802",
     "year": 1999,
@@ -1060,6 +1093,13 @@
     "category": "Computer Engineering"
   },
   {
+    "title": "Digital Design and Computer Architecture: RISC-V Edition",
+    "isbn13": "9780128200643",
+    "year": 2021,
+    "author": "Sarah Harris; David Harris",
+    "category": "Computer Engineering"
+  },
+  {
     "title": "Digital Design with RTL Design, VHDL, and Verilog",
     "isbn13": "9780470531082",
     "year": 2010,
@@ -1166,6 +1206,13 @@
     "category": "History of Technology"
   },
   {
+    "title": "Electrodynamics Tutorials with Python Simulations",
+    "isbn13": "9781032502311",
+    "year": 2024,
+    "author": "Taejoon Kouh; Minjoon Kouh",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Electromagnetic Theory",
     "isbn13": "9781549664519",
     "year": 2017,
@@ -1237,6 +1284,13 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "Electronic Warfare in the Information Age",
+    "isbn13": "9780890065266",
+    "year": 1999,
+    "author": "D. Curtis Schleher",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Electronics",
     "year": 1951,
     "author": "Seely",
@@ -1295,6 +1349,18 @@
     "year": "1998",
     "author": "Ullman, Jeffrey",
     "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Elements of Physics",
+    "year": 1901,
+    "author": "A.P. Gage",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Elements of Quaternions",
+    "year": 1891,
+    "author": "A.S. Hardy",
+    "category": "Antiquarian"
   },
   {
     "title": "Elements of Radio 2nd Edition",
@@ -1424,6 +1490,13 @@
     "category": "Chemistry and Materials Science"
   },
   {
+    "title": "Essentials of Computational Chemistry: Theories and Models",
+    "isbn13": "9780470091821",
+    "year": 2004,
+    "author": "Christopher J. Cramer",
+    "category": "Chemistry and Materials Science"
+  },
+  {
     "title": "Essentials of Computer Organization and Architecture",
     "isbn13": "9780763704445",
     "year": 2003,
@@ -1475,6 +1548,13 @@
     "year": 2023,
     "author": "Faraday, Michael",
     "category": "History of Technology"
+  },
+  {
+    "title": "Experiments and Observations on Electricity",
+    "isbn13": "9781522833437",
+    "year": 2015,
+    "author": "Benjamin Franklin",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "Feedback Control of Dynamic Systems",
@@ -1569,6 +1649,13 @@
     "year": 1878,
     "author": "Bridges",
     "category": "Antiquarian"
+  },
+  {
+    "title": "FPGA Prototyping by Verilog Examples",
+    "isbn13": "9780470185322",
+    "year": 2008,
+    "author": "Pong P. Chu",
+    "category": "Computer Engineering"
   },
   {
     "title": "Free-Format RPG IV",
@@ -1706,6 +1793,13 @@
     "year": 2013,
     "author": "Pierce, Benjamin A.",
     "category": "Biology"
+  },
+  {
+    "title": "Genghis Khan",
+    "isbn13": "9780609809648",
+    "year": 2005,
+    "author": "Jack Weatherford",
+    "category": "History"
   },
   {
     "title": "Genki I: An Integrated Course in Elementary Japanese Workbook",
@@ -2298,6 +2392,13 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "Leibniz on Binary: The Invention of Computer Arithmetic",
+    "isbn13": "9780262544344",
+    "year": 2022,
+    "author": "",
+    "category": "History of Computing"
+  },
+  {
     "title": "Level II BASIC Reference Manual",
     "year": 1979,
     "category": "Vintage Programming"
@@ -2604,6 +2705,12 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "Musashi's Book of Five Rings",
+    "isbn13": "9780804835206",
+    "year": 2004,
+    "author": "Miyamoto Musashi; Stephen F. Kaufman"
+  },
+  {
     "title": "MySQL Cookbook",
     "isbn13": "9780596527082",
     "year": 2007,
@@ -2650,6 +2757,12 @@
     "year": 2013,
     "author": "Dollenmayer, David; Hansen, Thomas",
     "category": "Language"
+  },
+  {
+    "title": "New Catechism of Electricity, A Practial Treatise",
+    "year": 1896,
+    "author": "N. Hawkins",
+    "category": "Antiquarian"
   },
   {
     "title": "New Encyclopedia of Machine Shop Practice",
@@ -2817,6 +2930,13 @@
     "category": "Religion and Mythology"
   },
   {
+    "title": "Parasite Rex: Inside the Bizarre World of Nature's Most Dangerous Creatures",
+    "isbn13": "9780743200110",
+    "year": 2001,
+    "author": "Carl Zimmer",
+    "category": "Biology"
+  },
+  {
     "title": "Partial Differential Equations for Scientists and Engineers",
     "isbn13": "9780486676203",
     "year": 1993,
@@ -2973,6 +3093,12 @@
     "year": 2012,
     "author": "KASAP",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Principle of Electroplating and Electroforming",
+    "year": 1930,
+    "author": "Blum; Hogaboom",
+    "category": "Antiquarian"
   },
   {
     "title": "Principles of Programming",
@@ -3384,6 +3510,13 @@
     "isbn13": "9788120312463",
     "year": 2008,
     "author": "Alan V. Oppenheim; Alan S. Willsky",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Silicon VLSI Technology: Fundamentals, Practice and Modeling",
+    "isbn13": "9780130850379",
+    "year": 2000,
+    "author": "James D. Plummer; Michael Deal; Peter B. Griffin",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
@@ -3938,6 +4071,13 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "The Human Past: World History & the Development of Human Societies",
+    "isbn13": "9780500293355",
+    "year": 2017,
+    "author": "Chris Scarre",
+    "category": "History"
+  },
+  {
     "title": "The Illustrated Brief History of Time",
     "isbn10": "0553103741",
     "year": 1996,
@@ -4129,6 +4269,13 @@
     "year": 1990,
     "author": "Cowlishaw, Michael",
     "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "The Rise and Fall of Ancient Egypt",
+    "isbn13": "9780553384901",
+    "year": 2013,
+    "author": "Toby Wilkinson",
+    "category": "History"
   },
   {
     "title": "The Spaceships of Ezekiel",

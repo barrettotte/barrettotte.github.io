@@ -336,7 +336,20 @@
   },
   {
     "name": "CompTIA Security+ Certification",
+    "url": "https://www.credly.com/badges/5fc52414-f0b7-444e-88eb-9632fb742bd9/public_url",
     "category": "cert",
     "date": "2024-07-02"
+  },
+  {
+    "name": "AWS Certified Cloud Practitioner",
+    "url": "https://www.credly.com/badges/58be814e-4b16-4aab-bc79-ec90fe5f923a/public_url",
+    "category": "cert",
+    "date": "2024-08-23"
+  },
+  {
+    "name": "AWS Certified Developer - Associate",
+    "url": "https://www.credly.com/badges/1dbd44c3-b0fc-421d-a210-858ac7dc4dfb/public_url",
+    "category": "cert",
+    "date": "2024-09-19"
   }
 ]

@@ -930,6 +930,12 @@
       "date": "2024-07"
     },
     {
+      "name": "tetris-wasm",
+      "url": "https://github.com/barrettotte/tetris-wasm",
+      "desc": "Tetris clone in C and compiled to WASM",
+      "date": "2024-08"
+    },
+    {
       "name": "from-stones-to-qubits",
       "desc": "A book on the history of computing and technology",
       "date": "2023-01",
