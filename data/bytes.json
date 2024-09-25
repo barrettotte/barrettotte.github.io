@@ -351,5 +351,11 @@
     "url": "https://www.credly.com/badges/1dbd44c3-b0fc-421d-a210-858ac7dc4dfb/public_url",
     "category": "cert",
     "date": "2024-09-19"
+  },
+  {
+    "name": "CTF: Patriot CTF 2024",
+    "url": "https://github.com/barrettotte/ctf/tree/master/patriot-ctf-2024",
+    "category": "ctf",
+    "date": "2024-09-22"
   }
 ]
