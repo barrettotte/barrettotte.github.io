@@ -14,7 +14,8 @@
     {{ $minYear := index $years 0 }}
     {{ $maxYear := index $years (sub (len $years) 1) }}
 
-    <p>Small miscellaneous things I've worked on {{ $minYear }}-{{ $maxYear }}.</p>
+    <p>Small miscellaneous things I've completed {{ $minYear }}-{{ $maxYear }}.</p>
+    <p>I store some assets for things listed here in my repo named <a href="https://github.com/barrettotte/bytes">bytes</a>.</p>
 
     <!-- Section links -->
     <div id="section-links">
@@ -27,7 +28,7 @@
     </div>
 
     <ul class="post-list">
-      {{ range (sort $bytes "date" "desc") }}
+      {{ range ((sort $bytes "date" "asc") | collections.Reverse) }}
         {{ $pageYear := substr .date 0 4 }}
         
         {{ if (ne $pageYear ($.Scratch.Get "year")) }}

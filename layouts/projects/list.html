@@ -51,7 +51,7 @@
       {{ end }}
 
       <!-- Projects by year -->
-      {{ range (sort $projects "date" "desc") }}
+      {{ range ((sort $projects "date" "asc") | collections.Reverse) }}
         {{ $pageYear := substr .date 0 4 }}
 
         {{ if (ne $pageYear ($.Scratch.Get "year")) }}
