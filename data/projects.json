@@ -206,16 +206,17 @@
       "date": "2018-09"
     },
     {
-      "name": "ProcJam-2018",
-      "url": "https://github.com/barrettotte/ProcJam-2018",
-      "desc": "Procedural Generation Jam 2018 entry",
-      "date": "2018-10"
-    },
-    {
       "name": "Population-Genetics-Sim",
       "url": "https://github.com/barrettotte/Population-Genetics-Sim",
       "desc": "Simulate basic population genetics",
       "date": "2018-10"
+    },
+    {
+      "name": "ProcJam-2018",
+      "url": "https://github.com/barrettotte/ProcJam-2018",
+      "desc": "Procedural Generation Jam 2018 entry",
+      "date": "2018-10",
+      "deployUrl": "https://barrettotte.itch.io/simple-population-genetics-simulator"
     },
     {
       "name": "TempleOS-and-HolyC",
@@ -224,8 +225,8 @@
       "date": "2018-10"
     },
     {
-      "name": "Resume",
-      "url": "https://github.com/barrettotte/Resume",
+      "name": "resume",
+      "url": "https://github.com/barrettotte/resume",
       "desc": "My resume generated in LaTeX",
       "date": "2018-12"
     },
@@ -826,6 +827,24 @@
       "desc": "Tetris clone in C and compiled to WASM",
       "date": "2024-08",
       "deployUrl": "https://barrettotte.github.io/tetris-wasm/"
+    },
+    {
+      "name": "fpga-morse-uart",
+      "url": "https://github.com/barrettotte/fpga-morse-uart",
+      "desc": "Receives ASCII over UART, echos it back, and outputs morse code signal on LED",
+      "date": "2024-10"
+    },
+    {
+      "name": "thoth-rv32",
+      "url": "https://github.com/barrettotte/thoth-rv32",
+      "desc": "Single cycle RISC-V core supporting most of RV32I",
+      "date": "2024-10"
+    },
+    {
+      "name": "not-a-rat",
+      "url": "https://github.com/barrettotte/not-a-rat",
+      "desc": "A joke \"virus\" using OpenGL and a little MASM",
+      "date": "2024-10"
     },
     {
       "name": "from-stones-to-qubits",

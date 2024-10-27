@@ -42,6 +42,11 @@
     "category": "code"
   },
   {
+    "name": "Altair 8800 Kit",
+    "date": "2020-05-24",
+    "category": "electronics"
+  },
+  {
     "name": "Projectile Motion in Pygame",
     "url": "https://github.com/barrettotte/bytes/tree/master/code/pygame-projectile",
     "date": "2020-09-07",
@@ -323,6 +328,11 @@
     "date": "2024-01-30"
   },
   {
+    "name": "Whiteboard Marker Holder",
+    "category": "3d-print",
+    "date": "2024-02-06"
+  },
+  {
     "name": "CNC Controller Holder",
     "url": "https://github.com/barrettotte/bytes/tree/master/3d-printing/cnc-designs/cnc-controller-holder",
     "category": "3d-print",
@@ -347,6 +357,11 @@
     "date": "2024-08-23"
   },
   {
+    "name": "Note encrypt/decrypt scripts",
+    "category": "code",
+    "date": "2024-09-09"
+  },
+  {
     "name": "AWS Certified Developer - Associate",
     "url": "https://www.credly.com/badges/1dbd44c3-b0fc-421d-a210-858ac7dc4dfb/public_url",
     "category": "cert",
@@ -357,5 +372,11 @@
     "url": "https://github.com/barrettotte/ctf/tree/master/patriot-ctf-2024",
     "category": "ctf",
     "date": "2024-09-22"
+  },
+  {
+    "name": "CTF: DEADFACE CTF 2024",
+    "url": "https://github.com/barrettotte/ctf/blob/master/deadface-ctf-2024",
+    "category": "ctf",
+    "date": "2024-10-19"
   }
 ]
