@@ -101,25 +101,25 @@
     "category": "3d-print"
   },
   {
-    "name": "CTF: Hack The Boo 2022",
-    "url": "https://github.com/barrettotte/ctf/blob/master/hacktheboo-2022",
+    "name": "Hack The Boo 2022",
+    "url": "https://github.com/barrettotte/cyber-archive/tree/master/ctf/hacktheboo-2022",
     "date": "2022-10-27",
     "category": "ctf"
   },
   {
-    "name": "CTF: Cyber Apocalypse 2023",
-    "url": "https://github.com/barrettotte/ctf/blob/master/cyber-apocalypse-2023",
+    "name": "Cyber Apocalypse 2023",
+    "url": "https://github.com/barrettotte/cyber-archive/tree/master/ctf/cyber-apocalypse-2023",
     "date": "2023-03-23",
     "category": "ctf"
   },
   {
-    "name": "CTF: PlaidCTF 2023",
-    "url": "https://github.com/barrettotte/ctf/blob/master/plaid-ctf-2023",
+    "name": "PlaidCTF 2023",
+    "url": "https://github.com/barrettotte/cyber-archive/tree/master/ctf/plaid-ctf-2023",
     "date": "2023-04-16",
     "category": "ctf"
   },
   {
-    "name": "CTF: UMDCTF 2023",
+    "name": "UMDCTF 2023",
     "date": "2023-04-30",
     "category": "ctf"
   },
@@ -214,8 +214,8 @@
     "date": "2023-10-09"
   },
   {
-    "name": "CTF: SunshineCTF 2023",
-    "url": "https://github.com/barrettotte/ctf/blob/master/sunshine-ctf-2023",
+    "name": "SunshineCTF 2023",
+    "url": "https://github.com/barrettotte/cyber-archive/tree/master/ctf/sunshine-ctf-2023",
     "category": "ctf",
     "date": "2023-10-09"
   },
@@ -226,20 +226,20 @@
     "date": "2023-10-10"
   },
   {
-    "name": "CTF: TCP1P CTF 2023",
-    "url": "https://github.com/barrettotte/ctf/blob/master/tcp1p-2023",
+    "name": "TCP1P CTF 2023",
+    "url": "https://github.com/barrettotte/cyber-archive/tree/master/ctf/tcp1p-2023",
     "category": "ctf",
     "date": "2023-10-15"
   },
   {
-    "name": "CTF: DEADFACE CTF 2023",
-    "url": "https://github.com/barrettotte/ctf/blob/master/deadface-ctf-2023",
+    "name": "DEADFACE CTF 2023",
+    "url": "https://github.com/barrettotte/cyber-archive/tree/master/ctf/deadface-ctf-2023",
     "category": "ctf",
     "date": "2023-10-21"
   },
   {
-    "name": "CTF: Hack The Boo 2023",
-    "url": "https://github.com/barrettotte/ctf/blob/master/hacktheboo-2023",
+    "name": "Hack The Boo 2023",
+    "url": "https://github.com/barrettotte/cyber-archive/tree/master/ctf/hacktheboo-2023",
     "category": "ctf",
     "date": "2023-10-27"
   },
@@ -274,7 +274,7 @@
     "date": "2023-11-09"
   },
   {
-    "name": "CTF: CakeCTF 2023",
+    "name": "CakeCTF 2023",
     "url": "https://github.com/barrettotte/ctf#ctfs",
     "category": "ctf",
     "date": "2023-11-12"
@@ -339,8 +339,8 @@
     "date": "2024-03-04"
   },
   {
-    "name": "CTF: Cyber Apocalypse 2024",
-    "url": "https://github.com/barrettotte/ctf/blob/master/cyber-apocalypse-2024",
+    "name": "Cyber Apocalypse 2024",
+    "url": "https://github.com/barrettotte/cyber-archive/tree/master/ctf/cyber-apocalypse-2024",
     "category": "ctf",
     "date": "2024-03-13"
   },
@@ -368,14 +368,14 @@
     "date": "2024-09-19"
   },
   {
-    "name": "CTF: Patriot CTF 2024",
-    "url": "https://github.com/barrettotte/ctf/tree/master/patriot-ctf-2024",
+    "name": "Patriot CTF 2024",
+    "url": "https://github.com/barrettotte/cyber-archive/tree/master/ctf/patriot-ctf-2024",
     "category": "ctf",
     "date": "2024-09-22"
   },
   {
-    "name": "CTF: DEADFACE CTF 2024",
-    "url": "https://github.com/barrettotte/ctf/blob/master/deadface-ctf-2024",
+    "name": "DEADFACE CTF 2024",
+    "url": "https://github.com/barrettotte/cyber-archive/tree/master/ctf/deadface-ctf-2024",
     "category": "ctf",
     "date": "2024-10-19"
   }

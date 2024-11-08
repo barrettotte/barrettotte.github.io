@@ -1651,6 +1651,13 @@
     "category": "Antiquarian"
   },
   {
+    "title": "FPGA-based Implementation of Signal Processing Systems",
+    "isbn13": "9781119077954",
+    "year": 2017,
+    "author": "Roger Woods; John McAllister; Gaye Lightbody; Ying Yi",
+    "category": "Computer Engineering"
+  },
+  {
     "title": "FPGA Prototyping by Verilog Examples",
     "isbn13": "9780470185322",
     "year": 2008,
@@ -2495,6 +2502,13 @@
     "year": 2010,
     "author": "Lécuyer, Christophe; Brock, David C.",
     "category": "History of Computing"
+  },
+  {
+    "title": "Making Embedded Systems: Design Patterns for Great Software",
+    "isbn13": "9781098151546",
+    "year": 2024,
+    "author": "Elecia White",
+    "category": "Computer Engineering"
   },
   {
     "title": "Making Games for the Atari 2600",
@@ -3386,6 +3400,13 @@
     "isbn13": "9781608880591",
     "year": 2020,
     "author": "U.S. Navy"
+  },
+  {
+    "title": "Retargetable C Compiler, A: Design and Implementation",
+    "isbn13": "9780805316704",
+    "year": 1995,
+    "author": "David Hanson; Christopher Fraser",
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Retro Game Dev: C64 Edition",
