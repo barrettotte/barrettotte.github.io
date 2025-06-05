@@ -804,6 +804,12 @@
       "date": "2024-02"
     },
     {
+      "name": "nand-pcb-test",
+      "url": "https://github.com/barrettotte/nand-pcb-test",
+      "desc": " Homemade PCB test using a CNC router",
+      "date": "2024-04"
+    },
+    {
       "name": "query-sandbox",
       "url": "https://github.com/barrettotte/query-sandbox",
       "desc": "A sandbox for messing around with various queries",
@@ -845,6 +851,19 @@
       "url": "https://github.com/barrettotte/not-a-rat",
       "desc": "A joke \"virus\" using OpenGL and a little MASM",
       "date": "2024-10"
+    },
+    {
+      "name": "c64-tea",
+      "url": "https://github.com/barrettotte/c64-tea",
+      "desc": "Tiny Encryption Algorithm (TEA) for Commodore 64 using BASIC and 6502 ASM",
+      "date": "2025-05"
+    },
+    {
+      "name": "questlines",
+      "url": "https://github.com/barrettotte/questlines",
+      "desc": "A prototype app to build questlines for long-term goals",
+      "date": "2025-06",
+      "deployUrl": "https://barrettotte.github.io/questlines/"
     },
     {
       "name": "from-stones-to-qubits",
