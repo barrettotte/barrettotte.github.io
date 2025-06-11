@@ -592,6 +592,10 @@
     "category": "Mechanical Engineering"
   },
   {
+    "title": "Behold a Pale Horse",
+    "author": "William Cooper"
+  },
+  {
     "title": "Beginner's BASIC",
     "isbn13": "9780895120281",
     "year": 1979,
@@ -1272,6 +1276,13 @@
     "isbn13": "9781032502311",
     "year": 2024,
     "author": "Taejoon Kouh; Minjoon Kouh",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electromagnetic Simulation Using the FDTD Method with Python",
+    "isbn13": "9781119565802",
+    "year": 2020,
+    "author": "Jennifer E. Houle; Dennis M. Sullivan",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
@@ -2130,6 +2141,12 @@
     "year": 1996,
     "author": "Soltis, Frank G.",
     "category": "Vintage Programming"
+  },
+  {
+    "title": "Inside the CIA: Revealing the Secrets of the World's Most Powerful Spy Agency",
+    "isbn13": "9780671734589",
+    "year": 1994,
+    "author": "Ronald Kessler"
   },
   {
     "title": "Inside the Machine: An Illustrated Introduction to Microprocessors and Computer Architecture",
@@ -3523,6 +3540,13 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "Quantum Electrodynamics",
+    "isbn13": "9780805325010",
+    "year": 1971,
+    "author": "R. Feynman",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Quantum Mechanics: The Theoretical Minimum",
     "isbn13": "9780465062904",
     "year": 2015,
@@ -4824,6 +4848,13 @@
     "year": 2006,
     "author": "Benvenuti, Christian",
     "category": "Compilers, Interpreters, and Operating Systems"
+  },
+  {
+    "title": "Understanding Molecular Simulation: From Algorithms to Applications",
+    "isbn13": "9780122673511",
+    "year": 2001,
+    "author": "Daan Frenkel; Berend Smit",
+    "category": "Computer Science and Software Engineering"
   },
   {
     "title": "University Physics with Modern Physics (14th Edition)",

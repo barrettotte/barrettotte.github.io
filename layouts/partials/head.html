@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {{- $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" "true") -}}
-  {{- $styles := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "scss/style.scss" . | resources.ToCSS $options | resources.Fingerprint "sha512" }}
+  {{- $styles := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "scss/style.scss" . | css.Sass $options | resources.Fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ $styles.Permalink | absURL }}" integrity="{{ $styles.Data.Integrity }}">
 
   <link rel="stylesheet" href={{ "lib/font-awesome-free-6.5.2-web/css/all.min.css" | absURL }}>

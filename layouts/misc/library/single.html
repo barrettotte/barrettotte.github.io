@@ -8,7 +8,9 @@
 
         <span>I currently have {{ len .Site.Data.books }} books.</span>
 
-        {{ $oldest := index (sort .Site.Data.books "year") 0 }}
+        {{ $booksWithYear := where .Site.Data.books "year" "gt" 0 }}
+        {{ $oldest := index (sort $booksWithYear "year") 0 }}
+
         <span>My oldest book was published in {{ $oldest.year }}.</span>
       </div>
 
@@ -65,7 +67,9 @@
                 by {{ .author }}
               {{ end }}
   
-              ({{ .year }})
+              {{ if isset . "year" }}
+                ({{ .year }})
+              {{ end }}
             </li>
           {{ end }}
         </ul>
