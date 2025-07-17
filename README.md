@@ -10,6 +10,7 @@ A simple personal site using [Hugo](https://gohugo.io/).
   - [Hugo Extended v0.147.8+](https://github.com/gohugoio/hugo/releases/tag/v0.147.8)
 - Build - `hugo -D`
 - Start [dev server](http://localhost:1313/) - `hugo server --disableFastRender --noHTTPCache`
+  - add `--minify` to more accurately show styling used when deployed
 
 ## References
 

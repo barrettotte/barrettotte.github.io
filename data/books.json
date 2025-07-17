@@ -768,6 +768,12 @@
     "category": "History of Mathematics"
   },
   {
+    "title": "Circuit Quantum Electrodynamics",
+    "year": 2007,
+    "author": "David Schuster",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Classical Mechanics: The Theoretical Minimum",
     "isbn13": "9780141976228",
     "year": 2014,
@@ -794,6 +800,12 @@
     "year": 2013,
     "author": "Steinberg, Prof James",
     "category": "Computer Engineering"
+  },
+  {
+    "title": "Collective Electrodynamics",
+    "year": 2000,
+    "author": "Carver A. Mead",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "College Physics",
@@ -2879,6 +2891,13 @@
     "category": "Biology"
   },
   {
+    "title": "Molecular Quantum Electrodynamics",
+    "isbn13": "9780486402147",
+    "year": 1998,
+    "author": "D. P. Craig; T. Thirunamachandran",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "More BASIC Computer Games",
     "isbn13": "9780894801372",
     "year": 1979,
@@ -3280,6 +3299,13 @@
     "year": 2014,
     "author": "Dang, Bruce; Gazet, Alexandre; Bachaalany, Elias",
     "category": "Cyber Security"
+  },
+  {
+    "title": "Practical SDR",
+    "isbn13": "9781718502543",
+    "year": 2024,
+    "author": "David Clark; Paul Clark",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "Princples of Industrial Electronics",
@@ -3938,6 +3964,13 @@
     "year": 2016,
     "author": "Alexander Kossiakoff ET ALL",
     "category": "Mechanical Engineering"
+  },
+  {
+    "title": "T.T. Brown's Electrogravitics Research",
+    "isbn13": "9781935023272",
+    "year": 2014,
+    "author": "T.T. Brown",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "TCP/IP Sockets in C",
