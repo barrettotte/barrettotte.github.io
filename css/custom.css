@@ -214,10 +214,6 @@ article.post header div.meta {
     display: inline;
 }
 
-#subtitle > .subtitle-item:first-child {
-    padding-right: 5px;
-}
-
 #subtitle > .subtitle-item:not(:first-child)::before {
     content: "•";
     padding-left: 5px;
