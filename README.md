@@ -12,6 +12,11 @@ A simple personal site using [Hugo](https://gohugo.io/).
 - Start [dev server](http://localhost:1313/) - `hugo server --disableFastRender --noHTTPCache`
   - add `--minify` to more accurately show styling used when deployed
 
+```sh
+# sort books.json by title
+cat books.json > tmp.json && jq 'sort_by(.title | ascii_downcase)' tmp.json > books.json && rm tmp.json
+```
+
 ## References
 
 - Based on [Cactus Theme](https://themes.gohugo.io/themes/hugo-theme-cactus/)

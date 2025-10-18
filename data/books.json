@@ -1,12 +1,5 @@
 [
   {
-    "title": "Радиолюбитель Кубаркин, Наши приемные лампы (radio amateur Kubarkin, Our Reception Lamps)",
-    "isbn13": "",
-    "year": 1930,
-    "author": "Kubarkin",
-    "category": "Antiquarian"
-  },
-  {
     "title": "1177 B.C.: The Year Civilization Collapsed",
     "isbn13": "9780691208015",
     "year": 2021,
@@ -87,7 +80,7 @@
     "isbn13": "9781409200734",
     "year": 2008,
     "author": "Poli, Riccardo; Langdon, William B.; McPhee, Nicholas Freitag",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "A First Course in Abstract Algebra",
@@ -231,18 +224,18 @@
     "category": "History of Computing"
   },
   {
-    "title": "Ada's Algorithm",
-    "isbn13": "9781612194578",
-    "year": 2015,
-    "author": "Essinger, James",
-    "category": "History of Computing"
-  },
-  {
     "title": "Ada 95 from the Beginning",
     "isbn13": "9780201403763",
     "year": 1996,
     "author": "Skansholm, J.",
     "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Ada's Algorithm",
+    "isbn13": "9781612194578",
+    "year": 2015,
+    "author": "Essinger, James",
+    "category": "History of Computing"
   },
   {
     "title": "Advanced Graphics in C: Programming and Techniques",
@@ -369,7 +362,7 @@
     "isbn13": "9780123742605",
     "year": 2011,
     "author": "Pacheco, Peter",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "An Introduction to Radio Astronomy",
@@ -397,6 +390,13 @@
     "year": 1999,
     "author": "Crandall, Stephen; Lardner, Thomas",
     "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Annalen der Physik und Chemie",
+    "year": 1866,
+    "author": "J.C. Poggendorff",
+    "category": "Antiquarian",
+    "language": "German"
   },
   {
     "title": "Ant: The Definitive Guide, 2nd Edition",
@@ -437,7 +437,7 @@
     "isbn13": "9781461468486",
     "year": 2013,
     "author": "Kuhn, Max; Johnson, Kjell",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Applied X-Rays",
@@ -473,17 +473,17 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
-    "title": "Assembler Language Programming: The IBM System/360 and 370",
-    "isbn13": "9780201073225",
-    "year": 1975,
-    "author": "Struble, George",
-    "category": "Vintage Programming"
-  },
-  {
     "title": "Assembler Language Programming for IBM and IBM-Compatible Computers",
     "isbn13": "9780471886570",
     "year": 1986,
     "author": "Stern, Nancy B.",
+    "category": "Vintage Programming"
+  },
+  {
+    "title": "Assembler Language Programming: The IBM System/360 and 370",
+    "isbn13": "9780201073225",
+    "year": 1975,
+    "author": "Struble, George",
     "category": "Vintage Programming"
   },
   {
@@ -571,6 +571,13 @@
     "category": "Antiquarian"
   },
   {
+    "title": "AVR Workshop: A Hands-On Introduction with 60 Projects",
+    "isbn13": "9781718502581",
+    "year": 2022,
+    "author": "John Boxall",
+    "category": "Computer Engineering"
+  },
+  {
     "title": "Basic Electricity",
     "isbn13": "9780486209739",
     "year": 1970,
@@ -592,10 +599,6 @@
     "category": "Mechanical Engineering"
   },
   {
-    "title": "Behold a Pale Horse",
-    "author": "William Cooper"
-  },
-  {
     "title": "Beginner's BASIC",
     "isbn13": "9780895120281",
     "year": 1979,
@@ -608,6 +611,10 @@
     "year": 2008,
     "author": "Allen, Grant",
     "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Behold a Pale Horse",
+    "author": "William Cooper"
   },
   {
     "title": "Bhagavad Gita",
@@ -676,7 +683,7 @@
     "isbn13": "9781633437166",
     "year": 2024,
     "author": "Sebastian Raschka",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Build Your Own CNC Machine",
@@ -686,25 +693,18 @@
     "category": "Mechanical Engineering"
   },
   {
-    "title": "Building Parsers with Java",
-    "isbn13": "9780201719628",
-    "year": 2001,
-    "author": "Metsker, Steven John Metsker",
-    "category": "Compilers, Interpreters, and Operating Systems"
+    "title": "Building AI Agents with LLMs, RAG, and Knowledge Graphs A Practical Guide to Autonomous and Modern AI Agents",
+    "isbn13": "9781835087060",
+    "year": 2025,
+    "author": "Salvatore Raieli; Gabriele Iuculano",
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
-    "title": "C# 5.0 in a Nutshell",
-    "isbn13": "9781449320102",
-    "year": 2012,
-    "author": "Albahari, Joseph; Albahari, Ben",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
-    "title": "Calculus, 7th Edition",
-    "isbn13": "9780538497817",
-    "year": 2012,
-    "author": "Stewart, James",
-    "category": "Mathematics"
+    "title": "Building LLMs for Production: Enhancing LLM Abilities and Reliability with Prompting, Fine-Tuning, and RAG",
+    "isbn13": "9798324731472",
+    "year": 2024,
+    "author": "Louis-François Bouchard; Louie Peters",
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Calculus and Analytic Geometry",
@@ -718,6 +718,13 @@
     "isbn13": "9780321785503",
     "year": 2012,
     "author": "Briggs, William; Cochran, Lyle; Gillett, Bernard",
+    "category": "Mathematics"
+  },
+  {
+    "title": "Calculus, 7th Edition",
+    "isbn13": "9780538497817",
+    "year": 2012,
+    "author": "Stewart, James",
     "category": "Mathematics"
   },
   {
@@ -748,16 +755,16 @@
     "author": "Erich Von Daniken"
   },
   {
+    "title": "Chemistry of Powder and Explosives",
+    "year": 1943,
+    "author": "Tenney L. Davis",
+    "category": "Chemistry and Materials Science"
+  },
+  {
     "title": "Chemistry: Principles, Patterns, and Applications",
     "isbn13": "9780805383171",
     "year": 2006,
     "author": "Averill, Bruce A.; Eldredge, Patricia",
-    "category": "Chemistry and Materials Science"
-  },
-  {
-    "title": "Chemistry of Powder and Explosives",
-    "year": 1943,
-    "author": "Tenney L. Davis",
     "category": "Chemistry and Materials Science"
   },
   {
@@ -772,6 +779,12 @@
     "year": 2007,
     "author": "David Schuster",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Circuits and Machines in Electrical Engineering",
+    "year": 1938,
+    "author": "Kraehenbuehl; Faucett",
+    "category": "Antiquarian"
   },
   {
     "title": "Classical Mechanics: The Theoretical Minimum",
@@ -833,10 +846,10 @@
     "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
-    "title": "CompTIA Security+ All-in-One Exam Guide, Fourth Edition (Exam SY0-401)",
-    "isbn13": "9780071841245",
-    "year": 2014,
-    "author": "Conklin, Wm. Arthur; White, Greg; Williams, Dwayne; Cothren, Chuck; Davis, Roger",
+    "title": "CompTIA Security+ Practice Tests: Exam SY0-701",
+    "isbn13": "9781394211388",
+    "year": 2024,
+    "author": "Seidl, David",
     "category": "Cyber Security"
   },
   {
@@ -844,13 +857,6 @@
     "isbn13": "9781394211418",
     "year": 2024,
     "author": "Chapple, Mike; Seidl, David",
-    "category": "Cyber Security"
-  },
-  {
-    "title": "CompTIA Security+ Practice Tests: Exam SY0-701",
-    "isbn13": "9781394211388",
-    "year": 2024,
-    "author": "Seidl, David",
     "category": "Cyber Security"
   },
   {
@@ -893,6 +899,13 @@
     "isbn13": "9781480145511",
     "year": 2012,
     "author": "Newman, Mark",
+    "category": "Physics"
+  },
+  {
+    "title": "Computational Physics Problem Solving with Python",
+    "isbn13": "9783527413157",
+    "year": 2015,
+    "author": "Rubin H. Landau; Manuel J. Páez; Cristian C. Bordeianu",
     "category": "Physics"
   },
   {
@@ -962,7 +975,7 @@
     "isbn13": "9780130307965",
     "year": 2001,
     "author": "Shapiro, Linda G.; Stockman, George C.",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Computer: A History of the Information Machine",
@@ -1012,6 +1025,14 @@
     "category": "Physics"
   },
   {
+    "title": "CPUの創りかた IC10個のお手軽CPU設計超入門初歩のデジタル回路動作の基本原理と製作",
+    "isbn13": "9784839909864",
+    "year": 2003,
+    "author": "渡波郁",
+    "category": "Computer Engineering",
+    "language": "Japanese"
+  },
+  {
     "title": "Cryptonomicon",
     "isbn13": "9780060512804",
     "year": 2002,
@@ -1030,7 +1051,7 @@
     "isbn13": "9780134177410",
     "year": 2015,
     "author": "Storti, Duane; Yurtoglu, Mete",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Data File Programming in BASIC",
@@ -1043,14 +1064,14 @@
     "isbn13": "9781449361327",
     "year": 2013,
     "author": "Provost, Foster; Fawcett, Tom",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Data Science from Scratch: First Principles with Python",
     "isbn13": "9781492041139",
     "year": 2019,
     "author": "Grus, Joel",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Data Structures Using Pascal",
@@ -1092,14 +1113,14 @@
     "isbn13": "9780262035613",
     "year": 2016,
     "author": "Goodfellow, Ian; Bengio, Yoshua; Courville, Aaron",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Deep Learning for Coders with Fastai and PyTorch: AI Applications Without a PhD",
     "isbn13": "9781492045526",
     "year": 2020,
     "author": "Howard, Jeremy; Gugger, Sylvain",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Design of Analog CMOS Integrated Circuits",
@@ -1147,7 +1168,8 @@
     "isbn13": "9783642719455",
     "year": 2011,
     "author": "Raúl Rojas",
-    "category": "History of Computing"
+    "category": "History of Computing",
+    "language": "German"
   },
   {
     "title": "Differential Equations with Boundary-Value Problems",
@@ -1219,13 +1241,6 @@
     "category": "Fiction"
   },
   {
-    "title": "Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability (3rd Edition)",
-    "isbn13": "9780321965516",
-    "year": 2013,
-    "author": "Krug, Steve",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
     "title": "Dynamo Electric Machinery Part One",
     "year": 1902,
     "author": "Thompson",
@@ -1291,6 +1306,27 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "Electrogravitics II, 2nd Edition Validating Reports on a New Propulsion Methodology",
+    "isbn13": "9780964107090",
+    "year": 2005,
+    "author": "Thomas Valone",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electrogravitics Systems Volume 1: Reports on a New Propulsion Methodology",
+    "isbn13": "9798852929204",
+    "year": 2023,
+    "author": "Thomas Valone",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electrogravitics Systems: Reports on a New Propulsion Methodology",
+    "isbn13": "9780964107007",
+    "year": 2023,
+    "author": "Thomas Valone",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Electromagnetic Simulation Using the FDTD Method with Python",
     "isbn13": "9781119565802",
     "year": 2020,
@@ -1318,18 +1354,6 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
-    "title": "Electron-Tube Circuits",
-    "year": 1950,
-    "author": "Seely",
-    "category": "Electromagnetism, Electrical Engineering, and Radio"
-  },
-  {
-    "title": "Electron-Tube Circuits (2nd Edition)",
-    "year": 1958,
-    "author": "Seely",
-    "category": "Electromagnetism, Electrical Engineering, and Radio"
-  },
-  {
     "title": "Electron and Nuclear Physics",
     "year": 1952,
     "author": "J. Barton Hoag",
@@ -1339,6 +1363,18 @@
     "title": "Electron Paramagnetic Resonance",
     "year": 1968,
     "author": "J.W. Orton",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electron-Tube Circuits",
+    "year": 1950,
+    "author": "Seely",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electron-Tube Circuits (2nd Edition)",
+    "year": 1958,
+    "author": "Seely",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
@@ -1365,6 +1401,13 @@
     "title": "Electronic Switching, Timing, and Pulsing Circuits",
     "year": 1959,
     "author": "Pettit",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electronic troubleshooting: A manual for engineers and technicians",
+    "isbn13": "9780879092498",
+    "year": 1974,
+    "author": "Clyde N Herrick",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
@@ -1399,6 +1442,20 @@
     "year": 1960,
     "author": "Markus",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Elektrische Hochleistungsübertragung",
+    "year": 1932,
+    "author": "R. Rüdenberg",
+    "category": "Antiquarian",
+    "language": "German"
+  },
+  {
+    "title": "Elektrizität und Light",
+    "year": 1902,
+    "author": "Dr. G. Jaumann",
+    "category": "Antiquarian",
+    "language": "German"
   },
   {
     "title": "Elementary Linear Algebra",
@@ -1472,17 +1529,17 @@
     "category": "Antiquarian"
   },
   {
-    "title": "Embedded Systems: Real-Time Operating Systems for Arm Cortex M Microcontrollers",
-    "isbn13": "9781466468863",
-    "year": 2012,
-    "author": "Valvano, Jonathan",
-    "category": "Computer Engineering"
-  },
-  {
     "title": "Embedded Systems with ARM Cortex-M Microcontrollers in Assembly Language and C: Third Edition",
     "isbn13": "9780982692660",
     "year": 2017,
     "author": "Zhu, Yifeng",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "Embedded Systems: Real-Time Operating Systems for Arm Cortex M Microcontrollers",
+    "isbn13": "9781466468863",
+    "year": 2012,
+    "author": "Valvano, Jonathan",
     "category": "Computer Engineering"
   },
   {
@@ -1527,13 +1584,6 @@
     "category": "Physics"
   },
   {
-    "title": "Engineering: A Compiler",
-    "isbn13": "9780120884780",
-    "year": 2011,
-    "author": "Cooper, Keith; Torczon, Linda",
-    "category": "Compilers, Interpreters, and Operating Systems"
-  },
-  {
     "title": "Engineering Electromagnetics",
     "year": 1958,
     "author": "Hayt",
@@ -1560,11 +1610,11 @@
     "category": "Mechanical Engineering"
   },
   {
-    "title": "Eniac: The Triumphs and Tragedies of the World's First Computer",
-    "isbn10": "0425176444",
-    "year": 2001,
-    "author": "McCartney, Scott",
-    "category": "History of Computing"
+    "title": "Engineering: A Compiler",
+    "isbn13": "9780120884780",
+    "year": 2011,
+    "author": "Cooper, Keith; Torczon, Linda",
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "ENIAC in Action: Making and Remaking the Modern Computer",
@@ -1572,6 +1622,19 @@
     "year": 2016,
     "author": "Haigh, Thomas; Priestley, Mark; Rope, Crispin",
     "category": "History of Computing"
+  },
+  {
+    "title": "Eniac: The Triumphs and Tragedies of the World's First Computer",
+    "isbn10": "0425176444",
+    "year": 2001,
+    "author": "McCartney, Scott",
+    "category": "History of Computing"
+  },
+  {
+    "title": "Essential Characteristics",
+    "year": 1973,
+    "author": "General Electric",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "Essential Organic Chemistry",
@@ -1595,17 +1658,23 @@
     "category": "Computer Engineering"
   },
   {
-    "title": "Essential Characteristics",
-    "year": 1973,
-    "author": "General Electric",
-    "category": "Electromagnetism, Electrical Engineering, and Radio"
-  },
-  {
     "title": "Ethereal Aether: A History of the Michelson-Morley-Miller Aether-Drift Experiments",
     "isbn13": "9780292720008",
     "year": 1972,
     "author": "Swenson, Lloyd S.",
     "category": "Physics"
+  },
+  {
+    "title": "Euclid's Elements of Geometry",
+    "year": 1745,
+    "category": "Antiquarian"
+  },
+  {
+    "title": "Euclid: The Thirteen Books of Elements, Vol. 3, Books 10-13",
+    "isbn13": "9780486600901",
+    "year": 1956,
+    "author": "Thomas L. Heath; Euclid",
+    "category": "History of Mathematics"
   },
   {
     "title": "Euclid: The Thirteen Books of the Elements, Vol. 1: Books 1-2",
@@ -1622,18 +1691,6 @@
     "category": "History of Mathematics"
   },
   {
-    "title": "Euclid: The Thirteen Books of Elements, Vol. 3, Books 10-13",
-    "isbn13": "9780486600901",
-    "year": 1956,
-    "author": "Thomas L. Heath; Euclid",
-    "category": "History of Mathematics"
-  },
-  {
-    "title": "Euclid's Elements of Geometry",
-    "year": 1745,
-    "category": "Antiquarian"
-  },
-  {
     "title": "Experimental Researches in Electricity, Volume 1",
     "isbn13": "9798393044657",
     "year": 2023,
@@ -1648,11 +1705,9 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
-    "title": "Feedback Control of Dynamic Systems",
-    "isbn13": "9780136019695",
-    "year": 2009,
-    "author": "Franklin, Gene F.; Powell, J. David; Emami-Naeini, Abbas",
-    "category": "Mechanical Engineering"
+    "title": "Faraday's Lost Aether",
+    "year": 1996,
+    "author": "L.W. Kruger"
   },
   {
     "title": "Faraday, Maxwell, and the Electromagnetic Field: How Two Men Revolutionized Physics",
@@ -1662,9 +1717,11 @@
     "category": "History of Technology"
   },
   {
-    "title": "Faraday's Lost Aether",
-    "year": 1996,
-    "author": "L.W. Kruger"
+    "title": "Feedback Control of Dynamic Systems",
+    "isbn13": "9780136019695",
+    "year": 2009,
+    "author": "Franklin, Gene F.; Powell, J. David; Emami-Naeini, Abbas",
+    "category": "Mechanical Engineering"
   },
   {
     "title": "Field and Wave Electromagnetics",
@@ -1692,13 +1749,6 @@
     "year": 1975,
     "author": "Wheeler, Alwyne C",
     "category": "Biology"
-  },
-  {
-    "title": "Flexible Input, Dazzling Output With IBM i",
-    "isbn13": "9781583478325",
-    "year": 2014,
-    "author": "Rafael Victória-pereira",
-    "category": "Computer Science and Software Engineering"
   },
   {
     "title": "For Love of Insects",
@@ -1742,17 +1792,17 @@
     "category": "Antiquarian"
   },
   {
-    "title": "FPGA-based Implementation of Signal Processing Systems",
-    "isbn13": "9781119077954",
-    "year": 2017,
-    "author": "Roger Woods; John McAllister; Gaye Lightbody; Ying Yi",
-    "category": "Computer Engineering"
-  },
-  {
     "title": "FPGA Prototyping by Verilog Examples",
     "isbn13": "9780470185322",
     "year": 2008,
     "author": "Pong P. Chu",
+    "category": "Computer Engineering"
+  },
+  {
+    "title": "FPGA-based Implementation of Signal Processing Systems",
+    "isbn13": "9781119077954",
+    "year": 2017,
+    "author": "Roger Woods; John McAllister; Gaye Lightbody; Ying Yi",
     "category": "Computer Engineering"
   },
   {
@@ -1886,6 +1936,13 @@
     "category": "Chemistry and Materials Science"
   },
   {
+    "title": "Generative AI with LangChain: Build production ready LLM applications and advanced agents using Python and LangGraph",
+    "isbn13": "9781837022014",
+    "year": 2025,
+    "author": "Ben Auffarth; Leonid Kuligin",
+    "category": "AI, Data Science, and Parallel Programming"
+  },
+  {
     "title": "Genetics: A Conceptual Approach, 5th Edition",
     "isbn13": "9781464109461",
     "year": 2013,
@@ -1900,13 +1957,6 @@
     "category": "History"
   },
   {
-    "title": "Genki I: An Integrated Course in Elementary Japanese Workbook",
-    "isbn13": "9784789014410",
-    "year": 2011,
-    "author": "Eri Banno",
-    "category": "Language"
-  },
-  {
     "title": "Genki I: An Integrated Course in Elementary Japanese",
     "isbn13": "9784789014403",
     "year": 2011,
@@ -1914,11 +1964,11 @@
     "category": "Language"
   },
   {
-    "title": "Geometry, Relativity and the Fourth Dimension",
-    "isbn13": "9780486234007",
-    "year": 1977,
-    "author": "Rudolf v.B. Rucker",
-    "category": "Physics"
+    "title": "Genki I: An Integrated Course in Elementary Japanese Workbook",
+    "isbn13": "9784789014410",
+    "year": 2011,
+    "author": "Eri Banno",
+    "category": "Language"
   },
   {
     "title": "Geometry of Complex Numbers",
@@ -1926,6 +1976,13 @@
     "year": 1980,
     "author": "Hans Schwerdtfeger",
     "category": "Mathematics"
+  },
+  {
+    "title": "Geometry, Relativity and the Fourth Dimension",
+    "isbn13": "9780486234007",
+    "year": 1977,
+    "author": "Rudolf v.B. Rucker",
+    "category": "Physics"
   },
   {
     "title": "Getting Started on the Sharp 1500 & Radio Shack PC-2",
@@ -1939,13 +1996,6 @@
     "isbn13": "9780743261692",
     "year": 2006,
     "category": "History"
-  },
-  {
-    "title": "Gödel's Proof",
-    "isbn13": "9780814758373",
-    "year": 2008,
-    "author": "Ernest Nagel; James Newman",
-    "category": "Mathematics"
   },
   {
     "title": "GPU Gems 2",
@@ -1999,6 +2049,13 @@
     "author": "Roy F. Dunlap"
   },
   {
+    "title": "Gödel's Proof",
+    "isbn13": "9780814758373",
+    "year": 2008,
+    "author": "Ernest Nagel; James Newman",
+    "category": "Mathematics"
+  },
+  {
     "title": "Hacking: The Art of Exploitation, 2nd Edition",
     "isbn13": "9781593271442",
     "year": 2008,
@@ -2023,7 +2080,7 @@
     "isbn13": "9781492032649",
     "year": 2019,
     "author": "Géron, Aurélien",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Heart of the Buddha's Teaching: Transforming Suffering into Peace, Joy, and Liberation",
@@ -2093,20 +2150,6 @@
     "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
-    "title": "IBM's Early Computers",
-    "isbn10": "0262022257",
-    "year": 1985,
-    "author": "Bashe, Charles J.; Johnson, Lyle R.; Palmer, John H.; Pugh, Emerson W.",
-    "category": "History of Computing"
-  },
-  {
-    "title": "IBM i Security Administration and Compliance",
-    "isbn13": "9781583473733",
-    "year": 2012,
-    "author": "Woodbury, Carol",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
     "title": "IBM PC Assembly Language and Programming",
     "isbn13": "9780131246034",
     "year": 1995,
@@ -2119,6 +2162,13 @@
     "year": 2007,
     "author": "Vining, Bruce; Pence, Doug; Hawkins, Ron",
     "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "IBM's Early Computers",
+    "isbn10": "0262022257",
+    "year": 1985,
+    "author": "Bashe, Charles J.; Johnson, Lyle R.; Palmer, John H.; Pugh, Emerson W.",
+    "category": "History of Computing"
   },
   {
     "title": "Iliad & Odyssey",
@@ -2139,6 +2189,13 @@
     "year": 1984,
     "author": "Gribbin, John",
     "category": "Physics"
+  },
+  {
+    "title": "In the Shadow of the Machine",
+    "isbn13": "9781912230143",
+    "year": 2018,
+    "author": "Jeremy Naydler",
+    "category": "History of Computing"
   },
   {
     "title": "Infinitesimal Calculus",
@@ -2200,7 +2257,7 @@
     "isbn13": "9780486248646",
     "year": 1985,
     "author": "Jackson Jr., Philip C.",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Introduction to Astrophysics: The Stars",
@@ -2236,6 +2293,12 @@
     "category": "Chemistry and Materials Science"
   },
   {
+    "title": "Introduction to Electricity and Optics",
+    "year": 1950,
+    "author": "Frank",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Introduction to Electrocardiography",
     "isbn13": "9780632009732",
     "year": 1982,
@@ -2243,23 +2306,17 @@
     "category": "Biology"
   },
   {
-    "title": "Introduction to Electronic Warfare Modeling and Simulation (Radar, Sonar and Navigation)",
-    "isbn13": "9781891121623",
-    "year": 2006,
-    "author": "David L. Adamy",
-    "category": "Electromagnetism, Electrical Engineering, and Radio"
-  },
-  {
-    "title": "Introduction to Electricity and Optics",
-    "year": 1950,
-    "author": "Frank",
-    "category": "Electromagnetism, Electrical Engineering, and Radio"
-  },
-  {
     "title": "Introduction to Electrodynamics",
     "isbn13": "9781108420419",
     "year": 2017,
     "author": "Griffiths, David J.",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Introduction to Electronic Warfare Modeling and Simulation (Radar, Sonar and Navigation)",
+    "isbn13": "9781891121623",
+    "year": 2006,
+    "author": "David L. Adamy",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
@@ -2297,6 +2354,13 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "Introduction to Laser Physics",
+    "isbn13": "9783540134305",
+    "year": 1984,
+    "author": "K. Shimoda",
+    "category": "Physics"
+  },
+  {
     "title": "Introduction to Logic: And to the Methodology of Deductive Sciences",
     "isbn13": "9780486284620",
     "year": 1995,
@@ -2321,6 +2385,13 @@
     "title": "Introduction to Microwave Theory",
     "year": 1962,
     "author": "Atwater",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Introduction to Modern Magnetohydrodynamics",
+    "isbn13": "9781107158658",
+    "year": 2016,
+    "author": "Sébastien Galtier",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
@@ -2375,6 +2446,13 @@
     "isbn13": "9780750301831",
     "year": 1995,
     "author": "R J, Goldston; Rutherford, Paul H",
+    "category": "Physics"
+  },
+  {
+    "title": "Introduction to Plasma Physics: With Space and Laboratory Applications",
+    "isbn13": "9780521367301",
+    "year": 2005,
+    "author": "D. A. Gurnett; A. Bhattacharjee",
     "category": "Physics"
   },
   {
@@ -2434,31 +2512,10 @@
     "category": "History"
   },
   {
-    "title": "Java After Hours: 10 Projects You'll Never Do at Work",
-    "isbn13": "9780672327476",
-    "year": 2005,
-    "author": "Holzner, Steven",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
     "title": "Java Application Strategies For Iseries And As/400",
     "isbn13": "9781583470251",
     "year": 2001,
     "author": "Don Denoncourt",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
-    "title": "Java Extreme Programming Cookbook",
-    "isbn13": "9780596003876",
-    "year": 2003,
-    "author": "Eric M. Burke; Brian M. Coyner",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
-    "title": "JavaScript Application Cookbook: Programming JavaScript Applications",
-    "isbn13": "9781565925779",
-    "year": 1999,
-    "author": "Bradenbaugh, Jerry",
     "category": "Computer Science and Software Engineering"
   },
   {
@@ -2513,13 +2570,6 @@
     "isbn13": "9781491918661",
     "year": 2014,
     "author": "Nixon, Robin",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
-    "title": "Learning Python, 3rd Edition",
-    "isbn13": "9780596513986",
-    "year": 2007,
-    "author": "Lutz, Mark",
     "category": "Computer Science and Software Engineering"
   },
   {
@@ -2602,7 +2652,7 @@
     "isbn13": "9781836200079",
     "year": 2024,
     "author": "Paul Iusztin; Maxime Labonne; Alex Vesa",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Logical Chess: Move By Move",
@@ -2611,10 +2661,18 @@
     "author": "Chernev, Irving"
   },
   {
-    "title": "Machine, Assembly, and Systems Programming For the IBM 360",
-    "year": 1969,
-    "author": "Payne",
-    "category": "Vintage Programming"
+    "title": "Longitude The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time",
+    "isbn13": "9780802713124",
+    "year": 1995,
+    "author": "Dava Sobel",
+    "category": "History of Technology"
+  },
+  {
+    "title": "Lost in Math: How Beauty Leads Physics Astray",
+    "isbn13": "9781541646766",
+    "year": 2020,
+    "author": "Sabine Hossenfelder",
+    "category": "Physics"
   },
   {
     "title": "Machine Elements in Mechanical Design (4th Edition)",
@@ -2629,6 +2687,12 @@
     "year": 2009,
     "author": "Kibbe, Richard R.; Meyer, Roland O.; Neely, John E.; White, Warren T.",
     "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Machine, Assembly, and Systems Programming For the IBM 360",
+    "year": 1969,
+    "author": "Payne",
+    "category": "Vintage Programming"
   },
   {
     "title": "Machines For Power Farming",
@@ -2808,6 +2872,13 @@
     "category": "Computer Engineering"
   },
   {
+    "title": "Microcontroller Exploits",
+    "isbn13": "9781718503885",
+    "year": 2024,
+    "author": "Travis Goodspeed",
+    "category": "Computer Engineering"
+  },
+  {
     "title": "Microcontroller Projects for Amateur Radio",
     "isbn13": "9781625951281",
     "year": 2020,
@@ -2836,6 +2907,13 @@
     "category": "Computer Engineering"
   },
   {
+    "title": "Microwave Receivers With Electronic Warfare Applications",
+    "isbn13": "9780894647246",
+    "year": 1992,
+    "author": "James Bao-Yen Tsui",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Mindfulness: A Practical Guide to Awakening",
     "isbn13": "9781622030651",
     "year": 2013,
@@ -2847,6 +2925,12 @@
     "year": 1996,
     "author": "L. C. Paulson",
     "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Modern Application of Electricity",
+    "year": 1882,
+    "author": "Hospitalier",
+    "category": "Antiquarian"
   },
   {
     "title": "Modern Compiler Implementation in C",
@@ -2916,13 +3000,6 @@
     "isbn13": "9780804835206",
     "year": 2004,
     "author": "Miyamoto Musashi; Stephen F. Kaufman"
-  },
-  {
-    "title": "MySQL Cookbook",
-    "isbn13": "9780596527082",
-    "year": 2007,
-    "author": "DuBois, Paul",
-    "category": "Computer Science and Software Engineering"
   },
   {
     "title": "Mythical Man-Month, The: Essays on Software Engineering, Anniversary Edition",
@@ -2999,13 +3076,6 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
-    "title": "Node.js for PHP Developers: Porting PHP to Node.js",
-    "isbn13": "9781449333607",
-    "year": 2013,
-    "author": "Howard, Daniel",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
     "title": "Norse Mythology",
     "isbn13": "9780393609097",
     "year": 2017,
@@ -3032,13 +3102,6 @@
     "year": 2011,
     "author": "Menninger, Karl",
     "category": "History of Mathematics"
-  },
-  {
-    "title": "Numerical and Statistical Methods for Bioengineering: Applications in MATLAB",
-    "isbn13": "9780521871587",
-    "year": 2010,
-    "author": "King, Michael R.; Mody, Nipa A.",
-    "category": "Biology"
   },
   {
     "title": "Numerical Electromagnetics: The FDTD Method",
@@ -3159,7 +3222,7 @@
     "isbn13": "9781617296468",
     "year": 2021,
     "author": "Robert Robey; Yuliana Zamora",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Parasite Rex: Inside the Bizarre World of Nature's Most Dangerous Creatures",
@@ -3190,18 +3253,18 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
-    "title": "Perl One-Liners",
-    "isbn13": "9781593275204",
-    "year": 2013,
-    "author": "Krumins, Peteris",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
     "title": "PC Interrupts: A Programmer's Reference to BIOS, DOS, and Third Party Calls",
     "isbn13": "9780201577976",
     "year": 1991,
     "author": "Ralf Brown",
     "category": "Compilers, Interpreters, and Operating Systems"
+  },
+  {
+    "title": "Perl One-Liners",
+    "isbn13": "9781593275204",
+    "year": 2013,
+    "author": "Krumins, Peteris",
+    "category": "Computer Science and Software Engineering"
   },
   {
     "title": "Physical Chemistry: A Molecular Approach",
@@ -3308,17 +3371,17 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
-    "title": "Princples of Industrial Electronics",
-    "year": 1966,
-    "author": "Ben Zeines",
-    "category": "Electromagnetism, Electrical Engineering, and Radio"
-  },
-  {
     "title": "Prescott's Microbiology",
     "isbn13": "9781259281594",
     "year": 2016,
     "author": "Willey, Joanne; Sherwood, Linda; Woolverton, Christopher J.",
     "category": "Biology"
+  },
+  {
+    "title": "Principle of Electroplating and Electroforming",
+    "year": 1930,
+    "author": "Blum; Hogaboom",
+    "category": "Antiquarian"
   },
   {
     "title": "Principles and Applications of Electrochemistry Volume II",
@@ -3354,12 +3417,6 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
-    "title": "Principle of Electroplating and Electroforming",
-    "year": 1930,
-    "author": "Blum; Hogaboom",
-    "category": "Antiquarian"
-  },
-  {
     "title": "Principles of Programming",
     "year": 1961,
     "author": "IBM",
@@ -3370,6 +3427,12 @@
     "year": 1919,
     "author": "Janksy",
     "category": "Antiquarian"
+  },
+  {
+    "title": "Princples of Industrial Electronics",
+    "year": 1966,
+    "author": "Ben Zeines",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "Probability and Statistics for Engineering and the Sciences",
@@ -3383,14 +3446,13 @@
     "isbn13": "9781118739327",
     "year": 2014,
     "author": "Cheng, John; Grossman, Max; McKercher, Ty",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
-    "title": "Programming Android",
-    "isbn13": "9781449389697",
-    "year": 2011,
-    "author": "Mednieks, Zigurd; Dornin, Laird; Meike, G. Blake; Nakamura, Masumi",
-    "category": "Computer Science and Software Engineering"
+    "title": "Programmed to Kill: The Politics of Serial Murder",
+    "isbn13": "9780595326402",
+    "year": 2004,
+    "author": "David Mcgowan"
   },
   {
     "title": "Programming Boot Sector Games",
@@ -3400,17 +3462,17 @@
     "category": "Computer Science and Software Engineering"
   },
   {
-    "title": "Programming C#: Building .NET Applications with C#",
-    "isbn13": "9780596006990",
-    "year": 2005,
-    "author": "Liberty, Jesse",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
     "title": "Programming ColdFusion MX, 2nd Edition",
     "isbn13": "9780596003807",
     "year": 2003,
     "author": "Rob Brooks-Bilson",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Programming Groovy 2",
+    "isbn13": "9781937785307",
+    "year": 2013,
+    "author": "Subramaniam, Venkat",
     "category": "Computer Science and Software Engineering"
   },
   {
@@ -3435,13 +3497,6 @@
     "category": "Vintage Programming"
   },
   {
-    "title": "Programming Groovy 2",
-    "isbn13": "9781937785307",
-    "year": 2013,
-    "author": "Subramaniam, Venkat",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
     "title": "Programming Languages: Design and Implementation (4th Edition)",
     "isbn13": "9780130276780",
     "year": 2000,
@@ -3460,7 +3515,7 @@
     "isbn13": "9780128119860",
     "year": 2016,
     "author": "Kirk, David B.; Hwu, Wen-mei W.",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Programming Perl",
@@ -3500,7 +3555,7 @@
     "isbn13": "9780201142242",
     "year": 1986,
     "author": "Bratko, Ivan",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Purple Team Field Manual",
@@ -3510,18 +3565,11 @@
     "category": "Cyber Security"
   },
   {
-    "title": "Python Cookbook",
-    "isbn13": "9780596007973",
-    "year": 2005,
-    "author": "Martelli, Alex; Ravenscroft, Anna; Ascher, David",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
     "title": "Python Machine Learning, 1st Edition",
     "isbn13": "9781783555130",
     "year": 2015,
     "author": "Raschka, Sebastian",
-    "category": "Data Science, Machine Learning, and Parallel Programming"
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "QED: The Strange Theory of Light and Matter",
@@ -3573,13 +3621,6 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
-    "title": "Quantum Mechanics: The Theoretical Minimum",
-    "isbn13": "9780465062904",
-    "year": 2015,
-    "author": "Susskind, Leonard; Friedman, Art",
-    "category": "Physics"
-  },
-  {
     "title": "Quantum Mechanics in Simple Matrix Form",
     "isbn13": "9780486445304",
     "year": 2005,
@@ -3591,6 +3632,13 @@
     "isbn13": "9783540574705",
     "year": 1994,
     "author": "Siegmund Brandt; Hans D. Dahmen",
+    "category": "Physics"
+  },
+  {
+    "title": "Quantum Mechanics: The Theoretical Minimum",
+    "isbn13": "9780465062904",
+    "year": 2015,
+    "author": "Susskind, Leonard; Friedman, Art",
     "category": "Physics"
   },
   {
@@ -3633,13 +3681,6 @@
     "year": 2014,
     "author": "Clark, Ben",
     "category": "Cyber Security"
-  },
-  {
-    "title": "Regular Expression Pocket Reference",
-    "isbn13": "9780596514273",
-    "year": 2007,
-    "author": "Stubblebine, Tony",
-    "category": "Computer Science and Software Engineering"
   },
   {
     "title": "Relational Theory for Computer Professionals: What Relational Databases Are Really All About",
@@ -3694,20 +3735,6 @@
     "isbn13": "9781583473641",
     "year": 2011,
     "author": "Cozzi, Bob",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
-    "title": "Ruby Cookbook",
-    "isbn13": "9781449373719",
-    "year": 2015,
-    "author": "Carlson, Lucas; Richardson, Leonard",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
-    "title": "Ruby on Rails: Up and Running",
-    "isbn13": "9780596101329",
-    "year": 2006,
-    "author": "Bruce Tate; Curt Hibbs",
     "category": "Computer Science and Software Engineering"
   },
   {
@@ -3780,23 +3807,17 @@
     "category": "Computer Science and Software Engineering"
   },
   {
-    "title": "Shīpīyū No Tsukurikata: Aishī Jikko No Otegaru Shīpīyū Sekkei Chōnyūmon Shoho No Dejitaru Kairo Dōsa No Kihon Genri To Seisaku",
-    "isbn13": "9784839909864",
-    "year": 2003,
-    "category": "Computer Engineering"
+    "title": "Signals & Systems",
+    "isbn13": "9788120312463",
+    "year": 2008,
+    "author": "Alan V. Oppenheim; Alan S. Willsky",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "Signals, Systems and Inference",
     "isbn13": "9780133943283",
     "year": 2015,
     "author": "Oppenheim, Alan; Verghese, George",
-    "category": "Electromagnetism, Electrical Engineering, and Radio"
-  },
-  {
-    "title": "Signals & Systems",
-    "isbn13": "9788120312463",
-    "year": 2008,
-    "author": "Alan V. Oppenheim; Alan S. Willsky",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
@@ -3835,6 +3856,13 @@
     "category": "Chemistry and Materials Science"
   },
   {
+    "title": "Some Assembly Required: Assembly Language Programming with the AVR Microcontroller",
+    "isbn13": "9781439820643",
+    "year": 2011,
+    "author": "Margush, Timothy S",
+    "category": "Computer Engineering"
+  },
+  {
     "title": "Spark from the Deep: How Shocking Experiments with Strongly Electric Fish Powered Scientific Discovery (Animals, History, Culture)",
     "isbn13": "9781421409818",
     "year": 2013,
@@ -3870,25 +3898,11 @@
     "category": "History"
   },
   {
-    "title": "SQL Cookbook: Query Solutions and Techniques for Database Developers",
-    "isbn13": "9780596009762",
-    "year": 2006,
-    "author": "Molinaro, Anthony",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
-    "title": "SQL Pocket Guide",
-    "isbn13": "9781449394097",
-    "year": 2010,
-    "author": "Gennick, Jonathan",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
-    "title": "Some Assembly Required: Assembly Language Programming with the AVR Microcontroller",
-    "isbn13": "9781439820643",
-    "year": 2011,
-    "author": "Margush, Timothy S",
-    "category": "Computer Engineering"
+    "title": "Sputnik Workbook: An Introductory Russian Language Course, Part I",
+    "isbn13": "9780993913914",
+    "year": 2014,
+    "author": "Dr. Julia Rochtchina",
+    "category": "Language"
   },
   {
     "title": "Sputnik: An Introductory Russian Language Course, Part I",
@@ -3898,11 +3912,11 @@
     "category": "Language"
   },
   {
-    "title": "Sputnik Workbook: An Introductory Russian Language Course, Part I",
-    "isbn13": "9780993913914",
-    "year": 2014,
-    "author": "Dr. Julia Rochtchina",
-    "category": "Language"
+    "title": "SQL Cookbook: Query Solutions and Techniques for Database Developers",
+    "isbn13": "9780596009762",
+    "year": 2006,
+    "author": "Molinaro, Anthony",
+    "category": "Computer Science and Software Engineering"
   },
   {
     "title": "Standard Handbook for Electrical Engineers 6th Edition",
@@ -3957,6 +3971,13 @@
     "year": 2011,
     "author": "Vandever, Kevin",
     "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Superheavy Making and Breaking the Periodic Table",
+    "isbn13": "9781472953926",
+    "year": 2021,
+    "author": "Kit Chapman",
+    "category": "Chemistry and Materials Science"
   },
   {
     "title": "Systems Engineering Principles and Practice, 2nd Edition",
@@ -4134,6 +4155,13 @@
     "category": "Religion and Mythology"
   },
   {
+    "title": "The Book of I2C A Guide for Adventurers",
+    "isbn13": "9781718502468",
+    "year": 2022,
+    "author": "Randall Hyde",
+    "category": "Computer Engineering"
+  },
+  {
     "title": "The Book of Yokai: Mysterious Creatures of Japanese Folklore",
     "isbn13": "9780520271029",
     "year": 2015,
@@ -4169,18 +4197,18 @@
     "category": "History of Computing"
   },
   {
-    "title": "The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography",
-    "isbn13": "9780385495325",
-    "year": 2000,
-    "author": "Singh, Simon",
-    "category": "History of Computing"
-  },
-  {
     "title": "The CNC Cookbook",
     "isbn13": "9780982110300",
     "year": 2009,
     "author": "E Hess",
     "category": "Mechanical Engineering"
+  },
+  {
+    "title": "The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography",
+    "isbn13": "9780385495325",
+    "year": 2000,
+    "author": "Singh, Simon",
+    "category": "History of Computing"
   },
   {
     "title": "The Complete Patents of Nikola Tesla",
@@ -4214,6 +4242,13 @@
     "year": 2012,
     "author": "Daylight, Edgar G.; Wirth, Niklaus; Hoare, Tony; Liskov, Barbara; Naur, Peter",
     "category": "History of Computing"
+  },
+  {
+    "title": "The Definitive ANTLR 4 Reference",
+    "isbn13": "9781934356999",
+    "year": 2013,
+    "author": "Parr, Terence",
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "The Design of the UNIX Operating System",
@@ -4250,6 +4285,13 @@
     "author": "Alighieri, Dante"
   },
   {
+    "title": "The Dream Machine",
+    "isbn13": "9781732265110",
+    "year": 2018,
+    "author": "M. Mitchell Waldrop",
+    "category": "History of Computing"
+  },
+  {
     "title": "The Electrical Engineers Handbook",
     "year": 1908,
     "author": "ICS",
@@ -4261,6 +4303,24 @@
     "year": 2010,
     "author": "Shadowitz, Albert",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "The Electron",
+    "year": 1924,
+    "author": "Robert Andrews Millikan",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "The Electron in Chemistry",
+    "year": 1923,
+    "author": "Sir J.J. Thomson",
+    "category": "Antiquarian"
+  },
+  {
+    "title": "The Electron Theory of Matter",
+    "year": 1914,
+    "author": "O.W. Richardson",
+    "category": "Antiquarian"
   },
   {
     "title": "The Elements of Computing Systems: Building a Modern Computer from First Principles",
@@ -4276,36 +4336,17 @@
     "category": "Antiquarian"
   },
   {
+    "title": "The Energy Evolution: Harnessing Free Energy From Nature",
+    "isbn13": "9781858600611",
+    "year": 2000,
+    "author": "Viktor Schauberger"
+  },
+  {
     "title": "The Exact Sciences in Antiquity",
     "isbn10": "9780486223322",
     "year": 1969,
     "author": "Neugebauer, O.",
     "category": "History of Technology"
-  },
-  {
-    "title": "The Definitive ANTLR 4 Reference",
-    "isbn13": "9781934356999",
-    "year": 2013,
-    "author": "Parr, Terence",
-    "category": "Compilers, Interpreters, and Operating Systems"
-  },
-  {
-    "title": "The Electron",
-    "year": 1924,
-    "author": "Robert Andrews Millikan",
-    "category": "Electromagnetism, Electrical Engineering, and Radio"
-  },
-  {
-    "title": "The Electron Theory of Matter",
-    "year": 1914,
-    "author": "O.W. Richardson",
-    "category": "Antiquarian"
-  },
-  {
-    "title": "The Energy Evolution: Harnessing Free Energy From Nature",
-    "isbn13": "9781858600611",
-    "year": 2000,
-    "author": "Viktor Schauberger"
   },
   {
     "title": "The Fabric of Civilization",
@@ -4327,13 +4368,6 @@
     "year": 1989,
     "author": "Burks, Alice R.; Burks, Arthur W.",
     "category": "History of Computing"
-  },
-  {
-    "title": "The Five Dysfunctions of a Team: A Leadership Fable",
-    "isbn13": "9780787960759",
-    "year": 2002,
-    "author": "Lencioni, Patrick M.",
-    "category": "Computer Science and Software Engineering"
   },
   {
     "title": "The Forgotten Genius of Oliver Heaviside",
@@ -4432,23 +4466,10 @@
     "category": "History of Technology"
   },
   {
-    "title": "The Influence of Computers and Informatics on Mathematics and its Teaching",
-    "isbn13": "9780521324021",
-    "year": 1986,
-    "category": "Mathematics"
-  },
-  {
     "title": "The Inventions Researches and Writings of Nikola Tesla",
     "isbn13": "9781493646289",
     "year": 2013,
     "author": "Martin, Thomas Commerford"
-  },
-  {
-    "title": "The Joy of Kotlin",
-    "isbn13": "9781617295362",
-    "year": 2019,
-    "author": "Saumont, Pierre-Yves",
-    "category": "Computer Science and Software Engineering"
   },
   {
     "title": "The Kybalion: Centenary Edition",
@@ -4490,12 +4511,6 @@
     "year": 2017,
     "author": "Shibuya, Michio; Tonagi, Takashi; Office Sawa",
     "category": "Computer Engineering"
-  },
-  {
-    "title": "Modern Application of Electricity",
-    "year": 1882,
-    "author": "Hospitalier",
-    "category": "Antiquarian"
   },
   {
     "title": "The Modern Clock",
@@ -4552,18 +4567,17 @@
     "category": "Religion and Mythology"
   },
   {
+    "title": "The Oscillator at Work",
+    "year": 1940,
+    "author": "John F. Rider",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "The Paper Computer Unfolded: A Twenty-First Century Guide to the Bell Labs CARDIAC",
     "isbn13": "9781537421131",
     "year": 2017,
     "author": "Lorenzo, Mark Jones",
     "category": "History of Computing"
-  },
-  {
-    "title": "The Physics Of Sound",
-    "isbn13": "9788131768587",
-    "year": 2004,
-    "author": "Richard E. Berg",
-    "category": "Physics"
   },
   {
     "title": "The Penultimate Truth",
@@ -4587,17 +4601,17 @@
     "category": "Vintage Programming"
   },
   {
-    "title": "The Phoenix Project",
-    "isbn13": "9781942788294",
-    "year": 2018,
-    "author": "Kim, Gene; Behr, Kevin; Spafford, George",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
     "title": "The Physical Theory of Transistors",
     "year": 1961,
     "author": "Valdes",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "The Physics Of Sound",
+    "isbn13": "9788131768587",
+    "year": 2004,
+    "author": "Richard E. Berg",
+    "category": "Physics"
   },
   {
     "title": "The Pneumatics of Hero of Alexandria",
@@ -4618,13 +4632,6 @@
     "isbn13": "9798668027521",
     "year": 2020,
     "author": "Tesla, Nikola"
-  },
-  {
-    "title": "The Programmer's Guide To Iseries Navigator",
-    "isbn13": "9781583470473",
-    "year": 2006,
-    "author": "Paul Tuohy",
-    "category": "Computer Science and Software Engineering"
   },
   {
     "title": "The Radio Amateur's Handbook (1940)",
@@ -4692,13 +4699,6 @@
     "category": "Religion and Mythology"
   },
   {
-    "title": "The Unicorn Project",
-    "isbn13": "9781942788768",
-    "year": 2019,
-    "author": "Kim, Gene",
-    "category": "Computer Science and Software Engineering"
-  },
-  {
     "title": "The Universal History of Computing",
     "isbn13": "9780471441472",
     "year": 2001,
@@ -4745,12 +4745,6 @@
     "year": 2009,
     "author": "Smith, Huston",
     "category": "Religion and Mythology"
-  },
-  {
-    "title": "Théorie raisonnée de l'Electricité et du Magnétisme",
-    "year": 1787,
-    "author": "Haüy",
-    "category": "Antiquarian"
   },
   {
     "title": "Theoretical Nuclear Physics",
@@ -4801,11 +4795,11 @@
     "category": "History of Computing"
   },
   {
-    "title": "Tomcat: The Definitive Guide",
-    "isbn13": "9780596101060",
-    "year": 2007,
-    "author": "Brittain, Jason; Darwin, Ian F.",
-    "category": "Computer Science and Software Engineering"
+    "title": "Théorie raisonnée de l'Electricité et du Magnétisme",
+    "year": 1787,
+    "author": "Haüy",
+    "category": "Antiquarian",
+    "language": "French"
   },
   {
     "title": "TRS-80 Assembly Language Programming",
@@ -4844,16 +4838,16 @@
     "author": "Sitchin, Zecharia"
   },
   {
+    "title": "Ultimate Guide to U.S. Army Survival Skills, Tactics, and Techniques",
+    "isbn13": "9781435114029",
+    "year": 2017
+  },
+  {
     "title": "Ultra High Frequency Techniques",
     "isbn13": "9786000972684",
     "year": 1942,
     "author": "J Brainerd",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
-  },
-  {
-    "title": "Ultimate Guide to U.S. Army Survival Skills, Tactics, and Techniques",
-    "isbn13": "9781435114029",
-    "year": 2017
   },
   {
     "title": "Understanding Digital Computers",
@@ -4867,13 +4861,6 @@
     "year": 1996,
     "author": "Lyons, Richard G.",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
-  },
-  {
-    "title": "Understanding the Linux Kernel, Third Edition",
-    "isbn13": "9780596005658",
-    "year": 2005,
-    "author": "Bovet, Daniel P.; Cesati, Marco",
-    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Understanding Linux Network Internals: Guided Tour to Networking on Linux",
@@ -4890,6 +4877,13 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "Understanding the Linux Kernel, Third Edition",
+    "isbn13": "9780596005658",
+    "year": 2005,
+    "author": "Bovet, Daniel P.; Cesati, Marco",
+    "category": "Compilers, Interpreters, and Operating Systems"
+  },
+  {
     "title": "University Physics with Modern Physics (14th Edition)",
     "isbn13": "9780321973610",
     "year": 2015,
@@ -4902,6 +4896,13 @@
     "year": 1990,
     "author": "Muster, John",
     "category": "Compilers, Interpreters, and Operating Systems"
+  },
+  {
+    "title": "Unlocking Data with Generative AI and RAG Enhance generative AI systems by integrating internal data with large language models using RAG",
+    "isbn13": "9781835887905",
+    "year": 2024,
+    "author": "Keith Bourne",
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Vacuum-tube and Semiconductor Electronics",
@@ -4934,13 +4935,6 @@
     "year": 2023,
     "author": "Flemming, J.A.",
     "category": "Physics"
-  },
-  {
-    "title": "Web Database Applications with PHP & MySQL, 2nd Edition",
-    "isbn13": "9780596005436",
-    "year": 2004,
-    "author": "Hugh E. Williams; David Lane",
-    "category": "Computer Science and Software Engineering"
   },
   {
     "title": "Wicked Cool Ruby Scripts",
@@ -5003,5 +4997,12 @@
     "year": 2015,
     "author": "Plowman, Gary",
     "category": "Vintage Programming"
+  },
+  {
+    "title": "Радиолюбитель Кубаркин, Наши приемные лампы (radio amateur Kubarkin, Our Reception Lamps)",
+    "year": 1930,
+    "author": "Kubarkin",
+    "category": "Antiquarian",
+    "language": "Russian"
   }
 ]

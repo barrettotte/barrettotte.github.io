@@ -378,5 +378,11 @@
     "url": "https://github.com/barrettotte/cyber-archive/tree/master/ctf/deadface-ctf-2024",
     "category": "ctf",
     "date": "2024-10-19"
+  },
+  {
+    "name": "Bed Remote Holder",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-printing/bed-remote-holder",
+    "category": "3d-print",
+    "date": "2025-07-20"
   }
 ]
