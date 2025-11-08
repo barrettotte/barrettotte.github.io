@@ -14,7 +14,7 @@ A simple personal site using [Hugo](https://gohugo.io/).
 
 ```sh
 # sort books.json by title
-cat books.json > tmp.json && jq 'sort_by(.title | ascii_downcase)' tmp.json > books.json && rm tmp.json
+cat data/books.json > tmp.json && jq 'sort_by(.title | ascii_downcase)' tmp.json > data/books.json && rm tmp.json
 ```
 
 ## References

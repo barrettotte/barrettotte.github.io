@@ -578,6 +578,13 @@
     "category": "Computer Engineering"
   },
   {
+    "title": "Bare Metal C Embedded Programming for the Real World",
+    "isbn13": "9781718501621",
+    "year": 2022,
+    "author": "Stephen Oualline",
+    "category": "Computer Engineering"
+  },
+  {
     "title": "Basic Electricity",
     "isbn13": "9780486209739",
     "year": 1970,
@@ -691,6 +698,13 @@
     "year": 2009,
     "author": "Floyd Kelly, James; Hood-Daniel, Patrick",
     "category": "Mechanical Engineering"
+  },
+  {
+    "title": "Building a Debugger Write a Native x64 Debugger From Scratch",
+    "isbn13": "9781718504080",
+    "year": 2025,
+    "author": "Sy Brand",
+    "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
     "title": "Building AI Agents with LLMs, RAG, and Knowledge Graphs A Practical Guide to Autonomous and Modern AI Agents",
@@ -3597,6 +3611,13 @@
     "isbn13": "9780521879965",
     "year": 2008,
     "author": "Yanofsky, Noson S.; Mannucci, Mirco A.",
+    "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Quantum Computing From Concepts to Code",
+    "isbn13": "9781718504004",
+    "year": 2025,
+    "author": "Andrew Glassner",
     "category": "Computer Science and Software Engineering"
   },
   {

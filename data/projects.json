@@ -878,6 +878,12 @@
       "date": "2025-06"
     },
     {
+      "name": "cyber-rag",
+      "url": "https://github.com/barrettotte/cyber-rag",
+      "desc": "RAG chat API using open source cybersecurity data",
+      "date": "2025-10"
+    },
+    {
       "name": "from-stones-to-qubits",
       "desc": "A book on the history of computing and technology",
       "date": "2023-01",
