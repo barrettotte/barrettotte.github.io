@@ -585,6 +585,12 @@
     "category": "Computer Engineering"
   },
   {
+    "title": "Basic Data of Plasma Physics",
+    "year": 1959,
+    "author": "Sanborn C. Brown",
+    "category": "Physics"
+  },
+  {
     "title": "Basic Electricity",
     "isbn13": "9780486209739",
     "year": 1970,
@@ -1455,6 +1461,18 @@
     "title": "Electronics and Nucleonics Dictionary 3rd Edition",
     "year": 1960,
     "author": "Markus",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electrons (+ and -), Protons, Photons, Neutrons, and Cosmic Rays",
+    "year": 1935,
+    "author": "Robert Andrews Millikan",
+    "category": "Physics"
+  },
+  {
+    "title": "Electrons and Holes in Semiconductors",
+    "year": 1950,
+    "author": "William Shockley",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
@@ -2402,6 +2420,12 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "Introduction to Microwaves",
+    "year": 1945,
+    "author": "Simon Ramo",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Introduction to Modern Magnetohydrodynamics",
     "isbn13": "9781107158658",
     "year": 2016,
@@ -2510,6 +2534,12 @@
     "year": 1972,
     "author": "Robert C. Wrede",
     "category": "Mathematics"
+  },
+  {
+    "title": "Introductory Circuit Theory",
+    "year": 1953,
+    "author": "Ernst A. Guillemin",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "Jacquard's Web",
@@ -2954,6 +2984,12 @@
     "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
+    "title": "Modern Conceptions of Electricity",
+    "year": 1928,
+    "author": "Charles R. Gibson",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Modern Digital and Analog Communication Systems",
     "isbn13": "9780195331455",
     "year": 2009,
@@ -3301,6 +3337,12 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "Physics of the Magnetosphere",
+    "year": 1968,
+    "author": "Robert L. Carovillano; John F. McClay; Henry R. Radoski",
+    "category": "Physics"
+  },
+  {
     "title": "Piezoelectricity: Volume One: An Introduction to the Theory and Applications of Electromechanical Phenomena in Crystals",
     "isbn13": "9780486828602",
     "year": 2018,
@@ -3313,6 +3355,13 @@
     "year": 2018,
     "author": "Walter Guyton Cady",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Pions to Quarks Particle Physics in the 1950s",
+    "year": 1989,
+    "author": "Brown; Laurie Mark; Max Dresden and Lillian Hoddeson",
+    "isbn13": "9780521309844",
+    "category": "Physics"
   },
   {
     "title": "Plasma Physics And Magnetofluid Mechanics",
@@ -4363,6 +4412,11 @@
     "author": "Viktor Schauberger"
   },
   {
+    "title": "The Energy Machine of T.Henry Moray",
+    "year": 2005,
+    "author": "Moray B. King"
+  },
+  {
     "title": "The Exact Sciences in Antiquity",
     "isbn10": "9780486223322",
     "year": 1969,
@@ -4493,6 +4547,12 @@
     "author": "Martin, Thomas Commerford"
   },
   {
+    "title": "The Kojiki: Japanese Records of Ancient Matters",
+    "isbn13": "9781605069388",
+    "year": 2008,
+    "category": "Religion and Mythology"
+  },
+  {
     "title": "The Kybalion: Centenary Edition",
     "isbn13": "9780143131687",
     "year": 2018,
@@ -4572,6 +4632,12 @@
     "year": 1976,
     "author": "Young; Morgan",
     "category": "Language"
+  },
+  {
+    "title": "The Nihongi: Part I, II, III & IV",
+    "isbn13": "9781605069463",
+    "year": 2008,
+    "category": "Religion and Mythology"
   },
   {
     "title": "The Only Way out of Deception: a last days call to return to the Lord",
@@ -4768,6 +4834,12 @@
     "category": "Religion and Mythology"
   },
   {
+    "title": "The Yengishiki or Shinto Rituals",
+    "isbn13": "9781605069470",
+    "year": 2008,
+    "category": "Religion and Mythology"
+  },
+  {
     "title": "Theoretical Nuclear Physics",
     "year": 1966,
     "author": "Blatt; Weisskopf",
@@ -4821,6 +4893,18 @@
     "author": "Haüy",
     "category": "Antiquarian",
     "language": "French"
+  },
+  {
+    "title": "Transistor Physics and Circuits",
+    "year": 1958,
+    "author": "Robert L. Reed; Marlin P. Ristenbatt",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Treatise on Thermodynamics",
+    "year": 1926,
+    "author": "Max Planck",
+    "category": "Physics"
   },
   {
     "title": "TRS-80 Assembly Language Programming",
@@ -4956,6 +5040,12 @@
     "year": 2023,
     "author": "Flemming, J.A.",
     "category": "Physics"
+  },
+  {
+    "title": "Weird Scenes Inside the Canyon Laurel Canyon, Covert Ops & the Dark Heart of the Hippie Dream",
+    "isbn13": "9781909394124",
+    "year": 2014,
+    "author": "David McGowan"
   },
   {
     "title": "Wicked Cool Ruby Scripts",
