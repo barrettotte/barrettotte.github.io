@@ -9,108 +9,105 @@
     },
     {
       "name": "Blackjack",
-      "url": null,
       "desc": "Blackjack in C++ for high school course",
       "date": "2012-05",
       "languages": ["c++"]
     },
     {
+      "name": "Pokemon Battle",
+      "desc": "An attempt at recreating the classic Pokemon battle UI/logic with Allegro",
+      "date": "2012-05",
+      "languages": ["c++"]
+    },
+    {
       "name": "Sloth Game",
-      "url": null,
       "desc": "A bad clone of Frogger in Java for high school course",
       "date": "2012-12",
       "languages": ["java"]
     },
     {
       "name": "Chase Game",
-      "url": null,
       "desc": "Basic chase game in GameMaker Studio",
       "date": "2013-01",
       "languages": ["gml"]
     },
     {
       "name": "Unnamed Minecraft Mod",
-      "url": null,
       "desc": "Adds custom tree generation, recipes, etc.",
       "date": "2013-04",
       "languages": ["java"]
     },
     {
       "name": "Atomic Minecraft Mod",
-      "url": null,
       "desc": "Build molecules using subatomic particles",
       "date": "2013-06",
       "languages": ["java"]
     },
     {
       "name": "TicTacToe",
-      "url": null,
       "desc": "TicTacToe in C++ for high school course",
       "date": "2013-12",
       "languages": ["c++"]
     },
     {
       "name": "One Rep Max Calc",
-      "url": null,
       "desc": "Java GUI to calculate one rep max for lifting",
       "date": "2013-12",
       "languages": ["java"]
     },
     {
       "name": "Battleship",
-      "url": null,
       "desc": "Battleship in C++ for high school course",
       "date": "2014-01",
       "languages": ["c++"]
     },
     {
       "name": "Portfolio v1",
-      "url": null,
       "desc": "Portfolio site in static HTML and CSS",
       "date": "2014-01",
       "languages": ["html", "css"]
     },
     {
       "name": "VB Text Editor",
-      "url": null,
       "desc": "A text editor in Visual Basic for college course",
       "date": "2014-10",
       "languages": ["visual-basic"]
     },
     {
       "name": "Battleship",
-      "url": null,
       "desc": "Battleship in C for college course",
       "date": "2015-04",
       "languages": ["c"]
     },
     {
       "name": "Portfolio v2",
-      "url": null,
       "desc": "Portfolio site with PHP and JS this time",
       "date": "2015-06",
       "languages": ["php", "js"]
     },
     {
       "name": "Asm Grade Calculator",
-      "url": null,
       "desc": "Calculate student grades from text file with x86 assembly",
       "date": "2015-03",
       "languages": ["assembly"]
     },
     {
       "name": "Tetris Unity",
-      "url": null,
       "desc": "Tetris clone in Unity Engine",
       "date": "2015-06",
       "languages": ["c#"]
     },
     {
       "name": "Survival Game",
-      "url": null,
       "desc": "3D Survival game in Unity (abandoned)",
       "date": "2015-11",
       "languages": ["c#"]
+    },
+    {
+      "name": "three.js Scene",
+      "desc": "Final project of computer graphics college course",
+      "date": "2016-05",
+      "languages": ["javascript"]
     },
     {
       "name": "Master-Telegrapher-Demo",
@@ -121,14 +118,12 @@
     },
     {
       "name": "Space Survival Game",
-      "url": null,
       "desc": "3D Space survival game in Unity (abandoned)",
       "date": "2016-11",
       "languages": ["c#"]
     },
     {
       "name": "Gainz-Goblin",
-      "url": null,
       "desc": "Discord bot in Node.js to play YouTube audio clips",
       "date": "2016-11",
       "languages": ["javascript"]
@@ -149,7 +144,6 @@
     },
     {
       "name": "Medieval Shopkeep Game",
-      "url": null,
       "desc": "3D Medieval Shopkeep Game in Unity (abandoned)",
       "date": "2017-05",
       "languages": ["c#"]
@@ -171,7 +165,6 @@
     },
     {
       "name": "SAP-1-CPU",
-      "url": null,
       "desc": "SAP-1 breadboard CPU",
       "date": "2017-08"
     },
@@ -195,6 +188,12 @@
       "desc": "Fullstack movie watch list app for college course",
       "date": "2018-03",
       "languages": ["javascript"]
+    },
+    {
+      "name": "Algorithm Benchmarker",
+      "desc": "Final project of algorithm design and analysis college course",
+      "date": "2018-03",
+      "languages": ["java"]
     },
     {
       "name": "Manga-Downloader",
@@ -857,7 +856,7 @@
       "url": "https://github.com/barrettotte/deep-fryer",
       "desc": "An image \"deep fryer\" to learn a little CUDA",
       "date": "2023-07",
-      "languages": ["c++"]
+      "languages": ["c++", "cuda"]
     },
     {
       "name": "faraday-disk",
@@ -893,8 +892,8 @@
     },
     {
       "name": "coulomb",
-      "url": "https://github.com/barrettotte/coulomb",
-      "desc": "My development environment",
+      "url": "https://github.com/barrettotte/coulomb/tree/afc2e070e774814fda0dbd422d378599fcf6b409",
+      "desc": "My development environment (2023)",
       "date": "2023-12",
       "languages": ["shell"]
     },
@@ -983,6 +982,18 @@
       "languages": ["assembly", "c++"]
     },
     {
+      "name": "agartha-16",
+      "desc": "Verilog implementation of AGARTHA-16 CPU core. (part of monorepo)",
+      "date": "2025-02",
+      "languages": ["verilog"]
+    },
+    {
+      "name": "agartha-16",
+      "desc": "Assembler for AGARTHA-16 assembly. (part of monorepo)",
+      "date": "2025-04",
+      "languages": ["python"]
+    },
+    {
       "name": "c64-tea",
       "url": "https://github.com/barrettotte/c64-tea",
       "desc": "Tiny Encryption Algorithm (TEA) for Commodore 64 using BASIC and 6502 ASM",
@@ -1019,11 +1030,39 @@
       "languages": ["python", "javascript", "html", "css"]
     },
     {
+      "name": "coulomb",
+      "url": "https://github.com/barrettotte/coulomb",
+      "desc": "My Fedora Kinoite config and dotfiles",
+      "date": "2025-11",
+      "languages": ["shell", "lua"]
+    },
+    {
       "name": "discord-rpc-bridge",
       "url": "https://github.com/barrettotte/discord-rpc-bridge",
       "desc": "A bridge to update Discord status when using Flatpak Steam and Discord",
       "date": "2025-11",
       "languages": ["go"]
+    },
+    {
+      "name": "furnace",
+      "url": "https://github.com/barrettotte/furnace",
+      "desc": "Heat up room using CPU/GPU and displays DOOM fire",
+      "date": "2026-01",
+      "languages": ["c++", "cuda"]
+    },
+    {
+      "name": "stix-visualizer",
+      "url": "https://github.com/barrettotte/stix-visualizer",
+      "desc": "A Qt app to visualize STIX 2.1 data",
+      "date": "2026-01",
+      "languages": ["c++"]
+    },
+    {
+      "name": "stix-rag",
+      "url": "https://github.com/barrettotte/stix-rag",
+      "desc": "A RAG experiment using MITRE ATT&CK STIX data",
+      "date": "2026-02",
+      "languages": ["python", "javascript", "html", "css"]
     },
     {
       "name": "from-stones-to-qubits",
@@ -1033,7 +1072,7 @@
     },
     {
       "name": "agartha-16",
-      "desc": "My homebrew 16-bit CPU",
+      "desc": "My homebrew 16-bit computer system",
       "date": "2024-02",
       "long": true
     }

@@ -14,7 +14,7 @@
     {{ $minYear := index $years 0 }}
     {{ $maxYear := index $years (sub (len $years) 1) }}
 
-    <p>Small miscellaneous things I've completed {{ $minYear }}-{{ $maxYear }}.</p>
+    <p>Small miscellaneous things I've completed {{ $minYear }}-{{ now.Year }}.</p>
     <p>I store some assets for things listed here in my repo named <a href="https://github.com/barrettotte/bytes">bytes</a>.</p>
 
     <!-- Section links -->

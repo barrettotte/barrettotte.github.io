@@ -4,17 +4,26 @@ Hosted at https://barrettotte.github.io
 
 A simple personal site using [Hugo](https://gohugo.io/).
 
-## Development
-
-- Dependencies 
-  - [Hugo Extended v0.147.8+](https://github.com/gohugoio/hugo/releases/tag/v0.147.8)
-- Build - `hugo -D`
-- Start [dev server](http://localhost:1313/) - `hugo server --disableFastRender --noHTTPCache`
-  - add `--minify` to more accurately show styling used when deployed
+## Dependencies
 
 ```sh
+sudo pacman -S base-devel jq go hugo
+```
+
+## Development
+
+```sh
+# build
+make build
+
+# start dev server at http://localhost:1313/
+make serve
+
+# start dev server, but with minified styling
+make serve_minify
+
 # sort books.json by title
-cat data/books.json > tmp.json && jq 'sort_by(.title | ascii_downcase)' tmp.json > data/books.json && rm tmp.json
+make sort_books
 ```
 
 ## References

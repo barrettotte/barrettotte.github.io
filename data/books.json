@@ -259,19 +259,6 @@
     "category": "Vintage Programming"
   },
   {
-    "title": "Aether and Gravitation",
-    "isbn13": "9781006670541",
-    "year": 2024,
-    "author": "Hooper, William George",
-    "category": "Physics"
-  },
-  {
-    "title": "Agartha: The Earth's Inner World",
-    "isbn13": "9789198336368",
-    "year": 2018,
-    "author": "Stjerna, Mariana"
-  },
-  {
     "title": "Alternating Current Electricity",
     "year": 1916,
     "author": "Timbie; Higbie",
@@ -329,6 +316,13 @@
     "year": 2006,
     "author": "Stanley J. Farlow",
     "category": "Mathematics"
+  },
+  {
+    "title": "An Introduction to Electronic Analogue Computers",
+    "isbn13": "9781014110954",
+    "year": 2021,
+    "author": "M. G. Hartley",
+    "category": "Computer Engineering"
   },
   {
     "title": "An Introduction to Functional Programming Through Lambda Calculus",
@@ -390,6 +384,20 @@
     "year": 1999,
     "author": "Crandall, Stephen; Lardner, Thomas",
     "category": "Mechanical Engineering"
+  },
+  {
+    "title": "An Introduction to the Physics of Ferroelectrics (Ferroelectricity and related phenomena)",
+    "isbn13": "9780677306001",
+    "year": 1976,
+    "author": "Toshio Mitsui",
+    "category": "Physics"
+  },
+  {
+    "title": "Analog and Hybrid Computer Programming",
+    "isbn13": "9783110787597",
+    "year": 2023,
+    "author": "Bernd Ulmann",
+    "category": "Computer Science and Software Engineering"
   },
   {
     "title": "Annalen der Physik und Chemie",
@@ -626,10 +634,6 @@
     "category": "Computer Science and Software Engineering"
   },
   {
-    "title": "Behold a Pale Horse",
-    "author": "William Cooper"
-  },
-  {
     "title": "Bhagavad Gita",
     "isbn13": "9789389432701",
     "year": 2019,
@@ -769,12 +773,6 @@
     "category": "Biology"
   },
   {
-    "title": "Chariots of the Gods",
-    "isbn13": "9780425166802",
-    "year": 1999,
-    "author": "Erich Von Daniken"
-  },
-  {
     "title": "Chemistry of Powder and Explosives",
     "year": 1943,
     "author": "Tenney L. Davis",
@@ -901,6 +899,13 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "Computational Fluid Dynamics A Practical Approach",
+    "isbn13": "9780081011270",
+    "year": 2018,
+    "author": "Jiyuan Tu; Guan Heng Yeoh; Chaoqun Liu",
+    "category": "Physics"
+  },
+  {
     "title": "Computational Geometry in C",
     "isbn13": "9780521649766",
     "year": 1998,
@@ -926,6 +931,13 @@
     "isbn13": "9783527413157",
     "year": 2015,
     "author": "Rubin H. Landau; Manuel J. Páez; Cristian C. Bordeianu",
+    "category": "Physics"
+  },
+  {
+    "title": "Computational Plasma Physics With Applications To Fusion And Astrophysics",
+    "isbn13": "9780813342115",
+    "year": 2004,
+    "author": "Toshi Tajima",
     "category": "Physics"
   },
   {
@@ -1164,6 +1176,13 @@
     "category": "Mechanical Engineering"
   },
   {
+    "title": "Designing and Creating Printed Circuits",
+    "isbn13": "9780810409644",
+    "year": 1981,
+    "author": "Walter Sikonowiz",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Designing Data-Intensive Applications",
     "isbn13": "9781449373320",
     "year": 2017,
@@ -1286,19 +1305,6 @@
     "category": "History of Technology"
   },
   {
-    "title": "Einstein's Greatest Mistake: Abandonment Of The Aether",
-    "isbn13": "9780595374816",
-    "year": 2006,
-    "author": "Sid Deutsch",
-    "category": "Physics"
-  },
-  {
-    "title": "Electric Universe: The Shocking True Story of Electricity",
-    "isbn13": "9781400045501",
-    "year": 2005,
-    "author": "David Bodanis"
-  },
-  {
     "title": "Electrical Engineering Experiments",
     "year": 1939,
     "author": "Reed; Corcoran",
@@ -1312,6 +1318,12 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "Electricity and Magnetism",
+    "year": 1903,
+    "author": "R.T. Glazebrook",
+    "category": "Antiquarian"
+  },
+  {
     "title": "Electricity in the 17th & 18th Centuries: A Study in Early Modern Physics",
     "isbn13": "9780486406886",
     "year": 1999,
@@ -1323,27 +1335,6 @@
     "isbn13": "9781032502311",
     "year": 2024,
     "author": "Taejoon Kouh; Minjoon Kouh",
-    "category": "Electromagnetism, Electrical Engineering, and Radio"
-  },
-  {
-    "title": "Electrogravitics II, 2nd Edition Validating Reports on a New Propulsion Methodology",
-    "isbn13": "9780964107090",
-    "year": 2005,
-    "author": "Thomas Valone",
-    "category": "Electromagnetism, Electrical Engineering, and Radio"
-  },
-  {
-    "title": "Electrogravitics Systems Volume 1: Reports on a New Propulsion Methodology",
-    "isbn13": "9798852929204",
-    "year": 2023,
-    "author": "Thomas Valone",
-    "category": "Electromagnetism, Electrical Engineering, and Radio"
-  },
-  {
-    "title": "Electrogravitics Systems: Reports on a New Propulsion Methodology",
-    "isbn13": "9780964107007",
-    "year": 2023,
-    "author": "Thomas Valone",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
@@ -1396,6 +1387,12 @@
     "year": 1958,
     "author": "Seely",
     "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "Electronic Analog Computers",
+    "year": 1956,
+    "author": "Granino A. Korn; Theresa M. Korn",
+    "category": "Antiquarian"
   },
   {
     "title": "Electronic and Radio Engineering, 4th Edition",
@@ -1690,13 +1687,6 @@
     "category": "Computer Engineering"
   },
   {
-    "title": "Ethereal Aether: A History of the Michelson-Morley-Miller Aether-Drift Experiments",
-    "isbn13": "9780292720008",
-    "year": 1972,
-    "author": "Swenson, Lloyd S.",
-    "category": "Physics"
-  },
-  {
     "title": "Euclid's Elements of Geometry",
     "year": 1745,
     "category": "Antiquarian"
@@ -1737,11 +1727,6 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
-    "title": "Faraday's Lost Aether",
-    "year": 1996,
-    "author": "L.W. Kruger"
-  },
-  {
     "title": "Faraday, Maxwell, and the Electromagnetic Field: How Two Men Revolutionized Physics",
     "isbn13": "9781633886070",
     "year": 2019,
@@ -1768,12 +1753,6 @@
     "year": 1987,
     "author": "Michael J Folk",
     "category": "Compilers, Interpreters, and Operating Systems"
-  },
-  {
-    "title": "Fingerprints Of The Gods",
-    "isbn13": "9780517887295",
-    "year": 1995,
-    "author": "Graham Hancock"
   },
   {
     "title": "Fishes of the world: An illustrated dictionary",
@@ -2129,12 +2108,6 @@
     "category": "Religion and Mythology"
   },
   {
-    "title": "Hidden Nature: The Startling Insights of Viktor Schauberger",
-    "isbn13": "9780863154324",
-    "year": 2014,
-    "author": "Alick Bartholomew"
-  },
-  {
     "title": "High Energy Laser (HEL): Tomorrow's Weapon in Directed Energy Weapons Volume I",
     "isbn13": "9781490751368",
     "year": 2014,
@@ -2244,12 +2217,6 @@
     "category": "Vintage Programming"
   },
   {
-    "title": "Inside the CIA: Revealing the Secrets of the World's Most Powerful Spy Agency",
-    "isbn13": "9780671734589",
-    "year": 1994,
-    "author": "Ronald Kessler"
-  },
-  {
     "title": "Inside the Machine: An Illustrated Introduction to Microprocessors and Computer Architecture",
     "isbn13": "9781593276683",
     "year": 2006,
@@ -2289,6 +2256,13 @@
     "isbn13": "9780486248646",
     "year": 1985,
     "author": "Jackson Jr., Philip C.",
+    "category": "AI, Data Science, and Parallel Programming"
+  },
+  {
+    "title": "Introduction to Artificial Life",
+    "isbn13": "9780387946467",
+    "year": 1998,
+    "author": "Christoph Adami",
     "category": "AI, Data Science, and Parallel Programming"
   },
   {
@@ -2588,6 +2562,13 @@
     "isbn13": "9781432132880",
     "year": 2020,
     "category": "Religion and Mythology"
+  },
+  {
+    "title": "Lagrangian Mechanics For the Non-physicist",
+    "isbn13": "9798865663959",
+    "year": 2023,
+    "author": "Ville Hirvonen",
+    "category": "Physics"
   },
   {
     "title": "Language Implementation Patterns: Create Your Own Domain-Specific and General Programming Languages",
@@ -2971,6 +2952,12 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "Moby-Dick",
+    "isbn13": "9780460873079",
+    "year": 1993,
+    "author": "Herman Melville"
+  },
+  {
     "title": "Modern Application of Electricity",
     "year": 1882,
     "author": "Hospitalier",
@@ -3181,12 +3168,6 @@
     "category": "Computer Science and Software Engineering"
   },
   {
-    "title": "Occult Secrets of Vril: Goddess Energy and the Human Potential",
-    "isbn13": "9781943494026",
-    "year": 2015,
-    "author": "Robert Sepehr"
-  },
-  {
     "title": "Oceanography",
     "isbn13": "9780534530822",
     "year": 1999,
@@ -3253,12 +3234,6 @@
     "year": 1960,
     "author": "C. Eaborn",
     "category": "Chemistry and Materials Science"
-  },
-  {
-    "title": "Orgone Energy the Answer to Atomic Suicide",
-    "isbn13": "9780682474771",
-    "year": 1972,
-    "author": "J. Eden"
   },
   {
     "title": "Oxford Companion to World Mythology",
@@ -3331,6 +3306,13 @@
     "category": "Physics"
   },
   {
+    "title": "Physics of Electric Propulsion",
+    "isbn13": "9780486450407",
+    "year": 2006,
+    "author": "Robert G. Jahn",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Physics of Solids in Intense Magnetic Fields",
     "year": 1969,
     "author": "E.D. Haidemenakis",
@@ -3364,10 +3346,24 @@
     "category": "Physics"
   },
   {
+    "title": "Plasma Physics and Fusion Energy",
+    "isbn13": "9780521733175",
+    "year": 2008,
+    "author": "Jeffrey P. Freidberg",
+    "category": "Physics"
+  },
+  {
     "title": "Plasma Physics And Magnetofluid Mechanics",
     "isbn13": "9781258228859",
     "year": 1963,
     "author": "Ali Bulent Cambel",
+    "category": "Physics"
+  },
+  {
+    "title": "Plasma Physics via Computer Simulation",
+    "isbn13": "9780750310253",
+    "year": 2004,
+    "author": "C.K. Birdsall; A.B Langdon",
     "category": "Physics"
   },
   {
@@ -3418,6 +3414,13 @@
     "year": 2012,
     "author": "Michael Sikorski; Andrew Honig",
     "category": "Cyber Security"
+  },
+  {
+    "title": "Practical Parallel Programming",
+    "isbn13": "9780262231862",
+    "year": 1995,
+    "author": "Greg Wilson",
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Practical Reverse Engineering: x86, x64, ARM, Windows Kernel, Reversing Tools, and Obfuscation",
@@ -3510,12 +3513,6 @@
     "year": 2014,
     "author": "Cheng, John; Grossman, Max; McKercher, Ty",
     "category": "AI, Data Science, and Parallel Programming"
-  },
-  {
-    "title": "Programmed to Kill: The Politics of Serial Murder",
-    "isbn13": "9780595326402",
-    "year": 2004,
-    "author": "David Mcgowan"
   },
   {
     "title": "Programming Boot Sector Games",
@@ -3739,6 +3736,12 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "Radio Physics Course",
+    "year": 1930,
+    "author": "Alfred A. Ghirardi",
+    "category": "Antiquarian"
+  },
+  {
     "title": "Radio Shack: Computer Programming in BASIC for Everyone",
     "isbn13": "9780395147160",
     "year": 1973,
@@ -3758,12 +3761,6 @@
     "year": 2013,
     "author": "Date, C. J.",
     "category": "Mathematics"
-  },
-  {
-    "title": "Report of Operation HighJump: U.S. Navy Antarctic Development Program 1947",
-    "isbn13": "9781608880591",
-    "year": 2020,
-    "author": "U.S. Navy"
   },
   {
     "title": "Retargetable C Compiler, A: Design and Implementation",
@@ -4050,18 +4047,18 @@
     "category": "Chemistry and Materials Science"
   },
   {
+    "title": "System 370/390 Job Control Language",
+    "isbn13": "9780471534655",
+    "year": 1991,
+    "author": "Gary DeWard Brown",
+    "category": "Vintage Programming"
+  },
+  {
     "title": "Systems Engineering Principles and Practice, 2nd Edition",
     "isbn13": "9788126563784",
     "year": 2016,
     "author": "Alexander Kossiakoff ET ALL",
     "category": "Mechanical Engineering"
-  },
-  {
-    "title": "T.T. Brown's Electrogravitics Research",
-    "isbn13": "9781935023272",
-    "year": 2014,
-    "author": "T.T. Brown",
-    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "TCP/IP Sockets in C",
@@ -4099,6 +4096,19 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "The Aeneid",
+    "isbn13": "9780451531179",
+    "year": 2009,
+    "author": "Virgil"
+  },
+  {
+    "title": "The Agentic AI Bible",
+    "isbn13": "9798296391360",
+    "year": 2025,
+    "author": "Thomas R. Caldwell",
+    "category": "AI, Data Science, and Parallel Programming"
+  },
+  {
     "title": "The Alchemist",
     "isbn13": "9780062315007",
     "year": 2022,
@@ -4110,18 +4120,6 @@
     "year": 2008,
     "author": "Petzold, Charles",
     "category": "History of Computing"
-  },
-  {
-    "title": "The Anunnaki Bible: The Sumerian Text's Origin of the Judeo Christian Bibles",
-    "isbn13": "9781480954502",
-    "year": 2018,
-    "author": "Blackwell, Donald M"
-  },
-  {
-    "title": "The Anunnaki Chronicles: A Zecharia Sitchin Reader",
-    "isbn13": "9781591432296",
-    "year": 2015,
-    "author": "Sitchin, Zecharia"
   },
   {
     "title": "The Apollo Guidance Computer: Architecture and Operation",
@@ -4193,12 +4191,6 @@
     "category": "Game Development, Graphics, and Audio"
   },
   {
-    "title": "The Autobiography of Nikola Tesla and Other Works",
-    "isbn13": "9781645174387",
-    "year": 2021,
-    "author": "Tesla, Nikola; Martin, Thomas Commerford"
-  },
-  {
     "title": "The Baron Trump Collection",
     "isbn13": "9781789870008",
     "year": 1890,
@@ -4211,12 +4203,6 @@
     "year": 1978,
     "author": "Tracton, Ken",
     "category": "Vintage Programming"
-  },
-  {
-    "title": "The Body Electric: Electromagnetism And The Foundation Of Life",
-    "isbn13": "9780688069711",
-    "year": 1998,
-    "author": "Becker, Robert; Selden, Gary"
   },
   {
     "title": "The Book of Enoch",
@@ -4279,12 +4265,6 @@
     "year": 2000,
     "author": "Singh, Simon",
     "category": "History of Computing"
-  },
-  {
-    "title": "The Complete Patents of Nikola Tesla",
-    "isbn13": "9781566192668",
-    "year": 1994,
-    "category": "History of Technology"
   },
   {
     "title": "The Crest of the Peacock: Non-European Roots of Mathematics",
@@ -4406,17 +4386,6 @@
     "category": "Antiquarian"
   },
   {
-    "title": "The Energy Evolution: Harnessing Free Energy From Nature",
-    "isbn13": "9781858600611",
-    "year": 2000,
-    "author": "Viktor Schauberger"
-  },
-  {
-    "title": "The Energy Machine of T.Henry Moray",
-    "year": 2005,
-    "author": "Moray B. King"
-  },
-  {
     "title": "The Exact Sciences in Antiquity",
     "isbn10": "9780486223322",
     "year": 1969,
@@ -4493,6 +4462,12 @@
     "category": "History of Mathematics"
   },
   {
+    "title": "The Histories",
+    "isbn13": "9780140449082",
+    "year": 2003,
+    "author": "Herodotus"
+  },
+  {
     "title": "The History of U.S. Electronic Warfare (Vol. 1)",
     "isbn13": "9789996430886",
     "year": 1984,
@@ -4520,13 +4495,6 @@
     "category": "Antiquarian"
   },
   {
-    "title": "The Homopolar Handbook",
-    "isbn13": "9780964107014",
-    "year": 1994,
-    "author": "Valone, Thomas",
-    "category": "Electromagnetism, Electrical Engineering, and Radio"
-  },
-  {
     "title": "The Human Past: World History & the Development of Human Societies",
     "isbn13": "9780500293355",
     "year": 2017,
@@ -4539,12 +4507,6 @@
     "year": 1996,
     "author": "Stephen William Hawking",
     "category": "History of Technology"
-  },
-  {
-    "title": "The Inventions Researches and Writings of Nikola Tesla",
-    "isbn13": "9781493646289",
-    "year": 2013,
-    "author": "Martin, Thomas Commerford"
   },
   {
     "title": "The Kojiki: Japanese Records of Ancient Matters",
@@ -4594,6 +4556,12 @@
     "category": "Computer Engineering"
   },
   {
+    "title": "The Martian",
+    "isbn13": "9780553418026",
+    "year": 2014,
+    "author": "Andy Weir"
+  },
+  {
     "title": "The Modern Clock",
     "year": 1978,
     "author": "Goodrich, Ward L.",
@@ -4605,13 +4573,6 @@
     "year": 2006,
     "author": "Robert Cozzi",
     "category": "Computer Science and Software Engineering"
-  },
-  {
-    "title": "The Mythology of the Aryan Nations",
-    "isbn13": "9781410211651",
-    "year": 2004,
-    "author": "Cox, Sir George W",
-    "category": "Religion and Mythology"
   },
   {
     "title": "The Nag Hammadi Scriptures",
@@ -4637,13 +4598,6 @@
     "title": "The Nihongi: Part I, II, III & IV",
     "isbn13": "9781605069463",
     "year": 2008,
-    "category": "Religion and Mythology"
-  },
-  {
-    "title": "The Only Way out of Deception: a last days call to return to the Lord",
-    "isbn13": "9781732342934",
-    "year": 2022,
-    "author": "Scott McAliley",
     "category": "Religion and Mythology"
   },
   {
@@ -4715,12 +4669,6 @@
     "category": "History of Technology"
   },
   {
-    "title": "The Problem of Increasing Human Energy",
-    "isbn13": "9798668027521",
-    "year": 2020,
-    "author": "Tesla, Nikola"
-  },
-  {
     "title": "The Radio Amateur's Handbook (1940)",
     "year": 1940,
     "author": "ARRL Inc.",
@@ -4741,12 +4689,6 @@
     "category": "Game Development, Graphics, and Audio"
   },
   {
-    "title": "The Real History of the Rosicrucians",
-    "year": 1887,
-    "author": "Arthur Edward Waite",
-    "category": "History"
-  },
-  {
     "title": "The Rexx Language: A Practical Approach to Programming",
     "isbn13": "9780137806515",
     "year": 1990,
@@ -4759,11 +4701,6 @@
     "year": 2013,
     "author": "Toby Wilkinson",
     "category": "History"
-  },
-  {
-    "title": "The Spaceships of Ezekiel",
-    "year": 1974,
-    "author": "Josef F. Blumrich"
   },
   {
     "title": "The Story of Writing",
@@ -4937,12 +4874,6 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
-    "title": "Twelfth Planet: Book I of the Earth Chronicles",
-    "isbn13": "9780061379130",
-    "year": 2007,
-    "author": "Sitchin, Zecharia"
-  },
-  {
     "title": "Ultimate Guide to U.S. Army Survival Skills, Tactics, and Techniques",
     "isbn13": "9781435114029",
     "year": 2017
@@ -5016,12 +4947,6 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
-    "title": "Viktor Schauberger: A Life of Learning from Nature",
-    "isbn13": "9780863157240",
-    "year": 2009,
-    "author": "Jane Cobbald"
-  },
-  {
     "title": "Vis-à-Vis: Beginning French, 6th Edition (English and French Edition)",
     "isbn13": "9780073386478",
     "year": 2014,
@@ -5029,23 +4954,11 @@
     "category": "Language"
   },
   {
-    "title": "Vril: The Power of the Coming Race",
-    "isbn13": "9781448636921",
-    "year": 2009,
-    "author": "Bulwer-Lytton, Edward"
-  },
-  {
     "title": "Waves and Ripples in Air, Water, and Æther",
     "isbn13": "9781632703378",
     "year": 2023,
     "author": "Flemming, J.A.",
     "category": "Physics"
-  },
-  {
-    "title": "Weird Scenes Inside the Canyon Laurel Canyon, Covert Ops & the Dark Heart of the Hippie Dream",
-    "isbn13": "9781909394124",
-    "year": 2014,
-    "author": "David McGowan"
   },
   {
     "title": "Wicked Cool Ruby Scripts",
