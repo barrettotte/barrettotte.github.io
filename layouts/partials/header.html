@@ -10,7 +10,7 @@
       */ -}}</div>
   </div>
 
-  <div id="nav">
+  <nav id="nav" aria-label="Main navigation">
     {{ $section := .Section }}
 
     {{ if not $section }}
@@ -43,5 +43,5 @@
         >{{- .Name -}}</a>
       </div>
     {{ end }}
-  </div>
+  </nav>
 </header>

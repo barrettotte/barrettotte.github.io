@@ -11,7 +11,7 @@
         {{ range (sort .Site.Data.museum.computers "name") }}
           <li>
             <a href="{{- .img -}}">
-              <img src="{{- .img -}}" alt="{{- .name -}}"/>
+              <img src="{{- .img -}}" alt="{{- .name -}}" loading="lazy" decoding="async"/>
             </a>
             <div class="overlay"><span>{{- .name -}}</span></div>
           </li>
@@ -25,7 +25,7 @@
         {{ range (sort .Site.Data.museum.misc "name") }}
           <li>
             <a href="{{- .img -}}">
-              <img src="{{- .img -}}" alt="{{- .name -}}"/>
+              <img src="{{- .img -}}" alt="{{- .name -}}" loading="lazy" decoding="async"/>
             </a>
             <div class="overlay"><span>{{- .name -}}</span></div>
           </li>

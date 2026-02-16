@@ -3,22 +3,25 @@
   {{- partial "head" . -}}
 
   <body class="max-width mx-auto px3 ltr">
+    <a href="#main" class="skip-link">Skip to main content</a>
     <div class="content index pt2 pb4">
       {{- partial "header" . -}}
-      {{- block "main" . }}{{- end }}
+      <main id="main">
+        {{- block "main" . }}{{- end }}
+      </main>
       {{- partial "footer" . -}}
     </div>
   </body>
 
-  <script src={{ "js/custom.js" | relURL }}></script>
+  <script src={{ "js/custom.js" | relURL }} defer></script>
 
   {{ if .IsHome }}
-    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script src="/js/carousel.js" defer></script>
     <link rel="stylesheet" href="/css/carousel.css">
   {{ end }}
 
   {{ if or (eq .Section "projects") (eq .Section "bytes") (eq .Title "My Library") }}
-    <script src={{ "js/filter.js" | relURL }}></script>
+    <script src={{ "js/filter.js" | relURL }} defer></script>
   {{ end }}
 
 </html>

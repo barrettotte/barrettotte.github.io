@@ -141,6 +141,7 @@
 
     sectionSelect = document.createElement('select');
     sectionSelect.className = 'filter-select';
+    sectionSelect.setAttribute('aria-label', config.sectionAllLabel);
     sectionSelect.addEventListener('change', function() {
       sectionFilter = sectionSelect.value;
       updateHash();
@@ -151,6 +152,7 @@
     if (config.primaryAttr) {
       primarySelect = document.createElement('select');
       primarySelect.className = 'filter-select';
+      primarySelect.setAttribute('aria-label', config.primaryPlaceholder);
       primarySelect.addEventListener('change', function() {
         if (primarySelect.value) {
           togglePrimaryFilter(primarySelect.value);
