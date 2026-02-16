@@ -256,6 +256,19 @@ article.post header div.meta {
     padding-right: 5px;
 }
 
+.about-callout {
+    border-left: 3px solid var(--color-accent-1);
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    color: var(--color-text);
+    font-style: italic;
+}
+
+.about-stats {
+    color: var(--color-text-muted);
+    font-size: 0.9em;
+}
+
 .about-top-row {
     display: flex;
     padding-left: 1.50rem;
@@ -276,6 +289,43 @@ article.post header div.meta {
 .about-top-col ul {
     margin: 0;
     padding: 0 0 0 1.0rem;
+}
+
+.about-list li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+.about-icon {
+    width: 1.2em;
+    text-align: center;
+    margin-right: 6px;
+    color: var(--color-accent-1);
+}
+
+.about-arc {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 0.5rem;
+}
+
+.arc-entry {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.arc-year {
+    color: var(--color-accent-1);
+    font-weight: bold;
+    flex-shrink: 0;
+    width: 3.5em;
+}
+
+.arc-theme {
+    color: var(--color-text-muted);
+    font-size: 0.9em;
 }
 
 #footer {

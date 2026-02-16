@@ -1,17 +1,17 @@
 {
     "interests": [
-        "History of computing/technology",
-        "Computer architecture",
-        "Electronics",
-        "Low-level programming",
-        "Electromagnetism"
+        {"name": "History of computing/technology", "icon": "fas fa-microchip", "url": "/misc/museum"},
+        {"name": "Computer architecture", "icon": "fas fa-memory"},
+        {"name": "Electronics", "icon": "fas fa-bolt", "url": "/bytes#cat=electronics"},
+        {"name": "Low-level programming", "icon": "fas fa-terminal"},
+        {"name": "Electromagnetism", "icon": "fas fa-magnet"}
     ],
     "hobbies": [
-        "Tinkering",
-        "Weightlifting",
-        "Self-studying",
-        "Anime",
-        "Video games"
+        {"name": "Tinkering", "icon": "fas fa-wrench", "url": "/projects"},
+        {"name": "Weightlifting", "icon": "fas fa-dumbbell"},
+        {"name": "Self-studying", "icon": "fas fa-book", "url": "/misc/library"},
+        {"name": "Anime", "icon": "fas fa-tv", "url": "https://anilist.co/user/barrettotte"},
+        {"name": "Video games", "icon": "fas fa-gamepad"}
     ],
     "favoriteLanguages": [
         "C",

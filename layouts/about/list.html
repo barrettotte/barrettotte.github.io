@@ -2,8 +2,23 @@
   <div id="archive">
     <h1>About Me</h1>
 
-    <h2 class="color-accent-1">General</h2>
     {{ $aboutData := .Site.Data.about }}
+    {{ $projects := .Site.Data.projects.list }}
+    {{ $books := .Site.Data.books }}
+
+    {{/* compute unique language count */}}
+    {{ $langMap := dict }}
+    {{ range $projects }}
+      {{ range .languages }}
+        {{ $langMap = merge $langMap (dict . true) }}
+      {{ end }}
+    {{ end }}
+
+    {{/* compute year range */}}
+    {{ $sorted := sort $projects "date" }}
+    {{ $minYear := index (split (index $sorted 0).date "-") 0 }}
+
+    <h2 class="color-accent-1">General</h2>
 
     <p>I'm a software engineer that loves to tinker and teach myself new things.</p>
     <p>
@@ -11,22 +26,49 @@
       I feel like knowing a lot of different subjects has greatly improved my ability to learn.
       Some of my favorite projects in the past have been ones where I knew very little at the start.
     </p>
-    <p>Life is too short and there are tons of interesting things, so why limit yourself to one subject?</p>
+
+    <blockquote class="about-callout">
+      Life is too short and there are tons of interesting things, so why limit yourself to one subject?
+    </blockquote>
+
+    <p class="about-stats">
+      So far that's led to
+      <a href="/projects">{{ len $projects }} projects</a> since {{ $minYear }}, and
+      <a href="/misc/library">{{ len $books }}+ books</a> in my library.
+    </p>
 
     <div class="about-top-row">
       <div class="about-top-col">
         <h3 class="color-accent-1">Interests</h3>
-        <ul>
+        <ul class="about-list">
           {{ range $aboutData.interests }}
-            <li>{{ . }}</li>
+            <li>
+              <i class="{{ .icon }} about-icon" aria-hidden="true"></i>
+              {{ if .url }}
+                <a href="{{ .url }}">{{ .name }}</a>
+              {{ else }}
+                {{ .name }}
+              {{ end }}
+            </li>
           {{ end }}
         </ul>
       </div>
       <div class="about-top-col">
         <h3 class="color-accent-1">Hobbies</h3>
-        <ul>
+        <ul class="about-list">
           {{ range $aboutData.hobbies }}
-            <li>{{ . }}</li>
+            <li>
+              <i class="{{ .icon }} about-icon" aria-hidden="true"></i>
+              {{ if .url }}
+                {{ if hasPrefix .url "http" }}
+                  <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>
+                {{ else }}
+                  <a href="{{ .url }}">{{ .name }}</a>
+                {{ end }}
+              {{ else }}
+                {{ .name }}
+              {{ end }}
+            </li>
           {{ end }}
         </ul>
       </div>
@@ -37,10 +79,11 @@
     <p>
       My favorite programming languages are
       {{ range $i, $lang := $languages }}
+        {{ $slug := $lang | lower }}
         {{ if eq $i $languageCount }}
-          and {{ $lang }}.
+          and <a href="/projects#lang={{ $slug }}">{{ $lang }}</a>.
         {{ else if lt $i $languageCount }}
-          {{ $lang }}, 
+          <a href="/projects#lang={{ $slug }}">{{ $lang }}</a>,
         {{ end }}
       {{ end }}
     </p>
@@ -56,5 +99,24 @@
     <p>My resume with more detail is available at <a href="{{ .Site.Params.links.resume }}" target="_blank" rel="noopener noreferrer">/resume</a>.</p>
     <p>Based on my interests, I hope to eventually earn a role that intersects cybersecurity and computer engineering, but we'll see.</p>
 
+    <h2 class="color-accent-1">Annual Summary</h2>
+
+    <div class="about-arc">
+      {{ $annual := .Site.Data.annual }}
+      {{ $years := slice }}
+      {{ range $year, $_ := $annual }}
+        {{ $years = $years | append $year }}
+      {{ end }}
+      {{ $years = sort $years }}
+
+      {{ range $years }}
+        {{ $year := . }}
+        {{ $theme := index $annual $year }}
+        <div class="arc-entry">
+          <span class="arc-year">{{ $year }}</span>
+          <span class="arc-theme">{{ $theme }}</span>
+        </div>
+      {{ end }}
+    </div>
   </div>
 {{ end }}

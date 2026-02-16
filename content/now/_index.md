@@ -1,4 +1,0 @@
----
-title: Now
-section: now
----
