@@ -17,10 +17,15 @@ title = "Barrett Otte"
   url = "/bytes"
   weight = 3
 
+#[[menu.main]]
+#  name = "Now"
+#  url = "/now"
+#  weight = 4
+
 [[menu.main]]
   name = "About"
   url = "/about"
-  weight = 5
+  weight = 4
 
 [[menu.main]]
   name = "Resume"
@@ -67,7 +72,6 @@ title = "Barrett Otte"
 
   # Home page settings
   tagsOverview = false
-  showProjectsList = true
 
   [params.links]
     anilist = "https://anilist.co/user/barrettotte/"

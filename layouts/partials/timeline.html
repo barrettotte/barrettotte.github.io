@@ -1,0 +1,51 @@
+{{ $annual := .Site.Data.annual }}
+{{ $allProjects := where .Site.Data.projects.list "hidden" nil }}
+{{ $allProjects = where $allProjects "long" nil }}
+{{ $allBytes := .Site.Data.bytes }}
+
+{{/* Collect and sort years descending */}}
+{{ $years := slice }}
+{{ range $year, $_ := $annual }}
+  {{ $years = $years | append $year }}
+{{ end }}
+{{ $years = sort $years "value" "desc" }}
+
+<div class="timeline">
+  {{ range $idx, $year := $years }}
+    {{ $theme := index $annual $year }}
+
+    {{/* Count projects for this year */}}
+    {{ $yearProjects := slice }}
+    {{ range $allProjects }}
+      {{ if and .date (eq (substr .date 0 4) $year) }}
+        {{ $yearProjects = $yearProjects | append . }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Count bytes for this year */}}
+    {{ $yearBytes := slice }}
+    {{ range $allBytes }}
+      {{ if and .date (eq (substr .date 0 4) $year) }}
+        {{ $yearBytes = $yearBytes | append . }}
+      {{ end }}
+    {{ end }}
+
+    <div class="timeline-year">
+      <div class="timeline-heading">
+        <span class="timeline-label">{{ $year }}</span>
+        <span class="timeline-theme">{{ $theme }}</span>
+        <span class="timeline-counts">
+          {{- if gt (len $yearProjects) 0 -}}
+            <a href="/projects/#{{ $year }}" class="timeline-count-link">{{ len $yearProjects }} project{{ if gt (len $yearProjects) 1 }}s{{ end }}</a>
+          {{- end -}}
+          {{- if and (gt (len $yearProjects) 0) (gt (len $yearBytes) 0) -}}
+            <span class="timeline-count-sep">&middot;</span>
+          {{- end -}}
+          {{- if gt (len $yearBytes) 0 -}}
+            <a href="/bytes/#{{ $year }}" class="timeline-count-link">{{ len $yearBytes }} byte{{ if gt (len $yearBytes) 1 }}s{{ end }}</a>
+          {{- end -}}
+        </span>
+      </div>
+    </div>
+  {{ end }}
+</div>

@@ -1,6 +1,6 @@
 {{ define "main"}}
   <div id="archive">
-    <h1>Bytes</h1>
+    <h1 class="page-title">Bytes</h1>
 
     {{ $bytes := .Site.Data.bytes }}
 
@@ -14,41 +14,27 @@
     {{ $minYear := index $years 0 }}
     {{ $maxYear := index $years (sub (len $years) 1) }}
 
-    <p>Small miscellaneous things I've completed {{ $minYear }}-{{ now.Year }}.</p>
+    <p>{{ len $bytes }} small miscellaneous things I've completed, {{ $minYear }}-{{ now.Year }}.</p>
     <p>I store some assets for things listed here in my repo named <a href="https://github.com/barrettotte/bytes">bytes</a>.</p>
 
-    <!-- Section links -->
-    <div id="section-links">
-      <h2 class="color-accent-1">By Year</h2>
-      <ul class="horizontal-list">
-        {{ range (sort $years "value" "desc") }}
-          <li><a href="/bytes/#{{ . }}">{{ . }}</a></li>
-        {{ end }}
-      </ul>
+    <!-- Filter controls: hidden by default, revealed by JS -->
+    <div id="byte-controls" style="display:none">
+      <div id="filter-bar" class="filter-bar"></div>
+      <div id="active-filters"></div>
+      <div id="filter-status" class="filter-status"></div>
     </div>
 
-    <ul class="post-list">
+    <ul id="byte-list-default" class="post-list data-list">
       {{ range ((sort $bytes "date" "asc") | collections.Reverse) }}
         {{ $pageYear := substr .date 0 4 }}
-        
+
         {{ if (ne $pageYear ($.Scratch.Get "year")) }}
           {{ $.Scratch.Set "year" $pageYear }}
-          {{ $byYear := slice }}
-
-          {{ range $bytes }}
-            {{ $year := printf "%4s" (index (split .date "-") 0) }}
-            {{ if eq $pageYear $year }}
-              {{ $byYear = $byYear | append . }}
-            {{ end }}
-          {{ end }}
-
-          <h2 id="{{ $pageYear | urlize }}">
-            <a href="#{{ $pageYear | urlize }}">{{ $pageYear }}</a> ({{ len $byYear }})
-          </h2>
+          {{ partial "year-header.html" (dict "year" $pageYear "items" $bytes) }}
         {{ end }}
 
         {{ if not .hidden }}
-          <li class="post-item">
+          <li class="post-item" data-category="{{ .category }}" data-date="{{ .date }}">
             <time datetime="{{ time (printf "%s" .date) }}">{{ .date }}</time>
             <span>
               {{ if eq .category "ctf" }}
@@ -70,7 +56,7 @@
               {{ if .url }}
                 <a href="{{ .url }}">{{ .name }}</a>
               {{ else }}
-                <span style="text-decoration:underline;">{{ .name }}</span>
+                <span style="text-decoration:underline; color:var(--color-text)">{{ .name }}</span>
               {{ end }}
             </span>
           </li>

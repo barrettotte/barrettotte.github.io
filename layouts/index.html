@@ -1,21 +1,8 @@
 {{ define "main" }}
   {{ partial "carousel.html" (dict "context" . "height" "66.66667" "unit" "%" "duration" "10000") }}
 
-  <section id="projects">
-    <span class="h1">
-      <a href="/projects">Featured Projects</a>
-    </span>
-    <ul class="post-list">
-      {{ range sort (.Site.Data.projects.list) "date" "desc" }}
-        {{ if and .featured (not .hidden) }}
-        <li class="post-item">
-          {{ $projectDate := printf "%s%s" .date "-01" }}
-          <time datetime="{{ time $projectDate }}" itemprop="datePublished">{{ .date }}</time>
-          <span><a href="{{ .url }}">{{ .name }}</a>: {{ .desc | markdownify }}</span>
-        </li>
-        {{ end }}
-      {{ end }}
-    </ul>
+  <section id="journey">
+    {{ partial "timeline.html" . }}
   </section>
 
 {{ end }}

@@ -1,0 +1,22 @@
+{
+  "updated": "2026-02-15",
+  "sections": [
+    {
+      "title": "Working On",
+      "icon": "fa-solid fa-code",
+      "items": []
+    },
+    {
+      "title": "Learning",
+      "icon": "fa-solid fa-book-open",
+      "items": [
+        "LLMs and RAG"
+      ]
+    },
+    {
+      "title": "Reading",
+      "icon": "fa-solid fa-bookmark",
+      "items": []
+    }
+  ]
+}

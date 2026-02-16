@@ -46,8 +46,9 @@
           {{ $books = where $.Site.Data.books "category" nil }}
         {{ end }}
 
-        <h2 id="{{ $category | urlize }}" style="text-transform: capitalize">
-          <a href="#{{ $category | urlize }}">{{ $category }}</a> ({{ len $books }})
+        <h2 id="{{ $category | urlize }}" class="section-header" style="text-transform: capitalize">
+          <a href="#{{ $category | urlize }}">{{ $category }}</a>
+          <span class="section-count">({{ len $books }})</span>
         </h2>
 
         <ul class="library-list">

@@ -17,4 +17,8 @@
     <link rel="stylesheet" href="/css/carousel.css">
   {{ end }}
 
+  {{ if or (eq .Section "projects") (eq .Section "bytes") }}
+    <script src={{ "js/filter.js" | relURL }}></script>
+  {{ end }}
+
 </html>

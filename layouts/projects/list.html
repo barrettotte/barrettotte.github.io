@@ -1,7 +1,7 @@
 {{ define "main"}}
   <div id="archive">
-    <h1>Projects</h1>
-    
+    <h1 class="page-title">Projects</h1>
+
     {{ $projects := where .Site.Data.projects.list "hidden" nil }}
     {{ $projects := where $projects "long" nil }}
 
@@ -15,56 +15,41 @@
     {{ $minYear := index $years 0 }}
     {{ $maxYear := index $years (sub (len $years) 1) }}
 
-    <p>Projects I've worked on {{ $minYear }}-{{ now.Year }}.</p>
+    <p>{{ len $projects }} projects, {{ $minYear }}-{{ now.Year }}.</p>
 
-    <!-- Section links -->
-    <div id="section-links">
-      <a href="/projects/#section-links">
-        <h2 class="color-accent-1">By Year</h2>
-      </a>
-      <ul class="horizontal-list">
-        {{ range (sort $years "value" "desc") }}
-          <li><a href="/projects/#{{ . }}">{{ . }}</a></li>
-        {{ end }}
-      </ul>
+    <!-- Filter controls: hidden by default, revealed by JS -->
+    <div id="project-controls" style="display:none">
+      <div id="filter-bar" class="filter-bar"></div>
+      <div id="active-filters"></div>
+      <div id="filter-status" class="filter-status"></div>
     </div>
 
-    <ul class="post-list">
-      <!-- Projects by year -->
+    <!-- Default list view -->
+    <ul id="project-list-default" class="post-list data-list">
       {{ range ((sort $projects "date" "asc") | collections.Reverse) }}
         {{ $pageYear := substr .date 0 4 }}
 
         {{ if (ne $pageYear ($.Scratch.Get "year")) }}
           {{ $.Scratch.Set "year" $pageYear }}
-          {{ $byYear := slice }}
-
-          {{ range $projects }}
-            {{ $year := printf "%4s" (index (split .date "-") 0) }}
-            {{ if eq $pageYear $year }}
-              {{ $byYear = $byYear | append . }}
-            {{ end }}
-          {{ end }}
-
-          <h2 id="{{ $pageYear | urlize }}">
-            <a href="#{{ $pageYear | urlize }}">{{ $pageYear }}</a> ({{ len $byYear }})
-          </h2>
+          {{ partial "year-header.html" (dict "year" $pageYear "items" $projects) }}
         {{ end }}
 
         {{ if not .hidden }}
-          <li class="post-item">
+          <li class="post-item" data-languages="{{ delimit (default (slice) .languages) "," }}" data-date="{{ .date }}">
             <time datetime="{{ time (printf "%s%s" .date "-01") }}">{{ .date }}</time>
             <span>
               {{ if .url }}
-                <a href="{{ .url }}">{{ .name }}</a><div class="post-desc">: {{ .desc | markdownify }}</div>
+                <a href="{{ .url }}">{{ .name }}</a><span class="item-desc">{{ .desc | markdownify }}</span>
               {{ else }}
-                <span style="text-decoration:underline">{{ .name }}</span><div class="post-desc">: {{ .desc | markdownify }}</div>
+                <span style="text-decoration:underline; color:var(--color-text)">{{ .name }}</span><span class="item-desc">{{ .desc | markdownify }}</span>
               {{ end }}
             </span>
           </li>
         {{ end }}
       {{ end }}
     </ul>
+
   </div>
-  
+
   {{ partial "scroll-to-top.html" (dict "context" . "target" "/projects/#" ) }}
 {{ end }}

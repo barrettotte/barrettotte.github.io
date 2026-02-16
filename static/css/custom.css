@@ -72,28 +72,20 @@ article.post header div.meta {
 
 .content a:hover {
     color: var(--color-accent-1);
-    text-decoration: underline;
     background-image: none;
 }
 
-#carousel10, #projects {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+#carousel10 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#journey {
+    margin-top: 0.5rem;
 }
 
 .post-list > .post-item {
-    display: list-item;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-.post-list > .post-item:hover {
-    overflow: visible;
-}
-
-.post-desc {
-    display: inline;
+    color: var(--color-border);
 }
 
 .icon:hover, .post-list > h2 {
@@ -104,8 +96,8 @@ article.post header div.meta {
     margin-bottom: 2.0rem;
 }
 
-#archive .post-list .post-item, #archive .project-list .project-item {
-    display: list-item;
+#archive .post-list .post-item {
+    display: flex;
 }
 
 .color-accent-1 {
@@ -180,6 +172,7 @@ article.post header div.meta {
 
 #header {
     border-bottom: 1px solid var(--color-border);
+    margin-bottom: 1rem;
 }
 
 #header h1 {
@@ -252,6 +245,10 @@ article.post header div.meta {
     margin-right: 5px;
 }
 
+#footer li a {
+    margin-right: 0;
+}
+
 #footer a {
     text-decoration: none;
 }
@@ -262,6 +259,113 @@ article.post header div.meta {
 
 .footer-left, .footer-right {
     margin-top: 10px;
+}
+
+/******************* section components *******************/
+
+.page-title {
+    margin-bottom: 0.25rem;
+}
+
+.page-desc {
+    margin-top: 0;
+    color: var(--color-border);
+    font-size: 0.85rem;
+}
+
+.section-header {
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-header a {
+    text-decoration: none;
+}
+
+.section-header a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.section-count {
+    color: var(--color-border);
+    font-weight: normal;
+    font-size: 0.85em;
+    text-decoration: none;
+}
+
+a.section-count:hover {
+    color: var(--color-accent-1);
+}
+
+.data-list {
+    padding: 0;
+    list-style: none;
+}
+
+.data-list > li {
+    display: flex;
+    margin-bottom: 0.35rem;
+    padding: 2px 0;
+    list-style: none;
+}
+
+.data-list > li time {
+    color: var(--color-border);
+    margin-right: 10px;
+    font-size: 0.85em;
+    flex-shrink: 0;
+}
+
+.data-list > li > span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.data-list > li:hover > span {
+    white-space: normal;
+    overflow: visible;
+}
+
+.data-list > li .item-icon {
+    margin-right: 4px;
+    width: 1.25em;
+    text-align: center;
+    display: inline-block;
+    color: var(--color-text);
+}
+
+.data-list > li i {
+    color: var(--color-text);
+}
+
+.data-list > li .item-desc {
+    color: var(--color-text);
+    opacity: 0.7;
+    font-size: 0.9em;
+}
+
+.data-list > li .item-desc::before {
+    content: ": ";
+    color: var(--color-text);
+}
+
+/******************* now page *******************/
+
+.now-section {
+    margin-bottom: 1.5rem;
+}
+
+.now-section .section-header i {
+    color: var(--color-accent-1);
+    margin-right: 4px;
+}
+
+.now-section .data-list > li {
+    list-style: square;
+    margin-left: 1.5rem;
 }
 
 /******************* museum *******************/
@@ -326,9 +430,7 @@ article.post header div.meta {
 }
 
 .library-list > li {
-    /* margin: 25px 0; */
-    padding: 0px 0px 0px 5px;
-    /* list-style-type: none; */
+    padding: 0 0 0 5px;
 }
 
 .library-list {
@@ -383,6 +485,170 @@ article.post header div.meta {
     }
 }
 
+/******************* project controls *******************/
+
+#project-controls,
+#byte-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+/******************* filter bar *******************/
+
+.filter-bar {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-select {
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.filter-select:hover,
+.filter-select:focus {
+    border-color: var(--color-accent-1);
+    outline: none;
+}
+
+#active-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    width: 100%;
+}
+
+.active-filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--color-accent-1);
+    color: var(--color-background);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+}
+
+.remove-filter {
+    background: none;
+    border: none;
+    color: var(--color-background);
+    cursor: pointer;
+    padding: 0 2px;
+    font-size: 1.1em;
+    line-height: 1;
+}
+
+.remove-filter:hover {
+    opacity: 0.7;
+}
+
+.clear-filters {
+    background: none;
+    border: none;
+    color: var(--color-border);
+    cursor: pointer;
+    font-size: 0.8em;
+    text-decoration: underline;
+    padding: 2px 4px;
+}
+
+.clear-filters:hover {
+    color: var(--color-accent-1);
+}
+
+.filter-status {
+    color: var(--color-border);
+    font-size: 0.8em;
+    width: 100%;
+}
+
+/******************* journey timeline *******************/
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--color-border);
+}
+
+.timeline-year {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.timeline-year::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--color-border);
+    background: var(--color-background);
+    z-index: 1;
+}
+
+.timeline-heading {
+    display: flex;
+    align-items: baseline;
+    padding: 4px 0;
+    gap: 10px;
+}
+
+.timeline-label {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.timeline-theme {
+    color: var(--color-border);
+    font-size: 0.85em;
+}
+
+.timeline-counts {
+    margin-left: auto;
+    font-size: 0.8em;
+    white-space: nowrap;
+}
+
+.timeline-count-link {
+    color: var(--color-border);
+    text-decoration: none;
+}
+
+.timeline-count-link:hover {
+    color: var(--color-accent-1);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.timeline-count-sep {
+    color: var(--color-border);
+    margin: 0 4px;
+}
+
 /*************************************************/
 /*                   mobile                      */
 /*************************************************/
@@ -408,7 +674,7 @@ article.post header div.meta {
         margin-bottom: 1rem;
     }
 
-    #archive .post-list .post-item, #archive .project-list .project-item {
+    #archive .post-list .post-item {
         margin-left: 10px;
     }
 
@@ -451,10 +717,12 @@ article.post header div.meta {
     }
 
     #subtitle {
+        display: block;
         width: 100%;
         margin: 0;
         padding: 0px 0px 10px 0px;
         text-align: center;
+        float: none;
     }
 
     #subtitle > li {
@@ -462,7 +730,16 @@ article.post header div.meta {
     }
 
     #footer {
-        height: 25px;
+        position: relative;
+        height: auto;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #footer .footer-left,
+    #footer .footer-right {
+        display: block;
+        width: 100%;
     }
 
     .about-top-row {
@@ -477,7 +754,45 @@ article.post header div.meta {
         display: inline-block;
     }
 
-    #computing .gallery > li {
-        width: 100%;
+    .horizontal-list {
+        grid-template-columns: repeat(5, 1fr);
+        margin-left: 5px;
     }
+
+    #museum .gallery > li {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* timeline: shift left, single column */
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline::before {
+        left: 4px;
+    }
+
+    .timeline-year::before {
+        left: -19px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .timeline-counts {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #carousel10 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .horizontal-list {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
 }

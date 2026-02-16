@@ -83,41 +83,36 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  #header #nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px 0;
+
+    .nav-item {
+      a {
+        padding-right: 12px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
 @media screen and (max-width: 480px) {
   #header #title {
-    display: table;
-    margin-right: 5rem;
-    min-height: $logo-height;
+    display: block;
+    text-align: center;
+
     h1 {
-      display: table-cell;
-      vertical-align: middle;
+      display: block;
+      font-size: 1.3rem;
     }
   }
   #header #nav {
-    ul {
-      a:hover {
-        background: none;
-      }
-      li {
-        display: none;
-        border-right: 0;
-      }
-      li.icon {
-        position: absolute;
-        top: 77px;
-        right: 1rem;
-        display: inline-block;
-      }
-    }
-    ul.responsive {
-      li {
-        display: block;
-      }
-    }
-    li:not(:first-child) {
-      padding-top: 1rem;
-      padding-left: $logo-width + 20px;
-      font-size: 1rem;
+    justify-content: center;
+
+    .nav-item a {
+      padding-right: 10px;
+      font-size: 0.75rem;
     }
   }
-};
+}

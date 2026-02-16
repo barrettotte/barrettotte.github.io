@@ -1,0 +1,15 @@
+{{- $year := .year -}}
+{{- $items := .items -}}
+{{- $byYear := slice -}}
+
+{{- range $items -}}
+  {{- $itemYear := printf "%4s" (index (split .date "-") 0) -}}
+  {{- if eq $year $itemYear -}}
+    {{- $byYear = $byYear | append . -}}
+  {{- end -}}
+{{- end -}}
+
+<h2 id="{{ $year | urlize }}" class="section-header" data-year="{{ $year }}">
+  <a href="#{{ $year | urlize }}">{{ $year }}</a>
+  <a href="#{{ $year | urlize }}" class="section-count">({{ len $byYear }})</a>
+</h2>

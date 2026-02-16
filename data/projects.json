@@ -476,8 +476,7 @@
       "url": "https://github.com/barrettotte/TRS80-Twilio",
       "desc": "Twilio Hackathon 2020 entry",
       "date": "2020-04",
-      "languages": ["basic", "c++"],
-      "featured": true
+      "languages": ["basic", "c++"]
     },
     {
       "name": "IBMi-Jupyter",
@@ -520,8 +519,7 @@
       "url": "https://github.com/barrettotte/Subarashii-CPU",
       "desc": "A simple 16-bit RISC CPU",
       "date": "2020-07",
-      "languages": ["verilog"],
-      "featured": true
+      "languages": ["verilog"]
     },
     {
       "name": "RPGLE-BF",
@@ -635,8 +633,7 @@
       "url": "https://github.com/barrettotte/qr-asm",
       "desc": "QR code generated with ARM assembly",
       "date": "2021-09",
-      "languages": ["assembly"],
-      "featured": true
+      "languages": ["assembly"]
     },
     {
       "name": "stencil-anlist",
@@ -657,23 +654,20 @@
       "url": "https://github.com/barrettotte/angstrom-cpu",
       "desc": "4-bit accumulator-based CPU",
       "date": "2021-12",
-      "languages": ["verilog"],
-      "featured": true
+      "languages": ["verilog"]
     },
     {
       "name": "bootjack",
       "url": "https://github.com/barrettotte/bootjack",
       "desc": "Bootable Blackjack in 508 bytes",
       "date": "2021-12",
-      "languages": ["assembly"],
-      "featured": true
+      "languages": ["assembly"]
     },
     {
       "name": "candlestick-mic",
       "url": "https://github.com/barrettotte/candlestick-mic",
       "desc": "Old candlestick phone as a headset",
-      "date": "2022-01",
-      "featured": true
+      "date": "2022-01"
     },
     {
       "name": "rusty-lc3-vm",
@@ -701,8 +695,7 @@
       "url": "https://github.com/barrettotte/enki-os",
       "desc": "Basic x86 kernel",
       "date": "2022-04",
-      "languages": ["c", "assembly"],
-      "featured": true
+      "languages": ["c", "assembly"]
     },
     {
       "name": "mech-mouse-jiggler",
@@ -751,8 +744,7 @@
       "url": "https://github.com/barrettotte/perceptron-asm",
       "desc": "Single-layer perceptron in x86 assembly",
       "date": "2022-08",
-      "languages": ["assembly"],
-      "featured": true
+      "languages": ["assembly"]
     },
     {
       "name": "pico-signals",
