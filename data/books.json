@@ -151,6 +151,13 @@
     "category": "History of Technology"
   },
   {
+    "title": "A Journey to the Center of the Earth",
+    "isbn13": "9780895774026",
+    "year": 1992,
+    "author": "Jules Verne",
+    "category": "Fiction"
+  },
+  {
     "title": "A Mind at Play: How Claude Shannon Invented the Information Age",
     "isbn13": "9781476766690",
     "year": 2018,
@@ -236,6 +243,13 @@
     "year": 2015,
     "author": "Essinger, James",
     "category": "History of Computing"
+  },
+  {
+    "title": "Advanced Engineering Electromagnetics",
+    "isbn13": "9780471621942",
+    "year": 1989,
+    "author": "Constantine A. Balanis",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "Advanced Graphics in C: Programming and Techniques",
@@ -523,6 +537,13 @@
     "category": "Physics"
   },
   {
+    "title": "Athenaze An Introduction to Ancient Greek",
+    "isbn13": "9780195056211",
+    "year": 1990,
+    "author": "Maurice G. Balme; Gilbert Lawall",
+    "category": "Language"
+  },
+  {
     "title": "Atomic Spectra and Atomic Structure",
     "isbn13": "9780486601151",
     "year": 2010,
@@ -694,6 +715,13 @@
     "year": 2010,
     "author": "Whitesitt, J. Eldon",
     "category": "Mathematics"
+  },
+  {
+    "title": "Brave New World",
+    "isbn13": "9780060850524",
+    "year": 2006,
+    "author": "Aldous Huxley",
+    "category": "Fiction"
   },
   {
     "title": "Build a Large Language Model (From Scratch)",
@@ -1831,6 +1859,13 @@
     "category": "History of Computing"
   },
   {
+    "title": "From Caveman to Chemist: Circumstances and Achievements",
+    "isbn13": "9780841217874",
+    "year": 1991,
+    "author": "Hugh W. Salzberg",
+    "category": "History of Technology"
+  },
+  {
     "title": "Functional Programming in Scala",
     "isbn13": "9781617290657",
     "year": 2014,
@@ -2584,6 +2619,12 @@
     "category": "Vintage Programming"
   },
   {
+    "title": "Learn Like a Polymath",
+    "isbn13": "9781647431969",
+    "year": 2020,
+    "author": "Peter Hollins"
+  },
+  {
     "title": "Learn You a Haskell for Great Good!",
     "isbn13": "9781593272838",
     "year": 2011,
@@ -2955,7 +2996,8 @@
     "title": "Moby-Dick",
     "isbn13": "9780460873079",
     "year": 1993,
-    "author": "Herman Melville"
+    "author": "Herman Melville",
+    "category": "Fiction"
   },
   {
     "title": "Modern Application of Electricity",
@@ -3236,11 +3278,25 @@
     "category": "Chemistry and Materials Science"
   },
   {
+    "title": "Our Magnetic Earth The Science of Geomagnetism",
+    "isbn13": "9780226006598",
+    "year": 2012,
+    "author": "Ronald T. Merrill",
+    "category": "Physics"
+  },
+  {
     "title": "Oxford Companion to World Mythology",
     "isbn13": "9780195387087",
     "year": 2009,
     "author": "Leeming, David",
     "category": "Religion and Mythology"
+  },
+  {
+    "title": "Paradise Lost",
+    "isbn13": "9780140424393",
+    "year": 2003,
+    "author": "John Milton",
+    "category": "Fiction"
   },
   {
     "title": "Parallel and High Performance Computing",
@@ -4332,7 +4388,8 @@
     "title": "The Divine Comedy",
     "isbn13": "9781607109914",
     "year": 2013,
-    "author": "Alighieri, Dante"
+    "author": "Alighieri, Dante",
+    "category": "Fiction"
   },
   {
     "title": "The Dream Machine",
@@ -4340,6 +4397,12 @@
     "year": 2018,
     "author": "M. Mitchell Waldrop",
     "category": "History of Computing"
+  },
+  {
+    "title": "The Earth's Core and Geomagnetism",
+    "year": 1963,
+    "author": "J.A. Jacobs",
+    "category": "Physics"
   },
   {
     "title": "The Electrical Engineers Handbook",
@@ -4439,6 +4502,13 @@
     "year": 2003,
     "author": "Livio, Mario",
     "category": "History of Mathematics"
+  },
+  {
+    "title": "The Gospel of Judas From Codex Tchacos",
+    "isbn13": "9781426200427",
+    "year": 2006,
+    "author": "Rodolphe Kasser; Marvin W. Meyer; Gregor Wurst",
+    "category": "Religion and Mythology"
   },
   {
     "title": "The Hardware Hacking Handbook: Breaking Embedded Security with Hardware Attacks",
@@ -4559,7 +4629,8 @@
     "title": "The Martian",
     "isbn13": "9780553418026",
     "year": 2014,
-    "author": "Andy Weir"
+    "author": "Andy Weir",
+    "category": "Fiction"
   },
   {
     "title": "The Modern Clock",
@@ -4797,6 +4868,13 @@
     "category": "Mechanical Engineering"
   },
   {
+    "title": "Theory of Heat",
+    "isbn13": "9780486417356",
+    "year": 2001,
+    "author": "James Clerk Maxwell; Peter Pesic",
+    "category": "Physics"
+  },
+  {
     "title": "Thermodynamics",
     "isbn13": "9780486603612",
     "year": 1956,
@@ -4842,6 +4920,13 @@
     "year": 1926,
     "author": "Max Planck",
     "category": "Physics"
+  },
+  {
+    "title": "Trilobite Eyewitness to Evolution",
+    "isbn13": "9780375706219",
+    "year": 2001,
+    "author": "Richard Fortey",
+    "category": "Biology"
   },
   {
     "title": "TRS-80 Assembly Language Programming",
@@ -4959,6 +5044,20 @@
     "year": 2023,
     "author": "Flemming, J.A.",
     "category": "Physics"
+  },
+  {
+    "title": "Wheelock's Latin",
+    "isbn13": "9780064671798",
+    "year": 1995,
+    "author": "Frederic M. Wheelock; Richard A. Lafleur",
+    "category": "Language"
+  },
+  {
+    "title": "When Computers Were Human",
+    "isbn13": "9780691091570",
+    "year": 2005,
+    "author": "David Alan Grier",
+    "category": "History of Computing"
   },
   {
     "title": "Wicked Cool Ruby Scripts",

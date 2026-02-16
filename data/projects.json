@@ -1060,21 +1060,23 @@
     {
       "name": "stix-rag",
       "url": "https://github.com/barrettotte/stix-rag",
-      "desc": "A RAG experiment using MITRE ATT&CK STIX data",
+      "desc": "Agentic RAG chatbot for STIX/ATT&CK data",
       "date": "2026-02",
       "languages": ["python", "javascript", "html", "css"]
     },
     {
-      "name": "from-stones-to-qubits",
-      "desc": "A book on the history of computing and technology",
-      "date": "2023-01",
-      "long": true
+      "name": "doppelganger",
+      "url": "https://github.com/barrettotte/doppelganger",
+      "desc": "TTS voice cloning Discord bot",
+      "date": "2026-02",
+      "languages": ["python", "svelte"]
     },
     {
-      "name": "agartha-16",
-      "desc": "My homebrew 16-bit computer system",
-      "date": "2024-02",
-      "long": true
+      "name": "daedalus",
+      "url": "https://github.com/barrettotte/daedalus",
+      "desc": "Opinionated lightweight local-only kanban board",
+      "date": "2026-02",
+      "languages": ["go", "svelte"]
     }
   ]
 }
