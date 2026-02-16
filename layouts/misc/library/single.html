@@ -24,57 +24,54 @@
       {{ end }}
       {{ $categories = $categories | uniq | sort }}
 
-      <!-- Section links -->
-      <div id="section-links">
-        <a href="/misc/library/#section-links">
-          <h2 class="color-accent-1">Books By Category</h2>
-        </a>
-        <ul>
-          {{ range (sort $categories) }}
-            <li><a href="/misc/library/#{{ . | urlize }}">{{ . }}</a></li>
-          {{ end }}
-        </ul>
+      <!-- Filter controls: hidden by default, revealed by JS -->
+      <div id="library-controls" style="display:none">
+        <div id="filter-bar" class="filter-bar"></div>
+        <div id="active-filters"></div>
+        <div id="filter-status" class="filter-status"></div>
       </div>
 
-      {{ range $categories | sort }}
-        {{ $category := . }}
-        {{ $books := slice }}
+      <div id="library-list-default">
+        {{ range $categories | sort }}
+          {{ $category := . }}
+          {{ $books := slice }}
 
-        {{ if ne $category "Uncategorized" }}
-          {{ $books = where $.Site.Data.books "category" $category }}
-        {{ else }}
-          {{ $books = where $.Site.Data.books "category" nil }}
-        {{ end }}
-
-        <h2 id="{{ $category | urlize }}" class="section-header" style="text-transform: capitalize">
-          <a href="#{{ $category | urlize }}">{{ $category }}</a>
-          <span class="section-count">({{ len $books }})</span>
-        </h2>
-
-        <ul class="library-list">
-          {{ range $books }}
-            <li>
-              {{ if isset . "isbn10" }}
-                <a href="https://isbnsearch.org/isbn/{{ .isbn10 }}">{{ .title }}</a>
-              {{ else if isset . "isbn13" }}
-                <a href="https://isbnsearch.org/isbn/{{ .isbn13 }}">{{ .title }}</a>
-              {{ else if isset . "lccn" }}
-                <a href="https://lccn.loc.gov/{{ .lccn }}">{{ .title }}</a>
-              {{ else }}
-                <u>{{ .title }}</u>
-              {{ end }}
-  
-              {{ if isset . "author" }}
-                by {{ .author }}
-              {{ end }}
-  
-              {{ if isset . "year" }}
-                ({{ .year }})
-              {{ end }}
-            </li>
+          {{ if ne $category "Uncategorized" }}
+            {{ $books = where $.Site.Data.books "category" $category }}
+          {{ else }}
+            {{ $books = where $.Site.Data.books "category" nil }}
           {{ end }}
-        </ul>
-      {{ end }}
+
+          <h2 id="{{ $category | urlize }}" class="section-header" data-category="{{ $category }}" style="text-transform: capitalize">
+            <a href="#{{ $category | urlize }}">{{ $category }}</a>
+            <a href="#{{ $category | urlize }}" class="section-count">({{ len $books }})</a>
+          </h2>
+
+          <ul class="library-list">
+            {{ range $books }}
+              <li class="post-item" data-category="{{ $category }}">
+                {{ if isset . "isbn10" }}
+                  <a href="https://isbnsearch.org/isbn/{{ .isbn10 }}">{{ .title }}</a>
+                {{ else if isset . "isbn13" }}
+                  <a href="https://isbnsearch.org/isbn/{{ .isbn13 }}">{{ .title }}</a>
+                {{ else if isset . "lccn" }}
+                  <a href="https://lccn.loc.gov/{{ .lccn }}">{{ .title }}</a>
+                {{ else }}
+                  <u>{{ .title }}</u>
+                {{ end }}
+
+                {{ if isset . "author" }}
+                  by {{ .author }}
+                {{ end }}
+
+                {{ if isset . "year" }}
+                  ({{ .year }})
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </div>
 
     </div>
   </article>

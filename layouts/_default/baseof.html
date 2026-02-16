@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/css/carousel.css">
   {{ end }}
 
-  {{ if or (eq .Section "projects") (eq .Section "bytes") }}
+  {{ if or (eq .Section "projects") (eq .Section "bytes") (eq .Title "My Library") }}
     <script src={{ "js/filter.js" | relURL }}></script>
   {{ end }}
 

@@ -488,7 +488,8 @@ a.section-count:hover {
 /******************* project controls *******************/
 
 #project-controls,
-#byte-controls {
+#byte-controls,
+#library-controls {
     display: flex;
     flex-wrap: wrap;
     align-items: center;

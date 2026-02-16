@@ -5,26 +5,51 @@
   var config;
   var projectControls = document.getElementById('project-controls');
   var byteControls = document.getElementById('byte-controls');
+  var libraryControls = document.getElementById('library-controls');
 
   if (projectControls) {
     config = {
       controls: projectControls,
       list: document.getElementById('project-list-default'),
-      attr: 'data-languages',
-      multiValue: true,
-      hashKey: 'lang',
-      itemLabel: 'projects',
-      placeholder: 'Filter by language...'
+      sectionHeaderAttr: 'data-year',
+      sectionItemAttr: 'data-date',
+      sectionMatch: 'year-prefix',
+      sectionAllLabel: 'All years',
+      sectionHashKey: 'year',
+      primaryAttr: 'data-languages',
+      primaryMultiValue: true,
+      primaryHashKey: 'lang',
+      primaryPlaceholder: 'Filter by language...',
+      itemLabel: 'projects'
     };
   } else if (byteControls) {
     config = {
       controls: byteControls,
       list: document.getElementById('byte-list-default'),
-      attr: 'data-category',
-      multiValue: false,
-      hashKey: 'cat',
-      itemLabel: 'bytes',
-      placeholder: 'Filter by category...'
+      sectionHeaderAttr: 'data-year',
+      sectionItemAttr: 'data-date',
+      sectionMatch: 'year-prefix',
+      sectionAllLabel: 'All years',
+      sectionHashKey: 'year',
+      primaryAttr: 'data-category',
+      primaryMultiValue: false,
+      primaryHashKey: 'cat',
+      primaryPlaceholder: 'Filter by category...',
+      itemLabel: 'bytes'
+    };
+  } else if (libraryControls) {
+    config = {
+      controls: libraryControls,
+      list: document.getElementById('library-list-default'),
+      sectionHeaderAttr: 'data-category',
+      sectionItemAttr: 'data-category',
+      sectionMatch: 'exact',
+      sectionAllLabel: 'All categories',
+      sectionHashKey: 'cat',
+      primaryAttr: null,
+      primaryHashKey: null,
+      primaryPlaceholder: null,
+      itemLabel: 'books'
     };
   }
 
@@ -33,9 +58,9 @@
   }
 
   var primaryFilters = [];
-  var yearFilter = '';
+  var sectionFilter = '';
   var primarySelect = null;
-  var yearSelect = null;
+  var sectionSelect = null;
 
   var filterBar = document.getElementById('filter-bar');
   var activeFiltersEl = document.getElementById('active-filters');
@@ -55,19 +80,30 @@
     render();
   }
 
-  // Read all list items and compute whether each passes the current year and primary filters.
+  // Extract the section value from an item's attribute based on the configured match mode.
+  function getSectionValue(el) {
+    var raw = el.getAttribute(config.sectionItemAttr) || '';
+    if (config.sectionMatch === 'year-prefix') {
+      return raw.substring(0, 4);
+    }
+    return raw.toLowerCase();
+  }
+
+  // Read all list items and compute whether each passes the current section and primary filters.
   function getItemData() {
     var items = config.list.querySelectorAll('.post-item');
     var result = [];
     for (var i = 0; i < items.length; i++) {
       var el = items[i];
-      var date = el.getAttribute('data-date') || '';
-      var raw = (el.getAttribute(config.attr) || '').toLowerCase();
-      var values = config.multiValue ? raw.split(',').filter(Boolean) : (raw ? [raw] : []);
+      var section = getSectionValue(el);
 
-      var passesYear = !yearFilter || date.substring(0, 4) === yearFilter;
-      var passesPrimary = primaryFilters.length === 0;
-      if (!passesPrimary) {
+      var passesSection = !sectionFilter || section === sectionFilter;
+      var passesPrimary = true;
+
+      if (config.primaryAttr && primaryFilters.length > 0) {
+        var raw = (el.getAttribute(config.primaryAttr) || '').toLowerCase();
+        var values = config.primaryMultiValue ? raw.split(',').filter(Boolean) : (raw ? [raw] : []);
+        passesPrimary = false;
         for (var k = 0; k < primaryFilters.length; k++) {
           if (values.indexOf(primaryFilters[k]) !== -1) {
             passesPrimary = true;
@@ -78,98 +114,103 @@
 
       result.push({
         el: el,
-        date: date,
-        values: values,
-        passesYear: passesYear,
+        section: section,
+        passesSection: passesSection,
         passesPrimary: passesPrimary
       });
     }
     return result;
   }
 
-  // Collect all year values from section header data attributes.
-  function getYears() {
+  // Collect all section values from section header data attributes.
+  function getSections() {
     var headers = config.list.querySelectorAll('.section-header');
-    var years = [];
+    var sections = [];
     for (var i = 0; i < headers.length; i++) {
-      var y = headers[i].getAttribute('data-year');
-      if (y) {
-        years.push(y);
+      var val = headers[i].getAttribute(config.sectionHeaderAttr);
+      if (val) {
+        sections.push(config.sectionMatch === 'exact' ? val.toLowerCase() : val);
       }
     }
-    return years;
+    return sections;
   }
 
-  // Create the year and primary filter dropdowns and append them to the filter bar.
+  // Create the section and primary filter dropdowns and append them to the filter bar.
   function buildFilterBar() {
     filterBar.textContent = '';
 
-    yearSelect = document.createElement('select');
-    yearSelect.className = 'filter-select';
-    yearSelect.addEventListener('change', function() {
-      yearFilter = yearSelect.value;
+    sectionSelect = document.createElement('select');
+    sectionSelect.className = 'filter-select';
+    sectionSelect.addEventListener('change', function() {
+      sectionFilter = sectionSelect.value;
       updateHash();
       render();
     });
-    filterBar.appendChild(yearSelect);
+    filterBar.appendChild(sectionSelect);
 
-    primarySelect = document.createElement('select');
-    primarySelect.className = 'filter-select';
-    primarySelect.addEventListener('change', function() {
-      if (primarySelect.value) {
-        togglePrimaryFilter(primarySelect.value);
-        primarySelect.value = '';
-      }
-    });
-    filterBar.appendChild(primarySelect);
+    if (config.primaryAttr) {
+      primarySelect = document.createElement('select');
+      primarySelect.className = 'filter-select';
+      primarySelect.addEventListener('change', function() {
+        if (primarySelect.value) {
+          togglePrimaryFilter(primarySelect.value);
+          primarySelect.value = '';
+        }
+      });
+      filterBar.appendChild(primarySelect);
+    }
 
-    updateYearOptions();
+    updateSectionOptions();
     updatePrimaryOptions();
   }
 
-  // Rebuild year dropdown options, showing only years with matching items based on primary filters.
-  function updateYearOptions() {
-    yearSelect.textContent = '';
+  // Rebuild section dropdown options, showing only sections with matching items based on primary filters.
+  function updateSectionOptions() {
+    sectionSelect.textContent = '';
 
     var all = document.createElement('option');
     all.value = '';
-    all.textContent = 'All years';
-    yearSelect.appendChild(all);
+    all.textContent = config.sectionAllLabel;
+    sectionSelect.appendChild(all);
 
     var data = getItemData();
-    var yearCounts = {};
+    var sectionCounts = {};
     for (var i = 0; i < data.length; i++) {
       if (data[i].passesPrimary) {
-        var y = data[i].date.substring(0, 4);
-        yearCounts[y] = (yearCounts[y] || 0) + 1;
+        sectionCounts[data[i].section] = (sectionCounts[data[i].section] || 0) + 1;
       }
     }
 
-    var years = getYears();
-    for (var i = 0; i < years.length; i++) {
-      var count = yearCounts[years[i]] || 0;
-      if (count === 0 && years[i] !== yearFilter) {
+    var sections = getSections();
+    for (var i = 0; i < sections.length; i++) {
+      var key = config.sectionMatch === 'exact' ? sections[i].toLowerCase() : sections[i];
+      var count = sectionCounts[key] || 0;
+      if (count === 0 && key !== sectionFilter) {
         continue;
       }
 
       var opt = document.createElement('option');
-      opt.value = years[i];
-      opt.textContent = years[i] + ' (' + count + ')';
+      opt.value = key;
+      opt.textContent = sections[i] + ' (' + count + ')';
 
-      if (years[i] === yearFilter) {
+      if (key === sectionFilter) {
         opt.selected = true;
       }
-      yearSelect.appendChild(opt);
+      sectionSelect.appendChild(opt);
     }
   }
 
-  // Rebuild primary filter dropdown options, showing only values with matching items based on year filter.
+  // Rebuild primary filter dropdown options, showing only values with matching items based on section filter.
   function updatePrimaryOptions() {
+    if (!primarySelect) {
+      return;
+    }
+
     primarySelect.textContent = '';
 
     var placeholder = document.createElement('option');
     placeholder.value = '';
-    placeholder.textContent = config.placeholder;
+    placeholder.textContent = config.primaryPlaceholder;
     placeholder.disabled = true;
     placeholder.selected = true;
     primarySelect.appendChild(placeholder);
@@ -177,10 +218,11 @@
     var data = getItemData();
     var counts = {};
     for (var i = 0; i < data.length; i++) {
-      if (data[i].passesYear) {
-        for (var j = 0; j < data[i].values.length; j++) {
-          var v = data[i].values[j];
-          counts[v] = (counts[v] || 0) + 1;
+      if (data[i].passesSection) {
+        var raw = (data[i].el.getAttribute(config.primaryAttr) || '').toLowerCase();
+        var values = config.primaryMultiValue ? raw.split(',').filter(Boolean) : (raw ? [raw] : []);
+        for (var j = 0; j < values.length; j++) {
+          counts[values[j]] = (counts[values[j]] || 0) + 1;
         }
       }
     }
@@ -213,15 +255,15 @@
       }
     }
 
-    if (primaryFilters.length === 0 && !yearFilter) {
+    if (primaryFilters.length === 0 && !sectionFilter) {
       filterStatus.textContent = '';
       return;
     }
 
-    if (yearFilter) {
-      activeFiltersEl.appendChild(createChip(yearFilter, function() {
-        yearFilter = '';
-        yearSelect.value = '';
+    if (sectionFilter) {
+      activeFiltersEl.appendChild(createChip(sectionFilter, function() {
+        sectionFilter = '';
+        sectionSelect.value = '';
         updateHash();
         render();
       }));
@@ -240,8 +282,8 @@
     clearBtn.textContent = 'clear all';
     clearBtn.addEventListener('click', function() {
       primaryFilters = [];
-      yearFilter = '';
-      yearSelect.value = '';
+      sectionFilter = '';
+      sectionSelect.value = '';
       updateHash();
       render();
     });
@@ -280,11 +322,11 @@
   // Sync current filter state to the URL hash for bookmarking and back/forward navigation.
   function updateHash() {
     var parts = [];
-    if (yearFilter) {
-      parts.push('year=' + yearFilter);
+    if (sectionFilter) {
+      parts.push(config.sectionHashKey + '=' + encodeURIComponent(sectionFilter));
     }
-    if (primaryFilters.length > 0) {
-      parts.push(config.hashKey + '=' + primaryFilters.map(encodeURIComponent).join(','));
+    if (config.primaryHashKey && primaryFilters.length > 0) {
+      parts.push(config.primaryHashKey + '=' + primaryFilters.map(encodeURIComponent).join(','));
     }
 
     if (parts.length === 0) {
@@ -303,22 +345,22 @@
 
     var params = hash.split('&');
     for (var i = 0; i < params.length; i++) {
-      if (params[i].indexOf(config.hashKey + '=') === 0) {
-        primaryFilters = params[i].slice(config.hashKey.length + 1).split(',').map(decodeURIComponent).filter(Boolean);
-      } else if (params[i].indexOf('year=') === 0) {
-        yearFilter = params[i].slice(5);
+      if (params[i].indexOf(config.sectionHashKey + '=') === 0) {
+        sectionFilter = decodeURIComponent(params[i].slice(config.sectionHashKey.length + 1));
+      } else if (config.primaryHashKey && params[i].indexOf(config.primaryHashKey + '=') === 0) {
+        primaryFilters = params[i].slice(config.primaryHashKey.length + 1).split(',').map(decodeURIComponent).filter(Boolean);
       }
     }
   }
 
-  // Apply filters to list items, hide empty year headers, and update the active filters display.
+  // Apply filters to list items, hide empty section headers, and update the active filters display.
   function render() {
-    updateYearOptions();
+    updateSectionOptions();
     updatePrimaryOptions();
 
     var items = config.list.querySelectorAll('.post-item');
     var headers = config.list.querySelectorAll('.section-header');
-    var filtering = primaryFilters.length > 0 || yearFilter;
+    var filtering = primaryFilters.length > 0 || sectionFilter;
 
     if (!filtering) {
       for (var i = 0; i < items.length; i++) {
@@ -326,6 +368,10 @@
       }
       for (var j = 0; j < headers.length; j++) {
         headers[j].style.display = '';
+        var nextEl = headers[j].nextElementSibling;
+        if (nextEl && nextEl.tagName === 'UL') {
+          nextEl.style.display = '';
+        }
       }
       renderActiveFilters();
       return;
@@ -333,14 +379,15 @@
 
     var data = getItemData();
     for (var i = 0; i < data.length; i++) {
-      if (data[i].passesYear && data[i].passesPrimary) {
+      if (data[i].passesSection && data[i].passesPrimary) {
         data[i].el.style.display = '';
       } else {
         data[i].el.style.display = 'none';
       }
     }
 
-    // Hide year headers that have no visible items beneath them.
+    // Hide section headers that have no visible items beneath them.
+    // Items may be direct siblings or nested inside a container element (e.g. <ul>).
     for (var j = 0; j < headers.length; j++) {
       var hasVisible = false;
       var sibling = headers[j].nextElementSibling;
@@ -349,12 +396,28 @@
           hasVisible = true;
           break;
         }
+        var nested = sibling.querySelectorAll('.post-item');
+        for (var m = 0; m < nested.length; m++) {
+          if (nested[m].style.display !== 'none') {
+            hasVisible = true;
+            break;
+          }
+        }
+        if (hasVisible) {
+          break;
+        }
         sibling = sibling.nextElementSibling;
       }
       if (hasVisible) {
         headers[j].style.display = '';
       } else {
         headers[j].style.display = 'none';
+      }
+
+      // Also hide/show the adjacent list container if present.
+      var nextEl = headers[j].nextElementSibling;
+      if (nextEl && nextEl.tagName === 'UL') {
+        nextEl.style.display = hasVisible ? '' : 'none';
       }
     }
 
