@@ -274,6 +274,12 @@
       "languages": ["assembly", "basic"]
     },
     {
+      "name": "crypto-esp8266-disp",
+      "desc": "Display ticker of BTC and ETH prices with ESP8266",
+      "date": "2019-01",
+      "languages": ["c++"]
+    },
+    {
       "name": "SQL-UNIT-POC",
       "url": "https://github.com/barrettotte/SQL-UNIT-POC",
       "desc": "POC MSSQL unit testing framework",
@@ -1024,7 +1030,7 @@
     {
       "name": "coulomb",
       "url": "https://github.com/barrettotte/coulomb",
-      "desc": "My Fedora Kinoite config and dotfiles",
+      "desc": "My system config and dotfiles (Fedora Kinoite)",
       "date": "2025-11",
       "languages": ["shell", "lua"]
     },
@@ -1066,9 +1072,30 @@
     {
       "name": "daedalus",
       "url": "https://github.com/barrettotte/daedalus",
-      "desc": "Opinionated lightweight local-only kanban board",
+      "desc": "A lightweight, offline-first kanban board desktop app",
       "date": "2026-02",
       "languages": ["go", "svelte"]
+    },
+    {
+      "name": "fishtank-userscript",
+      "url": "https://github.com/barrettotte/fishtank-userscript",
+      "desc": "UserScript to tweak/add features to fishtank.live (Season 5 update)",
+      "date": "2026-03",
+      "languages": ["javascript"]
+    },
+    {
+      "name": "fishtank-roku-app",
+      "url": "https://github.com/barrettotte/fishtank-roku-app",
+      "desc": "A basic app for watching Fishtank.live on Roku (unofficial)",
+      "date": "2025-03",
+      "languages": ["brighterscript"]
+    },
+    {
+      "name": "fishtank-android-tv",
+      "url": "https://github.com/barrettotte/fishtank-android-tv",
+      "desc": "A basic app for watching Fishtank.live on Android TV (unofficial)",
+      "date": "2025-03",
+      "languages": ["kotlin"]
     }
   ]
 }

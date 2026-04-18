@@ -21,6 +21,13 @@
     "category": "Mechanical Engineering"
   },
   {
+    "title": "1984: the Original Complete Paperback Edition",
+    "isbn13": "9781966873013",
+    "year": 2025,
+    "author": "George Orwell",
+    "category": "Fiction"
+  },
+  {
     "title": "507 Mechanical Movements",
     "isbn13": "9781614275183",
     "year": 2013,
@@ -224,6 +231,26 @@
     "category": "History of Technology"
   },
   {
+    "title": "ABC's of Electricity",
+    "year": 1963,
+    "author": "Howard W. Sam",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "ABC's of Electronic Power",
+    "isbn13": "9780672208843",
+    "year": 1972,
+    "author": "Rufus P. Turner",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
+    "title": "ABC's of Electronics",
+    "isbn13": "9780672208652",
+    "year": 1972,
+    "author": "Farl J. Waters",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Abstracting Away the Machine: The History of the FORTRAN Programming Language",
     "isbn13": "9781082395949",
     "year": 2019,
@@ -271,6 +298,13 @@
     "year": 1988,
     "author": "Duncan, Ray",
     "category": "Vintage Programming"
+  },
+  {
+    "title": "Advanced Penetration Testing Hacking Satellite Communication",
+    "isbn13": "9798884400924",
+    "year": 2024,
+    "author": "RICHARD. KNOWELL",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "Alternating Current Electricity",
@@ -412,6 +446,13 @@
     "year": 2023,
     "author": "Bernd Ulmann",
     "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Animal Farm",
+    "isbn13": "9786055114336",
+    "year": 2023,
+    "author": "George Orwell",
+    "category": "Fiction"
   },
   {
     "title": "Annalen der Physik und Chemie",
@@ -1346,6 +1387,13 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "Electrical Soldering",
+    "isbn13": "9780672214110",
+    "year": 1976,
+    "author": "Louis M. Dezettel",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Electricity and Magnetism",
     "year": 1903,
     "author": "R.T. Glazebrook",
@@ -1647,6 +1695,13 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "Engineering Electromagnetism Physical Processes and Computation",
+    "isbn13": "9780198562887",
+    "year": 1994,
+    "author": "P. Hammond; J. K. Sykulski",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Engineering Electronics",
     "year": 1938,
     "author": "Fink",
@@ -1658,6 +1713,13 @@
     "year": 2000,
     "author": "Landels, J. G.",
     "category": "History of Technology"
+  },
+  {
+    "title": "Engineering Magnetohydrodynamics",
+    "isbn13": "9780486450322",
+    "year": 2006,
+    "author": "George W. Sutton; Arthur Sherman",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "Engineering Mechanics: Dynamics (2nd Edition)",
@@ -1686,6 +1748,13 @@
     "year": 2001,
     "author": "McCartney, Scott",
     "category": "History of Computing"
+  },
+  {
+    "title": "Enuma Elish The Babylonian Creation Epic",
+    "isbn13": "9781493775033",
+    "year": 2013,
+    "author": "Timothy J. Stephany",
+    "category": "Religion and Mythology"
   },
   {
     "title": "Essential Characteristics",
@@ -2183,6 +2252,13 @@
     "category": "Computer Engineering"
   },
   {
+    "title": "How to Read Schematic Diagrams",
+    "isbn13": "9780672211270",
+    "year": 1975,
+    "author": "Donald E. Herrington",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "I/O Design: Data Management in Operating Systems",
     "isbn13": "9780810457898",
     "year": 1977,
@@ -2597,6 +2673,13 @@
     "isbn13": "9781432132880",
     "year": 2020,
     "category": "Religion and Mythology"
+  },
+  {
+    "title": "Knowledge Graphs and LLMs in Action",
+    "isbn13": "9781633439894",
+    "year": 2025,
+    "author": "Alessandro Negro; Vlastimil Kus; Giuseppe Futia; Fabio Montagna",
+    "category": "AI, Data Science, and Parallel Programming"
   },
   {
     "title": "Lagrangian Mechanics For the Non-physicist",
@@ -3341,6 +3424,13 @@
     "category": "Compilers, Interpreters, and Operating Systems"
   },
   {
+    "title": "Perceptrons An Introd. to Computational Geometry",
+    "isbn13": "",
+    "year": 1990,
+    "author": "Marvin Lee Minsky; Seymour Papert",
+    "category": "AI, Data Science, and Parallel Programming"
+  },
+  {
     "title": "Perl One-Liners",
     "isbn13": "9781593275204",
     "year": 2013,
@@ -3861,6 +3951,13 @@
     "category": "Computer Science and Software Engineering"
   },
   {
+    "title": "Sapiens A Brief History of Humankind",
+    "isbn13": "9780063422001",
+    "year": 2025,
+    "author": "Yuval N. Harari",
+    "category": "History"
+  },
+  {
     "title": "Satellite Communications Systems: Systems, Techniques and Technology",
     "isbn13": "9780470714584",
     "year": 2010,
@@ -4145,6 +4242,12 @@
     "category": "Mathematics"
   },
   {
+    "title": "Terrestrial Magnetism And Atmospheric Electricity",
+    "isbn13": "9781024849493",
+    "year": 2025,
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
+  },
+  {
     "title": "Testing Java Microservices",
     "isbn13": "9781617292897",
     "year": 2018,
@@ -4281,6 +4384,13 @@
     "category": "Religion and Mythology"
   },
   {
+    "title": "The Brothers Karamazov",
+    "isbn13": "9780553212167",
+    "year": 1984,
+    "author": "Fyodor Dostoevsky",
+    "category": "Fiction"
+  },
+  {
     "title": "The C Programming Language",
     "isbn13": "9780131101630",
     "year": 1978,
@@ -4320,6 +4430,13 @@
     "isbn13": "9780385495325",
     "year": 2000,
     "author": "Singh, Simon",
+    "category": "History of Computing"
+  },
+  {
+    "title": "The Computer from Pascal to Von Neumann",
+    "isbn13": "9780691023670",
+    "year": 1993,
+    "author": "Herman H. Goldstine",
     "category": "History of Computing"
   },
   {
@@ -4597,6 +4714,13 @@
     "year": 2010,
     "author": "Michael Kerrisk",
     "category": "Compilers, Interpreters, and Operating Systems"
+  },
+  {
+    "title": "The Lost Colonies of Ancient America",
+    "isbn13": "9781601632784",
+    "year": 2013,
+    "author": "Frank Joseph",
+    "category": "History"
   },
   {
     "title": "The Mahabharata",
@@ -4996,6 +5120,12 @@
     "year": 2001,
     "author": "Daan Frenkel; Berend Smit",
     "category": "Computer Science and Software Engineering"
+  },
+  {
+    "title": "Understanding Solid-State Electronics",
+    "year": 1972,
+    "author": "Texas Instruments",
+    "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
     "title": "Understanding the Linux Kernel, Third Edition",
