@@ -1087,14 +1087,14 @@
       "name": "fishtank-roku-app",
       "url": "https://github.com/barrettotte/fishtank-roku-app",
       "desc": "A basic app for watching Fishtank.live on Roku (unofficial)",
-      "date": "2025-03",
+      "date": "2026-03",
       "languages": ["brighterscript"]
     },
     {
       "name": "fishtank-android-tv",
       "url": "https://github.com/barrettotte/fishtank-android-tv",
       "desc": "A basic app for watching Fishtank.live on Android TV (unofficial)",
-      "date": "2025-03",
+      "date": "2026-03",
       "languages": ["kotlin"]
     }
   ]
