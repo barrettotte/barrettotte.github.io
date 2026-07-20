@@ -307,6 +307,20 @@
     "category": "Electromagnetism, Electrical Engineering, and Radio"
   },
   {
+    "title": "After 1177 B.C.: The Survival of Civilizations",
+    "isbn13": "9780691256832",
+    "year": 2026,
+    "author": "Cline, Eric H.",
+    "category": "History"
+  },
+  {
+    "title": "AI Systems Performance Engineering Optimizing Model Training and Inference Workloads with GPUs, CUDA, and Pytorch",
+    "isbn13": "9798341627789",
+    "year": 2025,
+    "author": "Chris Fregly",
+    "category": "AI, Data Science, and Parallel Programming"
+  },
+  {
     "title": "Alternating Current Electricity",
     "year": 1916,
     "author": "Timbie; Higbie",
@@ -2125,6 +2139,13 @@
     "category": "Game Development, Graphics, and Audio"
   },
   {
+    "title": "Graph Neural Networks in Action",
+    "isbn13": "9781617299056",
+    "year": 2025,
+    "author": "Keita Broadwater; Namid Stillman",
+    "category": "AI, Data Science, and Parallel Programming"
+  },
+  {
     "title": "Gray's Anatomy for Students",
     "isbn13": "9780702051319",
     "year": 2014,
@@ -2680,6 +2701,13 @@
     "year": 2025,
     "author": "Alessandro Negro; Vlastimil Kus; Giuseppe Futia; Fabio Montagna",
     "category": "AI, Data Science, and Parallel Programming"
+  },
+  {
+    "title": "Konrad Zuse's Early Computers The Quest for the Computer in Germany",
+    "isbn13": "9783031398780",
+    "year": 2024,
+    "author": "Raúl Rojas",
+    "category": "History of Computing"
   },
   {
     "title": "Lagrangian Mechanics For the Non-physicist",
@@ -3853,6 +3881,13 @@
     "year": 2015,
     "author": "Susskind, Leonard; Friedman, Art",
     "category": "Physics"
+  },
+  {
+    "title": "Quantum Programming in Depth Solving Problems with Q# and Qiskit",
+    "isbn13": "9781633436909",
+    "year": 2025,
+    "author": "Mariia Mykhailova",
+    "category": "Computer Science and Software Engineering"
   },
   {
     "title": "Quantum Theory",

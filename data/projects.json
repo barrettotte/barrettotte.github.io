@@ -1096,6 +1096,20 @@
       "desc": "A basic app for watching Fishtank.live on Android TV (unofficial)",
       "date": "2026-03",
       "languages": ["kotlin"]
+    },
+    {
+      "name": "temple-os-mcp",
+      "url": "https://github.com/barrettotte/temple-os-mcp",
+      "desc": "An experimental MCP server for TempleOS",
+      "date": "2026-04",
+      "languages": ["holy-c", "python", "shell"]
+    },
+    {
+      "name": "fusion-box",
+      "url": "https://github.com/barrettotte/fusion-box",
+      "desc": "Experimental: patched wine 11.10 (winewayland.drv) + DXVK in a distrobox container to run Autodesk Fusion natively on Wayland",
+      "date": "2026-07",
+      "languages": ["c", "shell"]
     }
   ]
 }
