@@ -8,7 +8,7 @@
         <a href="#computers">Computers</a>
       </h2>
       <ul class="gallery">
-        {{ range (sort .Site.Data.museum.computers "name") }}
+        {{ range (sort hugo.Data.museum.computers "name") }}
           <li>
             <a href="{{- .img -}}">
               <img src="{{- .img -}}" alt="{{- .name -}}" loading="lazy" decoding="async"/>
@@ -22,7 +22,7 @@
         <a href="#misc">Misc</a>
       </h2>
       <ul class="gallery">
-        {{ range (sort .Site.Data.museum.misc "name") }}
+        {{ range (sort hugo.Data.museum.misc "name") }}
           <li>
             <a href="{{- .img -}}">
               <img src="{{- .img -}}" alt="{{- .name -}}" loading="lazy" decoding="async"/>

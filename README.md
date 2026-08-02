@@ -2,7 +2,7 @@
 
 Hosted at https://barrettotte.github.io
 
-A simple personal site using [Hugo](https://gohugo.io/).
+A personal site built with [Hugo](https://gohugo.io/).
 
 ## Dependencies
 

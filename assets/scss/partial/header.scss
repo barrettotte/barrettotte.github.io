@@ -1,102 +1,112 @@
 #header {
-  margin: 0 auto 2rem;
   width: 100%;
+  margin: 0 auto var(--space-4);
+  border-bottom: 1px solid var(--color-border);
 
   h1,
   .h1 {
+    display: inline;
     margin-top: 0;
     margin-bottom: 0;
     color: $color-text;
-    letter-spacing: .01em;
     font-weight: 700;
     font-style: normal;
     font-size: 1.5rem;
     line-height: 2rem;
+    letter-spacing: 0.01em;
 
     @include antialias();
   }
+
   a {
     background: none;
     color: inherit;
     text-decoration: none;
   }
-  #logo {
-    display: inline-block;
-    float: left;
-    margin-right: 20px;
-    width: $logo-width;
-    height: $logo-height;
-    border-radius: 5px;
-    background-size: $logo-width $logo-height;
-    background-repeat: no-repeat;
-    @if $logo-grayout {
-      filter: grayscale(100%);
-      -webkit-filter: grayscale(100%);
-    }
+}
+
+#title {
+  display: block;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 10px 0 0;
+  border-top: 1px solid var(--color-border);
+  color: $color-accent-1;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 0.8rem;
+  letter-spacing: 0.01em;
+
+  > .nav-item .active {
+    text-decoration: underline;
   }
-  #nav {
-    color: $color-accent-1;
-    letter-spacing: .01em;
-    font-weight: 200;
-    font-style: normal;
-    font-size: .8rem;
 
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      line-height: 15px;
+  a {
+    padding-right: 20px;
 
-      a {
-        margin-right: 15px;
-        color: $color-accent-1;
-      }
-      a:hover {
-        @include underline(5px, $color-accent-1);
-      }
-      li {
-        display: inline-block;
-        margin-right: 15px;
-        border-right: 1px dotted;
-        border-color: $color-accent-1;
-        vertical-align: middle;
-      }
-      .icon {
-        display: none;
-      }
-      li:last-child {
-        margin-right: 0;
-        border-right: 0;
+    &:hover,
+    &:focus-visible {
+      color: var(--color-text);
+    }
 
-        a {
-          margin-right: 0;
-        }
-      }
+    &:focus-visible {
+      outline: var(--focus-ring);
+      outline-offset: 2px;
     }
   }
 }
-@if $logo-grayout {
-  #header:hover {
-    #logo {
-      filter: none;
-      -webkit-filter: none;
+
+#nav a:hover,
+#header h1:hover,
+#subtitle > .subtitle-item a:hover {
+  color: var(--color-accent-1);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+#nav a:hover,
+#nav a:focus-visible {
+  color: var(--color-text);
+}
+
+#subtitle {
+  display: inline;
+  float: right;
+  margin: 15px 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.75em;
+
+  > .subtitle-item {
+    display: inline;
+
+    &:not(:first-child)::before {
+      padding-right: 5px;
+      padding-left: 5px;
+      content: "•";
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   #header #nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2px 0;
 
-    .nav-item {
-      a {
-        padding-right: 12px;
-        font-size: 0.8rem;
-      }
+    .nav-item a {
+      padding-right: 12px;
+      font-size: 0.8rem;
     }
   }
 }
+
 @media screen and (max-width: 480px) {
   #header #title {
     display: block;
@@ -107,12 +117,38 @@
       font-size: 1.3rem;
     }
   }
+
   #header #nav {
+    display: flex;
     justify-content: center;
 
     .nav-item a {
       padding-right: 10px;
       font-size: 0.75rem;
     }
+  }
+
+  #title > h1 > a {
+    display: inline-block;
+    width: 100%;
+  }
+
+  #header #title {
+    margin-right: 0;
+
+    h1 {
+      display: flex;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  #subtitle {
+    display: block;
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 10px;
+    text-align: center;
   }
 }

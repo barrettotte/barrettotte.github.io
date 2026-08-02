@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.Language.Locale }}">
   {{- partial "head" . -}}
 
   <body class="max-width mx-auto px3 ltr">
@@ -11,17 +11,13 @@
       </main>
       {{- partial "footer" . -}}
     </div>
+
+    <script src="{{ "js/custom.js" | relURL }}" defer></script>
+    {{- if .IsHome }}
+      <script src="{{ "js/carousel.js" | relURL }}" defer></script>
+    {{- end }}
+    {{- if or (eq .Section "projects") (eq .Section "bytes") (eq .Title "My Library") }}
+      <script src="{{ "js/filter.js" | relURL }}" defer></script>
+    {{- end }}
   </body>
-
-  <script src={{ "js/custom.js" | relURL }} defer></script>
-
-  {{ if .IsHome }}
-    <script src="/js/carousel.js" defer></script>
-    <link rel="stylesheet" href="/css/carousel.css">
-  {{ end }}
-
-  {{ if or (eq .Section "projects") (eq .Section "bytes") (eq .Title "My Library") }}
-    <script src={{ "js/filter.js" | relURL }} defer></script>
-  {{ end }}
-
 </html>

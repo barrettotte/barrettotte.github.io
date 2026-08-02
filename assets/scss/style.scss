@@ -1,8 +1,10 @@
+// Hugo's built-in SCSS pipeline uses LibSass, which does not support the
+// modern Sass module system. Keep @import until the compiler is replaced.
 @import "variables";
 @import "colors/{{ site.Params.colortheme | default "white" }}";
 @import "util";
 @import "mixins";
-@import "extend";
+@import "base";
 @import "fonts";
 
 // global-reset()
@@ -17,7 +19,6 @@ html {
   padding: 0;
   height: 100%;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
 }
 body {
   margin: 0;
@@ -34,7 +35,6 @@ body {
 
   @include antialias();
 
-  @extend $base-style !optional;
 }
 .content {
   position: relative;
@@ -127,17 +127,9 @@ body {
   }
 }
 
-@media (min-width: 480px) {
-  p {
-    text-align: justify;
-  }
-}
-
-@import "partial/header";
 @import "partial/index";
 @import "partial/article";
 @import "partial/archive";
-@import "partial/footer";
 @import "partial/pagination";
 
 pre {
@@ -145,7 +137,6 @@ pre {
   padding: 15px 15px 10px 15px;
   border: 1px dotted $color-border;
   border-radius: 2px;
-  -webkit-border-radius: 2px;
   font-size: 13px;
   font-family: $font-family-mono;
   line-height: 22px;
@@ -163,7 +154,7 @@ pre {
     font-size: 0.9em;
     line-height: 1.7;
     color: #fff;
-    background-color: #8c8c8c;
+    background-color: var(--color-code-control);
     min-width: 60px;
     text-align: center;
     cursor: pointer;
@@ -171,8 +162,8 @@ pre {
   }
 
   .code-copy-btn:hover {
-    background-color: #666;
-    color: #2bbc8a;
+    background-color: var(--color-code-control-hover);
+    color: var(--color-accent-1);
   }
 
   code {
@@ -187,14 +178,12 @@ code {
   padding: 0 5px;
   border: 1px dotted $color-border;
   border-radius: 2px;
-  -webkit-border-radius: 2px;
 }
 
 .highlight {
 
   & > div {
     border-radius: 2px;
-    -webkit-border-radius: 2px;
   }
 
   pre {
@@ -221,3 +210,6 @@ code {
     }
   }
 }
+
+// Site-specific components and overrides are imported last intentionally.
+@import "site";

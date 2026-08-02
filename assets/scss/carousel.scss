@@ -1,4 +1,4 @@
-/* https://raw.githubusercontent.com/jhvanderschee/hugocodex/main/static/css/carousel.css */
+// Based on https://raw.githubusercontent.com/jhvanderschee/hugocodex/main/static/css/carousel.css
 
 .carousel {
     position: relative;
@@ -56,7 +56,7 @@
 
 .carousel ol {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     display: flex;
     left: 50%;
     transform: translateX(-66.667%);

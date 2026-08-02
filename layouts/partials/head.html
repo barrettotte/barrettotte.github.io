@@ -2,26 +2,27 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ if not .IsHome }} {{ .Title }} | {{ end }} {{ .Site.Title }}</title>
-  <link rel = 'canonical' href = '{{ .Permalink }}'>
+  <link rel="canonical" href="{{ .Permalink }}">
 
   {{ with .Site.Params.description }}
     <meta name="description" content="{{ . }}">
   {{ end }}
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {{- $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" "true") -}}
+  {{- $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" hugo.IsServer) -}}
   {{- $styles := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "scss/style.scss" . | css.Sass $options | resources.Fingerprint "sha512" }}
-  <link rel="stylesheet" href="{{ $styles.Permalink | absURL }}" integrity="{{ $styles.Data.Integrity }}">
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
 
-  <link rel="stylesheet" href={{ "lib/font-awesome-free-6.5.2-web/css/all.min.css" | absURL }}>
-  <link rel="stylesheet" href={{ "css/custom.css" | absURL}}>
+  <link rel="stylesheet" href="{{ "lib/font-awesome-free-6.5.2-web/css/all.min.css" | relURL }}">
+  {{- if .IsHome }}
+    {{- $carouselOptions := (dict "targetPath" "css/carousel.css" "outputStyle" "compressed" "enableSourceMap" hugo.IsServer) -}}
+    {{- $carouselStyles := resources.Get "scss/carousel.scss" | css.Sass $carouselOptions | resources.Fingerprint "sha512" -}}
+    <link rel="stylesheet" href="{{ $carouselStyles.RelPermalink }}" integrity="{{ $carouselStyles.Data.Integrity }}">
+  {{- end }}
 
-  <link rel="prefetch" href="{{ "lib/font-awesome-free-6.5.2-web/webfonts/fa-brands-400.woff2" | absURL }}" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="prefetch" href="{{ "lib/font-awesome-free-6.5.2-web/webfonts/fa-regular-400.woff2" | absURL }}" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="prefetch" href="{{ "lib/font-awesome-free-6.5.2-web/webfonts/fa-solid-900.woff2" | absURL }}" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="prefetch" href="{{ "lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" | absURL }}" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="{{ "lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 
-  <link rel="icon" href={{ "img/favicon.svg" | absURL }} />
+  <link rel="icon" href="{{ "img/favicon.svg" | relURL }}">
 
   {{ with .OutputFormats.Get "RSS" }}
     {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}

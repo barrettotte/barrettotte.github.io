@@ -1,0 +1,48 @@
+#not-found {
+    margin-top: 0.5rem;
+    text-align: center;
+
+    h1 {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        color: var(--color-danger);
+    }
+}
+
+.typewriter {
+    display: inline-block;
+    padding-top: 0.25rem;
+}
+
+.typewriter-text {
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-right: 4px solid var(--color-accent-1);
+    color: var(--color-accent-1);
+    font-size: 20px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    animation: typing 1.5s steps(30, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--color-accent-1);
+    }
+}

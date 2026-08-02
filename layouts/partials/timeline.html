@@ -1,7 +1,7 @@
-{{ $annual := .Site.Data.annual }}
-{{ $allProjects := where .Site.Data.projects.list "hidden" nil }}
+{{ $annual := hugo.Data.annual }}
+{{ $allProjects := where hugo.Data.projects.list "hidden" nil }}
 {{ $allProjects = where $allProjects "long" nil }}
-{{ $allBytes := .Site.Data.bytes }}
+{{ $allBytes := hugo.Data.bytes }}
 
 {{/* Collect and sort years descending */}}
 {{ $years := slice }}

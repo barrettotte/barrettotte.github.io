@@ -2,9 +2,9 @@
   <div id="archive">
     <h1>About Me</h1>
 
-    {{ $aboutData := .Site.Data.about }}
-    {{ $projects := .Site.Data.projects.list }}
-    {{ $books := .Site.Data.books }}
+    {{ $aboutData := hugo.Data.about }}
+    {{ $projects := hugo.Data.projects.list }}
+    {{ $books := hugo.Data.books }}
 
     {{/* compute unique language count */}}
     {{ $langMap := dict }}
@@ -102,7 +102,7 @@
     <h2 class="color-accent-1">Annual Summary</h2>
 
     <div class="about-arc">
-      {{ $annual := .Site.Data.annual }}
+      {{ $annual := hugo.Data.annual }}
       {{ $years := slice }}
       {{ range $year, $_ := $annual }}
         {{ $years = $years | append $year }}

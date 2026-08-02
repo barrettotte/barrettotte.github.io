@@ -6,16 +6,16 @@
         <h1>{{- .Title -}}</h1>
         {{- .Content -}}
 
-        <span>I currently have {{ len .Site.Data.books }} books.</span>
+        <span>I currently have {{ len hugo.Data.books }} books.</span>
 
-        {{ $booksWithYear := where .Site.Data.books "year" "gt" 0 }}
+        {{ $booksWithYear := where hugo.Data.books "year" "gt" 0 }}
         {{ $oldest := index (sort $booksWithYear "year") 0 }}
 
         <span>My oldest book was published in {{ $oldest.year }}.</span>
       </div>
 
       {{ $categories := slice }}
-      {{ range .Site.Data.books }}
+      {{ range hugo.Data.books }}
         {{ if isset . "category" }}
           {{ $categories = $categories | append .category }}
         {{ else }}
@@ -37,9 +37,9 @@
           {{ $books := slice }}
 
           {{ if ne $category "Uncategorized" }}
-            {{ $books = where $.Site.Data.books "category" $category }}
+            {{ $books = where hugo.Data.books "category" $category }}
           {{ else }}
-            {{ $books = where $.Site.Data.books "category" nil }}
+            {{ $books = where hugo.Data.books "category" nil }}
           {{ end }}
 
           <h2 id="{{ $category | urlize }}" class="section-header" data-category="{{ $category }}" style="text-transform: capitalize">

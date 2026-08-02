@@ -2,7 +2,7 @@
   <div id="archive">
     <h1 class="page-title">Projects</h1>
 
-    {{ $projects := where .Site.Data.projects.list "hidden" nil }}
+    {{ $projects := where hugo.Data.projects.list "hidden" nil }}
     {{ $projects := where $projects "long" nil }}
 
     {{ $years := slice }}
@@ -35,14 +35,25 @@
         {{ end }}
 
         {{ if not .hidden }}
-          <li class="post-item" data-languages="{{ delimit (default (slice) .languages) "," }}" data-date="{{ .date }}">
+          <li class="post-item" data-languages="{{ delimit (default (slice) .languages) "," }}" data-date="{{ .date }}" data-deployed="{{ if .deployUrl }}true{{ else }}false{{ end }}" data-search="{{ printf "%s %s" .name .desc | plainify | lower }}">
             <time datetime="{{ time (printf "%s%s" .date "-01") }}">{{ .date }}</time>
-            <span>
+            <span class="project-summary">
               {{ if .url }}
-                <a href="{{ .url }}">{{ .name }}</a><span class="item-desc">{{ .desc | markdownify }}</span>
+                <a href="{{ .url }}">{{ .name }}</a>
               {{ else }}
-                <span style="text-decoration:underline; color:var(--color-text)">{{ .name }}</span><span class="item-desc">{{ .desc | markdownify }}</span>
+                <span style="text-decoration:underline; color:var(--color-text)">{{ .name }}</span>
               {{ end }}
+              {{ $projectName := .name }}
+              {{ with .deployUrl }}
+                <a
+                  class="project-launch"
+                  href="{{ . }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open deployed version of {{ $projectName }}"
+                ><i class="fas fa-globe" aria-hidden="true"></i></a>
+              {{ end }}
+              <span class="item-desc">{{ .desc | markdownify }}</span>
             </span>
           </li>
         {{ end }}

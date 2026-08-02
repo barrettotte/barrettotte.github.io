@@ -2,7 +2,7 @@
   <div id="archive">
     <h1 class="page-title">Bytes</h1>
 
-    {{ $bytes := .Site.Data.bytes }}
+    {{ $bytes := hugo.Data.bytes }}
 
     {{ $years := slice }}
     {{ range $bytes }}

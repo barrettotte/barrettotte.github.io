@@ -1,0 +1,278 @@
+// Site-level tokens, global overrides, and component composition.
+:root {
+    --color-accent-1: #{$color-accent-1};
+    --color-background: #{$color-background};
+    --color-surface: #{mix($color-text, $color-background, 5%)};
+    --color-surface-raised: #{mix($color-text, $color-background, 9%)};
+    --color-border: #{$color-border};
+    --color-text: #{$color-text};
+    --color-text-muted: #{$color-text-muted};
+    --color-danger: #a40000;
+    --color-code-control: #8c8c8c;
+    --color-code-control-hover: #666;
+    --focus-ring: 2px solid var(--color-accent-1);
+    --radius-sm: 3px;
+    --radius-md: 5px;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+}
+
+.skip-link {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    z-index: 999;
+}
+
+.skip-link:focus {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--color-accent-1);
+    color: var(--color-background);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    z-index: 9999;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+html,
+body {
+    color: var(--color-text);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+h1,
+.h1 {
+    margin-top: var(--space-1);
+    font-size: 1.6rem;
+    line-height: 1.25;
+}
+
+h2,
+.h2 {
+    font-size: 1.15rem;
+    line-height: 1.35;
+}
+
+h3,
+.h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+li {
+    display: list-item;
+    list-style: square;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+
+td {
+    vertical-align: top;
+}
+
+article .content h2, .h2 {
+    margin-top: var(--space-5);
+    color: var(--color-accent-1);
+}
+
+article .content h2::before {
+    content: "";
+}
+
+article .content h3, .h3 {
+    color: var(--color-accent-1);
+    text-decoration: none;
+}
+
+article.post header div.meta {
+    margin-top: 1rem;
+}
+
+.article-tag {
+    margin-left: 0.50rem;
+}
+
+.article-tag::before {
+    content: none;
+}
+
+.author > span {
+    text-transform: none;
+}
+
+.content a {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    background-image: none;
+}
+
+.content a:hover {
+    color: var(--color-accent-1);
+    background-image: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: var(--focus-ring);
+    outline-offset: 2px;
+}
+
+::selection {
+    background: var(--color-accent-1);
+    color: var(--color-background);
+}
+
+.post-list > .post-item {
+    color: var(--color-text-muted);
+}
+
+.icon:hover, .post-list > h2 {
+    color: var(--color-accent-1);
+}
+
+#archive, article {
+    margin-bottom: var(--space-6);
+}
+
+#archive .post-list .post-item {
+    display: flex;
+}
+
+.color-accent-1 {
+    color: var(--color-accent-1);
+}
+
+#section-links {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#section-links > a {
+    text-decoration: none;
+}
+
+#section-links > a:hover {
+    color: var(--color-accent-1);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.horizontal-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.horizontal-list li {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.horizontal-list li:nth-child(4n) {
+    margin-right: 0;
+}
+
+#scroll-to-top {
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+#scroll-to-top i {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+#scroll-to-top a:focus-visible {
+    outline: 2px solid var(--color-accent-1);
+    outline-offset: 2px;
+}
+
+.post-item > time {
+    color: var(--color-text-muted);
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .content {
+        width: 100%;
+        margin-right: 0.5rem;
+    }
+
+    li {
+        word-wrap: break-word;
+    }
+
+    .horizontal-list {
+        grid-template-columns: repeat(5, 1fr);
+        margin-left: 5px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .horizontal-list {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
+@import "partial/header";
+@import "components/about";
+@import "partial/footer";
+
+@import "components/home";
+@import "components/collections";
+@import "components/museum";
+@import "components/library";
+@import "components/not-found";
+@import "components/filters";
+@import "components/timeline";

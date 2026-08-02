@@ -30,3 +30,30 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  #posts > ul > li,
+  #projects > ul > li,
+  #archive > ul > li {
+    margin-left: 0;
+  }
+
+  #posts > ul > li > time,
+  #projects > ul > li > time,
+  #archive > ul > li time {
+    margin-right: 5px;
+    font-size: 0.75rem;
+  }
+
+  #archive .post-list .post-item {
+    margin-left: 10px;
+  }
+
+  .post > .content > ul {
+    padding-left: 0.75rem;
+  }
+
+  .post-list > h2 {
+    padding-bottom: 10px;
+  }
+}
