@@ -1,7 +1,29 @@
 {{ define "main" }}
-  {{ partial "carousel.html" (dict "context" . "height" "66.66667" "unit" "%" "duration" "10000") }}
+  {{ $projects := where hugo.Data.projects "hidden" nil }}
+  {{ $projects = where $projects "long" nil }}
 
-  <section id="journey">
+  <section class="home-intro" aria-labelledby="home-intro-title">
+    <h1 id="home-intro-title">I like learning, experimenting, and building as I go.</h1>
+    <p class="home-lede">
+      This site is where I keep track of my projects and collections.
+    </p>
+
+    <p class="home-stats">
+      <a href="{{ "/projects" | relURL }}">{{ len $projects }} projects</a> <span aria-hidden="true">·</span>
+      <a href="{{ "/bytes" | relURL }}">{{ len hugo.Data.bytes }} bytes</a> <span aria-hidden="true">·</span>
+      <a href="{{ "/misc/library" | relURL }}">{{ len hugo.Data.books }} books</a> <span aria-hidden="true">·</span>
+      <a href="{{ "/misc/museum" | relURL }}">{{ len hugo.Data.museum }} museum pieces</a>
+    </p>
+  </section>
+
+  {{ partial "featured-work.html" . }}
+
+  <section id="project-history" class="home-section" aria-labelledby="project-history-title">
+    <div class="home-section-heading">
+      <div>
+        <h2 id="project-history-title">Project History</h2>
+      </div>
+    </div>
     {{ partial "timeline.html" . }}
   </section>
 

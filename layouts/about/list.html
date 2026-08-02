@@ -1,18 +1,10 @@
 {{ define "main" }}
   <div id="archive">
-    <h1>About Me</h1>
+    <h1 class="page-title">{{ .Title }}</h1>
 
-    {{ $aboutData := hugo.Data.about }}
-    {{ $projects := hugo.Data.projects.list }}
+    {{ $projects := where hugo.Data.projects "hidden" nil }}
+    {{ $projects = where $projects "long" nil }}
     {{ $books := hugo.Data.books }}
-
-    {{/* compute unique language count */}}
-    {{ $langMap := dict }}
-    {{ range $projects }}
-      {{ range .languages }}
-        {{ $langMap = merge $langMap (dict . true) }}
-      {{ end }}
-    {{ end }}
 
     {{/* compute year range */}}
     {{ $sorted := sort $projects "date" }}
@@ -20,103 +12,52 @@
 
     <h2 class="color-accent-1">General</h2>
 
-    <p>I'm a software engineer that loves to tinker and teach myself new things.</p>
     <p>
-      I have deep knowledge of a few subjects, but I'm more of a generalist than a specialist.
-      I feel like knowing a lot of different subjects has greatly improved my ability to learn.
-      Some of my favorite projects in the past have been ones where I knew very little at the start.
+      I'm a software engineer who enjoys learning, experimenting, and building as I go.
+      My interests range from software and computer architecture to electronics and computing history.
     </p>
-
-    <blockquote class="about-callout">
-      Life is too short and there are tons of interesting things, so why limit yourself to one subject?
-    </blockquote>
+    <p>
+      I tend to explore a wide range of subjects rather than stick to one specialty.
+      Many of my favorite projects started with something I knew very little about.
+    </p>
 
     <p class="about-stats">
       So far that's led to
       <a href="/projects">{{ len $projects }} projects</a> since {{ $minYear }}, and
-      <a href="/misc/library">{{ len $books }}+ books</a> in my library.
+      <a href="/misc/library">{{ len $books }} books</a> in my library.
     </p>
 
-    <div class="about-top-row">
-      <div class="about-top-col">
-        <h3 class="color-accent-1">Interests</h3>
-        <ul class="about-list">
-          {{ range $aboutData.interests }}
-            <li>
-              <i class="{{ .icon }} about-icon" aria-hidden="true"></i>
-              {{ if .url }}
-                <a href="{{ .url }}">{{ .name }}</a>
-              {{ else }}
-                {{ .name }}
-              {{ end }}
-            </li>
-          {{ end }}
-        </ul>
-      </div>
-      <div class="about-top-col">
-        <h3 class="color-accent-1">Hobbies</h3>
-        <ul class="about-list">
-          {{ range $aboutData.hobbies }}
-            <li>
-              <i class="{{ .icon }} about-icon" aria-hidden="true"></i>
-              {{ if .url }}
-                {{ if hasPrefix .url "http" }}
-                  <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>
-                {{ else }}
-                  <a href="{{ .url }}">{{ .name }}</a>
-                {{ end }}
-              {{ else }}
-                {{ .name }}
-              {{ end }}
-            </li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
+    <h2 class="color-accent-1">Interests</h2>
 
-    {{ $languages := $aboutData.favoriteLanguages }}
-    {{ $languageCount := sub (len $languages) 1 }}
+    <ul class="about-list about-interest-list">
+      <li><i class="fas fa-microchip about-icon" aria-hidden="true"></i><a href="/misc/museum">History of computing/technology</a></li>
+      <li><i class="fas fa-memory about-icon" aria-hidden="true"></i>Computer architecture</li>
+      <li><i class="fas fa-bolt about-icon" aria-hidden="true"></i><a href="/bytes#cat=electronics">Electronics</a></li>
+      <li><i class="fas fa-terminal about-icon" aria-hidden="true"></i>Low-level programming</li>
+      <li><i class="fas fa-magnet about-icon" aria-hidden="true"></i>Electromagnetism</li>
+      <li><i class="fas fa-wrench about-icon" aria-hidden="true"></i><a href="/projects">Tinkering</a></li>
+      <li><i class="fas fa-dumbbell about-icon" aria-hidden="true"></i>Weightlifting</li>
+      <li><i class="fas fa-book about-icon" aria-hidden="true"></i><a href="/misc/library">Self-studying</a></li>
+      <li><i class="fas fa-tv about-icon" aria-hidden="true"></i><a href="https://anilist.co/user/barrettotte" target="_blank" rel="noopener noreferrer">Anime</a></li>
+      <li><i class="fas fa-gamepad about-icon" aria-hidden="true"></i>Video games</li>
+    </ul>
+
     <p>
       My favorite programming languages are
-      {{ range $i, $lang := $languages }}
-        {{ $slug := $lang | lower }}
-        {{ if eq $i $languageCount }}
-          and <a href="/projects#lang={{ $slug }}">{{ $lang }}</a>.
-        {{ else if lt $i $languageCount }}
-          <a href="/projects#lang={{ $slug }}">{{ $lang }}</a>,
-        {{ end }}
-      {{ end }}
+      <a href="/projects#lang=c">C</a>,
+      <a href="/projects#lang=assembly">Assembly</a>,
+      <a href="/projects#lang=python">Python</a>, and
+      <a href="/projects#lang=go">Go</a>.
     </p>
 
     <h2 class="color-accent-1">Career</h2>
 
-    {{ $start := time ($aboutData.careerStart) }}
+    {{ $start := time "2018-06-04" }}
     {{ $yearsElapsed := $start.Year | sub now.Year }}
     <p>
-      In summary, I'm a software engineer with {{ $yearsElapsed }} years of professional experience.
-      The majority of my experience is backend development with <strong>Java</strong>, <strong>Vue.js</strong>, and <strong>Postgres</strong>.
+      I've worked professionally as a software engineer for {{ $yearsElapsed }} years,
+      primarily on backend and full-stack systems using <strong>Java</strong>, <strong>Python</strong>, <strong>Vue.js</strong>, and <strong>PostgreSQL</strong>.
     </p>
-    <p>My resume with more detail is available at <a href="{{ .Site.Params.links.resume }}" target="_blank" rel="noopener noreferrer">/resume</a>.</p>
-    <p>Based on my interests, I hope to eventually earn a role that intersects cybersecurity and computer engineering, but we'll see.</p>
-
-    <h2 class="color-accent-1">Annual Summary</h2>
-
-    <div class="about-arc">
-      {{ $annual := hugo.Data.annual }}
-      {{ $years := slice }}
-      {{ range $year, $_ := $annual }}
-        {{ $years = $years | append $year }}
-      {{ end }}
-      {{ $years = sort $years }}
-
-      {{ range $years }}
-        {{ $year := . }}
-        {{ $theme := index $annual $year }}
-        <div class="arc-entry">
-          <span class="arc-year">{{ $year }}</span>
-          <span class="arc-theme">{{ $theme }}</span>
-        </div>
-      {{ end }}
-    </div>
+    <p>More detail is available in my <a href="{{ .Site.Params.links.resume }}" target="_blank" rel="noopener noreferrer">resume</a>.</p>
   </div>
 {{ end }}

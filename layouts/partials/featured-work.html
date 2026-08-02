@@ -1,0 +1,34 @@
+<section class="home-section" aria-labelledby="featured-work-title">
+  <div class="home-section-heading">
+    <div>
+      <h2 id="featured-work-title">Featured Projects</h2>
+    </div>
+    <a href="{{ "/projects" | relURL }}">All projects <span aria-hidden="true">→</span></a>
+  </div>
+
+  <div class="featured-grid">
+    {{ $featured := where hugo.Data.projects "featured" true }}
+    {{ range $index, $item := sort $featured "date" "desc" }}
+      {{ $url := $item.deployUrl | default $item.url }}
+      <article class="featured-item">
+        {{ with $item.image }}
+          <a class="featured-image" href="{{ $url }}" aria-label="View {{ $item.name }}">
+            <img
+              src="{{ printf "/img/thumbnails/projects/%s.webp" (path.BaseName .) | relURL }}"
+              alt=""
+              width="720"
+              height="405"
+              {{ if gt $index 0 }}loading="lazy"{{ end }}
+              decoding="async"
+            >
+          </a>
+        {{ end }}
+        <div class="featured-body">
+          <div class="featured-meta">{{ substr $item.date 0 4 }}{{ with index ($item.languages | default (slice)) 0 }} <span aria-hidden="true">·</span> {{ . }}{{ end }}</div>
+          <h3><a href="{{ $url }}">{{ $item.name }}</a></h3>
+          <p>{{ $item.desc }}</p>
+        </div>
+      </article>
+    {{ end }}
+  </div>
+</section>

@@ -1,86 +1,190 @@
-{
-  "computers": [
-    {
-      "name": "Altair 8800 Replica",
-      "img": "/img/computing/computers/altair8800-replica.jpg"
-    },
-    {
-      "name": "Commodore 64",
-      "img": "/img/computing/computers/commodore-64x2.jpg"
-    },
-    {
-      "name": "Comtrade Express",
-      "img": "/img/computing/computers/comtrade-express.jpg"
-    },
-    {
-      "name": "IBM 5150XT",
-      "img": "/img/computing/computers/ibm-5150xt.jpg"
-    },
-    {
-      "name": "IBM 5155",
-      "img": "/img/computing/computers/ibm-5155.jpg"
-    },
-    {
-      "name": "IBM AS/400",
-      "img": "/img/computing/computers/ibm-as400.jpg"
-    },
-    {
-      "name": "iMac G3",
-      "img": "/img/computing/computers/imac-g3.jpg"
-    },
-    {
-      "name": "Leading Edge (?)",
-      "img": "/img/computing/computers/leadingedge-x.jpg"
-    },
-    {
-      "name": "Tandy Color Computer 3",
-      "img": "/img/computing/computers/tandy-coco3.jpg"
-    },
-    {
-      "name": "TRS-80 Model I",
-      "img": "/img/computing/computers/trs80-1.jpg"
-    },
-    {
-      "name": "TRS-80 Model III",
-      "img": "/img/computing/computers/trs80-3.jpg"
-    },
-    {
-      "name": "TRS-80 Model 4P",
-      "img": "/img/computing/computers/trs80-4p.jpg"
-    },
-    {
-      "name": "TRS-80 Model 100",
-      "img": "/img/computing/computers/trs80-m100.jpg"
-    }
-  ],
-  "misc": [
-    {
-      "name": "IBM Model 8923 Keyboard",
-      "img": "/img/computing/ibm-kb-8923.jpg"
-    },
-    {
-      "name": "IBM Model M Keyboard",
-      "img": "/img/computing/ibm-kb-m.jpg"
-    },
-    {
-      "name": "Monroe Electromechanical Calculator",
-      "img": "/img/computing/monroe-calc.jpg"
-    },
-    {
-      "name": "Remex RRS1150BC1 Tape Reader",
-      "img": "/img/computing/remex-tape.jpg"
-    },
-    {
-      "name": "Tandy Pocket Scientific Calculator PC-6",
-      "img": "/img/computing/tandy-pc6.jpg"
-    },
-    {
-      "name": "USSR Felix Arithmometer",
-      "img": "/img/computing/ussr-mechcalc.jpg"
-    },
-    {
-      "name": "USSR Core Memory Chip",
-      "img": "/img/computing/ussr-memory-chip.jpg"
-    }
-  ]
-}
+[
+  {
+    "id": "altair-8800-replica",
+    "name": "Altair 8800 Replica",
+    "manufacturer": "Replica",
+    "year": null,
+    "displayYear": "Modern replica",
+    "category": "Computer",
+    "image": "/img/computing/computers/altair8800-replica.jpg",
+    "description": "A working replica of the front-panel computer that helped define the early personal-computing era."
+  },
+  {
+    "id": "commodore-64",
+    "name": "Commodore 64",
+    "manufacturer": "Commodore",
+    "year": 1982,
+    "category": "Computer",
+    "image": "/img/computing/computers/commodore-64x2.jpg",
+    "description": "An 8-bit home computer with its keyboard and computer hardware combined into a single case."
+  },
+  {
+    "id": "comtrade-express",
+    "name": "Comtrade Express",
+    "manufacturer": "Comtrade",
+    "year": null,
+    "displayYear": "Unknown",
+    "category": "Computer",
+    "image": "/img/computing/computers/comtrade-express.jpg",
+    "description": "A desktop-compatible computer that still needs further identification and documentation."
+  },
+  {
+    "id": "ibm-5150xt",
+    "name": "IBM 5150XT",
+    "manufacturer": "IBM",
+    "year": 1983,
+    "category": "Computer",
+    "image": "/img/computing/computers/ibm-5150xt.jpg",
+    "description": "An IBM PC XT-era desktop system from the early years of the IBM PC platform."
+  },
+  {
+    "id": "ibm-5155",
+    "name": "IBM 5155",
+    "manufacturer": "IBM",
+    "year": 1984,
+    "category": "Computer",
+    "image": "/img/computing/computers/ibm-5155.jpg",
+    "description": "IBM's portable PC, built around a transportable case with an integrated display and keyboard."
+  },
+  {
+    "id": "ibm-as400",
+    "name": "IBM AS/400",
+    "manufacturer": "IBM",
+    "year": 1988,
+    "category": "Computer",
+    "image": "/img/computing/computers/ibm-as400.jpg",
+    "description": "A system from IBM's AS/400 family of integrated business computers."
+  },
+  {
+    "id": "imac-g3",
+    "name": "iMac G3",
+    "manufacturer": "Apple",
+    "year": 1998,
+    "category": "Computer",
+    "image": "/img/computing/computers/imac-g3.jpg",
+    "description": "Apple's translucent all-in-one desktop built around the PowerPC G3 processor."
+  },
+  {
+    "id": "leading-edge-unknown",
+    "name": "Leading Edge (?)",
+    "manufacturer": "Leading Edge",
+    "year": null,
+    "displayYear": "Unknown",
+    "category": "Computer",
+    "image": "/img/computing/computers/leadingedge-x.jpg",
+    "description": "An unidentified Leading Edge-compatible desktop awaiting a firm model identification."
+  },
+  {
+    "id": "tandy-color-computer-3",
+    "name": "Tandy Color Computer 3",
+    "manufacturer": "Tandy",
+    "year": 1986,
+    "category": "Computer",
+    "image": "/img/computing/computers/tandy-coco3.jpg",
+    "description": "The third major Color Computer model, packaged as a compact keyboard computer."
+  },
+  {
+    "id": "trs-80-model-i",
+    "name": "TRS-80 Model I",
+    "manufacturer": "Tandy / Radio Shack",
+    "year": 1977,
+    "category": "Computer",
+    "image": "/img/computing/computers/trs80-1.jpg",
+    "description": "An early mass-market microcomputer sold through Radio Shack stores."
+  },
+  {
+    "id": "trs-80-model-iii",
+    "name": "TRS-80 Model III",
+    "manufacturer": "Tandy / Radio Shack",
+    "year": 1980,
+    "category": "Computer",
+    "image": "/img/computing/computers/trs80-3.jpg",
+    "description": "An all-in-one successor to the original TRS-80 with its monitor and drives housed together."
+  },
+  {
+    "id": "trs-80-model-4p",
+    "name": "TRS-80 Model 4P",
+    "manufacturer": "Tandy / Radio Shack",
+    "year": 1983,
+    "category": "Computer",
+    "image": "/img/computing/computers/trs80-4p.jpg",
+    "description": "A transportable version of the TRS-80 Model 4 with an integrated display and disk drives."
+  },
+  {
+    "id": "trs-80-model-100",
+    "name": "TRS-80 Model 100",
+    "manufacturer": "Tandy / Radio Shack",
+    "year": 1983,
+    "category": "Computer",
+    "image": "/img/computing/computers/trs80-m100.jpg",
+    "description": "A compact battery-powered portable computer with a built-in display, keyboard, and software."
+  },
+  {
+    "id": "ibm-model-8923-keyboard",
+    "name": "IBM Model 8923 Keyboard",
+    "manufacturer": "IBM",
+    "year": null,
+    "displayYear": "Unknown",
+    "category": "Keyboard",
+    "image": "/img/computing/ibm-kb-8923.jpg",
+    "description": "An IBM keyboard identified by model number 8923."
+  },
+  {
+    "id": "ibm-model-m-keyboard",
+    "name": "IBM Model M Keyboard",
+    "manufacturer": "IBM",
+    "year": 1985,
+    "category": "Keyboard",
+    "image": "/img/computing/ibm-kb-m.jpg",
+    "description": "IBM's well-known buckling-spring keyboard design with a heavy, durable construction."
+  },
+  {
+    "id": "monroe-electromechanical-calculator",
+    "name": "Monroe Electromechanical Calculator",
+    "manufacturer": "Monroe",
+    "year": null,
+    "displayYear": "Unknown",
+    "category": "Calculator",
+    "image": "/img/computing/monroe-calc.jpg",
+    "description": "An electromechanical desktop calculator from Monroe's line of office calculating machines."
+  },
+  {
+    "id": "remex-rrs1150bc1-tape-reader",
+    "name": "Remex RRS1150BC1 Tape Reader",
+    "manufacturer": "Remex",
+    "year": null,
+    "displayYear": "Unknown",
+    "category": "Peripheral",
+    "image": "/img/computing/remex-tape.jpg",
+    "description": "A punched-tape reader used to turn patterns stored on paper tape into electrical data."
+  },
+  {
+    "id": "tandy-pocket-scientific-calculator-pc-6",
+    "name": "Tandy Pocket Scientific Calculator PC-6",
+    "manufacturer": "Tandy",
+    "year": 1984,
+    "category": "Calculator",
+    "image": "/img/computing/tandy-pc6.jpg",
+    "description": "A pocket-sized programmable scientific calculator sold by Tandy."
+  },
+  {
+    "id": "ussr-felix-arithmometer",
+    "name": "USSR Felix Arithmometer",
+    "manufacturer": "Unknown",
+    "year": null,
+    "displayYear": "Unknown",
+    "category": "Calculator",
+    "image": "/img/computing/ussr-mechcalc.jpg",
+    "description": "A Soviet hand-cranked mechanical calculator from the long-running Felix family."
+  },
+  {
+    "id": "ussr-core-memory-chip",
+    "name": "USSR Core Memory Chip",
+    "manufacturer": "Unknown",
+    "year": null,
+    "displayYear": "Unknown",
+    "category": "Component",
+    "image": "/img/computing/ussr-memory-chip.jpg",
+    "description": "A small magnetic-core memory assembly with its woven storage cores visible."
+  }
+]

@@ -7,7 +7,7 @@
           {{ $terms := slice }}
 
           <!-- project tags -->
-          {{ range $p := hugo.Data.projects.list }}
+          {{ range $p := hugo.Data.projects }}
             {{ $terms = union $terms .tags }}  
           {{ end }}
 

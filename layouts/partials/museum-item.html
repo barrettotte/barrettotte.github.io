@@ -1,0 +1,22 @@
+{{ $thumbnail := printf "/img/thumbnails/museum/%s.webp" (path.BaseName .image) }}
+<article id="{{ .id }}" class="museum-item">
+  <a class="museum-item-image" href="{{ $thumbnail | relURL }}" aria-label="View photograph of {{ .name }}">
+    <img
+      src="{{ $thumbnail | relURL }}"
+      alt="{{ .name }}"
+      loading="lazy"
+      decoding="async"
+    >
+  </a>
+  <div class="museum-item-body">
+    <p class="museum-item-meta">
+      {{ .manufacturer }}
+      <span aria-hidden="true">·</span>
+      {{ .displayYear | default .year }}
+      <span aria-hidden="true">·</span>
+      {{ .category }}
+    </p>
+    <h4><a href="#{{ .id }}">{{ .name }}</a></h4>
+    <p>{{ .description }}</p>
+  </div>
+</article>

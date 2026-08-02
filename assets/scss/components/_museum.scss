@@ -1,66 +1,132 @@
-#museum .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 15px;
-    padding-left: 0;
+.museum-intro {
+    margin-bottom: var(--space-6);
 
-    > li {
-        position: relative;
-        height: 300px;
-        list-style: none;
-        cursor: pointer;
+    > p:not(.museum-count) {
+        max-width: 46rem;
     }
+}
 
-    li a img {
+.museum-count {
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+}
+
+.museum-section {
+    margin-top: var(--space-6);
+
+    > h2 {
+        color: var(--color-accent-1);
+    }
+}
+
+.museum-timeline {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-2) var(--space-5);
+    margin: 0;
+    padding: 0 0 0 var(--space-4);
+    border-left: 1px solid var(--color-border);
+    list-style: none;
+
+    li {
+        position: relative;
+        display: grid;
+        grid-template-columns: 7.5rem minmax(0, 1fr);
+        gap: var(--space-3);
+        align-items: baseline;
+
+        &::before {
+            position: absolute;
+            top: 0.65em;
+            left: calc(-1 * var(--space-4) - 3px);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--color-accent-1);
+            content: "";
+        }
+    }
+}
+
+.museum-timeline-year {
+    color: var(--color-text-muted);
+    font-size: 0.78rem;
+}
+
+.museum-year {
+    margin: var(--space-5) 0 var(--space-3);
+    color: var(--color-accent-1);
+    font-size: 1rem;
+}
+
+.museum-item {
+    display: grid;
+    grid-template-columns: minmax(12rem, 16rem) minmax(0, 1fr);
+    overflow: hidden;
+    margin-bottom: var(--space-4);
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    scroll-margin-top: var(--space-4);
+
+    &:target {
+        border-color: var(--color-accent-1);
+    }
+}
+
+.museum-item-image {
+    display: block;
+    min-height: 11rem;
+    background: var(--color-background);
+
+    img {
+        display: block;
         width: 100%;
         height: 100%;
-        border: 1px solid var(--color-border);
-        border-radius: 5px;
+        min-height: 11rem;
         object-fit: cover;
-        vertical-align: middle;
     }
 }
 
-.gallery li {
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 5px;
-        border-radius: 5px;
-        background: rgba(0, 0, 0, 0.85);
-        color: var(--color-accent-1);
-        text-align: center;
-        transform: scale(0);
-        transition: all 0.1s ease-in;
+.museum-item-body {
+    padding: var(--space-4);
+
+    h4 {
+        margin: 0 0 var(--space-2);
+        font-size: 1rem;
     }
 
-    &:hover,
-    &:focus-within {
-        border: 1px solid var(--color-accent-1);
-        border-radius: 5px;
-    }
-
-    &:hover .overlay,
-    &:focus-within .overlay {
-        border-bottom: 1px solid var(--color-accent-1);
-        transform: scale(1);
-    }
-
-    a:focus-visible {
-        outline: 2px solid var(--color-accent-1);
-        outline-offset: -2px;
+    > p:last-child {
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: 0.86rem;
     }
 }
 
-@media screen and (max-width: 480px) {
-    #museum .gallery > li {
-        width: 100%;
-        height: 200px;
+.museum-item-meta {
+    margin: 0 0 var(--space-2);
+    color: var(--color-accent-1);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 760px) {
+    .museum-timeline {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .museum-timeline li {
+        grid-template-columns: 6.75rem minmax(0, 1fr);
+    }
+
+    .museum-item {
+        grid-template-columns: 1fr;
+    }
+
+    .museum-item-image,
+    .museum-item-image img {
+        min-height: 12rem;
+        max-height: 16rem;
     }
 }

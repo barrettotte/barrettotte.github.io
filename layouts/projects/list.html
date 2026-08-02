@@ -2,7 +2,7 @@
   <div id="archive">
     <h1 class="page-title">Projects</h1>
 
-    {{ $projects := where hugo.Data.projects.list "hidden" nil }}
+    {{ $projects := where hugo.Data.projects "hidden" nil }}
     {{ $projects := where $projects "long" nil }}
 
     {{ $years := slice }}

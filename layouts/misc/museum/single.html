@@ -1,36 +1,53 @@
 {{ define "main" }}
+  {{ $items := hugo.Data.museum }}
+  {{ $dated := where $items "year" "ne" nil }}
+  {{ $dated = sort $dated "year" "desc" }}
+  {{ $undated := where $items "year" "eq" nil }}
+  {{ $undated = sort $undated "name" }}
+
   <article id="museum">
-    <div class="content">
-      <h1>{{- .Title -}}</h1>
-      {{- .Content -}}
+    <header class="museum-intro">
+      <h1 class="page-title">{{ .Title }}</h1>
+      {{ .Content }}
+      <p class="museum-count">{{ len $items }} pieces in the collection.</p>
+    </header>
 
-      <h2 id="computers">
-        <a href="#computers">Computers</a>
-      </h2>
-      <ul class="gallery">
-        {{ range (sort hugo.Data.museum.computers "name") }}
+    <section class="museum-section" aria-labelledby="museum-timeline-title">
+      <h2 id="museum-timeline-title">Timeline</h2>
+      <ol class="museum-timeline">
+        {{ range $dated }}
           <li>
-            <a href="{{- .img -}}">
-              <img src="{{- .img -}}" alt="{{- .name -}}" loading="lazy" decoding="async"/>
-            </a>
-            <div class="overlay"><span>{{- .name -}}</span></div>
+            <span class="museum-timeline-year">{{ .year }}</span>
+            <a href="#{{ .id }}">{{ .name }}</a>
           </li>
         {{ end }}
-      </ul>
-
-      <h2 id="misc">
-        <a href="#misc">Misc</a>
-      </h2>
-      <ul class="gallery">
-        {{ range (sort hugo.Data.museum.misc "name") }}
+        {{ range $undated }}
           <li>
-            <a href="{{- .img -}}">
-              <img src="{{- .img -}}" alt="{{- .name -}}" loading="lazy" decoding="async"/>
-            </a>
-            <div class="overlay"><span>{{- .name -}}</span></div>
+            <span class="museum-timeline-year">{{ .displayYear | default "Unknown" }}</span>
+            <a href="#{{ .id }}">{{ .name }}</a>
           </li>
         {{ end }}
-      </ul>
-    </div>
+      </ol>
+    </section>
+
+    <section class="museum-section" aria-labelledby="museum-collection-title">
+      <h2 id="museum-collection-title">Collection</h2>
+
+      {{ $.Scratch.Delete "museumYear" }}
+      {{ range $dated }}
+        {{ if ne .year ($.Scratch.Get "museumYear") }}
+          {{ $.Scratch.Set "museumYear" .year }}
+          <h3 id="museum-year-{{ .year }}" class="museum-year">{{ .year }}</h3>
+        {{ end }}
+        {{ partial "museum-item.html" . }}
+      {{ end }}
+
+      {{ with $undated }}
+        <h3 id="museum-year-unknown" class="museum-year">Unknown year</h3>
+        {{ range . }}
+          {{ partial "museum-item.html" . }}
+        {{ end }}
+      {{ end }}
+    </section>
   </article>
 {{ end }}

@@ -14,11 +14,6 @@
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
 
   <link rel="stylesheet" href="{{ "lib/font-awesome-free-6.5.2-web/css/all.min.css" | relURL }}">
-  {{- if .IsHome }}
-    {{- $carouselOptions := (dict "targetPath" "css/carousel.css" "outputStyle" "compressed" "enableSourceMap" hugo.IsServer) -}}
-    {{- $carouselStyles := resources.Get "scss/carousel.scss" | css.Sass $carouselOptions | resources.Fingerprint "sha512" -}}
-    <link rel="stylesheet" href="{{ $carouselStyles.RelPermalink }}" integrity="{{ $carouselStyles.Data.Integrity }}">
-  {{- end }}
 
   <link rel="preload" href="{{ "lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 

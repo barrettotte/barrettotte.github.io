@@ -13,9 +13,6 @@
     </div>
 
     <script src="{{ "js/custom.js" | relURL }}" defer></script>
-    {{- if .IsHome }}
-      <script src="{{ "js/carousel.js" | relURL }}" defer></script>
-    {{- end }}
     {{- if or (eq .Section "projects") (eq .Section "bytes") (eq .Title "My Library") }}
       <script src="{{ "js/filter.js" | relURL }}" defer></script>
     {{- end }}

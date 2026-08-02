@@ -6,3 +6,6 @@ node_modules
 themes/skeleton
 
 tmp/
+
+.venv
+*.py[co]

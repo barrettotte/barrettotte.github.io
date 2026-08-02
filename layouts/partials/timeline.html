@@ -1,18 +1,29 @@
-{{ $annual := hugo.Data.annual }}
-{{ $allProjects := where hugo.Data.projects.list "hidden" nil }}
+{{ $annual := slice
+  (dict "year" "2026" "theme" "LLMs, GNNs, and ?")
+  (dict "year" "2025" "theme" "LLMs, RAG, and CPU design")
+  (dict "year" "2024" "theme" "FPGA, CNC, and CPU design")
+  (dict "year" "2023" "theme" "homelab, electromagnetism, and deep learning")
+  (dict "year" "2022" "theme" "CAD, operating systems, and machine learning")
+  (dict "year" "2021" "theme" "3D printing, interpreters, and assembly")
+  (dict "year" "2020" "theme" "fullstack/mainframe development, compilers, and CPU design")
+  (dict "year" "2019" "theme" "fullstack/mainframe development")
+  (dict "year" "2018" "theme" "fullstack development and college Java")
+  (dict "year" "2017" "theme" "game development, computer architecture, and college Java")
+  (dict "year" "2016" "theme" "game development and college Java")
+  (dict "year" "2015" "theme" "game development and college Java")
+  (dict "year" "2014" "theme" "high school C++/Java and college C")
+  (dict "year" "2013" "theme" "high school C++/Java")
+  (dict "year" "2012" "theme" "high school C++/Java")
+  (dict "year" "2011" "theme" "high school C++")
+}}
+{{ $allProjects := where hugo.Data.projects "hidden" nil }}
 {{ $allProjects = where $allProjects "long" nil }}
 {{ $allBytes := hugo.Data.bytes }}
 
-{{/* Collect and sort years descending */}}
-{{ $years := slice }}
-{{ range $year, $_ := $annual }}
-  {{ $years = $years | append $year }}
-{{ end }}
-{{ $years = sort $years "value" "desc" }}
-
 <div class="timeline">
-  {{ range $idx, $year := $years }}
-    {{ $theme := index $annual $year }}
+  {{ range $annual }}
+    {{ $year := .year }}
+    {{ $theme := .theme }}
 
     {{/* Count projects for this year */}}
     {{ $yearProjects := slice }}
