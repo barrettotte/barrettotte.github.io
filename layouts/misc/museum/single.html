@@ -1,9 +1,11 @@
 {{ define "main" }}
   {{ $items := hugo.Data.museum }}
   {{ $dated := where $items "year" "ne" nil }}
-  {{ $dated = sort $dated "year" "desc" }}
+  {{ $dated = sort $dated "year" "asc" }}
   {{ $undated := where $items "year" "eq" nil }}
   {{ $undated = sort $undated "name" }}
+  {{ $replicas := where $undated "displayYear" "eq" "Modern replica" }}
+  {{ $unknown := where $undated "displayYear" "ne" "Modern replica" }}
 
   <article id="museum">
     <header class="museum-intro">
@@ -21,13 +23,35 @@
             <a href="#{{ .id }}">{{ .name }}</a>
           </li>
         {{ end }}
-        {{ range $undated }}
-          <li>
-            <span class="museum-timeline-year">{{ .displayYear | default "Unknown" }}</span>
-            <a href="#{{ .id }}">{{ .name }}</a>
-          </li>
-        {{ end }}
       </ol>
+
+      <div class="museum-secondary-lists">
+        {{ with $replicas }}
+          <section aria-labelledby="museum-replicas-title">
+            <h3 id="museum-replicas-title">
+              Modern replicas <span>({{ len . }})</span>
+            </h3>
+            <ul>
+              {{ range . }}
+                <li><a href="#{{ .id }}">{{ .name }}</a></li>
+              {{ end }}
+            </ul>
+          </section>
+        {{ end }}
+
+        {{ with $unknown }}
+          <section aria-labelledby="museum-unknown-title">
+            <h3 id="museum-unknown-title">
+              Unknown year <span>({{ len . }})</span>
+            </h3>
+            <ul>
+              {{ range . }}
+                <li><a href="#{{ .id }}">{{ .name }}</a></li>
+              {{ end }}
+            </ul>
+          </section>
+        {{ end }}
+      </div>
     </section>
 
     <section class="museum-section" aria-labelledby="museum-collection-title">
@@ -42,7 +66,14 @@
         {{ partial "museum-item.html" . }}
       {{ end }}
 
-      {{ with $undated }}
+      {{ with $replicas }}
+        <h3 id="museum-year-replica" class="museum-year">Modern replicas</h3>
+        {{ range . }}
+          {{ partial "museum-item.html" . }}
+        {{ end }}
+      {{ end }}
+
+      {{ with $unknown }}
         <h3 id="museum-year-unknown" class="museum-year">Unknown year</h3>
         {{ range . }}
           {{ partial "museum-item.html" . }}
@@ -50,4 +81,6 @@
       {{ end }}
     </section>
   </article>
+
+  {{ partial "scroll-to-top.html" (dict "context" . "target" "/misc/museum/#" ) }}
 {{ end }}

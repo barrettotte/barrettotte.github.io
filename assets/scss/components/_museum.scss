@@ -53,6 +53,38 @@
     font-size: 0.78rem;
 }
 
+.museum-secondary-lists {
+    display: grid;
+    gap: var(--space-4);
+    margin-top: var(--space-5);
+
+    h3 {
+        margin: 0 0 var(--space-2);
+        color: var(--color-text-muted);
+        font-size: 0.8rem;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        span {
+            font-weight: normal;
+        }
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-1) var(--space-5);
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        margin-bottom: var(--space-1);
+        list-style: none;
+    }
+}
+
 .museum-year {
     margin: var(--space-5) 0 var(--space-3);
     color: var(--color-accent-1);
@@ -110,7 +142,8 @@
 }
 
 @media screen and (max-width: 760px) {
-    .museum-timeline {
+    .museum-timeline,
+    .museum-secondary-lists ul {
         grid-template-columns: 1fr;
     }
 }

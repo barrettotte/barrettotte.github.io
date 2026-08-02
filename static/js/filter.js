@@ -41,8 +41,14 @@
       primaryMultiValue: false,
       primaryHashKey: 'cat',
       primaryPlaceholder: 'Filter by category...',
-      searchAttr: null,
-      flagAttr: null,
+      searchAttr: 'data-search',
+      searchHashKey: 'q',
+      searchPlaceholder: 'Search bytes...',
+      flagAttr: 'data-model',
+      flagHashKey: 'model',
+      flagLabel: '3D models',
+      flagIcon: 'fas fa-cube',
+      flagAriaLabel: 'Show entries with 3D models only',
       itemLabel: 'bytes'
     };
   } else if (libraryControls) {
@@ -91,7 +97,58 @@
     });
 
     buildFilterBar();
+    initProjectDescriptions();
     render();
+  }
+
+  // Add an explicit, accessible expansion control only to clipped project descriptions.
+  function initProjectDescriptions() {
+    if (!projectControls) {
+      return;
+    }
+
+    var rows = config.list.querySelectorAll('.project-item');
+
+    function updateToggle(row) {
+      if (row.classList.contains('is-desc-expanded') || row.offsetParent === null) {
+        return;
+      }
+      var description = row.querySelector('.item-desc');
+      var toggle = row.querySelector('.project-desc-toggle');
+      toggle.hidden = false;
+      var clipped = description.scrollWidth > description.clientWidth + 1 ||
+        description.scrollHeight > description.clientHeight + 1;
+      toggle.hidden = !clipped;
+    }
+
+    for (var i = 0; i < rows.length; i++) {
+      (function(row) {
+        var toggle = row.querySelector('.project-desc-toggle');
+        var icon = toggle.querySelector('i');
+        var projectName = row.querySelector('.project-title').textContent.trim();
+
+        toggle.addEventListener('click', function() {
+          var expanded = row.classList.toggle('is-desc-expanded');
+          toggle.setAttribute('aria-expanded', String(expanded));
+          toggle.setAttribute(
+            'aria-label',
+            (expanded ? 'Collapse description for ' : 'Show full description for ') + projectName
+          );
+          icon.className = expanded ? 'fas fa-chevron-up' : 'fas fa-chevron-down';
+          if (!expanded) {
+            updateToggle(row);
+          }
+        });
+
+        updateToggle(row);
+      })(rows[i]);
+    }
+
+    window.addEventListener('resize', function() {
+      for (var i = 0; i < rows.length; i++) {
+        updateToggle(rows[i]);
+      }
+    });
   }
 
   // Extract the section value from an item's attribute based on the configured match mode.
@@ -201,10 +258,10 @@
       flagControl.type = 'button';
       flagControl.className = 'filter-toggle';
       flagControl.setAttribute('aria-pressed', String(flagFilter));
-      flagControl.setAttribute('aria-label', 'Show deployed projects only');
+      flagControl.setAttribute('aria-label', config.flagAriaLabel || ('Show ' + config.flagLabel + ' only'));
 
       var flagIcon = document.createElement('i');
-      flagIcon.className = 'fas fa-globe';
+      flagIcon.className = config.flagIcon || 'fas fa-globe';
       flagIcon.setAttribute('aria-hidden', 'true');
       flagControl.appendChild(flagIcon);
       flagControl.appendChild(document.createTextNode(config.flagLabel));

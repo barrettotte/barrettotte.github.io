@@ -31,6 +31,8 @@ class Collection:
     output_dir: Path
     size: tuple[int, int]
     crop: bool
+    image_field: str = "image"
+    nested_field: str | None = None
 
 
 COLLECTIONS = (
@@ -40,6 +42,15 @@ COLLECTIONS = (
         output_dir=STATIC_DIR / "img/thumbnails/projects",
         size=(720, 405),
         crop=True,
+    ),
+    Collection(
+        name="models",
+        data_file=ROOT / "data/bytes.json",
+        output_dir=STATIC_DIR / "img/thumbnails/models",
+        size=(720, 405),
+        crop=False,
+        image_field="poster",
+        nested_field="model",
     ),
     Collection(
         name="museum",
@@ -71,6 +82,18 @@ def load_records(collection: Collection) -> list[dict[str, object]]:
         records = json.load(data_handle)
     if not isinstance(records, list):
         raise ValueError(f"{collection.data_file} must contain a top-level array")
+    if collection.nested_field is not None:
+        nested_records = []
+        for record in records:
+            nested = record.get(collection.nested_field)
+            if nested is None:
+                continue
+            if not isinstance(nested, dict):
+                raise ValueError(
+                    f"{collection.data_file}: {collection.nested_field} must be an object"
+                )
+            nested_records.append(nested)
+        return nested_records
     return records
 
 
@@ -144,11 +167,14 @@ def main() -> int:
             continue
 
         for record in records:
-            image_value = record.get("image")
+            image_value = record.get(collection.image_field)
             if image_value is None:
                 continue
             if not isinstance(image_value, str) or not image_value:
-                failures.append(f"invalid image field in {collection.data_file}: {image_value!r}")
+                failures.append(
+                    f"invalid {collection.image_field} field in "
+                    f"{collection.data_file}: {image_value!r}"
+                )
                 continue
 
             try:

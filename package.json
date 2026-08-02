@@ -1,0 +1,14 @@
+{
+  "name": "barrettotte-github-io",
+  "private": true,
+  "scripts": {
+    "build:js": "esbuild assets/js/three-viewer.js --bundle --format=esm --minify --target=es2020 --legal-comments=linked --outfile=static/js/vendor/three-viewer.js",
+    "check:js": "node --check static/js/filter.js && node --check static/js/models.js && node --check static/js/vendor/three-viewer.js"
+  },
+  "dependencies": {
+    "three": "0.182.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.1"
+  }
+}

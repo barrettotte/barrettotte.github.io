@@ -8,4 +8,5 @@ themes/skeleton
 tmp/
 
 .venv
+__pycache__
 *.py[co]

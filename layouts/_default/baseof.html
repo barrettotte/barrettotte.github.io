@@ -16,5 +16,8 @@
     {{- if or (eq .Section "projects") (eq .Section "bytes") (eq .Title "My Library") }}
       <script src="{{ "js/filter.js" | relURL }}" defer></script>
     {{- end }}
+    {{- if eq .Type "misc/3d-models" }}
+      <script src="{{ "js/models.js" | relURL }}" defer></script>
+    {{- end }}
   </body>
 </html>

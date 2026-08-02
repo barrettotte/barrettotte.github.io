@@ -1,11 +1,123 @@
 {{ define "main" }}
-<article id="3d-models">
-  <div class="content">
-    <h1>3D Models</h1>
+  {{ $models := slice }}
+  {{ range hugo.Data.bytes }}
+    {{ $byte := . }}
+    {{ with .model }}
+      {{ $models = $models | append (merge . (dict
+        "name" $byte.name
+        "date" $byte.date
+        "source" $byte.url
+        "byteCategory" $byte.category
+      )) }}
+    {{ end }}
+  {{ end }}
+  {{ $models = sort $models "date" "desc" }}
+  <article id="models">
+    <header class="models-intro">
+      <h1 class="page-title">{{ .Title }}</h1>
+      <p>CAD and 3D-printing models from projects I've worked on.</p>
+    </header>
 
-    Hopefully soon I'm going to dig through my old directories for 3D assets I've made.
-    I do plan on getting back into Blender for game development assets.
+    <nav class="model-index" aria-label="Jump to model">
+      <span>Jump to</span>
+      <ul>
+        {{ range $models }}
+          <li><a href="#{{ .slug }}">{{ .name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
 
-  </div>
-</article>
+    <div class="model-grid">
+      {{ range $models }}
+        {{ $model := . }}
+        <article id="{{ .slug }}" class="model-card">
+          <div class="model-media">
+            {{ with .poster }}
+              {{ $poster := printf "/img/thumbnails/models/%s.webp" (path.BaseName .) }}
+              <img
+                src="{{ $poster | relURL }}"
+                alt="{{ $model.name }}"
+                width="720"
+                height="405"
+                loading="lazy"
+                decoding="async"
+              >
+            {{ else }}
+              <button class="model-placeholder" type="button" aria-label="View {{ .name }} in 3D">
+                <i class="fas fa-cube" aria-hidden="true"></i>
+                <span>3D preview available</span>
+              </button>
+            {{ end }}
+            <div class="model-view-controls" hidden>
+              {{ with .parts }}
+                <label class="model-control-select" for="model-part-{{ $model.slug }}">
+                  <span>Part</span>
+                  <select id="model-part-{{ $model.slug }}" class="model-part-select">
+                    {{ range . }}
+                      <option
+                        value="{{ .src }}"
+                        data-fallback-model="{{ .fallback }}"
+                        data-up-axis="{{ .upAxis | default $model.upAxis | default "y" }}"
+                      >{{ .name }}</option>
+                    {{ end }}
+                  </select>
+                </label>
+              {{ end }}
+              <label class="model-control-select" for="render-mode-{{ .slug }}">
+                <span>Render</span>
+                <select id="render-mode-{{ .slug }}" class="model-render-mode">
+                  <option value="solid">Solid</option>
+                  <option value="edges">Solid + edges</option>
+                  <option value="wireframe">Wireframe</option>
+                </select>
+              </label>
+              <label class="model-control-select" for="lighting-mode-{{ .slug }}">
+                <span>Light</span>
+                <select id="lighting-mode-{{ .slug }}" class="model-lighting-mode">
+                  <option value="uniform">Uniform</option>
+                  <option value="directional">Directional</option>
+                </select>
+              </label>
+              <button class="model-reset" type="button" title="Reset view" aria-label="Reset view">
+                <i class="fas fa-rotate-left" aria-hidden="true"></i>
+              </button>
+              <button class="model-fullscreen" type="button" title="Fullscreen" aria-label="Enter fullscreen">
+                <i class="fas fa-expand" aria-hidden="true"></i>
+              </button>
+              <button class="model-close" type="button" title="Close viewer" aria-label="Close 3D viewer">
+                <i class="fas fa-xmark" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="model-body">
+            <p class="model-meta">
+              {{ substr .date 0 4 }}
+              <span aria-hidden="true">·</span>
+              {{ if eq .byteCategory "3d-print" }}CAD / 3D printing{{ else }}{{ .byteCategory | humanize }}{{ end }}
+              <span aria-hidden="true">·</span>
+              STL
+            </p>
+            <h2><a href="#{{ .slug }}">{{ .name }}</a></h2>
+            <p>{{ .description }}</p>
+            <div class="model-actions">
+              <a href="{{ .source }}" target="_blank" rel="noopener noreferrer">Source</a>
+              <button
+                class="model-load"
+                type="button"
+                data-model="{{ .src | relURL }}"
+                {{ with .fallback }}data-fallback-model="{{ . }}"{{ end }}
+                data-up-axis="{{ .upAxis | default "y" }}"
+                data-viewer-module="{{ "js/vendor/three-viewer.js" | relURL }}"
+                data-alt="Interactive 3D model of {{ .name }}"
+              >View 3D</button>
+            </div>
+            <p class="model-status" aria-live="polite"></p>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </article>
+
+  {{ partial "scroll-to-top.html" (dict "context" . "target" "/misc/3d-models/#" ) }}
 {{ end }}

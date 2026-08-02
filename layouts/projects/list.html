@@ -15,7 +15,9 @@
     {{ $minYear := index $years 0 }}
     {{ $maxYear := index $years (sub (len $years) 1) }}
 
-    <p>{{ len $projects }} projects, {{ $minYear }}-{{ now.Year }}.</p>
+    <p class="page-desc">
+      {{ len $projects }} projects I've built or experimented with, {{ $minYear }}-{{ now.Year }}.
+    </p>
 
     <!-- Filter controls: hidden by default, revealed by JS -->
     <div id="project-controls" style="display:none">
@@ -35,25 +37,36 @@
         {{ end }}
 
         {{ if not .hidden }}
-          <li class="post-item" data-languages="{{ delimit (default (slice) .languages) "," }}" data-date="{{ .date }}" data-deployed="{{ if .deployUrl }}true{{ else }}false{{ end }}" data-search="{{ printf "%s %s" .name .desc | plainify | lower }}">
+          <li class="post-item project-item" data-languages="{{ delimit (default (slice) .languages) "," }}" data-date="{{ .date }}" data-deployed="{{ if .deployUrl }}true{{ else }}false{{ end }}" data-search="{{ printf "%s %s" .name .desc | plainify | lower }}">
             <time datetime="{{ time (printf "%s%s" .date "-01") }}">{{ .date }}</time>
             <span class="project-summary">
-              {{ if .url }}
-                <a href="{{ .url }}">{{ .name }}</a>
-              {{ else }}
-                <span style="text-decoration:underline; color:var(--color-text)">{{ .name }}</span>
-              {{ end }}
               {{ $projectName := .name }}
-              {{ with .deployUrl }}
-                <a
-                  class="project-launch"
-                  href="{{ . }}"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open deployed version of {{ $projectName }}"
-                ><i class="fas fa-globe" aria-hidden="true"></i></a>
-              {{ end }}
-              <span class="item-desc">{{ .desc | markdownify }}</span>
+              <span class="project-title">
+                {{ if .url }}
+                  <a href="{{ .url }}">{{ .name }}</a>
+                {{ else }}
+                  <span style="text-decoration:underline; color:var(--color-text)">{{ .name }}</span>
+                {{ end }}
+              </span>
+              <span class="project-description">
+                <span class="item-desc">{{ .desc | markdownify }}</span>
+                {{ with .deployUrl }}
+                  <a
+                    class="project-launch"
+                    href="{{ . }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open deployed version of {{ $projectName }}"
+                  ><i class="fas fa-globe" aria-hidden="true"></i></a>
+                {{ end }}
+                <button
+                  class="project-desc-toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-label="Show full description for {{ .name }}"
+                  hidden
+                ><i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+              </span>
             </span>
           </li>
         {{ end }}

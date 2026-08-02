@@ -14,8 +14,10 @@
     {{ $minYear := index $years 0 }}
     {{ $maxYear := index $years (sub (len $years) 1) }}
 
-    <p>{{ len $bytes }} small miscellaneous things I've completed, {{ $minYear }}-{{ now.Year }}.</p>
-    <p>I store some assets for things listed here in my repo named <a href="https://github.com/barrettotte/bytes">bytes</a>.</p>
+    <p class="page-desc">
+      {{ len $bytes }} small projects, experiments, certifications, and other things I've completed,
+      {{ $minYear }}-{{ now.Year }}; source and assets live in <a href="https://github.com/barrettotte/bytes">bytes</a>.
+    </p>
 
     <!-- Filter controls: hidden by default, revealed by JS -->
     <div id="byte-controls" style="display:none">
@@ -34,29 +36,43 @@
         {{ end }}
 
         {{ if not .hidden }}
-          <li class="post-item" data-category="{{ .category }}" data-date="{{ .date }}">
+          <li
+            class="post-item"
+            data-category="{{ .category }}"
+            data-date="{{ .date }}"
+            data-model="{{ if .model }}true{{ else }}false{{ end }}"
+            data-search="{{ printf "%s %s" .name .category | plainify | lower }}"
+          >
             <time datetime="{{ time (printf "%s" .date) }}">{{ .date }}</time>
             <span>
               {{ if eq .category "ctf" }}
-                <i class="far fa-md fa-flag fa-fw"></i>
+                <i class="far fa-md fa-flag fa-fw" role="img" aria-label="CTF" title="CTF"></i>
               {{ else if eq .category "kaggle" }}
-                <i class="fab fa-md fa-kaggle fa-fw"></i>
+                <i class="fab fa-md fa-kaggle fa-fw" role="img" aria-label="Kaggle" title="Kaggle"></i>
               {{ else if eq .category "3d-print" }}
-                <i class="fa fa-md fa-cube fa-fw"></i>
+                <i class="fa fa-md fa-cube fa-fw" role="img" aria-label="3D printing" title="3D printing"></i>
               {{ else if eq .category "code" }}
-                <i class="fa fa-md fa-code fa-fw"></i>
+                <i class="fa fa-md fa-code fa-fw" role="img" aria-label="Code" title="Code"></i>
               {{ else if eq .category "electronics" }}
-                <i class="far fa-md fa-lightbulb fa-fw"></i>
+                <i class="far fa-md fa-lightbulb fa-fw" role="img" aria-label="Electronics" title="Electronics"></i>
               {{ else if eq .category "cert" }}
-                <i class="fa fa-md fa-scroll fa-fw"></i>
+                <i class="fa fa-md fa-scroll fa-fw" role="img" aria-label="Certification" title="Certification"></i>
               {{ else }}
-                <i class="fa fa-md fa-link fa-fw"></i>
+                <i class="fa fa-md fa-link fa-fw" role="img" aria-label="Miscellaneous" title="Miscellaneous"></i>
               {{ end }}
 
               {{ if .url }}
                 <a href="{{ .url }}">{{ .name }}</a>
               {{ else }}
                 <span style="text-decoration:underline; color:var(--color-text)">{{ .name }}</span>
+              {{ end }}
+              {{ $byteName := .name }}
+              {{ with .model }}
+                <a
+                  class="byte-model-link"
+                  href="{{ printf "/misc/3d-models/#%s" .slug | relURL }}"
+                  aria-label="View {{ $byteName }} in 3D"
+                ><span aria-hidden="true">3D</span></a>
               {{ end }}
             </span>
           </li>

@@ -1,25 +1,25 @@
 [
   {
     "name": "My First Program (C++)",
-    "url": "https://github.com/barrettotte/bytes/tree/master/code/first-program.cpp",
+    "url": "https://github.com/barrettotte/bytes/blob/master/code/first-program.cpp",
     "date": "2011-09-06",
     "category": "code"
   },
   {
     "name": "Simulating Fishing Rod Bend in Unity",
-    "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2017/1/index.md",
+    "url": "https://github.com/barrettotte/bytes/blob/master/old-posts/2017/1/index.md",
     "date": "2017-05-01",
     "category": "code"
   },
   {
     "name": "ColdFusion Service Pinger",
-    "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2018/2/index.md",
+    "url": "https://github.com/barrettotte/bytes/blob/master/old-posts/2018/2/index.md",
     "date": "2018-12-01",
     "category": "code"
   },
   {
     "name": "IBM i Pull Code Utility",
-    "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2019/2/index.md",
+    "url": "https://github.com/barrettotte/bytes/blob/master/old-posts/2019/2/index.md",
     "date": "2019-08-19",
     "category": "code"
   },
@@ -31,13 +31,13 @@
   },
   {
     "name": "IBM i Joke Program",
-    "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2020/1/index.md",
+    "url": "https://github.com/barrettotte/bytes/blob/master/old-posts/2020/1/index.md",
     "date": "2020-02-20",
     "category": "code"
   },
   {
     "name": "Send a Text Message with Twilio and DB2 SQL",
-    "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2020/3/index.md",
+    "url": "https://github.com/barrettotte/bytes/blob/master/old-posts/2020/3/index.md",
     "date": "2020-04-23",
     "category": "code"
   },
@@ -68,11 +68,19 @@
     "name": "Standing Desk Control Cover",
     "url": "https://github.com/barrettotte/bytes/tree/master/3d-printing/desk-designs/jarvis-controller-cover",
     "date": "2021-10-08",
-    "category": "3d-print"
+    "category": "3d-print",
+    "model": {
+      "slug": "standing-desk-control-cover",
+      "src": "https://raw.githubusercontent.com/barrettotte/bytes/master/web-models/3d-printing/desk-designs/jarvis-controller-cover/cover.glb",
+      "fallback": "https://raw.githubusercontent.com/barrettotte/bytes/master/3d-printing/desk-designs/jarvis-controller-cover/cover.stl",
+      "poster": "/img/models/standing-desk-control-cover.jpg",
+      "upAxis": "z",
+      "description": "A cover that prevents accidentally raising a standing desk."
+    }
   },
   {
     "name": "ColdFusion log4shell",
-    "url": "https://github.com/barrettotte/bytes/tree/master/old-posts/2021/3/index.md",
+    "url": "https://github.com/barrettotte/bytes/blob/master/old-posts/2021/3/index.md",
     "date": "2021-12-13",
     "category": "code"
   },
@@ -175,13 +183,40 @@
     "name": "Electroscope",
     "url": "https://github.com/barrettotte/bytes/tree/master/electronics/electroscope",
     "category": "electronics",
-    "date": "2023-09-14"
+    "date": "2023-09-14",
+    "model": {
+      "slug": "electroscope",
+      "src": "https://raw.githubusercontent.com/barrettotte/bytes/master/web-models/electronics/electroscope/bottle-mid.glb",
+      "fallback": "https://raw.githubusercontent.com/barrettotte/bytes/master/electronics/electroscope/bottle-mid.stl",
+      "poster": "/img/models/electroscope.jpg",
+      "parts": [
+        {
+          "name": "Bottle Insert",
+          "src": "https://raw.githubusercontent.com/barrettotte/bytes/master/web-models/electronics/electroscope/bottle-mid.glb",
+          "fallback": "https://raw.githubusercontent.com/barrettotte/bytes/master/electronics/electroscope/bottle-mid.stl"
+        },
+        {
+          "name": "Collector",
+          "src": "https://raw.githubusercontent.com/barrettotte/bytes/master/web-models/electronics/electroscope/collector.glb",
+          "fallback": "https://raw.githubusercontent.com/barrettotte/bytes/master/electronics/electroscope/collector.stl"
+        }
+      ],
+      "upAxis": "z",
+      "description": "The printed parts for a simple beer-bottle electroscope."
+    }
   },
   {
     "name": "Flip 5 Stand",
     "url": "https://github.com/barrettotte/bytes/tree/master/3d-printing/desk-designs/flip-5-stand",
     "category": "3d-print",
-    "date": "2023-09-20"
+    "date": "2023-09-20",
+    "model": {
+      "slug": "flip-5-stand",
+      "src": "https://raw.githubusercontent.com/barrettotte/bytes/master/web-models/3d-printing/desk-designs/flip-5-stand/flip-5-stand.glb",
+      "fallback": "https://raw.githubusercontent.com/barrettotte/bytes/master/3d-printing/desk-designs/flip-5-stand/flip-5-stand.stl",
+      "upAxis": "z",
+      "description": "A phone stand for a Samsung Galaxy Z Flip5."
+    }
   },
   {
     "name": "Desk Small Tray",
@@ -265,7 +300,15 @@
     "name": "Electrophorus",
     "url": "https://github.com/barrettotte/bytes/tree/master/electronics/electrophorus",
     "category": "electronics",
-    "date": "2023-11-09"
+    "date": "2023-11-09",
+    "model": {
+      "slug": "electrophorus",
+      "src": "https://raw.githubusercontent.com/barrettotte/bytes/master/web-models/electronics/electrophorus/electrophorus.glb",
+      "fallback": "https://raw.githubusercontent.com/barrettotte/bytes/master/electronics/electrophorus/electrophorus.stl",
+      "poster": "/img/models/electrophorus.jpg",
+      "upAxis": "z",
+      "description": "A handle used to build a basic electrophorus."
+    }
   },
   {
     "name": "Kaggle: DEFCON31 AI Village CTF",
@@ -336,7 +379,14 @@
     "name": "CNC Controller Holder",
     "url": "https://github.com/barrettotte/bytes/tree/master/3d-printing/cnc-designs/cnc-controller-holder",
     "category": "3d-print",
-    "date": "2024-03-04"
+    "date": "2024-03-04",
+    "model": {
+      "slug": "cnc-controller-holder",
+      "src": "https://raw.githubusercontent.com/barrettotte/bytes/master/web-models/3d-printing/cnc-designs/cnc-controller-holder/cnc-controller-mount.glb",
+      "fallback": "https://raw.githubusercontent.com/barrettotte/bytes/master/3d-printing/cnc-designs/cnc-controller-holder/cnc-controller-mount.stl",
+      "upAxis": "z",
+      "description": "A mount for a CNC router controller."
+    }
   },
   {
     "name": "Cyber Apocalypse 2024",
@@ -378,12 +428,28 @@
     "name": "Bed Remote Holder",
     "url": "https://github.com/barrettotte/bytes/tree/master/3d-printing/bed-remote-holder",
     "category": "3d-print",
-    "date": "2025-07-20"
+    "date": "2025-07-20",
+    "model": {
+      "slug": "bed-remote-holder",
+      "src": "https://raw.githubusercontent.com/barrettotte/bytes/master/web-models/3d-printing/bed-remote-holder/bed-remote-holder.glb",
+      "fallback": "https://raw.githubusercontent.com/barrettotte/bytes/master/3d-printing/bed-remote-holder/bed-remote-holder.stl",
+      "poster": "/img/models/bed-remote-holder.jpg",
+      "upAxis": "z",
+      "description": "A holder for two remotes mounted to a bed frame."
+    }
   },
   {
     "name": "AC Redirect",
     "url": "https://github.com/barrettotte/bytes/tree/master/3d-printing/ac-redirect",
     "category": "3d-print",
-    "date": "2026-08-02"
+    "date": "2026-08-02",
+    "model": {
+      "slug": "ac-redirect",
+      "src": "https://raw.githubusercontent.com/barrettotte/bytes/master/web-models/3d-printing/ac-redirect/ac-redirect.glb",
+      "fallback": "https://raw.githubusercontent.com/barrettotte/bytes/master/3d-printing/ac-redirect/ac-redirect.stl",
+      "poster": "/img/models/ac-redirect.png",
+      "upAxis": "z",
+      "description": "An angled redirect for a window AC exhaust."
+    }
   }
 ]

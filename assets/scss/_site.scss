@@ -218,14 +218,30 @@ select:focus-visible {
 }
 
 #scroll-to-top {
-    margin-left: auto; 
-    margin-right: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: var(--space-6);
     margin-bottom: 2rem;
-}
 
-#scroll-to-top i {
-    margin-left: 10px;
-    text-decoration: none;
+    a {
+        display: inline-flex;
+        gap: var(--space-2);
+        align-items: center;
+        background: none;
+        color: var(--color-text-muted);
+        font-size: 0.8rem;
+
+        span {
+            text-decoration: underline;
+            text-underline-offset: 0.15em;
+        }
+
+        &:hover,
+        &:focus-visible {
+            background: none;
+            color: var(--color-accent-1);
+        }
+    }
 }
 
 #scroll-to-top a:focus-visible {
@@ -272,6 +288,7 @@ select:focus-visible {
 @import "components/home";
 @import "components/collections";
 @import "components/museum";
+@import "components/models";
 @import "components/library";
 @import "components/not-found";
 @import "components/filters";
