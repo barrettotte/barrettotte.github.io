@@ -186,7 +186,7 @@
   {
     "name": "Desk Small Tray",
     "url": "https://github.com/barrettotte/bytes/tree/master/3d-printing/desk-designs/small-tray",
-    "category": "3d-print", 
+    "category": "3d-print",
     "date": "2023-09-29"
   },
   {
@@ -379,5 +379,11 @@
     "url": "https://github.com/barrettotte/bytes/tree/master/3d-printing/bed-remote-holder",
     "category": "3d-print",
     "date": "2025-07-20"
+  },
+  {
+    "name": "AC Redirect",
+    "url": "https://github.com/barrettotte/bytes/tree/master/3d-printing/ac-redirect",
+    "category": "3d-print",
+    "date": "2026-08-02"
   }
 ]

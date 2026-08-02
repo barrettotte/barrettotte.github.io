@@ -1110,6 +1110,13 @@
       "desc": "Experimental: patched wine 11.10 (winewayland.drv) + DXVK in a distrobox container to run Autodesk Fusion natively on Wayland",
       "date": "2026-07",
       "languages": ["c", "shell"]
+    },
+    {
+      "name": "treesitter-ibmi",
+      "url": "https://github.com/barrettotte/treesitter-ibmi",
+      "desc": "Tree-sitter grammars for IBM i languages: RPGLE, RPG/400, CL, DDS, and more",
+      "date": "2026-08",
+      "languages": ["javascript", "treesitter"]
     }
   ]
 }
