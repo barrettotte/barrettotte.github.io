@@ -5,7 +5,7 @@ NPM := $(if $(strip $(NPM)),$(NPM),npm)
 
 .DEFAULT_GOAL := help
 
-.PHONY: help build serve serve_minify sort_books check_hugo check_uv check_npm images images_check js js_check
+.PHONY: help build serve serve_minify sort_books check_hugo check_uv check_npm images images_check js js_check test_ui test_ui_install
 
 help: ## Show this help message
 	@echo "Usage: make <target> [HUGO=/path/to/hugo] [UV=/path/to/uv] [NPM=/path/to/npm]"
@@ -43,6 +43,12 @@ js: check_npm ## Bundle browser JavaScript
 
 js_check: check_npm ## Validate bundled browser JavaScript
 	$(NPM) run check:js
+
+test_ui: check_hugo check_npm ## Run headless browser smoke tests
+	HUGO="$(HUGO)" $(NPM) run test:ui
+
+test_ui_install: check_npm ## Install the Chromium test browser
+	npx playwright install chromium
 
 sort_books: ## Sort data/books.json by title
 	cat data/books.json > tmp.json && jq 'sort_by(.title | ascii_downcase)' tmp.json > data/books.json && rm tmp.json

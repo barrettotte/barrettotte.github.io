@@ -24,8 +24,8 @@
           </a>
         {{ end }}
         <div class="featured-body">
-          <div class="featured-meta">{{ substr $item.date 0 4 }}{{ with index ($item.languages | default (slice)) 0 }} <span aria-hidden="true">·</span> {{ . }}{{ end }}</div>
           <h3><a href="{{ $url }}">{{ $item.name }}</a></h3>
+          <div class="featured-meta">{{ substr $item.date 0 4 }}{{ with $item.languages }} <span aria-hidden="true">·</span> {{ delimit . " / " }}{{ end }}</div>
           <p>{{ $item.desc }}</p>
         </div>
       </article>

@@ -4,18 +4,17 @@
   <title>{{ if not .IsHome }} {{ .Title }} | {{ end }} {{ .Site.Title }}</title>
   <link rel="canonical" href="{{ .Permalink }}">
 
-  {{ with .Site.Params.description }}
-    <meta name="description" content="{{ . }}">
+  {{ with .Description | default .Site.Params.description }}
+    <meta name="description" content="{{ . | plainify }}">
   {{ end }}
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1d1f21">
 
   {{- $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" hugo.IsServer) -}}
   {{- $styles := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "scss/style.scss" . | css.Sass $options | resources.Fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
 
-  <link rel="stylesheet" href="{{ "lib/font-awesome-free-6.5.2-web/css/all.min.css" | relURL }}">
-
-  <link rel="icon" href="{{ "img/favicon.svg" | relURL }}">
+  <link rel="icon" href="{{ "img/favicon.svg" | relURL }}" type="image/svg+xml">
 
   {{ with .OutputFormats.Get "RSS" }}
     {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}

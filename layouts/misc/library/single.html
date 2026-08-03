@@ -1,28 +1,30 @@
 {{ define "main" }}
+  {{ $allBooks := hugo.Data.books }}
+  {{ $categories := slice }}
+  {{ range $allBooks }}
+    {{ $categories = $categories | append (.category | default "Uncategorized") }}
+  {{ end }}
+  {{ $categories = $categories | uniq | sort }}
+  {{ $tags := slice }}
+  {{ range $allBooks }}
+    {{ range (.tags | default slice) }}
+      {{ $tags = $tags | append . }}
+    {{ end }}
+  {{ end }}
+  {{ $tags = $tags | uniq | sort }}
+  {{ $booksWithYear := where $allBooks "year" "gt" 0 }}
+  {{ $oldest := index (sort $booksWithYear "year") 0 }}
+
   <article id="library">
     <div class="content">
 
-      <div class="library-top">
-        <h1>{{- .Title -}}</h1>
+      <header class="page-header">
+        <h1 class="page-title">{{- .Title -}}</h1>
         {{- .Content -}}
-
-        <span>I currently have {{ len hugo.Data.books }} books.</span>
-
-        {{ $booksWithYear := where hugo.Data.books "year" "gt" 0 }}
-        {{ $oldest := index (sort $booksWithYear "year") 0 }}
-
-        <span>My oldest book was published in {{ $oldest.year }}.</span>
-      </div>
-
-      {{ $categories := slice }}
-      {{ range hugo.Data.books }}
-        {{ if isset . "category" }}
-          {{ $categories = $categories | append .category }}
-        {{ else }}
-          {{ $categories = $categories | append "Uncategorized" }}
-        {{ end }}
-      {{ end }}
-      {{ $categories = $categories | uniq | sort }}
+        <p class="page-desc">
+          {{ len $allBooks }} books across {{ len $categories }} subjects and {{ len $tags }} collection tags; the oldest was published in {{ $oldest.year }}.
+        </p>
+      </header>
 
       <!-- Filter controls: hidden by default, revealed by JS -->
       <div id="library-controls" style="display:none">
@@ -31,41 +33,67 @@
         <div id="filter-status" class="filter-status"></div>
       </div>
 
+      <nav class="library-category-index" aria-label="Jump to book category">
+        <span>Jump to category</span>
+        <ul>
+          {{ range $categories }}
+            {{ $category := . }}
+            {{ $books := slice }}
+            {{ if ne $category "Uncategorized" }}
+              {{ $books = where $allBooks "category" $category }}
+            {{ else }}
+              {{ $books = where $allBooks "category" nil }}
+            {{ end }}
+            <li><a href="#{{ $category | urlize }}">{{ $category }} ({{ len $books }})</a></li>
+          {{ end }}
+        </ul>
+      </nav>
+
       <div id="library-list-default">
         {{ range $categories | sort }}
           {{ $category := . }}
           {{ $books := slice }}
 
           {{ if ne $category "Uncategorized" }}
-            {{ $books = where hugo.Data.books "category" $category }}
+            {{ $books = where $allBooks "category" $category }}
           {{ else }}
-            {{ $books = where hugo.Data.books "category" nil }}
+            {{ $books = where $allBooks "category" nil }}
           {{ end }}
 
-          <h2 id="{{ $category | urlize }}" class="section-header" data-category="{{ $category }}" style="text-transform: capitalize">
+          <h2 id="{{ $category | urlize }}" class="section-header" data-category="{{ $category }}">
             <a href="#{{ $category | urlize }}">{{ $category }}</a>
             <a href="#{{ $category | urlize }}" class="section-count">({{ len $books }})</a>
           </h2>
 
           <ul class="library-list">
             {{ range $books }}
-              <li class="post-item" data-category="{{ $category }}">
+              <li
+                class="post-item library-item"
+                data-category="{{ $category }}"
+                data-tags="{{ delimit (.tags | default slice) "," }}"
+                data-title="{{ .title | plainify | lower }}"
+                data-author="{{ .author | default "" | plainify | lower }}"
+                data-year="{{ .year | default 0 }}"
+                data-search="{{ printf "%s %s %v %s %s %s %s" .title (.author | default "") (.year | default "") (.isbn10 | default "") (.isbn13 | default "") (.lccn | default "") (delimit (.tags | default slice) " ") | plainify | lower }}"
+              >
+                <span class="library-book-title">
                 {{ if isset . "isbn10" }}
-                  <a href="https://isbnsearch.org/isbn/{{ .isbn10 }}">{{ .title }}</a>
+                  <a href="https://isbnsearch.org/isbn/{{ .isbn10 }}" title="{{ .title }}">{{ .title }}</a>
                 {{ else if isset . "isbn13" }}
-                  <a href="https://isbnsearch.org/isbn/{{ .isbn13 }}">{{ .title }}</a>
+                  <a href="https://isbnsearch.org/isbn/{{ .isbn13 }}" title="{{ .title }}">{{ .title }}</a>
                 {{ else if isset . "lccn" }}
-                  <a href="https://lccn.loc.gov/{{ .lccn }}">{{ .title }}</a>
+                  <a href="https://lccn.loc.gov/{{ .lccn }}" title="{{ .title }}">{{ .title }}</a>
                 {{ else }}
-                  <u>{{ .title }}</u>
+                  <span class="library-title-unlinked" title="{{ .title }}">{{ .title }}</span>
                 {{ end }}
+                </span>
 
                 {{ if isset . "author" }}
-                  by {{ .author }}
+                  <span class="library-book-author">{{ .author }}</span>
                 {{ end }}
 
                 {{ if isset . "year" }}
-                  ({{ .year }})
+                  <span class="library-book-year">{{ .year }}</span>
                 {{ end }}
               </li>
             {{ end }}

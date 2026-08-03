@@ -3,12 +3,15 @@
   "private": true,
   "scripts": {
     "build:js": "esbuild assets/js/three-viewer.js --bundle --format=esm --minify --target=es2020 --legal-comments=linked --outfile=static/js/vendor/three-viewer.js",
-    "check:js": "node --check static/js/filter.js && node --check static/js/models.js && node --check static/js/vendor/three-viewer.js"
+    "check:js": "node --check assets/js/custom.js && node --check assets/js/filter.js && node --check assets/js/models.js && node --check static/js/vendor/three-viewer.js",
+    "test:ui": "playwright test"
   },
   "dependencies": {
     "three": "0.182.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
+    "@playwright/test": "^1.62.1",
     "esbuild": "0.28.1"
   }
 }

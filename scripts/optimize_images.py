@@ -27,37 +27,45 @@ STATIC_DIR = ROOT / "static"
 @dataclass(frozen=True)
 class Collection:
     name: str
-    data_file: Path
     output_dir: Path
     size: tuple[int, int]
     crop: bool
+    data_file: Path | None = None
     image_field: str = "image"
     nested_field: str | None = None
+    sources: tuple[str, ...] = ()
 
 
 COLLECTIONS = (
     Collection(
         name="projects",
-        data_file=ROOT / "data/projects.json",
         output_dir=STATIC_DIR / "img/thumbnails/projects",
         size=(720, 405),
         crop=True,
+        data_file=ROOT / "data/projects.json",
     ),
     Collection(
         name="models",
-        data_file=ROOT / "data/bytes.json",
         output_dir=STATIC_DIR / "img/thumbnails/models",
         size=(720, 405),
         crop=False,
+        data_file=ROOT / "data/bytes.json",
         image_field="poster",
         nested_field="model",
     ),
     Collection(
         name="museum",
-        data_file=ROOT / "data/museum.json",
         output_dir=STATIC_DIR / "img/thumbnails/museum",
         size=(640, 480),
         crop=False,
+        data_file=ROOT / "data/museum.json",
+    ),
+    Collection(
+        name="about",
+        output_dir=STATIC_DIR / "img/thumbnails/about",
+        size=(900, 572),
+        crop=False,
+        sources=("img/about/cave.png",),
     ),
 )
 
@@ -78,6 +86,10 @@ def parse_args() -> argparse.Namespace:
 
 
 def load_records(collection: Collection) -> list[dict[str, object]]:
+    if collection.sources:
+        return [{collection.image_field: source} for source in collection.sources]
+    if collection.data_file is None:
+        raise ValueError(f"{collection.name} requires a data file or source images")
     with collection.data_file.open(encoding="utf-8") as data_handle:
         records = json.load(data_handle)
     if not isinstance(records, list):
@@ -138,12 +150,34 @@ def validate_output(collection: Collection, source: Path, output: Path) -> list[
     return errors
 
 
-def optimize(collection: Collection, source: Path, output: Path) -> None:
+def image_focus(record: dict[str, object]) -> tuple[float, float]:
+    value = record.get("imageFocus", (0.5, 0.5))
+    if (
+        not isinstance(value, (list, tuple))
+        or len(value) != 2
+        or not all(isinstance(position, (int, float)) for position in value)
+        or not all(0 <= position <= 1 for position in value)
+    ):
+        raise ValueError(f"imageFocus must contain two numbers from 0 to 1: {value!r}")
+    return float(value[0]), float(value[1])
+
+
+def optimize(
+    collection: Collection,
+    source: Path,
+    output: Path,
+    focus: tuple[float, float],
+) -> None:
     collection.output_dir.mkdir(parents=True, exist_ok=True)
     with Image.open(source) as image:
         image = ImageOps.exif_transpose(image)
         if collection.crop:
-            image = ImageOps.fit(image, collection.size, Image.Resampling.LANCZOS)
+            image = ImageOps.fit(
+                image,
+                collection.size,
+                Image.Resampling.LANCZOS,
+                centering=focus,
+            )
         else:
             image.thumbnail(collection.size, Image.Resampling.LANCZOS)
         image = image.convert("RGBA" if "A" in image.getbands() else "RGB")
@@ -156,10 +190,13 @@ def main() -> int:
     args = parse_args()
     failures: list[str] = []
     processed = 0
+    pruned = 0
     skipped = 0
     seen_outputs: set[Path] = set()
 
     for collection in COLLECTIONS:
+        failure_count = len(failures)
+        collection_outputs: set[Path] = set()
         try:
             records = load_records(collection)
         except (OSError, ValueError, json.JSONDecodeError) as error:
@@ -173,7 +210,7 @@ def main() -> int:
             if not isinstance(image_value, str) or not image_value:
                 failures.append(
                     f"invalid {collection.image_field} field in "
-                    f"{collection.data_file}: {image_value!r}"
+                    f"{collection.data_file or collection.name}: {image_value!r}"
                 )
                 continue
 
@@ -183,6 +220,7 @@ def main() -> int:
                 failures.append(str(error))
                 continue
             output = output_path(collection, source)
+            collection_outputs.add(output)
 
             if output in seen_outputs:
                 failures.append(f"duplicate optimized output: {output.relative_to(ROOT)}")
@@ -191,6 +229,12 @@ def main() -> int:
 
             if not source.is_file():
                 failures.append(f"missing source image: {source.relative_to(ROOT)}")
+                continue
+
+            try:
+                focus = image_focus(record)
+            except ValueError as error:
+                failures.append(f"{collection.name}: {error}")
                 continue
 
             if args.check:
@@ -202,11 +246,23 @@ def main() -> int:
                 continue
 
             try:
-                optimize(collection, source, output)
+                optimize(collection, source, output, focus)
                 processed += 1
                 print(f"optimized {source.relative_to(ROOT)} -> {output.relative_to(ROOT)}")
             except OSError as error:
                 failures.append(f"failed to optimize {source.relative_to(ROOT)}: {error}")
+
+        if len(failures) != failure_count or not collection.output_dir.exists():
+            continue
+
+        unexpected_outputs = set(collection.output_dir.glob("*.webp")) - collection_outputs
+        for output in sorted(unexpected_outputs):
+            if args.check:
+                failures.append(f"unexpected optimized image: {output.relative_to(ROOT)}")
+            else:
+                output.unlink()
+                pruned += 1
+                print(f"removed obsolete {output.relative_to(ROOT)}")
 
     if failures:
         for failure in failures:
@@ -216,7 +272,11 @@ def main() -> int:
     if args.check:
         print(f"validated {len(seen_outputs)} optimized images")
     else:
-        print(f"optimized {processed} images; skipped {skipped} current images")
+        print(
+            f"optimized {processed} images; "
+            f"removed {pruned} obsolete images; "
+            f"skipped {skipped} current images"
+        )
     return 0
 
 

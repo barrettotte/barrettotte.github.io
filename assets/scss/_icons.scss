@@ -1,0 +1,93 @@
+@font-face {
+  font-weight: 900;
+  font-style: normal;
+  font-family: "Font Awesome 6 Free";
+  font-display: block;
+  src: url("../lib/font-awesome-free-6.5.2-web/webfonts/fa-solid-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Font Awesome 6 Free";
+  font-display: block;
+  src: url("../lib/font-awesome-free-6.5.2-web/webfonts/fa-regular-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Font Awesome 6 Brands";
+  font-display: block;
+  src: url("../lib/font-awesome-free-6.5.2-web/webfonts/fa-brands-400.woff2") format("woff2");
+}
+
+.fa,
+.fas,
+.far,
+.fab {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fa,
+.fas {
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+}
+
+.far {
+  font-weight: 400;
+  font-family: "Font Awesome 6 Free";
+}
+
+.fab {
+  font-weight: 400;
+  font-family: "Font Awesome 6 Brands";
+}
+
+.fa-fw {
+  width: 1.25em;
+  text-align: center;
+}
+
+.fa-lg {
+  vertical-align: -0.075em;
+  font-size: 1.25em;
+  line-height: 0.05em;
+}
+
+.fa-arrow-up::before { content: "\f062"; }
+.fa-bolt::before { content: "\f0e7"; }
+.fa-book::before { content: "\f02d"; }
+.fa-chevron-down::before { content: "\f078"; }
+.fa-chevron-up::before { content: "\f077"; }
+.fa-code::before { content: "\f121"; }
+.fa-compress::before { content: "\f066"; }
+.fa-cube::before { content: "\f1b2"; }
+.fa-dumbbell::before { content: "\f44b"; }
+.fa-envelope::before { content: "\f0e0"; }
+.fa-expand::before { content: "\f065"; }
+.fa-flag::before { content: "\f024"; }
+.fa-gamepad::before { content: "\f11b"; }
+.fa-globe::before { content: "\f0ac"; }
+.fa-lightbulb::before { content: "\f0eb"; }
+.fa-link::before { content: "\f0c1"; }
+.fa-magnet::before { content: "\f076"; }
+.fa-memory::before { content: "\f538"; }
+.fa-microchip::before { content: "\f2db"; }
+.fa-rotate-left::before { content: "\f2ea"; }
+.fa-scroll::before { content: "\f70e"; }
+.fa-terminal::before { content: "\f120"; }
+.fa-tv::before { content: "\f26c"; }
+.fa-wrench::before { content: "\f0ad"; }
+.fa-xmark::before { content: "\f00d"; }
+
+.fa-github::before { content: "\f09b"; }
+.fa-itch-io::before { content: "\f83a"; }
+.fa-kaggle::before { content: "\f5fa"; }
+.fa-linkedin::before { content: "\f08c"; }

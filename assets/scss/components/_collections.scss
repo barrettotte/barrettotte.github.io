@@ -1,15 +1,24 @@
+.page-header {
+    margin-bottom: var(--space-5);
+}
+
 .page-title {
-    margin-bottom: var(--space-1);
+    margin-bottom: 0;
 }
 
 .page-desc {
-    margin-top: 0;
+    max-width: 46rem;
+    margin: var(--space-2) 0 0;
     color: var(--color-text-muted);
     font-size: 0.85rem;
-}
 
-#archive > .page-title + .page-desc {
-    margin-top: var(--space-2);
+    > :first-child {
+        margin-top: 0;
+    }
+
+    > :last-child {
+        margin-bottom: 0;
+    }
 }
 
 .section-header {
@@ -94,7 +103,9 @@ a.section-count:hover {
         display: flex;
         flex: 1 1 auto;
         align-items: baseline;
+        overflow: visible;
         min-width: 0;
+        white-space: normal;
     }
 
     .project-title {
@@ -108,7 +119,7 @@ a.section-count:hover {
         min-width: 0;
     }
 
-    .project-description .item-desc {
+    .project-item.project-descriptions-ready .project-description .item-desc {
         flex: 0 1 auto;
         overflow: hidden;
         min-width: 0;
@@ -238,27 +249,13 @@ a.section-count:hover {
     }
 }
 
-.now-section {
-    margin-bottom: 1.5rem;
-
-    .section-header i {
-        margin-right: 4px;
-        color: var(--color-accent-1);
-    }
-
-    .data-list > li {
-        margin-left: 1.5rem;
-        list-style: square;
-    }
-}
-
 @media screen and (max-width: 480px) {
     .data-list > li time {
         margin-right: 6px;
         font-size: 0.8em;
     }
 
-    .project-description .item-desc {
+    .project-item.project-descriptions-ready .project-description .item-desc {
         display: -webkit-box;
         white-space: normal;
         -webkit-box-orient: vertical;

@@ -21,7 +21,7 @@
 
     &::before {
         position: absolute;
-        top: 10px;
+        top: 1.3rem;
         left: -26px;
         z-index: 1;
         width: 10px;
@@ -30,6 +30,7 @@
         border-radius: 50%;
         background: var(--color-background);
         content: "";
+        transform: translateY(-50%);
     }
 }
 

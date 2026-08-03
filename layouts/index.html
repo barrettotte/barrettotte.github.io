@@ -1,6 +1,7 @@
 {{ define "main" }}
   {{ $projects := where hugo.Data.projects "hidden" nil }}
   {{ $projects = where $projects "long" nil }}
+  {{ $models := where hugo.Data.bytes "model" "!=" nil }}
 
   <section class="home-intro" aria-labelledby="home-intro-title">
     <h1 id="home-intro-title">I like learning, experimenting, and building as I go.</h1>
@@ -9,10 +10,11 @@
     </p>
 
     <p class="home-stats">
-      <a href="{{ "/projects" | relURL }}">{{ len $projects }} projects</a> <span aria-hidden="true">·</span>
-      <a href="{{ "/bytes" | relURL }}">{{ len hugo.Data.bytes }} bytes</a> <span aria-hidden="true">·</span>
-      <a href="{{ "/misc/library" | relURL }}">{{ len hugo.Data.books }} books</a> <span aria-hidden="true">·</span>
-      <a href="{{ "/misc/museum" | relURL }}">{{ len hugo.Data.museum }} museum pieces</a>
+      <a href="{{ "/projects" | relURL }}">projects ({{ len $projects }})</a> <span aria-hidden="true">·</span>
+      <a href="{{ "/bytes" | relURL }}">bytes ({{ len hugo.Data.bytes }})</a> <span aria-hidden="true">·</span>
+      <a href="{{ "/misc/library" | relURL }}">books ({{ len hugo.Data.books }})</a> <span aria-hidden="true">·</span>
+      <a href="{{ "/misc/museum" | relURL }}">museum pieces ({{ len hugo.Data.museum }})</a> <span aria-hidden="true">·</span>
+      <a href="{{ "/misc/3d-models" | relURL }}">3D models ({{ len $models }})</a>
     </p>
   </section>
 

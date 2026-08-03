@@ -6,18 +6,21 @@
     <a href="#main" class="skip-link">Skip to main content</a>
     <div class="content index pt2 pb4">
       {{- partial "header" . -}}
-      <main id="main">
+      <main id="main" tabindex="-1">
         {{- block "main" . }}{{- end }}
       </main>
       {{- partial "footer" . -}}
     </div>
 
-    <script src="{{ "js/custom.js" | relURL }}" defer></script>
+    {{- $customScript := resources.Get "js/custom.js" | minify | fingerprint "sha512" }}
+    <script src="{{ $customScript.RelPermalink }}" integrity="{{ $customScript.Data.Integrity }}" defer></script>
     {{- if or (eq .Section "projects") (eq .Section "bytes") (eq .Title "My Library") }}
-      <script src="{{ "js/filter.js" | relURL }}" defer></script>
+      {{- $filterScript := resources.Get "js/filter.js" | minify | fingerprint "sha512" }}
+      <script src="{{ $filterScript.RelPermalink }}" integrity="{{ $filterScript.Data.Integrity }}" defer></script>
     {{- end }}
     {{- if eq .Type "misc/3d-models" }}
-      <script src="{{ "js/models.js" | relURL }}" defer></script>
+      {{- $modelsScript := resources.Get "js/models.js" | minify | fingerprint "sha512" }}
+      <script src="{{ $modelsScript.RelPermalink }}" integrity="{{ $modelsScript.Data.Integrity }}" defer></script>
     {{- end }}
   </body>
 </html>

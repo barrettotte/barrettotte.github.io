@@ -133,7 +133,7 @@
     "desc": "Terrain generation using perlin noise",
     "date": "2016-12",
     "languages": ["c#"],
-    "image": "/img/carousel/terrain-generation-study.png",
+    "image": "/img/projects/terrain-generation-study.png",
     "featured": true
   },
   {
@@ -251,9 +251,7 @@
     "desc": "Procedural Generation Jam 2018 entry",
     "date": "2018-10",
     "languages": ["c#"],
-    "deployUrl": "https://barrettotte.itch.io/simple-population-genetics-simulator",
-    "image": "/img/carousel/procjam-2018.png",
-    "featured": true
+    "deployUrl": "https://barrettotte.itch.io/simple-population-genetics-simulator"
   },
   {
     "name": "TempleOS-and-HolyC",
@@ -664,7 +662,7 @@
     "desc": "4-bit accumulator-based CPU",
     "date": "2021-12",
     "languages": ["verilog"],
-    "image": "/img/carousel/angstrom-cpu.png",
+    "image": "/img/projects/angstrom-cpu.png",
     "featured": true
   },
   {
@@ -678,7 +676,9 @@
     "name": "candlestick-mic",
     "url": "https://github.com/barrettotte/candlestick-mic",
     "desc": "Old candlestick phone as a headset",
-    "date": "2022-01"
+    "date": "2022-01",
+    "image": "/img/projects/candlestick-mic.png",
+    "featured": true
   },
   {
     "name": "rusty-lc3-vm",
@@ -866,7 +866,7 @@
     "url": "https://github.com/barrettotte/faraday-disk",
     "desc": "A Faraday disk built to learn about electromagnetism and early generators",
     "date": "2023-08",
-    "image": "/img/carousel/faraday-disk.png",
+    "image": "/img/projects/faraday-disk.png",
     "featured": true
   },
   {
@@ -893,7 +893,9 @@
     "name": "wimshurst-machine",
     "url": "https://github.com/barrettotte/wimshurst-machine",
     "desc": "A Wimshurst machine made to learn about electrostatic generators",
-    "date": "2023-12"
+    "date": "2023-12",
+    "image": "/img/projects/wimshurst-machine.jpg",
+    "featured": true
   },
   {
     "name": "coulomb",
@@ -933,8 +935,10 @@
   {
     "name": "nand-pcb-test",
     "url": "https://github.com/barrettotte/nand-pcb-test",
-    "desc": " Homemade PCB test using a CNC router",
-    "date": "2024-04"
+    "desc": "Homemade PCB test using a CNC router",
+    "date": "2024-04",
+    "image": "/img/projects/nand-pcb-test.jpg",
+    "featured": true
   },
   {
     "name": "query-sandbox",
@@ -1003,7 +1007,10 @@
     "url": "https://github.com/barrettotte/c64-tea",
     "desc": "Tiny Encryption Algorithm (TEA) for Commodore 64 using BASIC and 6502 ASM",
     "date": "2025-05",
-    "languages": ["assembly", "basic"]
+    "languages": ["assembly", "basic"],
+    "image": "/img/projects/c64-tea.png",
+    "imageFocus": [0.5, 0.25],
+    "featured": true
   },
   {
     "name": "questlines",
@@ -1081,7 +1088,9 @@
     "url": "https://github.com/barrettotte/daedalus",
     "desc": "A lightweight, offline-first kanban board desktop app",
     "date": "2026-02",
-    "languages": ["go", "svelte"]
+    "languages": ["go", "svelte"],
+    "image": "/img/projects/daedalus.png",
+    "featured": true
   },
   {
     "name": "fishtank-userscript",
@@ -1109,7 +1118,9 @@
     "url": "https://github.com/barrettotte/temple-os-mcp",
     "desc": "An experimental MCP server for TempleOS",
     "date": "2026-04",
-    "languages": ["holy-c", "python", "shell"]
+    "languages": ["holy-c", "python", "shell"],
+    "image": "/img/projects/temple-os-mcp.png",
+    "featured": true
   },
   {
     "name": "fusion-box",

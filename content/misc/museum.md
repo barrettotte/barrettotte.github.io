@@ -1,6 +1,7 @@
 ---
 title: Museum
 type: misc/museum
+description: A timeline and catalog of vintage computers, calculators, and electronics.
 ---
 
 Over the years I've been collecting various old things while I study the history of computing.

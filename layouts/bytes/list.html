@@ -1,7 +1,5 @@
 {{ define "main"}}
   <div id="archive">
-    <h1 class="page-title">Bytes</h1>
-
     {{ $bytes := hugo.Data.bytes }}
 
     {{ $years := slice }}
@@ -14,10 +12,13 @@
     {{ $minYear := index $years 0 }}
     {{ $maxYear := index $years (sub (len $years) 1) }}
 
-    <p class="page-desc">
-      {{ len $bytes }} small projects, experiments, certifications, and other things I've completed,
-      {{ $minYear }}-{{ now.Year }}; source and assets live in <a href="https://github.com/barrettotte/bytes">bytes</a>.
-    </p>
+    <header class="page-header">
+      <h1 class="page-title">Bytes</h1>
+      <p class="page-desc">
+        {{ len $bytes }} small projects, experiments, certifications, and other things I've completed,
+        {{ $minYear }}-{{ now.Year }}; source and assets live in <a href="https://github.com/barrettotte/bytes">bytes</a>.
+      </p>
+    </header>
 
     <!-- Filter controls: hidden by default, revealed by JS -->
     <div id="byte-controls" style="display:none">
@@ -26,16 +27,13 @@
       <div id="filter-status" class="filter-status"></div>
     </div>
 
-    <ul id="byte-list-default" class="post-list data-list">
-      {{ range ((sort $bytes "date" "asc") | collections.Reverse) }}
-        {{ $pageYear := substr .date 0 4 }}
-
-        {{ if (ne $pageYear ($.Scratch.Get "year")) }}
-          {{ $.Scratch.Set "year" $pageYear }}
-          {{ partial "year-header.html" (dict "year" $pageYear "items" $bytes) }}
-        {{ end }}
-
-        {{ if not .hidden }}
+    <div id="byte-list-default" class="post-list">
+      {{ range ($years | collections.Reverse) }}
+        {{ $pageYear := . }}
+        {{ partial "year-header.html" (dict "year" $pageYear "items" $bytes) }}
+        <ul class="data-list">
+          {{ range ((sort $bytes "date" "asc") | collections.Reverse) }}
+            {{ if and (eq (substr .date 0 4) $pageYear) (not .hidden) }}
           <li
             class="post-item"
             data-category="{{ .category }}"
@@ -76,9 +74,11 @@
               {{ end }}
             </span>
           </li>
-        {{ end }}
+            {{ end }}
+          {{ end }}
+        </ul>
       {{ end }}
-    </ul>
+    </div>
   </div>
 
   {{ partial "scroll-to-top.html" (dict "context" . "target" "/bytes/#" ) }}

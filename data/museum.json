@@ -6,7 +6,7 @@
     "year": null,
     "displayYear": "Modern replica",
     "category": "Computer",
-    "image": "/img/computing/computers/altair8800-replica.jpg",
+    "image": "/img/museum/altair8800-replica.jpg",
     "description": "A working replica of the front-panel computer that helped define the early personal-computing era."
   },
   {
@@ -15,7 +15,7 @@
     "manufacturer": "Commodore",
     "year": 1982,
     "category": "Computer",
-    "image": "/img/computing/computers/commodore-64x2.jpg",
+    "image": "/img/museum/commodore-64x2.jpg",
     "description": "An 8-bit home computer with its keyboard and computer hardware combined into a single case."
   },
   {
@@ -25,7 +25,7 @@
     "year": null,
     "displayYear": "Unknown",
     "category": "Computer",
-    "image": "/img/computing/computers/comtrade-express.jpg",
+    "image": "/img/museum/comtrade-express.jpg",
     "description": "A desktop-compatible computer that still needs further identification and documentation."
   },
   {
@@ -34,7 +34,7 @@
     "manufacturer": "IBM",
     "year": 1983,
     "category": "Computer",
-    "image": "/img/computing/computers/ibm-5150xt.jpg",
+    "image": "/img/museum/ibm-5150xt.jpg",
     "description": "An IBM PC XT-era desktop system from the early years of the IBM PC platform."
   },
   {
@@ -43,7 +43,7 @@
     "manufacturer": "IBM",
     "year": 1984,
     "category": "Computer",
-    "image": "/img/computing/computers/ibm-5155.jpg",
+    "image": "/img/museum/ibm-5155.jpg",
     "description": "IBM's portable PC, built around a transportable case with an integrated display and keyboard."
   },
   {
@@ -52,7 +52,7 @@
     "manufacturer": "IBM",
     "year": 1988,
     "category": "Computer",
-    "image": "/img/computing/computers/ibm-as400.jpg",
+    "image": "/img/museum/ibm-as400.jpg",
     "description": "A system from IBM's AS/400 family of integrated business computers."
   },
   {
@@ -61,7 +61,7 @@
     "manufacturer": "Apple",
     "year": 1998,
     "category": "Computer",
-    "image": "/img/computing/computers/imac-g3.jpg",
+    "image": "/img/museum/imac-g3.jpg",
     "description": "Apple's translucent all-in-one desktop built around the PowerPC G3 processor."
   },
   {
@@ -71,7 +71,7 @@
     "year": null,
     "displayYear": "Unknown",
     "category": "Computer",
-    "image": "/img/computing/computers/leadingedge-x.jpg",
+    "image": "/img/museum/leadingedge-x.jpg",
     "description": "An unidentified Leading Edge-compatible desktop awaiting a firm model identification."
   },
   {
@@ -80,7 +80,7 @@
     "manufacturer": "Tandy",
     "year": 1986,
     "category": "Computer",
-    "image": "/img/computing/computers/tandy-coco3.jpg",
+    "image": "/img/museum/tandy-coco3.jpg",
     "description": "The third major Color Computer model, packaged as a compact keyboard computer."
   },
   {
@@ -89,7 +89,7 @@
     "manufacturer": "Tandy / Radio Shack",
     "year": 1977,
     "category": "Computer",
-    "image": "/img/computing/computers/trs80-1.jpg",
+    "image": "/img/museum/trs80-1.jpg",
     "description": "An early mass-market microcomputer sold through Radio Shack stores."
   },
   {
@@ -98,7 +98,7 @@
     "manufacturer": "Tandy / Radio Shack",
     "year": 1980,
     "category": "Computer",
-    "image": "/img/computing/computers/trs80-3.jpg",
+    "image": "/img/museum/trs80-3.jpg",
     "description": "An all-in-one successor to the original TRS-80 with its monitor and drives housed together."
   },
   {
@@ -107,7 +107,7 @@
     "manufacturer": "Tandy / Radio Shack",
     "year": 1983,
     "category": "Computer",
-    "image": "/img/computing/computers/trs80-4p.jpg",
+    "image": "/img/museum/trs80-4p.jpg",
     "description": "A transportable version of the TRS-80 Model 4 with an integrated display and disk drives."
   },
   {
@@ -116,7 +116,7 @@
     "manufacturer": "Tandy / Radio Shack",
     "year": 1983,
     "category": "Computer",
-    "image": "/img/computing/computers/trs80-m100.jpg",
+    "image": "/img/museum/trs80-m100.jpg",
     "description": "A compact battery-powered portable computer with a built-in display, keyboard, and software."
   },
   {
@@ -126,7 +126,7 @@
     "year": null,
     "displayYear": "Unknown",
     "category": "Keyboard",
-    "image": "/img/computing/ibm-kb-8923.jpg",
+    "image": "/img/museum/ibm-kb-8923.jpg",
     "description": "An IBM keyboard identified by model number 8923."
   },
   {
@@ -135,7 +135,7 @@
     "manufacturer": "IBM",
     "year": 1985,
     "category": "Keyboard",
-    "image": "/img/computing/ibm-kb-m.jpg",
+    "image": "/img/museum/ibm-kb-m.jpg",
     "description": "IBM's well-known buckling-spring keyboard design with a heavy, durable construction."
   },
   {
@@ -145,7 +145,7 @@
     "year": null,
     "displayYear": "Unknown",
     "category": "Calculator",
-    "image": "/img/computing/monroe-calc.jpg",
+    "image": "/img/museum/monroe-calc.jpg",
     "description": "An electromechanical desktop calculator from Monroe's line of office calculating machines."
   },
   {
@@ -155,7 +155,7 @@
     "year": null,
     "displayYear": "Unknown",
     "category": "Peripheral",
-    "image": "/img/computing/remex-tape.jpg",
+    "image": "/img/museum/remex-tape.jpg",
     "description": "A punched-tape reader used to turn patterns stored on paper tape into electrical data."
   },
   {
@@ -164,7 +164,7 @@
     "manufacturer": "Tandy",
     "year": 1984,
     "category": "Calculator",
-    "image": "/img/computing/tandy-pc6.jpg",
+    "image": "/img/museum/tandy-pc6.jpg",
     "description": "A pocket-sized programmable scientific calculator sold by Tandy."
   },
   {
@@ -174,7 +174,7 @@
     "year": null,
     "displayYear": "Unknown",
     "category": "Calculator",
-    "image": "/img/computing/ussr-mechcalc.jpg",
+    "image": "/img/museum/ussr-mechcalc.jpg",
     "description": "A Soviet hand-cranked mechanical calculator from the long-running Felix family."
   },
   {
@@ -184,7 +184,7 @@
     "year": null,
     "displayYear": "Unknown",
     "category": "Component",
-    "image": "/img/computing/ussr-memory-chip.jpg",
+    "image": "/img/museum/ussr-memory-chip.jpg",
     "description": "A small magnetic-core memory assembly with its woven storage cores visible."
   }
 ]

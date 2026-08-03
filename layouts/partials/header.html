@@ -26,22 +26,40 @@
     {{ range .Site.Menus.main }}
       {{ $isActive := "" }}
 
-      <div class="nav-item">
-        {{ if eq $section .URL }}
-          {{ $isActive = "active" }}
-        {{ else }}
-          {{ $isActive = "" }}
-        {{ end }}
+      {{ if .HasChildren }}
+        <div class="nav-group-desktop">
+          {{ range .Children }}
+            <div class="nav-item">
+              <a href="{{ .URL }}"{{ if hasPrefix $.RelPermalink (printf "%s/" (strings.TrimSuffix "/" .URL)) }} class="active"{{ end }}>{{ .Name }}</a>
+            </div>
+          {{ end }}
+        </div>
 
-        <a href="{{- .URL -}}" 
-          {{ with $isActive }} 
-            class="{{$isActive}}" 
+        <details class="nav-misc">
+          <summary{{ if eq $section .URL }} class="active"{{ end }}>{{ .Name }}</summary>
+          <div class="nav-dropdown">
+            <a href="{{ .URL }}"{{ if eq $.RelPermalink "/misc/" }} class="active"{{ end }}>All misc</a>
+            {{ range .Children }}
+              <a href="{{ .URL }}"{{ if hasPrefix $.RelPermalink (printf "%s/" (strings.TrimSuffix "/" .URL)) }} class="active"{{ end }}>{{ .Name }}</a>
+            {{ end }}
+          </div>
+        </details>
+      {{ else }}
+        <div class="nav-item">
+          {{ if eq $section .URL }}
+            {{ $isActive = "active" }}
           {{ end }}
-          {{ if eq .Name "Resume" }} 
-            target="_blank" rel="noopener noreferrer"
-          {{ end }}
-        >{{- .Name -}}</a>
-      </div>
+
+          <a href="{{- .URL -}}"
+            {{ with $isActive }}
+              class="{{$isActive}}"
+            {{ end }}
+            {{ if eq .Name "Resume" }}
+              target="_blank" rel="noopener noreferrer"
+            {{ end }}
+          >{{- .Name -}}</a>
+        </div>
+      {{ end }}
     {{ end }}
   </nav>
 </header>

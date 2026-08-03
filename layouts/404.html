@@ -1,8 +1,16 @@
 {{ define "main" }}
-  <div id="not-found">
-    <h1>Page Not Found :(</h1>
-    <div class="typewriter">
-      <div class="typewriter-text">PLEASE STAND BY&nbsp;...&nbsp;</div>
-    </div>
-  </div>
+  <section id="not-found">
+    <header class="page-header">
+      <p class="not-found-code" aria-hidden="true">404</p>
+      <h1 class="page-title">Page not found</h1>
+      <p class="page-desc">The page may have moved, or the address may be incorrect.</p>
+    </header>
+
+    <nav class="not-found-actions" aria-label="Page not found suggestions">
+      <a href="{{ "/" | relURL }}">Home</a>
+      <a href="{{ "/projects/" | relURL }}">Projects</a>
+      <a href="{{ "/bytes/" | relURL }}">Bytes</a>
+      <a href="{{ "/misc/museum/" | relURL }}">Museum</a>
+    </nav>
+  </section>
 {{ end }}

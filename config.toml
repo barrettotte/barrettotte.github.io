@@ -17,25 +17,39 @@ title = "Barrett Otte"
   url = "/bytes"
   weight = 3
 
-#[[menu.main]]
-#  name = "Now"
-#  url = "/now"
-#  weight = 4
+[[menu.main]]
+  identifier = "misc"
+  name = "Misc"
+  url = "/misc"
+  weight = 4
+
+[[menu.main]]
+  parent = "misc"
+  name = "Library"
+  url = "/misc/library"
+  weight = 1
+
+[[menu.main]]
+  parent = "misc"
+  name = "Museum"
+  url = "/misc/museum"
+  weight = 2
+
+[[menu.main]]
+  parent = "misc"
+  name = "3D Models"
+  url = "/misc/3d-models"
+  weight = 3
 
 [[menu.main]]
   name = "About"
   url = "/about"
-  weight = 4
+  weight = 5
 
 [[menu.main]]
   name = "Resume"
   url = "https://raw.githubusercontent.com/barrettotte/Resume/master/barrettotte-resume.pdf"
   weight = 6
-
-[[menu.main]]
-  name = "Misc"
-  url = "/misc"
-  weight = 7
 
 # https://gohugo.io/getting-started/configuration-markup
 [markup]
@@ -64,6 +78,7 @@ title = "Barrett Otte"
 [params]
   author = "Barrett Otte"
   colortheme = "dark"
+  description = "Personal projects, small builds, and collections from Barrett Otte."
 
   dateFormat = "2006-01-02"
   showReadTime = true

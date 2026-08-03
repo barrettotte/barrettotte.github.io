@@ -1,7 +1,5 @@
 {{ define "main"}}
   <div id="archive">
-    <h1 class="page-title">Projects</h1>
-
     {{ $projects := where hugo.Data.projects "hidden" nil }}
     {{ $projects := where $projects "long" nil }}
 
@@ -15,9 +13,12 @@
     {{ $minYear := index $years 0 }}
     {{ $maxYear := index $years (sub (len $years) 1) }}
 
-    <p class="page-desc">
-      {{ len $projects }} projects I've built or experimented with, {{ $minYear }}-{{ now.Year }}.
-    </p>
+    <header class="page-header">
+      <h1 class="page-title">Projects</h1>
+      <p class="page-desc">
+        {{ len $projects }} projects I've built or experimented with, {{ $minYear }}-{{ now.Year }}.
+      </p>
+    </header>
 
     <!-- Filter controls: hidden by default, revealed by JS -->
     <div id="project-controls" style="display:none">
@@ -27,16 +28,13 @@
     </div>
 
     <!-- Default list view -->
-    <ul id="project-list-default" class="post-list data-list">
-      {{ range ((sort $projects "date" "asc") | collections.Reverse) }}
-        {{ $pageYear := substr .date 0 4 }}
-
-        {{ if (ne $pageYear ($.Scratch.Get "year")) }}
-          {{ $.Scratch.Set "year" $pageYear }}
-          {{ partial "year-header.html" (dict "year" $pageYear "items" $projects) }}
-        {{ end }}
-
-        {{ if not .hidden }}
+    <div id="project-list-default" class="post-list">
+      {{ range ($years | collections.Reverse) }}
+        {{ $pageYear := . }}
+        {{ partial "year-header.html" (dict "year" $pageYear "items" $projects) }}
+        <ul class="data-list">
+          {{ range ((sort $projects "date" "asc") | collections.Reverse) }}
+            {{ if and (eq (substr .date 0 4) $pageYear) (not .hidden) }}
           <li class="post-item project-item" data-languages="{{ delimit (default (slice) .languages) "," }}" data-date="{{ .date }}" data-deployed="{{ if .deployUrl }}true{{ else }}false{{ end }}" data-search="{{ printf "%s %s" .name .desc | plainify | lower }}">
             <time datetime="{{ time (printf "%s%s" .date "-01") }}">{{ .date }}</time>
             <span class="project-summary">
@@ -69,9 +67,11 @@
               </span>
             </span>
           </li>
-        {{ end }}
+            {{ end }}
+          {{ end }}
+        </ul>
       {{ end }}
-    </ul>
+    </div>
 
   </div>
 
