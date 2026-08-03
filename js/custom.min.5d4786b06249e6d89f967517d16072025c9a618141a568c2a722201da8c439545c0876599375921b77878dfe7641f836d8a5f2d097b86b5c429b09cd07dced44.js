@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("scroll-to-top");if(e!==null){const t="maxTouchPoints"in navigator&&navigator.maxTouchPoints>0;t&&(e.onclick=e=>{window.location.hash="#header",window.location.hash="#"})}})
