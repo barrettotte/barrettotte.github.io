@@ -239,6 +239,50 @@ test('key pages have no serious automated accessibility violations', async ({ pa
   }
 });
 
+test('reduced motion disables smooth scrolling and visual transitions', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto('/');
+  await expect(page.locator('html')).toHaveCSS('scroll-behavior', 'auto');
+  const transitionSeconds = await page.locator('.featured-item').first().evaluate((item) => {
+    const duration = getComputedStyle(item).transitionDuration;
+    return duration.endsWith('ms') ? Number.parseFloat(duration) / 1000 : Number.parseFloat(duration);
+  });
+  expect(transitionSeconds).toBeLessThanOrEqual(0.00001);
+});
+
+test('key pages reflow without horizontal overflow at a high-zoom equivalent width', async ({ page }) => {
+  await page.setViewportSize({ width: 640, height: 900 });
+  for (const [path] of pages) {
+    await page.goto(path);
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+    expect(overflow, `${path} has horizontal overflow`).toBeLessThanOrEqual(1);
+  }
+});
+
+test('visible form and button controls meet the minimum target size', async ({ page }) => {
+  for (const path of ['/projects/', '/bytes/', '/misc/library/', '/misc/3d-models/']) {
+    await page.goto(path);
+    const undersized = await page.locator('button, input:not([type="hidden"]), select').evaluateAll(
+      (controls) => controls
+        .filter((control) => {
+          const style = getComputedStyle(control);
+          const rect = control.getBoundingClientRect();
+          return style.display !== 'none' && style.visibility !== 'hidden' && rect.width > 0 && rect.height > 0;
+        })
+        .map((control) => {
+          const rect = control.getBoundingClientRect();
+          return {
+            label: control.getAttribute('aria-label') || control.textContent.trim() || control.tagName,
+            width: rect.width,
+            height: rect.height,
+          };
+        })
+        .filter(({ width, height }) => width < 24 || height < 24)
+    );
+    expect(undersized, `${path} has undersized controls`).toEqual([]);
+  }
+});
+
 test.describe('without JavaScript', () => {
   test.use({ javaScriptEnabled: false });
 
