@@ -2,13 +2,14 @@
 HUGO := $(if $(strip $(HUGO)),$(HUGO),hugo)
 UV := $(if $(strip $(UV)),$(UV),uv)
 NPM := $(if $(strip $(NPM)),$(NPM),npm)
+BYTES_REPO := $(if $(strip $(BYTES_REPO)),$(BYTES_REPO),../bytes)
 
 .DEFAULT_GOAL := help
 
-.PHONY: help build serve serve_minify sort_books check_hugo check_uv check_npm images images_check js js_check test_ui test_ui_install
+.PHONY: help check build serve serve_minify sort_books check_hugo check_uv check_npm bytes_check images images_check js js_check test_ui test_ui_install
 
 help: ## Show this help message
-	@echo "Usage: make <target> [HUGO=/path/to/hugo] [UV=/path/to/uv] [NPM=/path/to/npm]"
+	@echo "Usage: make <target> [HUGO=/path/to/hugo] [UV=/path/to/uv] [NPM=/path/to/npm] [BYTES_REPO=/path/to/bytes]"
 	@echo ""
 	@echo "Targets:"
 	@awk 'BEGIN { FS = ":.*## " } /^[a-zA-Z0-9_-]+:.*## / { printf "  %-14s %s\n", $$1, $$2 }' $(MAKEFILE_LIST)
@@ -26,6 +27,8 @@ check_npm: ## Check that npm is available
 build: check_hugo ## Build the site, including draft content
 	$(HUGO) -D
 
+check: build images_check js_check bytes_check ## Run all local validation checks
+
 serve: check_hugo ## Start the development server
 	$(HUGO) server --disableFastRender --noHTTPCache
 
@@ -37,6 +40,9 @@ images: check_uv ## Generate optimized site thumbnails
 
 images_check: check_uv ## Validate optimized site thumbnails
 	$(UV) run scripts/optimize_images.py --check
+
+bytes_check: check_uv ## Validate Bytes links against the local repository
+	$(UV) run scripts/check_bytes_links.py --repo "$(BYTES_REPO)"
 
 js: check_npm ## Bundle browser JavaScript
 	$(NPM) run build:js

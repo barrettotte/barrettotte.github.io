@@ -32,6 +32,9 @@ make images
 # check that optimized thumbnails exist and are current
 make images_check
 
+# validate Bytes links against a sibling ../bytes checkout
+make bytes_check
+
 # bundle and validate browser JavaScript
 make js
 make js_check
@@ -49,6 +52,8 @@ Source images are stored under matching `assets/img/{about,models,museum,project
 Project images use a centered crop by default. Add an optional `imageFocus` pair such as `[0.5, 0.25]` to a project record to move the horizontal and vertical crop focus; both values range from `0` to `1`.
 
 Model metadata lives in the optional nested `model` field of `data/bytes.json`. Models are loaded from the `bytes` repository: the viewer prefers a web-ready GLB when available and falls back to the source STL. The npm build produces a self-contained Three.js viewer under `static/js/vendor`, and the catalog loads it only after a visitor requests an interactive view.
+
+`make bytes_check` validates every Bytes source, directory, GLB, and STL URL against a sibling `../bytes` checkout. Set `BYTES_REPO=/path/to/bytes` when the repository lives elsewhere. `make check` runs this together with the production build, image validation, and JavaScript bundle validation.
 
 ## References
 
